@@ -30,7 +30,7 @@ package-dir = { "" = "src" }
 where = ["src"]
 
 [tool.setuptools.package-data]
-kya = ["templates/*.html", "assets/*"]
+kya = ["templates/*.j2", "templates/*.html", "templates/static/*"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
