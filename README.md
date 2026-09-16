@@ -4,9 +4,11 @@ A free, self-updating tracker for US class-action settlements, split by **how
 big the money is**, **what it takes to claim it**, and **when the window
 closes**. Not legal advice, not a law firm, not a settlement administrator.
 
-Current state: **Milestone A complete** — the full pipeline runs against the
-live index and publishes a static site. Notifications (Telegram), the webhook
-worker (Cloudflare) and scheduled GitHub Actions runs are on the roadmap below.
+Current state: **Milestones A and B complete** — the pipeline publishes a
+static site, and the Telegram bot delivers diffs as messages with inline
+*Done / Not mine* buttons (recording those decisions is the Milestone C
+webhook). The Cloudflare worker and scheduled GitHub Actions runs are on the
+roadmap below.
 
 ## Why this exists
 
@@ -91,11 +93,30 @@ parser fixes above eliminated.
 
 ```bash
 pip install -e .[dev]
-python -m pytest                    # 191 tests, all offline (fixtures captured live)
+python -m pytest                    # 221 tests, all offline (fixtures captured live)
 kya --pages --site                  # full build: dataset + docs/ site
 python tools/build_dataset.py --limit 5   # smoke run without installing
 python tools/audit_warnings.py      # group the build's warnings by shape
 ```
+
+### Telegram setup (Milestone B)
+
+Credentials live in `.env` (gitignored — this repo is public); see
+`.env.example`. Nothing is ever read from `config.yaml`, which is committed.
+
+```bash
+# 1. @BotFather -> /newbot, copy the token into .env as KYA_TELEGRAM_BOT_TOKEN
+# 2. open the bot in Telegram and press Start, then:
+kya --whoami             # bot identity + the chat id that messaged it
+# 3. put that id in .env as KYA_TELEGRAM_CHAT_ID, then:
+kya --send-test-message  # one message with Done / Not mine buttons
+kya --notify-digest      # diff vs the stored snapshot, send what's new
+```
+
+Small digests send one message per case with the two buttons; a busy day
+degrades gracefully into a grouped digest (chunked to Telegram's 4096-char
+limit). Titles and details are HTML-escaped — scraped prose is untrusted
+input, and an unescaped `<` must never inject markup.
 
 The same pipeline runs locally or in CI: it needs no credentials, writes
 `data/settlements.json` plus the static site into `docs/` for GitHub Pages,
@@ -120,14 +141,15 @@ src/kya/
   site_build.py    Jinja2 -> docs/ static site
   run.py           the kya console entry point
   templates/       index.html.j2 plus static assets (style.css, app.js, favicon)
-tests/             191 offline tests over captured live fixtures
+tests/             221 offline tests over captured live fixtures
 tools/             build, fixture capture, and warning-audit CLIs
 ```
 
 ## Roadmap
 
 - [x] Milestone A - pipeline, dataset, static site
-- [ ] Milestone B - Telegram notifications with inline *Done / Not mine* buttons
+- [x] Milestone B - Telegram notifications with inline *Done / Not mine* buttons
+  (delivery + CLI; recording button presses lands with the Milestone C webhook)
 - [ ] Milestone C - Cloudflare Worker webhook + KV state
 - [ ] Scheduled GitHub Actions builds + GitHub Pages deploy
 - [ ] Secondary sources (CourtListener, topclassactions RSS) and cross-checks
