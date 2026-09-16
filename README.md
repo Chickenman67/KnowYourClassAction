@@ -100,6 +100,9 @@ python tools/audit_warnings.py      # group the build's warnings by shape
 The same pipeline runs locally or in CI: it needs no credentials, writes
 `data/settlements.json` plus the static site into `docs/` for GitHub Pages,
 and keeps its disposable SQLite query store under `.state/` (gitignored).
+The dataset is deterministic — rebuilding unchanged sources moves at most the
+`generated_at` line, so a scheduled run shows up as a reviewable diff rather
+than a rewrite of every record (`tests/test_store.py` holds that line).
 
 ## Repository layout
 
