@@ -343,10 +343,16 @@ def render_site(
 
     static_dir = _TEMPLATE_DIR / "static"
     if static_dir.is_dir():
-        for asset in static_dir.iterdir():
+        for asset in sorted(static_dir.iterdir()):
             if asset.is_file():
                 shutil.copy2(asset, out / asset.name)
                 written.append(out / asset.name)
+
+    # GitHub Pages runs Jekyll over docs/ by default; the built site is
+    # already finished HTML, so skip that pass (and its Liquid parsing).
+    nojekyll = out / ".nojekyll"
+    nojekyll.write_text("", encoding="utf-8")
+    written.append(nojekyll)
 
     if dataset_path is None:
         candidate = root / config.paths.data_json

@@ -91,7 +91,7 @@ parser fixes above eliminated.
 
 ```bash
 pip install -e .[dev]
-python -m pytest                    # 179 tests, all offline (fixtures captured live)
+python -m pytest                    # 191 tests, all offline (fixtures captured live)
 kya --pages --site                  # full build: dataset + docs/ site
 python tools/build_dataset.py --limit 5   # smoke run without installing
 python tools/audit_warnings.py      # group the build's warnings by shape
@@ -116,7 +116,8 @@ src/kya/
   store.py         SQLite store + data/settlements.json export
   site_build.py    Jinja2 -> docs/ static site
   run.py           the kya console entry point
-tests/             179 offline tests over captured live fixtures
+  templates/       index.html.j2 plus static assets (style.css, app.js, favicon)
+tests/             191 offline tests over captured live fixtures
 tools/             build, fixture capture, and warning-audit CLIs
 ```
 

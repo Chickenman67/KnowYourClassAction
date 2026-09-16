@@ -8,6 +8,7 @@ and digest of every capture.
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import pytest
@@ -66,6 +67,37 @@ def cvs_html() -> str:
 @pytest.fixture(scope="session")
 def equifax_html() -> str:
     return read_fixture("page_equifax_credit_score.html")
+
+
+@pytest.fixture(scope="session")
+def pages() -> dict:
+    """Every captured case page, parsed, keyed by slug.
+
+    Session-scoped so site and pipeline tests share one parse of the real
+    captures instead of walking the manifest twice.
+    """
+    from kya.sources.openclassactions_page import parse_page
+
+    manifest = json.loads((FIXTURE_DIR / "MANIFEST.json").read_text(encoding="utf-8"))
+    out: dict = {}
+    for name, meta in manifest.items():
+        if not name.startswith("page_"):
+            continue
+        result = parse_page(
+            (FIXTURE_DIR / f"{name}.html").read_text(encoding="utf-8"), meta["url"]
+        )
+        page = result[0] if isinstance(result, tuple) else result
+        slug = meta["url"].rsplit("/", 1)[-1].replace(".php", "")
+        out[slug] = page
+    return out
+
+
+@pytest.fixture(scope="session")
+def settlements(index_document, pages):
+    """The full dataset built from captured fixtures - index plus pages."""
+    from kya.build import build_all
+
+    return build_all(index_document, pages)
 
 
 @pytest.fixture(scope="session")
