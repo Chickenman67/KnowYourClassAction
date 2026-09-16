@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://openclassactions.com/sitemap.xml
+Sitemap: https://openclassactions.com/news-sitemap.xml
+
+# Machine-readable site guide for AI assistants and agentic fetchers.
+# Not part of the robots.txt spec â declared here because the convention is
+# that llms.txt lives at the root and crawlers look for it the way they look
+# for robots.txt. /llms.txt is rewritten to llms.php, which filters expired
+# claim deadlines out of the open-settlements directory on every request.
+# LLM-Content: https://openclassactions.com/llms.txt

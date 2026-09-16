@@ -1,0 +1,39 @@
+# KnowYourClassAction configuration.
+#
+# NOTE ON PERSONAL DATA: this repository is public. Nothing personal lives here.
+# Your home state is selected in the site UI and stored in your own browser
+# (localStorage) - it is never written to this file or committed.
+
+user_agent: "KnowYourClassAction/0.1 (+https://github.com/Chickenman67/KnowYourClassAction)"
+
+http:
+  timeout_seconds: 25
+  min_delay_seconds: 1.0      # serialized, polite: >= 1s between requests to the same host
+  max_retries: 3
+  cache_dir: ".cache"
+  cache_ttl_seconds: 21600    # 6 hours
+  respect_robots: true
+
+paths:
+  data_json: "data/settlements.json"   # canonical dataset (committed, public data only)
+  site_dir: "docs"                     # GitHub Pages publishes this directory
+  db_path: ".state/kya.sqlite3"        # disposable local query store, gitignored
+  fixture_dir: "tests/fixtures"
+
+# Which lanes to build. All four, always rendered as visually separate sections.
+lanes:
+  claimable: true      # 1 - open claim window, money available now
+  automatic: true      # 2 - no claim form: payment is automatic, but watch election dates
+  investigation: true  # 3 - lawsuits/investigations to join, nothing claimable yet
+  pending: true        # 4 - settlement exists but the claim window is not verified yet
+
+# Expected-value ranking assumptions. These are deliberately conservative and
+# are documented in the README so nobody mistakes an estimate for a promise.
+scoring:
+  assumed_units_per_claim: 1     # unknown household quantity -> assume one unit
+  pro_rata_assumed_share_pct: 0.0005   # 0.05% of a common fund
+
+deadlines:
+  soon_days: 7
+  urgent_days: 3
+  final_days: 1

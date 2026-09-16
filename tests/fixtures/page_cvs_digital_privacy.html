@@ -1,0 +1,2611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Revision Date: 09/14/26 -->
+    
+        <!-- Universal Required Meta Tags -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<!-- Self-hosted web fonts. The @font-face rules are generated into
+     css/style.css by scripts/build-fonts.php; this preload starts the one face
+     every page needs during the initial parse. See data/fonts.php for why only
+     Libre Franklin latin is pushed. -->
+<link rel="preload" href="/assets/fonts/libre-franklin-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- Twitter Card default. Per-page og:title / og:description / og:image
+     are picked up automatically by Twitter when twitter:* tags are absent. -->
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Site-level social identity: emitted before page-specific tags, so the
+     first-occurrence rule normalizes any per-page variants. -->
+<meta property="og:site_name" content="Open Class Actions">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@OpenClassAction">
+
+<!-- CPRA / CCPA: honor Global Privacy Control (GPC) signal and the
+     persistent opt-out cookie set from /ccpa.php. Setting
+     window['ga-disable-<PROPERTY_ID>'] = true BEFORE the gtag loader
+     runs is Google's documented opt-out mechanism, so this script
+     must execute first. Required by 11 CCR §7025 (GPC must be treated
+     as a valid opt-out of sale/sharing). -->
+<script>
+// Tracking-cookie nuker. Called from the opt-out detection block
+// below and from the click handler on /ccpa.php's opt-out button.
+// Defined at script-tag top-level so it's reachable from both places
+// without re-defining.
+//
+// Safety properties:
+//   - Only matches a CLOSED LIST of known third-party tracking-cookie
+//     name patterns. Functional / first-party cookies (PHPSESSID, our
+//     own oca_ccpa_optout, Mailchimp's, etc.) are explicitly NOT in
+//     the patterns list and cannot be matched. The `oca_ccpa_optout`
+//     name doesn't match any of the patterns by construction — we
+//     verified this manually before shipping.
+//   - Tries multiple `domain` attribute variants when issuing the
+//     delete because GA/AdSense set cookies on the apex hostname,
+//     a leading-dot variant, and the literal hostname depending on
+//     configuration. Issuing only one variant leaves the others
+//     orphaned in the browser.
+//   - Wrapped in try/catch at every layer — cookie cleanup must
+//     never block page render.
+//
+// Why this exists: prevent the "Sephora-style" gap where we set
+// ga-disable / npa=1 going forward but leave the user's previously-
+// set _ga, _gid, __gads, _gcl_au cookies in place — which a regulator
+// could read as "you stopped collecting NEW data but kept the link
+// to the data you already collected." The CalAG's 2022 Sephora
+// settlement called out exactly that pattern as a dark-pattern
+// CCPA violation.
+window.ocaNukeTrackingCookies = function () {
+    try {
+        // Closed list of known tracking-cookie name patterns. Any
+        // addition here must be reviewed against the explicit
+        // exclusion list below.
+        var patterns = [
+            /^_ga(_|$)/,    // Google Analytics:  _ga, _ga_<stream>
+            /^_gid$/,       // Google Analytics:  _gid
+            /^_gat(_|$)/,   // Google Analytics:  _gat, _gat_gtag_<id>
+            /^_gcl_/,       // Google Ads conv:   _gcl_au, _gcl_aw, _gcl_dc
+            /^__gads$/,     // AdSense:           __gads
+            /^__gpi$/,      // Google Personalization: __gpi
+            /^__eoi$/,      // AdSense ad load:   __eoi
+            /^_fbp$/        // Facebook Pixel — defensive; we don't use it
+        ];
+        // Explicit safety check: name patterns we must NEVER match
+        // even by accident. Belt-and-suspenders against future
+        // additions to the patterns list above.
+        var alwaysKeep = /^(oca_ccpa_optout|PHPSESSID|MCSession|MCNotify)$/i;
+
+        var hostname = (typeof location !== 'undefined' && location.hostname) || '';
+        // Candidate `domain` attributes for the delete operation.
+        // Empty string = no domain attr (cookie was set without one).
+        var domains = ['', hostname, '.' + hostname];
+        var parts = hostname.split('.');
+        while (parts.length > 1) {
+            domains.push(parts.join('.'));
+            domains.push('.' + parts.join('.'));
+            parts.shift();
+        }
+
+        document.cookie.split(';').forEach(function (raw) {
+            var name = raw.split('=')[0].trim();
+            if (!name) return;
+            if (alwaysKeep.test(name)) return;     // safety: never touch
+            var matched = false;
+            for (var i = 0; i < patterns.length; i++) {
+                if (patterns[i].test(name)) { matched = true; break; }
+            }
+            if (!matched) return;
+            domains.forEach(function (d) {
+                var c = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+                if (d) c += '; domain=' + d;
+                try { document.cookie = c; } catch (e) {}
+            });
+        });
+    } catch (e) { /* never block page render on cookie cleanup */ }
+};
+
+(function () {
+    try {
+        var gpc = (typeof navigator !== 'undefined' && navigator.globalPrivacyControl === true);
+        var cookieOpt = (typeof document !== 'undefined' &&
+            document.cookie.indexOf('oca_ccpa_optout=1') !== -1);
+        if (gpc || cookieOpt) {
+            // Disable Google Analytics + Google Ads conversion tags. The
+            // ga-disable-<id> = true convention is documented at
+            // developers.google.com/analytics/devguides/collection/ga4/disable.
+            window['ga-disable-UA-86289728-2'] = true;
+            window['ga-disable-AW-953983325'] = true;
+            // Force AdSense into Non-Personalized Ads mode for any ad
+            // unit pushed to the queue on the current page (covers the
+            // case where adsbygoogle.js was already loaded before the
+            // GPC signal could be observed client-side).
+            window.adsbygoogle = window.adsbygoogle || [];
+            window.adsbygoogle.requestNonPersonalizedAds = 1;
+            window.ocaPrivacyOptedOut = true;
+            window.ocaPrivacyOptOutSource = gpc ? 'gpc' : 'cookie';
+
+            // Nuke pre-existing third-party tracking cookies that may
+            // have been set on a prior visit before the user opted
+            // out (Sephora-style dark-pattern fix). Once per session
+            // is enough — gated by sessionStorage so we don't churn
+            // on every page navigation. Wrapped in try/catch
+            // separately so any cookie-cleanup error can't break the
+            // upstream tag-disable logic.
+            try {
+                if (typeof sessionStorage !== 'undefined' &&
+                    !sessionStorage.getItem('oca_optout_nuked')) {
+                    sessionStorage.setItem('oca_optout_nuked', '1');
+                    if (typeof window.ocaNukeTrackingCookies === 'function') {
+                        window.ocaNukeTrackingCookies();
+                    }
+                }
+            } catch (nukeErr) { /* never break page on cookie cleanup */ }
+
+            // NOTE: we deliberately do not auto-log opt-out signals
+            // to a server-side audit endpoint. An auto-log endpoint
+            // is abusable as a CSRF + X-Forwarded-For-spoof email
+            // flood amplifier. The §7101 24-month record-keeping
+            // requirement is satisfied by the inbound email requests
+            // to ccpa@ / privacy@ (real verifiable consumer
+            // requests). Browser-level technical signals we honor
+            // immediately and reversibly arguably aren't §7101
+            // "consumer requests" in the regulatory sense.
+        }
+    } catch (e) { /* fail open: never block page render on privacy code */ }
+})();
+</script>
+
+<!-- Google tag.
+
+     This is the standard gtag.js snippet, emitted synchronously in <head>, and
+     it is the ONLY copy on the site. Every public page reaches it through this
+     partial: 2,469 via data/meta.php and 224 hand-rolled-<head> settlement
+     pages that include this file directly. Nothing else may carry one.
+
+     HISTORY, because this block was a different shape for one day: until
+     2026-09-02, 2,260 pages carried their own pasted copy of this snippet and
+     only 433 relied on the partial. The partial therefore could not emit the
+     snippet outright -- meta.php is included near the TOP of <head>, above the
+     pasted copy it would have duplicated -- so it injected the tag at
+     DOMContentLoaded, and only after checking that no other loader existed.
+     That worked, but it meant two mechanisms with two pageview timings, and a
+     property ID that lived in 2,261 files. The pasted copies were stripped in
+     one sweep and this became the plain snippet. A page that still has one is
+     wrong, and audit-ga-coverage.php says so.
+
+     Why there is no runtime guard against a second copy: a guard here could
+     only see a snippet that ran ABOVE this partial, never one below it, so it
+     would give false comfort while catching almost nothing. The static audit
+     and its PostToolUse hook see both.
+
+     The GPC / oca_ccpa_optout kill-switch above runs first and sets its
+     ga-disable flags before this loads, so an opted-out visitor stays opted
+     out. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-86289728-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-86289728-2');
+    gtag('config', 'AW-953983325');
+</script>
+
+<!-- Newsletter signup tracking — shared by all four signup surfaces.
+
+     Every signup form on the site carries data-oca-signup (the surface) and
+     data-oca-label (the GA event_label already used for that surface). This
+     script is the single place that reads them, so adding a fifth form later
+     means adding two attributes, not another inline handler.
+
+     Signups fire gtag('event','click', {event_category, event_label}) — the
+     same event name and shape the inline handlers used, and the same one the
+     outbound affiliate/claim links use. That is deliberate: attribution is
+     read out of the BigQuery export (analytics_305584400) with a query keyed
+     on event_name = 'click' AND event_params.key = 'event_label', so keeping
+     signups on 'click' means existing saved queries and dashboards pick up
+     all four surfaces with no change. Filtering signups apart from affiliate
+     clicks is a LIKE 'sendy_%' away in SQL.
+
+     One behavioural difference from the old inline onclick: this fires on
+     SUBMIT, and only when the submit actually proceeds. A click that was
+     rejected by an unticked captcha is no longer counted as a signup attempt.
+
+     ocaTrack() is a guarded wrapper. gtag is defined synchronously above, so
+     on any page that includes this partial the guard never trips; it exists so
+     that a call from a page that somehow lacks the tag degrades to a silent
+     no-op instead of a ReferenceError. -->
+<script>
+    window.ocaTrack = function (name, params) {
+        try {
+            if (typeof gtag === 'function') { gtag('event', name, params || {}); }
+        } catch (e) { /* analytics must never break a page */ }
+    };
+
+    /* Attach as soon as the DOM is ready, then one turn later.
+       
+       This used to wait for `window.load`, which was a bug: on an ad-heavy
+       page `load` can be many seconds after the content is usable, and anyone
+       who reached a form and submitted before it fired got no event at all.
+       The form still worked and the address still reached Sendy, so the only
+       symptom was a signup that never appeared in analytics. The footer form
+       hit this hardest — it sits at the very bottom, so jumping straight to it
+       routinely beats `load`.
+
+       The setTimeout(0) preserves the ordering that `load` was giving us. The
+       per-form captcha guards attach either at parse time (data/footer.php) or
+       on DOMContentLoaded (index.php); deferring by one turn puts this after
+       every DOMContentLoaded handler has run, so those guards are always
+       registered first and e.defaultPrevented still correctly reports a submit
+       blocked by an unticked captcha. A blocked submit is not a submit. */
+    var ocaAttachSignupTracking = function () {
+        var forms = document.querySelectorAll('form[data-oca-signup]');
+        if (!forms.length) return;
+
+        forms.forEach(function (form) {
+            var label = form.getAttribute('data-oca-label') || form.getAttribute('data-oca-signup') || 'unknown';
+            var hitSettled = false;   /* the most recent hit is away (or gave up) */
+
+            /* Fire on the BUTTON CLICK, not on a successful submit.
+
+               This counts intent: someone pressed Subscribe. A click that then
+               fails the captcha, or has an invalid address, still counts —
+               previously those fired nothing at all, so the attempt was
+               invisible and the only visible number was completed signups.
+
+               It is also the same shape the outbound affiliate and claim links
+               use (a plain click event with an event_label), so all of it reads
+               out of one BigQuery query.
+
+               NOTE: these counts are signup ATTEMPTS. They will run higher than
+               the subscriber count in Sendy, because failed captchas, typo'd
+               addresses and second attempts all land here. Sendy remains the
+               source of truth for how many people actually joined. */
+            var btn = form.querySelector('input[type="submit"], button[type="submit"]');
+            if (btn) {
+                btn.addEventListener('click', function () {
+                    hitSettled = false;
+                    if (typeof gtag !== 'function') { hitSettled = true; return; }
+                    window.ocaTrack('click', {
+                        event_category: 'engagement',
+                        event_label: label,
+                        event_callback: function () { hitSettled = true; }
+                    });
+                    /* Give up waiting after 1s so a blocked or slow tag can
+                       never hold the form hostage. */
+                    setTimeout(function () { hitSettled = true; }, 1000);
+                });
+            }
+
+            form.addEventListener('submit', function (e) {
+                if (e.defaultPrevented) return;
+                if (form.__ocaResubmitting) return;   /* our own release, let it through */
+
+                /* Hand the surface to /subscribed.php. sessionStorage is keyed
+                   by origin and survives the hop out to the Sendy subdomain and
+                   back, because these forms submit in the SAME TAB. Sendy does
+                   not forward POST fields into its redirect, so this is the only
+                   way the thank-you page can know where the signup came from. */
+                try { sessionStorage.setItem('oca_signup_source', label); } catch (err) {}
+
+                /* The event has already fired on the click above. All this does
+                   is hold the navigation until that hit is actually away.
+
+                   gtag('event') only queues the hit; the tag builds and sends it
+                   asynchronously. Every event source on this site that reports
+                   reliably shares one property — the page does not unload: the
+                   affiliate links all carry target="_blank", and these forms used
+                   to as well. Once they became same-tab submits the document
+                   started tearing down in the same tick, and the request was
+                   never built. The address still reached Sendy, so the only
+                   symptom was a signup missing from analytics. */
+                if (hitSettled) return;               /* already sent — go */
+
+                e.preventDefault();
+                var started = +new Date();
+                var go = function () {
+                    if (!hitSettled && (+new Date()) - started < 1000) {
+                        setTimeout(go, 40);
+                        return;
+                    }
+                    form.__ocaResubmitting = true;
+                    /* Each of these forms has an input named "submit", which
+                       shadows the form's own submit() method — form.submit()
+                       would throw "not a function". Call the prototype method
+                       against the element instead. */
+                    HTMLFormElement.prototype.submit.call(form);
+                };
+                go();
+            });
+        });
+    };
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(ocaAttachSignupTracking, 0);
+        });
+    } else {
+        setTimeout(ocaAttachSignupTracking, 0);
+    }
+</script>
+
+
+<!-- Adsense Script
+     CPRA opt-out: when $oca_npa is true (cookie or Sec-GPC header), we set
+     adsbygoogle.requestNonPersonalizedAds=1 BEFORE adsbygoogle.js loads. Per
+     Google's docs this disables behavioral targeting and ad-personalization
+     cookies for this session, satisfying the "do not sell or share"
+     requirement under CPRA section 1798.140(ah). -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7840731971102704" crossorigin="anonymous"></script>
+<!-- End of Adsense Script -->
+
+<!-- Ad Blocking Recovery Script -->
+<script async src="https://fundingchoicesmessages.google.com/i/pub-7840731971102704?ers=1" nonce="tb1WVeODob6CoH0puyXx4w"></script>
+<script nonce="tb1WVeODob6CoH0puyXx4w">
+    (function() {
+        function signalGooglefcPresent() {
+            if (!window.frames['googlefcPresent']) {
+                if (document.body) {
+                    const iframe = document.createElement('iframe');
+                    iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';
+                    iframe.style.display = 'none';
+                    iframe.name = 'googlefcPresent';
+                    document.body.appendChild(iframe);
+                } else {
+                    setTimeout(signalGooglefcPresent, 0);
+                }
+            }
+        }
+        signalGooglefcPresent();
+    })();
+</script>
+<!-- End of Ad Blocking Recovery Script -->
+
+
+<!-- Browser Icon — purple egg set. Root-relative on purpose: some readers and
+     crawlers request /favicon.ico directly and never look at these tags.
+     sizes="32x32" on the .ico stops Chrome preferring it over the SVG. -->
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<!-- Site-wide structured data: Organization + WebSite.
+     Linked via @id so per-page Article/NewsArticle schemas can reference
+     the publisher with { "publisher": { "@id": ".../#organization" } }.
+     The Organization carries description, foundingDate (2019, per the
+     owner), press / tips contact points (the same addresses about.php
+     publishes -- no phone, the site publishes none) and
+     publishingPrinciples + correctionsPolicy pointing at
+     editorial-policy.php, which has a corrections section. Valid
+     schema.org; not a documented Google rich-result field, so expect no
+     visible change -- it makes the existing trust pages machine-readable.
+     The WebSite carries a SearchAction whose target is the settlements
+     directory's ?q= search (settlements.php reads it on load and filters
+     the table). Google retired the sitelinks search box in 2024, so this
+     too is valid markup with no rich result attached. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://openclassactions.com/#organization",
+      "name": "Open Class Actions",
+      "alternateName": "OCA",
+      "url": "https://openclassactions.com/",
+      "description": "A team of writers and legal researchers publishing plain-language, consumer-facing information about class action settlements, investigations and legal news so people can file valid claims on time.",
+      "foundingDate": "2019",
+      "publishingPrinciples": "https://openclassactions.com/editorial-policy.php",
+      "correctionsPolicy": "https://openclassactions.com/editorial-policy.php",
+      "contactPoint": [
+        { "@type": "ContactPoint", "contactType": "press", "email": "press@openclassactions.com", "url": "https://openclassactions.com/about.php" },
+        { "@type": "ContactPoint", "contactType": "news tips", "email": "tips@openclassactions.com", "url": "https://openclassactions.com/about.php" },
+        { "@type": "ContactPoint", "contactType": "advertising", "email": "ads@openclassactions.com", "url": "https://openclassactions.com/about.php" }
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://openclassactions.com/assets/images/logo-512-by-512.webp",
+        "contentUrl": "https://openclassactions.com/assets/images/logo-512-by-512.webp",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.facebook.com/groups/openclassactions",
+        "https://www.youtube.com/@OpenClassActions",
+        "https://www.tiktok.com/@openclassactions",
+        "https://www.instagram.com/openclassactionscom/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://openclassactions.com/#website",
+      "url": "https://openclassactions.com/",
+      "name": "Open Class Actions",
+      "description": "Track current class action settlements with deadlines, eligibility criteria, proof requirements, and claim form links.",
+      "publisher": { "@id": "https://openclassactions.com/#organization" },
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://openclassactions.com/settlements.php?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
+    <meta name="revised" content="09/14/2026" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://openclassactions.com/css/style.css?v=2026-09-07b">
+    <link rel="canonical" href="https://openclassactions.com/settlements/cvs-digital-privacy-class-action-settlement.php" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [{
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://openclassactions.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Settlements",
+                            "item": "https://openclassactions.com/settlements.php"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "CVS Digital Privacy Settlement",
+                            "item": "https://openclassactions.com/settlements/cvs-digital-privacy-class-action-settlement.php"
+                        }
+                    ]
+                },
+                {
+                    "@type": "NewsArticle",
+                    "@id": "https://openclassactions.com/settlements/cvs-digital-privacy-class-action-settlement.php#article",
+                    "isAccessibleForFree": true,
+                    "mainEntityOfPage": "https://openclassactions.com/settlements/cvs-digital-privacy-class-action-settlement.php",
+                    "headline": "CVS Digital Privacy Class Action Settlement — Up to $5 Without Proof or $10 With Documentation",
+                    "description": "CVS website and app users may claim up to $5 without proof or $10 with documentation. One claim per household. Deadline: November 16, 2026.",
+                    "image": [{
+                        "@type": "ImageObject",
+                        "url": "https://openclassactions.com/assets/images/cvs-pharmacy.webp",
+                        "width": 1200,
+                        "height": 630
+                    }],
+                    "author": { "@type": "Person", "name": "Steve Levine" },
+                    "publisher": { "@id": "https://openclassactions.com/#organization" },
+                    "datePublished": "2026-09-14T16:00:00+00:00",
+                    "dateModified": "2026-09-14T16:00:00+00:00",
+                    "inLanguage": "en"
+                },
+                {
+                    "@type": "FAQPage",
+                    "@id": "https://openclassactions.com/settlements/cvs-digital-privacy-class-action-settlement.php#faq",
+                    "mainEntity": [
+    {
+        "@type": "Question",
+        "name": "Can I file if I never received a settlement notice?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The official claim entry page links to an open form for people without a LoginID or PIN, including people who never received an email notice. Eligible class members can choose the up-to-$5 option without documentation."
+        }
+    },
+    {
+        "@type": "Question",
+        "name": "Does every person at my address get a separate payment?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The settlement permits only one claim per household, defined as all people residing at the same mailing address. Later claims from the same household will be denied."
+        }
+    },
+    {
+        "@type": "Question",
+        "name": "Do I need to explain why I have no proof?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The claim instructions say no proof or explanation is needed for Cash Payment B of up to $5. You must still meet the class requirements and sign the eligibility certification under penalty of perjury."
+        }
+    },
+    {
+        "@type": "Question",
+        "name": "What happens if my electronic payment cannot be delivered?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The online form says the administrator may request clarification or default to a check if an electronic payment cannot be made. Keep your contact and payment details current through the official settlement website."
+        }
+    },
+    {
+        "@type": "Question",
+        "name": "Is a CVS store purchase enough to qualify?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The class definition requires access to a CVS digital property in the United States before July 27, 2026. A store purchase alone does not establish that access, and no purchase is required by the stated class definition."
+        }
+    }
+]
+                }
+            ]
+        }
+    </script>
+    <meta name="author" content="Steve Levine">
+
+    <meta property="og:image" content="https://openclassactions.com/assets/images/cvs-pharmacy.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://openclassactions.com/settlements/cvs-digital-privacy-class-action-settlement.php" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CVS Digital Privacy Settlement — Up to $5 Without Proof" />
+    <meta property="og:description" content="CVS website and app users may claim up to $5 without proof or $10 with documentation. One claim per household. Deadline: November 16, 2026." />
+    <meta property="article:published_time" content="2026-09-14T16:00:00+00:00" />
+    <meta property="article:modified_time" content="2026-09-14T16:00:00+00:00" />
+    <meta property="article:section" content="Class Action Settlements" />
+    <meta property="article:tag" content="CVS Digital Privacy Settlement" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CVS Digital Privacy Settlement — Up to $5 Without Proof" />
+    <meta name="twitter:description" content="CVS website and app users may claim up to $5 without proof or $10 with documentation. One claim per household. Deadline: November 16, 2026." />
+    <meta name="twitter:image" content="https://openclassactions.com/assets/images/cvs-pharmacy.webp" />
+
+    <title>CVS Digital Privacy Settlement — Up to $5 Without Proof</title>
+    <meta name="description" content="CVS website and app users may claim up to $5 without proof or $10 with documentation. One claim per household. Deadline: November 16, 2026.">
+    <meta name="keywords" content="CVS settlement, CVS digital privacy settlement, CVS no proof claim, CVS Criteo settlement">
+
+</head>
+
+<body class="oca-centered">
+    <!-- NavBar — redesign 2026 · mobile condensed bar + drawer 2026-07 -->
+<style>
+    /* Wordmark height steps down at each major viewport breakpoint */
+    .navbar .brand-mark { display: block; width: auto; height: 32px; }                /* large desktop (default) */
+    @media (max-width: 1200px) { .navbar .brand-mark { height: 30px; } }             /* desktop */
+    @media (max-width: 992px)  { .navbar .brand-mark { height: 28px; } }             /* small desktop / landscape tablet */
+    @media (max-width: 768px)  { .navbar .brand-mark { height: 24px; } }             /* tablet (condensed bar) */
+    @media (max-width: 576px)  { .navbar .brand-mark { height: 21px; } }             /* phone */
+    @media (max-width: 380px)  { .navbar .brand-mark { height: 18px; } }             /* small phone */
+
+    /* ============================================================================
+       Mobile condensed nav (≤768px) — single bar: hamburger · centered logo ·
+       reserved profile slot, with a slide-in drawer for Home/Settlements/News.
+       Lives here (not style.css) so the partial stays self-contained and no
+       site-wide cache-buster bump is needed. This block loads after style.css,
+       so its rules win the cascade at equal specificity — including overriding
+       the legacy stacked-column mobile layout still present in style.css.
+       Desktop (>768px) is untouched: inline .nav-links, no toggle/drawer.
+       ============================================================================ */
+
+    /* Desktop bar: 64px editorial-standard row (overrides the legacy 72px in
+       style.css — the bar is sticky, so the 8px saved applies to every
+       scrolled viewport). Mobile stays 56px via the media query below. */
+    .navbar .inner { height: 64px; }
+
+    /* Hidden on desktop — the media query below turns them on */
+    .navbar .nav-toggle,
+    .navbar .nav-avatar-slot,
+    .navbar .nav-scrim,
+    .navbar .nav-drawer { display: none; }
+
+    @media (max-width: 768px) {
+
+        .navbar { padding: 0; }
+
+        /* 1fr | auto | 1fr — outer tracks always split leftover space equally,
+           so the brand stays dead-center even if the left/right controls have
+           different widths (e.g. once the profile icon becomes visible).
+           The legacy style.css mobile rule zeroes .inner's side padding via
+           the `padding: 6px 0` shorthand, so the .container gutter must be
+           restored here — the icons align to it like the content below. */
+        .navbar .inner {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            height: 56px;
+            padding: 0 40px;
+            gap: 0;
+        }
+
+        .navbar .brand { grid-column: 2; justify-self: center; }
+
+        /* Inline links leave the bar entirely — they live in the drawer now */
+        .navbar .nav-links { display: none; }
+
+        /* --- Left: hamburger toggle ------------------------------------- */
+        .navbar .nav-toggle {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            grid-column: 1;
+            justify-self: start;
+            width: 44px;
+            height: 44px;
+            margin-left: -11px;          /* 22px bars are inset 11px in the 44px box — this
+                                            puts the glyph flush with the content gutter, with
+                                            the tap target bleeding into it */
+            padding: 0;
+            background: none;
+            border: 0;
+            border-radius: 8px;
+            cursor: pointer;
+            position: relative;
+            z-index: 212;                /* stays tappable above scrim + drawer (X to close) */
+        }
+        .navbar .nav-toggle:focus-visible {
+            outline: 2px solid var(--oca-magenta, #b512ce);
+            outline-offset: 2px;
+        }
+        .navbar .nav-toggle .bar {
+            width: 22px;
+            height: 3px;
+            border-radius: 3px;
+            background: #111;
+            transition: transform .28s cubic-bezier(.22,.61,.36,1), opacity .18s ease;
+        }
+        /* translateY = bar height (3px) + gap (4px), so outer bars meet the middle */
+        .navbar.nav-open .nav-toggle .bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        .navbar.nav-open .nav-toggle .bar:nth-child(2) { opacity: 0; }
+        .navbar.nav-open .nav-toggle .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+        /* --- Right: reserved profile slot (future sign-in) ---------------
+           visibility:hidden keeps the 44px box in layout and out of the
+           a11y/tab order. To launch the profile icon later, delete the
+           visibility line (and wire up the button). */
+        .navbar .nav-avatar-slot {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-column: 3;
+            justify-self: end;
+            width: 44px;
+            height: 44px;
+            margin-right: -11px;         /* 22px icon inset 11px in the 44px box — glyph
+                                            flush with the right content gutter */
+            visibility: hidden;
+        }
+        .navbar .nav-avatar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            background: none;
+            border: 0;
+            border-radius: 8px;
+            cursor: pointer;
+            color: #111;
+        }
+
+        /* --- Scrim (below the bar only — the header stays visible) -------- */
+        .navbar .nav-scrim {
+            display: block;
+            position: absolute;
+            top: 100%;               /* anchored under the sticky bar, no magic numbers */
+            left: 0;
+            right: 0;
+            height: 100vh;
+            background: rgba(17, 22, 17, .45);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .22s ease;
+            z-index: 210;
+        }
+        .navbar.nav-open .nav-scrim {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* --- Menu panel (BBC-style) ------------------------------------------
+           Full-width sheet that expands directly BENEATH the bar, so the
+           header (X toggle · logo · profile slot) stays visible and
+           consistent while the menu is open. transform/opacity only —
+           compositor-driven, no layout/paint work. visibility flips after
+           the fade so closed-menu links can't be tabbed to or announced. */
+        .navbar .nav-drawer {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            /* bar (56px) + its 1px border. `100vh` on mobile is the LARGEST
+               viewport (toolbars retracted), so with the browser's toolbar shown
+               it overshoots the real height and the drawer's bottom rows land
+               under the browser chrome — unreachable, since the body is
+               scroll-locked while open. `svh` (smallest viewport height) is exact
+               here: the drawer only opens while the page is scroll-locked, and
+               toolbars only retract on page scroll, so the visible height IS the
+               small viewport. The plain `100vh` line stays first as a fallback
+               for pre-2022 engines. */
+            max-height: calc(100vh - 57px);
+            max-height: calc(100svh - 57px);
+            overflow-y: auto;
+            overscroll-behavior: contain;
+            background: #fff;
+            box-shadow: 0 24px 40px -18px rgba(17, 22, 17, .25);
+            transform: translateY(-8px);
+            opacity: 0;
+            visibility: hidden;
+            transition: transform .22s ease, opacity .22s ease, visibility 0s linear .22s;
+            z-index: 211;
+            /* safe-area pad keeps the last row above the iOS home indicator; 0 elsewhere */
+            padding: 2px 0 calc(16px + env(safe-area-inset-bottom));
+        }
+        .navbar.nav-open .nav-drawer {
+            transform: none;
+            opacity: 1;
+            visibility: visible;
+            transition: transform .22s ease, opacity .22s ease;
+        }
+
+        /* ---- Drawer content: four weights, not one flat list -----------------
+           An 11-row list where every row looked identical gave the eye nothing
+           to land on, so Settlements (what most readers arrive for) read the
+           same as the dictionary. Now: two lead rows, a two-up topic grid, a
+           chip rail for the narrower pillars that used to be footer-only, and
+           a quiet utility row for housekeeping + the closed archive. Nineteen
+           destinations in less height than the old eleven.
+           Gutter tracks the page content gutter via --nav-gutter. */
+        .navbar .nav-drawer { --nav-gutter: 40px; }
+
+        /* NOTE: this reset is (0,2,1) — two classes + an element. The list
+           containers below are therefore scoped `.nav-drawer .nav-x` (0,3,0)
+           so their gutter padding outranks the `padding: 0` here. Dropping
+           that extra class silently collapses every gutter to zero. */
+        .navbar .nav-drawer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar .nav-grid li,
+        .navbar .nav-chips li,
+        .navbar .nav-utility li { display: block; }
+
+        /* Tier 1 — full-width lead rows */
+        .navbar .nav-lead {
+            display: block;
+            padding: 13px var(--nav-gutter);
+            font-family: var(--oca-font-sans, sans-serif);
+            font-size: 17px;
+            font-weight: 800;
+            line-height: 1.25;
+            color: var(--oca-black, #111);
+            text-decoration: none;
+            border-bottom: 1px solid #f1f2f4;
+            border-left: 3px solid transparent;
+        }
+        .navbar .nav-lead .nav-lead-sub {
+            display: block;
+            margin-top: 3px;
+            font-size: 12.5px;
+            font-weight: 500;
+            color: var(--oca-fg-3, #6b7280);
+        }
+        .navbar .nav-lead:active { background: #f6f7f9; }
+        .navbar .nav-lead.active {
+            border-left-color: var(--oca-magenta, #b512ce);
+            background: #fbf3fd;
+        }
+
+        /* Group labels */
+        .navbar .nav-group-label {
+            margin: 0;
+            padding: 15px var(--nav-gutter) 8px;
+            font-family: var(--oca-font-sans, sans-serif);
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .09em;
+            color: var(--oca-fg-3, #6b7280);
+        }
+
+        /* Tier 2 — two-up topic grid: six hubs in the height three rows took */
+        .navbar .nav-drawer .nav-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            padding: 0 var(--nav-gutter);
+        }
+        .navbar .nav-grid a {
+            display: flex;
+            align-items: center;
+            min-height: 44px;
+            padding: 8px 12px;
+            font-family: var(--oca-font-sans, sans-serif);
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--oca-black, #111);
+            text-decoration: none;
+            background: #f7f8f9;
+            border: 1px solid transparent;
+            border-radius: 10px;
+        }
+        .navbar .nav-grid a:active { background: #eceef1; }
+        .navbar .nav-grid a.active {
+            background: #fbf3fd;
+            border-color: var(--oca-magenta, #b512ce);
+        }
+
+        /* Tier 3 — chip rail for the narrower pillars */
+        .navbar .nav-drawer .nav-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 8px var(--nav-gutter) 0;
+        }
+        .navbar .nav-chips a {
+            display: inline-flex;
+            align-items: center;
+            min-height: 40px;
+            padding: 6px 14px;
+            font-family: var(--oca-font-sans, sans-serif);
+            font-size: 13.5px;
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--oca-fg-2, #374151);
+            text-decoration: none;
+            background: #fff;
+            border: 1px solid var(--oca-gray-200, #e5e7eb);
+            border-radius: 999px;
+        }
+        .navbar .nav-chips a:active { background: #f6f7f9; }
+        .navbar .nav-chips a.active {
+            color: var(--oca-magenta, #b512ce);
+            border-color: var(--oca-magenta, #b512ce);
+            background: #fbf3fd;
+        }
+
+        /* Utility — deliberately quiet. Closed Settlements lives here rather
+           than in the main list: every page behind it is one the reader can no
+           longer act on, so it should not compete with live inventory. */
+        .navbar .nav-drawer .nav-utility {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px 18px;
+            margin-top: 14px;
+            padding: 10px var(--nav-gutter) 0;
+            border-top: 1px solid #f1f2f4;
+        }
+        .navbar .nav-utility a {
+            display: inline-flex;
+            align-items: center;
+            min-height: 36px;
+            font-family: var(--oca-font-sans, sans-serif);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--oca-fg-3, #6b7280);
+            text-decoration: none;
+        }
+        .navbar .nav-utility a:active { color: var(--oca-black, #111); }
+        .navbar .nav-utility a.active { color: var(--oca-magenta, #b512ce); }
+
+        /* Page scroll locks while the drawer is open */
+        body.oca-nav-locked { overflow: hidden; }
+    }
+
+    /* Phone widths: .container gutter drops to 10px (style.css ≤500px rule) —
+       keep the bar's gutter, and therefore the icon alignment, in step */
+    @media (max-width: 500px) {
+        .navbar .inner { padding-left: 10px; padding-right: 10px; }
+        .navbar .nav-drawer { --nav-gutter: 10px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .navbar .nav-toggle .bar,
+        .navbar .nav-scrim,
+        .navbar .nav-drawer { transition: none; }
+    }
+</style>
+<nav class="navbar">
+    <div class="container inner">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="oca-nav-drawer" aria-label="Open menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <a href="/" class="brand" aria-label="OpenClassActions.com — Home">
+            <!-- Inline SVG wordmark: white italic letters, black outline + hard drop shadow, purple dot -->
+            <svg class="brand-mark" viewBox="0 0 600 78" height="30" role="img" aria-hidden="true" focusable="false" style="display:block;width:auto;height:30px;overflow:visible;">
+                <g font-family="'Libre Franklin', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-style="italic" font-size="54" letter-spacing="-1">
+                    <!-- hard drop shadow layer -->
+                    <text x="12" y="60" textLength="578" lengthAdjust="spacingAndGlyphs" fill="#111" stroke="#111" stroke-width="9" stroke-linejoin="round" paint-order="stroke">OpenClassActions.com</text>
+                    <!-- main layer: white fill, black outline -->
+                    <text x="6" y="54" textLength="578" lengthAdjust="spacingAndGlyphs" fill="#fff" stroke="#111" stroke-width="7" stroke-linejoin="round" paint-order="stroke">OpenClassActions<tspan fill="#b512ce">.</tspan>com</text>
+                </g>
+            </svg>
+        </a>
+        <ul class="nav-links">
+            <li><a href="https://openclassactions.com/" id="link1">Home</a></li>
+            <li><a href="https://openclassactions.com/settlements.php">Settlements</a></li>
+            <li><a href="https://openclassactions.com/news.php" id="link2">News</a></li>
+        </ul>
+        <!-- Reserved slot for the future sign-in / profile icon (space held, not shown) -->
+        <span class="nav-avatar-slot">
+            <button class="nav-avatar" type="button" aria-label="Account" tabindex="-1">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 20c0-3.6 3.6-6 8-6s8 2.4 8 6"></path>
+                </svg>
+            </button>
+        </span>
+    </div>
+    <div class="nav-scrim" aria-hidden="true"></div>
+    <div id="oca-nav-drawer" class="nav-drawer">
+        <ul class="nav-drawer-links">
+                <li><a href="https://openclassactions.com/settlements.php" class="nav-lead">Settlements<span class="nav-lead-sub">Open claims · soonest deadline first</span></a></li>
+                <li><a href="https://openclassactions.com/news.php" class="nav-lead">News</a></li>
+            </ul>
+        <p class="nav-group-label">Browse by Topic</p>
+        <ul class="nav-grid">
+                <li><a href="https://openclassactions.com/investigations/hot-data-breaches.php">Data Breaches</a></li>
+                <li><a href="https://openclassactions.com/recalls.php">Recalls</a></li>
+                <li><a href="https://openclassactions.com/class-action-investigations.php">Investigations</a></li>
+                <li><a href="https://openclassactions.com/mass-torts.php">Mass Torts</a></li>
+            </ul>
+        <ul class="nav-chips">
+                <li><a href="https://openclassactions.com/no-proof-class-action-settlements.php">No-Proof Settlements</a></li>
+                <li><a href="https://openclassactions.com/wage-hour-class-actions.php">Wage &amp; Hour</a></li>
+            </ul>
+        <p class="nav-group-label">Read &amp; Learn</p>
+        <ul class="nav-chips">
+                <li><a href="https://openclassactions.com/blog.php">Blog</a></li>
+                <li><a href="https://openclassactions.com/class-action-dictionary.php">Dictionary</a></li>
+                <li><a href="https://openclassactions.com/learn.php">Learn</a></li>
+            </ul>
+        <ul class="nav-utility">
+                <li><a href="https://openclassactions.com/">Home</a></li>
+                <li><a href="https://openclassactions.com/closed-class-actions.php">Closed Settlements</a></li>
+                <li><a href="https://openclassactions.com/about.php">About</a></li>
+            </ul>    </div>
+</nav>
+<script>
+(function () {
+    var nav = document.querySelector('.navbar');
+    if (!nav) return;
+    var toggle = nav.querySelector('.nav-toggle');
+    var scrim = nav.querySelector('.nav-scrim');
+    function setOpen(open) {
+        nav.classList.toggle('nav-open', open);
+        document.body.classList.toggle('oca-nav-locked', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    }
+    toggle.addEventListener('click', function () {
+        setOpen(!nav.classList.contains('nav-open'));
+    });
+    scrim.addEventListener('click', function () { setOpen(false); });
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && nav.classList.contains('nav-open')) {
+            setOpen(false);
+            toggle.focus();
+        }
+    });
+    /* Close (and unlock scroll) if the viewport grows past the mobile breakpoint */
+    var mq = window.matchMedia('(min-width: 769px)');
+    var onWide = function (e) { if (e.matches) setOpen(false); };
+    if (mq.addEventListener) { mq.addEventListener('change', onWide); }
+    else if (mq.addListener) { mq.addListener(onWide); }
+})();
+</script>
+
+    <style>
+    .nwk-top { margin-top: 24px; }
+    .nwk-crumbs { font-size: 13px; color: #888; line-height: 1.4; margin-bottom: 18px; }
+    .nwk-crumbs a { color: inherit; text-decoration: none; }
+    .nwk-crumbs a:hover { color: var(--oca-magenta, #b512ce); }
+    .nwk-crumbs .sep { margin: 0 10px; color: #ccc; }
+    .nwk-crumbs .leaf { color: var(--oca-black, #111); font-weight: 600; }
+    .nwk-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--oca-magenta, #b512ce); margin-bottom: 16px; }
+    .nwk-eyebrow i { color: var(--oca-fg-3, #9ca3af); font-size: 12px; }
+
+    /* ---- Optional eyebrow popover ('eyebrow_popover') ----
+       Only ever styles a page that passes the field. Reveal is CSS-only:
+       :hover covers mouse, :focus-within covers both tap (a button takes
+       focus on touch) and keyboard. .container sets overflow:auto, which
+       would clip an absolutely-positioned panel, so the band opts out of it
+       via :has() — scoped so no other page's title band is affected. */
+    .nwk-top:has(.nwk-eyebrow-info) { overflow: visible; }
+    .nwk-eyebrow-info { position: relative; display: inline-flex; }
+    .nwk-eyebrow-info__btn {
+        background: none; border: 0; padding: 0; margin: 0; cursor: pointer;
+        display: inline-flex; align-items: center; line-height: 1;
+        color: var(--oca-fg-3, #9ca3af); transition: color 0.15s ease;
+    }
+    .nwk-eyebrow-info__btn:hover,
+    .nwk-eyebrow-info__btn:focus-visible { color: var(--oca-magenta, #b512ce); }
+    .nwk-eyebrow-info__panel {
+        position: absolute; top: calc(100% + 10px); left: 0; z-index: 120;
+        width: min(460px, calc(100vw - 32px));
+        opacity: 0; visibility: hidden; transform: translateY(-4px);
+        transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+        /* The eyebrow is uppercase 11px magenta; the panel is body copy. */
+        text-transform: none; letter-spacing: normal; font-weight: 400;
+        font-size: 1rem; color: var(--oca-fg-1, #111); text-align: left;
+    }
+    .nwk-eyebrow-info:hover .nwk-eyebrow-info__panel,
+    .nwk-eyebrow-info:focus-within .nwk-eyebrow-info__panel {
+        opacity: 1; visibility: visible; transform: none;
+    }
+    .nwk-eyebrow-info__panel > * {
+        margin: 0;
+        box-shadow: 0 18px 40px -12px rgba(11, 11, 12, 0.32);
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .nwk-eyebrow-info__panel { transition: none; }
+    }
+    /* Phones: pin the panel to the viewport rather than to the icon, which
+       can sit anywhere once the eyebrow wraps. Width is capped rather than
+       stretched to `right`, because a page whose content overflows sideways
+       inflates the initial containing block and a left/right pair would then
+       resolve against that inflated width instead of the screen. */
+    @media (max-width: 600px) {
+        .nwk-eyebrow-info__panel {
+            position: fixed; left: 16px; right: auto; top: auto;
+            width: min(calc(100vw - 32px), 358px);
+        }
+    }
+
+    .nwk-hot-pill { display: inline-block; padding: 2px 9px; background: var(--oca-magenta, #b512ce); color: #fff; border-radius: 999px; font-size: 10px; letter-spacing: 0.12em; line-height: 1.6; }
+    .nwk-title { font-family: Georgia, "Times New Roman", serif; font-weight: 800; font-size: clamp(1.6rem, 4vw, 1.9125rem); line-height: 1.18; letter-spacing: -0.01em; color: var(--oca-fg-1, #111); margin: 20px 0 26px; }
+</style>
+
+<!-- Full-width title band (breadcrumb + eyebrow + serif headline) -->
+<div class="container nwk-top">
+        <nav class="nwk-crumbs" aria-label="Breadcrumb">
+                                    <a href="https://openclassactions.com/">Home</a><span class="sep" aria-hidden="true">&rsaquo;</span>
+                                                <a href="https://openclassactions.com/settlements.php">Settlements</a><span class="sep" aria-hidden="true">&rsaquo;</span>
+                                                <span class="leaf" aria-current="page">CVS Digital Privacy Settlement</span>
+                        </nav>
+            <div class="nwk-eyebrow">Digital Privacy · Claims Open <svg class="oca-icon" width="1em" height="1em" viewBox="0 0 512 512" fill="currentColor" style="vertical-align:-.125em;" aria-hidden="true" focusable="false"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg></div>
+        <h1 class="nwk-title">CVS Digital Privacy Class Action Settlement — Up to $5 Without Proof or $10 With Documentation</h1>
+</div>
+
+    <div class="container grid-post settlementpost-fontsize">
+        <content>
+
+            <style>
+    .nwk-header { width: 100%; margin: 0 0 8px; box-sizing: border-box; }
+    .nwk-dates { display: flex; gap: 56px; padding: 18px 0 22px; border-top: 1px solid var(--oca-gray-200, #e5e7eb); border-bottom: 1px solid var(--oca-gray-200, #e5e7eb); }
+    .nwk-date-label { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--oca-fg-3, #9ca3af); margin-bottom: 8px; }
+    .nwk-date-val { display: block; font-size: 17px; font-weight: 600; color: var(--oca-fg-1, #111); }
+    .nwk-cover { margin: 26px 0 12px; }
+    /* No `aspect-ratio` here, deliberately. With `height: auto` a specified
+       aspect-ratio overrides the image's intrinsic one, and this rule sets no
+       `object-fit`, so a single fixed ratio would stretch or squash most covers:
+       the corpus spans 165 distinct ratios and the most common accounts for only
+       ~23% of pages. (data/settlement-card.php can use a fixed 16/10 box because
+       it deliberately CROPS with `object-fit: cover` — a grid thumbnail, not a
+       full-width editorial figure.) The space is reserved with each image's real
+       width/height attributes instead, which is what `height: auto` wants anyway:
+       the browser derives the correct ratio per image. */
+    .nwk-cover img { width: 100%; height: auto; display: block; border-radius: 2px; }
+    .nwk-caption { font-size: 14px; line-height: 1.5; color: var(--oca-fg-2, #4b5563); margin-top: 12px; }
+    .nwk-credit { color: var(--oca-fg-3, #9ca3af); font-style: italic; }
+    .nwk-byline { display: flex; align-items: center; gap: 14px; margin: 22px 0 4px; padding-top: 20px; border-top: 1px solid var(--oca-gray-200, #e5e7eb); }
+    .nwk-avatar { width: 54px; height: 54px; border-radius: 50%; object-fit: cover; flex: none; }
+    .nwk-byline-meta { flex: 1; min-width: 0; }
+    .nwk-byline-name { font-size: 16px; font-weight: 700; color: var(--oca-fg-1, #111); }
+    .nwk-byline-name a { color: inherit; text-decoration: none; }
+    .nwk-byline-name a:hover { text-decoration: underline; }
+    .nwk-byline-role { font-size: 14px; color: var(--oca-fg-3, #9ca3af); margin-top: 2px; }
+    .nwk-byline-actions { display: flex; align-items: center; gap: 10px; flex: none; }
+    /* No author block to sit beside — push the shares to the right edge. */
+    .nwk-byline.no-byline .nwk-byline-actions { margin-left: auto; }
+    /* Google Preferred Sources button — ONLY on pages that opt in via
+       'preferred_source'. Sized to match the height of the Tweet/Share widgets
+       so all three sit in one even row; the group gets its own full-width line
+       under the author block rather than competing with it for space. On narrow
+       screens the label shortens (same .banner-full/.banner-short idiom used by
+       the closed-settlement banner) so the row still fits without wrapping.
+       Scoped to .has-prefsrc so every other page renders unchanged. */
+    .nwk-byline.has-prefsrc { flex-wrap: wrap; row-gap: 16px; }
+    .nwk-byline-actions.has-prefsrc { flex: 0 0 100%; flex-wrap: wrap; align-items: center; justify-content: flex-start; gap: 10px; min-width: 0; }
+    .nwk-prefsrc-btn, .nwk-prefsrc-btn:link, .nwk-prefsrc-btn:visited { display: inline-flex; align-items: center; gap: 8px; height: 28px; padding: 0 14px; box-sizing: border-box; border: 1px solid #dadce0; border-radius: 14px; background: #fff; color: #3c4043; font-family: var(--oca-font-sans, system-ui, sans-serif); font-size: 13px; font-weight: 600; line-height: 1; text-decoration: none; white-space: nowrap; flex: none; transition: background-color .15s ease, border-color .15s ease, box-shadow .15s ease; }
+    .nwk-prefsrc-btn:hover, .nwk-prefsrc-btn:focus-visible { background: #f8f9fa; border-color: #c6cacd; color: #202124; text-decoration: none; box-shadow: 0 1px 2px rgba(60,64,67,.14); }
+    .nwk-prefsrc-btn svg { width: 15px; height: 15px; flex: none; display: block; }
+    .nwk-prefsrc-short { display: none; }
+    /* Slot holding Google's publisher.js widget. Once the widget has rendered,
+       inline JS freezes the slot at the widget's own measured size and takes the
+       widget out of flow, so the panel it opens on click OVERLAYS the row instead
+       of reflowing it — which is what previously pushed the Facebook button onto a
+       new line and hid the Tweet button. No hardcoded widget dimensions: the size
+       is measured, never guessed. */
+    .nwk-prefsrc-slot { position: relative; flex: 0 0 auto; display: inline-flex; align-items: center; z-index: 2; }
+    .nwk-prefsrc-slot.is-locked > [google-add-preferred-source-btn] { position: absolute; top: 0; left: 0; }
+    @media (max-width: 600px) {
+        .nwk-byline-actions.has-prefsrc { gap: 8px; }
+        .nwk-prefsrc-btn { padding: 0 11px; font-size: 12px; }
+        .nwk-prefsrc-long { display: none; }
+        .nwk-prefsrc-short { display: inline; }
+    }
+    /* Standfirst / dek — NYT-style: serif (mirrors the serif H1 in the title band),
+       light/regular weight, only a modest step above body size. The typographic
+       contrast (serif + color) does the work, NOT a big size jump. Renders ABOVE
+       the cover image, directly under the headline, like a newspaper dek. */
+    .nwk-lede { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(1.18rem, 1.1rem + 0.6vw, 1.4rem); line-height: 1.5; color: var(--oca-fg-2, #4b5563); margin: 22px 0 4px; }
+    /* Legacy alias for pages that still print .article-lede after the masthead. */
+    .article-lede { font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.18rem, 1.1rem + 0.6vw, 1.4rem); line-height: 1.5; color: var(--oca-fg-2, #4b5563); font-weight: 400; margin: 22px 0 4px; }
+    @media (max-width: 600px) {
+        .nwk-dates { gap: 32px; }
+        .nwk-byline { flex-wrap: wrap; }
+        .nwk-lede, .article-lede { font-size: 1.12rem; }
+    }
+</style>
+
+<header class="nwk-header">
+        <div class="nwk-dates">
+                <div>
+            <span class="nwk-date-label">Published</span>
+            <span class="nwk-date-val">September 14, 2026</span>
+        </div>
+                        <div>
+            <span class="nwk-date-label">Updated</span>
+            <span class="nwk-date-val">September 14, 2026</span>
+        </div>
+            </div>
+    
+        <p class="nwk-lede">U.S. residents who accessed a CVS website or app in the United States before July 27, 2026 may qualify to claim up to $5 without proof or up to $10 with documentation from the CVS digital privacy class action settlement. Claims close November 16, 2026.</p>
+    
+        <figure class="nwk-cover">
+                        <img src="https://openclassactions.com/assets/images/cvs-pharmacy.webp" alt="CVS pharmacy" width="1200" height="630" loading="eager" fetchpriority="high">
+                    </figure>
+    
+        <div class="nwk-byline has-prefsrc">
+                        <img class="nwk-avatar" src="https://openclassactions.com/assets/images/steve-levine.webp" alt="Steve Levine" width="54" height="54" decoding="async">
+        <div class="nwk-byline-meta">
+            <div class="nwk-byline-name">By <a href="https://openclassactions.com/authors/steve-levine.php" target="_blank">Steve Levine</a></div>
+                        <div class="nwk-byline-role">Editor-in-Chief</div>
+                    </div>
+                        <div class="nwk-byline-actions has-prefsrc">
+                        <script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
+            <div class="nwk-prefsrc-slot"><div google-add-preferred-source-btn data-theme="light" data-lang="en"></div></div>
+            <a class="nwk-prefsrc-btn" href="https://www.google.com/preferences/source?q=openclassactions.com" target="_blank" rel="noopener">
+                <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+                <span class="nwk-prefsrc-long">Add to Preferred Sources</span>
+                <span class="nwk-prefsrc-short">Preferred Source</span>
+            </a>
+            <script>
+            /* Google's widget resizes itself when clicked. Measure it once it has
+               rendered, lock the slot to that measured size and take it out of flow,
+               so the panel it opens on click OVERLAYS the row instead of reflowing it.
+               Fail-OPEN by design: the styled pill above is visible from the start and
+               is hidden only once the widget is confirmed on screen, so a blocked
+               script, a thrown error or JS being off all leave a working button. */
+            (function () {
+                var slot = document.querySelector('.nwk-prefsrc-slot');
+                var link = document.querySelector('.nwk-prefsrc-btn');
+                if (!slot || !link) { return; }
+                // One label for the Google widget and its fallback link. Capture
+                // receives composed clicks from Google's shadow DOM without
+                // changing its handlers, navigation, or keyboard activation.
+                var trackPreferredClick = function () {
+                    try {
+                        if (typeof window.ocaTrack === 'function') {
+                            window.ocaTrack('click', {
+                                event_category: 'engagement',
+                                event_label: 'Add to Preferred'
+                            });
+                        }
+                    } catch (e) { /* tracking must never interrupt the button */ }
+                };
+                slot.addEventListener('click', trackPreferredClick, true);
+                link.addEventListener('click', trackPreferredClick);
+                var btn = slot.firstElementChild, tries = 0;
+                var timer = setInterval(function () {
+                    var r = btn ? btn.getBoundingClientRect() : null;
+                    if (r && r.width > 0 && r.height > 0) {
+                        slot.style.width  = r.width + 'px';
+                        slot.style.height = r.height + 'px';
+                        slot.classList.add('is-locked');
+                        link.style.display = 'none';   /* widget is up — drop the pill */
+                        clearInterval(timer);
+                    } else if (++tries > 25) {
+                        slot.style.display = 'none';   /* widget never came — keep the pill */
+                        clearInterval(timer);
+                    }
+                }, 100);
+            })();
+            </script>
+                        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=CVS%20Digital%20Privacy%20Settlement%20%E2%80%94%20Up%20to%20%245%20Without%20Proof&url=https%3A%2F%2Fopenclassactions.com%2Fsettlements%2Fcvs-digital-privacy-class-action-settlement.php" data-size="large">Tweet</a>
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0" nonce="oca"></script>
+            <div class="fb-share-button" data-href="https://openclassactions.com/settlements/cvs-digital-privacy-class-action-settlement.php" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+                <a target="_blank" class="fb-xfbml-parse-ignore">Share</a>
+            </div>
+        </div>
+            </div>
+    </header>
+
+            <h2 class="h2-headers">Current Status</h2>
+            Claims are open for the CVS digital privacy settlement. Eligible class members can claim up to $5 without proof or an explanation, or up to $10 with documentation, by November 16, 2026 at 11:59 p.m. EST online. The proposed settlement still needs final approval; the hearing is scheduled for December 1, 2026, and no fixed payment date has been announced. Use the official no-login claim form below to file; only one claim per household is allowed.
+            <br>
+            <br>
+
+            <!-- OCA newsletter signup module (shared partial) -->
+<style>
+  .oca-signup {
+      font-family: var(--oca-font-sans, system-ui, sans-serif);
+      background: var(--oca-gray-100, #f7f8f8);
+      border: 1px solid var(--oca-gray-200, #ebecee);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin: 32px 0;
+      box-sizing: border-box;
+  }
+  .oca-signup__eyebrow {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--oca-magenta, #b512ce);
+      margin: 0 0 8px;
+  }
+  .oca-signup__title {
+      font-family: var(--oca-font-sans, system-ui, sans-serif);
+      font-size: 1.35rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--oca-fg-1, #111);
+      margin: 0 0 6px;
+  }
+  .oca-signup__sub {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--oca-fg-2, #444);
+      margin: 0 0 18px;
+      max-width: 52ch;
+  }
+  .oca-signup__row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: flex-start;
+  }
+  .oca-signup__field {
+      flex: 1 1 240px;
+      min-width: 0;
+  }
+  .oca-signup__input {
+      width: 100%;
+      box-sizing: border-box;
+      font-family: inherit;
+      font-size: 1rem;
+      padding: 12px 14px;
+      border: 1px solid var(--oca-gray-200, #d6d8dc);
+      border-radius: 10px;
+      background: #fff;
+      color: var(--oca-fg-1, #111);
+      transition: border-color .15s ease, box-shadow .15s ease;
+  }
+  .oca-signup__input::placeholder { color: #8a8f98; }
+  .oca-signup__input:focus {
+      outline: none;
+      border-color: var(--oca-magenta, #b512ce);
+      box-shadow: 0 0 0 3px rgba(181, 18, 206, 0.15);
+  }
+  .oca-signup__btn {
+      flex: 0 0 auto;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      background: var(--oca-magenta, #b512ce);
+      border: none;
+      border-radius: 10px;
+      padding: 12px 24px;
+      cursor: pointer;
+      transition: background .15s ease;
+  }
+  .oca-signup__btn:hover { background: var(--oca-magenta-hover, #9c0eb3); }
+  .oca-signup__captcha { margin: 14px 0 0; }
+  .oca-signup__fineprint {
+      font-size: 0.78rem;
+      line-height: 1.45;
+      color: var(--oca-fg-2, #6b7280);
+      margin: 12px 0 0;
+  }
+  @media (max-width: 600px) {
+      .oca-signup { padding: 22px 20px; }
+      .oca-signup__row { flex-direction: column; }
+      .oca-signup__field, .oca-signup__btn { width: 100%; }
+      .oca-signup__btn { padding: 13px 24px; }
+  }
+</style>
+
+<section class="oca-signup" aria-labelledby="oca-signup-title">
+    <p class="oca-signup__eyebrow">Free settlement alerts</p>
+    <h3 id="oca-signup-title" class="oca-signup__title">Get notified when new class actions open to claims</h3>
+    <p class="oca-signup__sub">Join thousands of readers who get the latest class action settlements you may qualify for &mdash; delivered straight to your inbox.</p>
+
+    <!-- SENDY SIGNUP POST FORM -->
+    <form class="oca-signup__form validate" action="https://sendy.openclassactions.com/subscribe" method="POST" accept-charset="utf-8" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+          data-oca-signup="post_form" data-oca-label="sendy_signup_post_form">
+        <div class="oca-signup__row">
+            <div class="oca-signup__field">
+                <label for="email" class="oca-signup__label" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="you@example.com" autocomplete="email" required class="required email oca-signup__input">
+            </div>
+            <input type="hidden" name="list" value="2oeQlI1UGcVzOJvVaqH2Zg" />
+            <input type="hidden" name="subform" value="yes" />
+            <button type="submit" class="oca-signup__btn" name="subscribe" id="submit">Subscribe</button>
+        </div>
+
+        <!-- Start Sendy Captcha 07-04-2025 -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <div class="oca-signup__captcha">
+            <div class="g-recaptcha" data-sitekey="6Lek_3crAAAAAKdbPhGz2WT9JARJ1CgHH9YhhC6V"></div>
+        </div>
+        <!-- End Sendy Captcha 07-04-2025  -->
+
+        <p class="oca-signup__fineprint">No spam. Unsubscribe anytime.</p>
+        <p class="oca-signup__fineprint" style="margin-top:6px;">California residents: see our <a href="https://openclassactions.com/ccpa.php" target="_blank" rel="noopener" style="color: var(--oca-magenta, #b512ce);">Notice at Collection &amp; Privacy Choices</a>.</p>
+    </form>
+</section>
+
+            <section class="settlement-facts" aria-label="Settlement quick facts">
+                <div class="fact">
+                    <span class="fact-label">Status</span>
+                    <span class="fact-value fact-value--active">Claims Open</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">Claim Deadline</span>
+                    <span class="fact-value">November 16, 2026</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">Estimated Payout</span>
+                    <span class="fact-value">Up to $5 or $10</span>
+                    <span class="fact-sub">One payment per household · amounts may be reduced</span>
+                </div>
+                <div class="fact">
+                    <span class="fact-label">Proof Required</span>
+                    <span class="fact-value">No</span>
+                    <span class="fact-sub">Up to $5 without documents or a notice ID; proof for up to $10</span>
+                </div>
+            </section>
+
+            <style>
+.oca-sd-inline-cta {
+    margin: 36px 0;
+    padding: 32px 0;
+    border-top: 1px solid #ebe4e8;
+    border-bottom: 1px solid #ebe4e8;
+    text-align: center;
+}
+.oca-sd-inline-cta .cta-line {
+    margin: 0 0 18px;
+    font-size: 15px;
+    color: var(--oca-black, #111);
+    font-weight: 500;
+    line-height: 1.5;
+}
+.oca-sd-inline-cta .file-claim {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--oca-magenta);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    border: 0;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+.oca-sd-inline-cta .file-claim:hover,
+.oca-sd-inline-cta .file-claim:focus-visible {
+    background: var(--oca-magenta-hover, #9c0eb3);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+/* Color & underline reassertion — beats the in-content link-styling
+   rule at css/style.css:1182 that targets
+   `content a:not(.btn):not(...)`. The .file-claim class isn't in
+   that :not() exception list, so the global rule wins on specificity
+   (0,6,2 vs our 0,2,0) and paints File Claim text blue + underlined
+   inside <content>. Mirrors the `.btn` !important fix at
+   css/style.css:1216-1231 — same cascade problem, same shape of fix. */
+.oca-sd-inline-cta a.file-claim,
+.oca-sd-inline-cta a.file-claim:link,
+.oca-sd-inline-cta a.file-claim:visited {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+.oca-sd-inline-cta a.file-claim:hover,
+.oca-sd-inline-cta a.file-claim:focus-visible {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+@media (max-width: 700px) {
+    .oca-sd-inline-cta {
+        margin: 28px 0;
+        padding: 24px 0;
+    }
+    .oca-sd-inline-cta .file-claim {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+</style>
+
+<aside class="oca-sd-inline-cta" aria-label="File this claim">
+    <div class="container">
+        <p class="cta-line">File through the official settlement administrator.</p>
+        <a class="file-claim" href="https://www.cvsdigitalprivacysettlement.com/form/open?utm_source=openclassactions.com" target="_blank" rel="noopener nofollow">File Claim</a>
+    </div>
+</aside>
+
+            <h2 class="h2-headers">What Is the CVS Digital Privacy Settlement?</h2>
+            CVS Pharmacy, Inc. and Criteo Corp. have reached a proposed settlement with a maximum cash payment of $20.5 million, and the official website is accepting claims. The lawsuit alleges that technology embedded in CVS digital properties disclosed users’ health or private information, browsing data, identifiers, or other personal data to Criteo and other third parties. Both defendants deny violating the law, and the court has not decided who is right.<br><br>The <a href="https://openclassactions.com/settlements/pixel-tracking/wellstar-health-system-pixel-tracking-privacy-class-action-settlement.php">Wellstar website tracking settlement</a> concerns a separate healthcare privacy case with its own eligibility rules and claim requirements.
+            <br>
+            <br>
+
+            <h2 class="h2-headers">Who Qualifies?</h2>
+            The settlement class covers all living individuals who accessed CVS digital properties in the United States before July 27, 2026. Covered properties include the CVS website, the CVS Health website, and the CVS app. The claim form also requires a declaration that the claimant was a U.S. resident at the time of access.<br><br>Eligibility is based on accessing a covered digital property; the stated class definition does not require a purchase. An in-store purchase alone does not establish the required website or app access. The notice gives a cutoff date but does not state a beginning date for the class period.
+            <br>
+            <br>
+
+            <h2 class="h2-headers">How Much Can You Get?</h2>
+            There are two alternative cash options:<ul><li>Cash Payment B: up to $5 without documentation. No proof or explanation is needed to request this option.</li><li>Cash Payment A: up to $10 with valid documentation showing membership in the settlement class.</li></ul><br>You choose one option, not both. Neither amount is guaranteed: payments may be reduced proportionately depending on the number of valid claims. The $20.5 million maximum first covers court-approved attorneys’ fees and costs, service awards, and settlement administration; the remaining money funds class payments.<br><br>Only one claim may be filed per household. The settlement defines a household as everyone living at the same mailing address, and additional claims from that household will be denied. Visiting multiple CVS websites or using both a website and the app does not create extra household claims.<br><br>Class counsel may request fees, costs, and expenses of up to 37.5% of the maximum cash payment. The court may award less.
+            <br>
+            <br>
+
+            <h2 class="h2-headers">What Proof or Notice ID Is Required?</h2>
+            No proof is required for the up-to-$5 option. The official claim entry page offers a link to file without logging in, and that open form does not ask for a LoginID or PIN. A person who never received a notice can use that route.<br><br>For up to $10, attach documentation showing access before July 27, 2026. The claim instructions give browser history, dated screenshots, and email receipts for online purchases as examples.<br><br>No proof does not remove the eligibility requirements. Claimants must certify under penalty of perjury that they accessed a covered CVS digital property while in the United States before the cutoff, were U.S. residents at the time, and supplied truthful information. Claims may be audited, verified, or reviewed by the court. The form also asks claimants to affirm agreement with the CVS Health Privacy Center disclosures.
+            <br>
+            <br>
+
+            <h2 class="h2-headers">What Is the Deadline?</h2>
+            Submit an online claim by November 16, 2026 at 11:59 p.m. EST. A mailed claim must be postmarked by November 16, 2026. The official website provides the printable form and mailing instructions.<br><br>The exclusion and objection deadline is earlier: November 1, 2026. Those are separate procedures from filing a payment claim; review the official notice for their requirements.
+            <br>
+            <br>
+
+            <h2 class="h2-headers">How Do You Take Action?</h2>
+            Open the <a href="https://www.cvsdigitalprivacysettlement.com/form/open?utm_source=openclassactions.com" target="_blank" rel="noopener">official CVS claim form without a LoginID or PIN</a>. Enter your contact information, select Cash Payment B for up to $5 without proof or Cash Payment A for up to $10 with documentation, choose a payment method, and complete the certification and signature.<br><br>The online form offers PayPal, Venmo, Zelle, or a check. A valid mailing address is required even when choosing electronic payment. You can also visit the <a href="https://www.cvsdigitalprivacysettlement.com/form/claim?utm_source=openclassactions.com" target="_blank" rel="noopener">main claim entry page</a>, which has the notice-login option, the no-login link, and the printable claim form.
+            <br>
+            <br>
+
+            <h2 class="h2-headers">What Happens Next?</h2>
+            The final approval hearing is scheduled for December 1, 2026 at 9:30 a.m. EST by Zoom. The court will consider approval of the settlement and the requested fees and service awards. The hearing may be rescheduled, so check the official website for changes.<br><br>The notice describes payment to valid claimants 120 days after final approval and/or completion of any appeals. That is conditional timing, not a guaranteed calendar payment date. Checks expire 180 days after issuance.<br><br>Remaining in the class releases the claims covered by the settlement if it becomes final, even if a class member does not request payment. Excluding yourself means giving up settlement benefits while retaining any right to pursue those claims separately. The official notice and agreement explain the scope of the release.
+            <br>
+            <br>
+
+            <h2 class="h2-headers">Sources and Verification</h2>
+            <ul><li><a href="https://www.cvsdigitalprivacysettlement.com/?utm_source=openclassactions.com" target="_blank" rel="noopener">Official CVS Digital Privacy Settlement website</a></li><li><a href="https://www.cvsdigitalprivacysettlement.com/faq/?utm_source=openclassactions.com" target="_blank" rel="noopener">Official settlement FAQs</a></li><li><a href="https://www.cvsdigitalprivacysettlement.com/form/claim?utm_source=openclassactions.com" target="_blank" rel="noopener">Claim instructions and printable claim form</a></li><li><a href="https://www.cvsdigitalprivacysettlement.com/documents/?utm_source=openclassactions.com" target="_blank" rel="noopener">Settlement agreement and court documents</a></li><li><a href="https://files.openclassactions.com/pdf/cvsdigitalprivacysettlement.pdf" target="_blank" rel="noopener">Court-authorized settlement notice</a></li></ul>
+            <br>
+            <br>
+
+            <h2 class="h2-headers">Questions</h2>
+            <details class="faq-item"><summary>Can I file if I never received a settlement notice?</summary><p>Yes. The official claim entry page links to an open form for people without a LoginID or PIN, including people who never received an email notice. Eligible class members can choose the up-to-$5 option without documentation.</p></details>
+<details class="faq-item"><summary>Does every person at my address get a separate payment?</summary><p>No. The settlement permits only one claim per household, defined as all people residing at the same mailing address. Later claims from the same household will be denied.</p></details>
+<details class="faq-item"><summary>Do I need to explain why I have no proof?</summary><p>No. The claim instructions say no proof or explanation is needed for Cash Payment B of up to $5. You must still meet the class requirements and sign the eligibility certification under penalty of perjury.</p></details>
+<details class="faq-item"><summary>What happens if my electronic payment cannot be delivered?</summary><p>The online form says the administrator may request clarification or default to a check if an electronic payment cannot be made. Keep your contact and payment details current through the official settlement website.</p></details>
+<details class="faq-item"><summary>Is a CVS store purchase enough to qualify?</summary><p>The class definition requires access to a CVS digital property in the United States before July 27, 2026. A store purchase alone does not establish that access, and no purchase is required by the stated class definition.</p></details>
+            <br>
+            <br>
+
+            <h2 class="h2-headers">Official Settlement Notice</h2>
+            <object
+                data="https://files.openclassactions.com/pdf/cvsdigitalprivacysettlement.pdf"
+                type="application/pdf" width="100%" height="600px">
+                <p>Your browser does not support viewing PDFs inline.
+                    <a href="https://files.openclassactions.com/pdf/cvsdigitalprivacysettlement.pdf"
+                        target="_blank" rel="noopener">Download the PDF</a>.
+                </p>
+            </object>
+            <br>
+
+            <div class="media-only">
+                For more class actions keep scrolling below.
+            </div>
+
+            
+<style>
+    .settlement-case-details {
+        display: grid;
+        grid-template-columns: 1fr;
+        background: var(--oca-surface-card);
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        border-radius: var(--oca-radius-xl);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04),
+            0 14px 36px -10px rgba(11, 11, 12, 0.14);
+        margin: 28px 0 24px;
+        overflow: hidden;
+    }
+
+    .settlement-case-details .detail {
+        padding: 18px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        min-width: 0;
+    }
+
+    .settlement-case-details .detail + .detail {
+        border-top: 1px solid var(--oca-gray-200);
+    }
+
+    .settlement-case-details .detail-label {
+        font-size: 11px;
+        font-weight: var(--oca-fw-semibold);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--oca-fg-3);
+    }
+
+    .settlement-case-details .detail-value {
+        font-family: var(--oca-font-sans);
+        font-size: 1.05rem;
+        font-weight: var(--oca-fw-bold);
+        color: var(--oca-fg-1);
+        line-height: 1.4;
+        word-break: break-word;
+    }
+
+    .settlement-case-details .detail-value a {
+        color: var(--oca-magenta);
+        text-decoration: none;
+        border-bottom: 1px solid currentColor;
+    }
+
+    .settlement-case-details .detail-value a:hover,
+    .settlement-case-details .detail-value a:focus {
+        color: var(--oca-magenta-hover, var(--oca-magenta));
+    }
+
+    .settlement-case-details .detail-sub {
+        font-size: 13px;
+        font-weight: var(--oca-fw-regular);
+        color: var(--oca-fg-2);
+        line-height: 1.45;
+    }
+</style>
+
+<section class="settlement-case-details" aria-label="Case details">
+    <div class="detail">
+        <span class="detail-label">Settlement Amount</span>
+        <span class="detail-value">
+            $20.5 million maximum, before fees and costs        </span>
+    </div>
+    <div class="detail">
+        <span class="detail-label">Case Title</span>
+        <span class="detail-value">
+            Brewer, et al. v. CVS Pharmacy, Inc. and Criteo Corp.        </span>
+    </div>
+    <div class="detail">
+        <span class="detail-label">Case Number</span>
+        <span class="detail-value">
+            CACE-26-008094        </span>
+    </div>
+    <div class="detail">
+        <span class="detail-label">Court</span>
+        <span class="detail-value">
+            Circuit Court for the 17th Judicial Circuit, Broward County, Florida        </span>
+    </div>
+    <div class="detail">
+        <span class="detail-label">Final Approval Hearing</span>
+        <span class="detail-value">
+            December 1, 2026 at 9:30 a.m. EST        </span>
+        <span class="detail-sub">Virtual hearing by Zoom; subject to change</span>
+    </div>
+    <div class="detail">
+        <span class="detail-label">Administrator</span>
+        <span class="detail-value">
+            Simpluris        </span>
+    </div>
+    <div class="detail">
+        <span class="detail-label">Official Website</span>
+        <span class="detail-value">
+            <a href="https://www.cvsdigitalprivacysettlement.com/?utm_source=openclassactions.com" target="_blank" rel="noopener">CVS Digital Privacy Settlement</a>
+        </span>
+    </div>
+</section>
+
+        </content>
+
+    </div>
+
+    <style>
+    /* ---- Centered single-column article (NYT-style). Scoped to the body
+            toggle so existing two-column pages are untouched. Everything fits
+            one ~600px content margin; breakouts are opt-in per element later. */
+    @media (min-width: 769px) {
+        body.oca-centered .nwk-top { max-width: 680px; }                                  /* title band → 600 inner + .container 40px padding */
+        body.oca-centered .grid-post { display: block; max-width: 1024px; margin: 0 auto; }
+        body.oca-centered .grid-post > content { display: block; max-width: 600px; margin: 0 auto; }
+        body.oca-centered .grid-post > content > .nwk-header { max-width: 600px; margin-left: auto; margin-right: auto; }
+        body.oca-centered .grid-post > content > object { width: 100%; }
+    }
+
+    /* ---- Below-article "Keep Reading" recirculation zone ---- */
+    .oca-keepreading { max-width: 1100px; margin: 8px auto 0; padding: 0 40px; font-family: var(--oca-font-sans); }
+
+    /* 1. Editorial "More on…" list — full zone width, left-justified, bulleted,
+          with a black rule above the title. */
+    .oca-morelist { margin: 0 0 40px; }
+    .oca-morelist > hr { border: 0; border-top: 2px solid var(--oca-fg-1, #111); margin: 0 0 16px; }
+    .oca-morelist > h2 { font-family: var(--oca-font-serif); font-size: 1.6rem; line-height: 1.2; text-align: left; margin: 0 0 14px; }
+    .oca-morelist ul { list-style: disc; margin: 0; padding: 0 0 0 22px; }
+    .oca-morelist li { padding: 7px 0; line-height: 1.5; font-size: 1rem; color: var(--oca-fg-2); }
+    .oca-morelist li strong { color: var(--oca-fg-1); }
+    .oca-morelist li a.more-link { color: var(--oca-magenta, #b512ce); text-decoration: none; font-weight: 600; }
+    .oca-morelist li a.more-link:hover { text-decoration: underline; }
+
+    /* 2. Wide recirc band: card grid + slim trending list. */
+    .oca-recirc { display: grid; grid-template-columns: 1fr; gap: 36px; }
+    @media (min-width: 900px) { .oca-recirc { grid-template-columns: minmax(0,1fr) 260px; } }
+    .oca-recirc-h { font-family: var(--oca-font-serif); font-size: 1.35rem; margin: 0 0 16px; padding-bottom: 10px; border-bottom: 2px solid var(--oca-fg-1); }
+    .oca-recirc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 22px; }
+    .oca-trending ol { list-style: none; margin: 0; padding: 0; counter-reset: trend; }
+    .oca-trending li { counter-increment: trend; padding: 12px 0; border-top: 1px solid var(--oca-gray-200, #e5e7eb); display: flex; gap: 10px; }
+    .oca-trending li:first-child { border-top: 0; }
+    .oca-trending li::before { content: counter(trend); font-family: var(--oca-font-serif); font-size: 1.1rem; color: var(--oca-fg-3); font-weight: 700; line-height: 1.3; }
+    .oca-trending a { color: var(--oca-fg-1); text-decoration: none; font-weight: 600; font-size: 0.95rem; line-height: 1.3; }
+    .oca-trending a:hover { color: var(--oca-magenta, #b512ce); }
+</style>
+
+<section class="oca-keepreading" aria-label="Keep reading">
+        <!-- 1. Editorial related-reading list -->
+    <div class="oca-morelist">
+        <hr>
+        <h2>More Privacy Settlements</h2>        <ul>
+                        <li><strong>Wellstar $4.25M Pixel Tracking Settlement:</strong> A separate case concerning tracking on healthcare websites and patient portals. <a class="more-link" href="https://openclassactions.com/settlements/pixel-tracking/wellstar-health-system-pixel-tracking-privacy-class-action-settlement.php">View settlement →</a></li>
+                        <li><strong>$59.5M Flo Period Tracker Privacy Settlement:</strong> A separate settlement for eligible users of the Flo period-tracking app. <a class="more-link" href="https://openclassactions.com/settlements/flo-health-app-privacy-settlement.php">View settlement →</a></li>
+                        <li><strong>Forbes $10M Website Tracking Settlement:</strong> A separate website tracking case for eligible California readers. <a class="more-link" href="https://openclassactions.com/settlements/privacy/forbes-website-tracker-privacy-class-action-settlement.php">View settlement →</a></li>
+                        <li><strong>Penn Medicine Pixel Tracking Settlement:</strong> A separate patient portal case with its own notice and eligibility requirements. <a class="more-link" href="https://openclassactions.com/settlements/pixel-tracking/penn-medicine-pixel-tracking-class-action-settlement.php">View settlement →</a></li>
+                    </ul>
+    </div>
+    
+        <!-- 2. Wide card grid + 3. Trending -->
+    <div class="oca-recirc">
+                <div class="oca-recirc-main">
+            <h3 class="oca-recirc-h">More Class Actions</h3>
+            <div class="oca-recirc-grid">
+                <a class="oca-card"
+   href="https://openclassactions.com/settlements/pork-price-fixing-class-action-settlement.php"
+         data-category="Antitrust"
+   data-deadline="2026-10-29"
+   data-proof="none"
+   data-region="">
+
+    <div class="media">
+                                <img src="https://openclassactions.com/assets/images/pork1.webp"
+             alt="$117M Pork Price-Fixing Settlement — No Receipts Required"
+             width="640" height="400"
+             loading="lazy" decoding="async">
+        
+        
+                
+            </div>
+
+    <div class="body">
+                        <div class="badges">
+                                                    <span class="pill pill-success">No Proof</span>
+                                                                            <span class="pill pill-neutral">Antitrust</span>
+                    </div>
+        
+        <h3 class="title">$117M Pork Price-Fixing Settlement — No Receipts Required</h3>
+
+                
+                    <div class="meta">Deadline: October 29, 2026</div>
+        
+            </div>
+</a><a class="oca-card"
+   href="https://openclassactions.com/settlements/new-amazon-returns-class-action-settlement.php"
+         data-category="Fees &amp; Billing"
+   data-deadline="2026-12-01"
+   data-proof="automatic"
+   data-region="">
+
+    <div class="media">
+                                <img src="https://openclassactions.com/assets/images/amazon2.webp"
+             alt="Amazon $309.5M Returns Settlement — Missing &amp; Reversed Refunds"
+             width="640" height="400"
+             loading="lazy" decoding="async">
+        
+        
+                
+            </div>
+
+    <div class="body">
+                        <div class="badges">
+                                                    <span class="pill pill-success">Automatic</span>
+                                                                            <span class="pill pill-neutral">Fees &amp; Billing</span>
+                    </div>
+        
+        <h3 class="title">Amazon $309.5M Returns Settlement — Missing &amp; Reversed Refunds</h3>
+
+                
+                    <div class="meta">Deadline: December 1, 2026 (Claim Filers Only)</div>
+        
+            </div>
+</a><a class="oca-card"
+   href="https://openclassactions.com/settlements/vppa/ted-foundation-vppa-video-privacy-settlement.php"
+         data-category="Privacy"
+   data-deadline="2026-10-26"
+   data-proof="id"
+   data-region="">
+
+    <div class="media">
+                                <img src="https://openclassactions.com/assets/images/ted.webp"
+             alt="TED Video Privacy Settlement — 2 Free Months or $5 Cash"
+             width="640" height="400"
+             loading="lazy" decoding="async">
+        
+        
+                
+            </div>
+
+    <div class="body">
+                        <div class="badges">
+                                                    <span class="pill pill-verify">Notice / PIN</span>
+                                                                            <span class="pill pill-neutral">Privacy</span>
+                    </div>
+        
+        <h3 class="title">TED Video Privacy Settlement — 2 Free Months or $5 Cash</h3>
+
+                
+                    <div class="meta">Deadline: October 26, 2026</div>
+        
+            </div>
+</a><a class="oca-card"
+   href="https://openclassactions.com/settlements/privacy/hirevue-bipa-biometric-privacy-class-action-settlement.php"
+         data-category="Privacy"
+   data-deadline="2026-10-13"
+   data-proof="id"
+   data-region="IL">
+
+    <div class="media">
+                                <img src="https://openclassactions.com/assets/images/fingerprint.webp"
+             alt="HireVue $3.75M Biometric Privacy Settlement — About $150"
+             width="640" height="400"
+             loading="lazy" decoding="async">
+        
+        
+                
+            </div>
+
+    <div class="body">
+                        <div class="badges">
+                                                    <span class="pill pill-verify">Notice / PIN</span>
+                                                                <span class="pill pill-flag-us pill-flag-us-il">IL</span>
+                                        <span class="pill pill-neutral">Privacy</span>
+                    </div>
+        
+        <h3 class="title">HireVue $3.75M Biometric Privacy Settlement — About $150</h3>
+
+                
+                    <div class="meta">Deadline: October 13, 2026</div>
+        
+            </div>
+</a><a class="oca-card"
+   href="https://injuryclaims.com/social-media-addiction-lawsuit?aid=84&amp;cid=41"
+   rel="sponsored noopener nofollow"   onclick="gtag(&#039;event&#039;, &#039;click&#039;, {&#039;event_category&#039;: &#039;engagement&#039;, &#039;event_label&#039;: &#039;IC - Social Media - Rec&#039;});"   data-category="Lawsuit"
+   data-deadline=""
+   data-proof=""
+   data-region="">
+
+    <div class="media">
+                                <img src="https://openclassactions.com/assets/images/social-media-addiction2.webp"
+             alt="Social Media Addiction Lawsuit"
+             width="640" height="400"
+             loading="lazy" decoding="async">
+        
+        
+                
+            </div>
+
+    <div class="body">
+                        <div class="badges">
+                                                                                                    <span class="pill pill-neutral">Lawsuit</span>
+                    </div>
+        
+        <h3 class="title">Social Media Addiction Lawsuit</h3>
+
+                            <div class="payout-sub">Lawsuits allege Instagram, TikTok, Snapchat, YouTube and Facebook were designed to addict minors · active litigation · see if you pre-qualify</div>
+        
+        
+            </div>
+</a>            </div>
+        </div>
+        
+                <aside class="oca-trending">
+            <h3 class="oca-recirc-h">Trending</h3>
+            <ol>
+                                <li><a href="https://openclassactions.com/news/nonbank-atm-settlement-claims-open-february-2027-deadline.php">$167.5M Nonbank ATM Settlement — Claims Open</a></li>
+                                <li><a href="https://openclassactions.com/settlements/credit-reporting/transunion-bankruptcy-remark-fcra-class-action-settlement.php">TransUnion $8.31M Bankruptcy Reporting Settlement — $100 to About $1,000</a></li>
+                                <li><a href="https://openclassactions.com/settlements/ptfa/people-data-labs-colorado-cell-phone-number-class-action-settlement.php">People Data Labs $6.36M Settlement — Colorado Cell Numbers, Claim by September 29</a></li>
+                                <li><a href="https://openclassactions.com/settlements.php">All Open Settlements</a></li>
+                            </ol>
+        </aside>
+            </div>
+    </section>
+
+    
+<aside class="oca-sd-inline-cta" aria-label="File this claim">
+    <div class="container">
+        <p class="cta-line">File through the official settlement administrator.</p>
+        <a class="file-claim" href="https://www.cvsdigitalprivacysettlement.com/form/open?utm_source=openclassactions.com" target="_blank" rel="noopener nofollow">File Claim</a>
+    </div>
+</aside>
+
+    <style>
+    /* Affiliate promo popup — data/affiliate-popup.php */
+    .oca-promo-popup[hidden] { display: none; }
+
+    .oca-promo-popup {
+        position: fixed;
+        right: 20px;
+        /* --oca-pp-anchor is set by the script to the height of a Google bottom
+           anchor ad, so the card floats above it instead of on top of it. */
+        bottom: calc(20px + var(--oca-pp-anchor, 0px));
+        z-index: 1200;                  /* over the sticky mobile CTA (1000),
+                                           under Google's consent/vignette UI */
+        width: 340px;
+        max-width: calc(100vw - 32px);
+        background: var(--oca-surface-card, #fff);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: var(--oca-radius-md, 14px);
+        box-shadow: 0 14px 34px -10px rgba(11, 11, 12, 0.34);
+        overflow: hidden;
+        font-family: var(--oca-font-sans, 'Libre Franklin', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif);
+        opacity: 0;
+        transform: translateY(14px);
+        transition: opacity 0.28s ease, transform 0.28s ease;
+    }
+    .oca-promo-popup.is-open { opacity: 1; transform: none; }
+
+    .oca-promo-popup-media { display: block; line-height: 0; }
+    .oca-promo-popup-media img {
+        display: block;
+        width: 100%;
+        height: 112px;
+        object-fit: cover;
+    }
+
+    .oca-promo-popup-close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 28px;
+        height: 28px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border: 0;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.92);
+        color: var(--oca-fg-2, #333);
+        font-size: 13px;
+        line-height: 1;
+        cursor: pointer;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    }
+    .oca-promo-popup-close:hover,
+    .oca-promo-popup-close:focus { background: #fff; color: var(--oca-fg-1, #111611); }
+
+    .oca-promo-popup-body { padding: 12px 14px 14px; }
+
+    .oca-promo-popup-eyebrow {
+        margin: 0;
+        font-size: 10px;
+        font-weight: var(--oca-fw-semibold, 600);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        line-height: 1.2;
+        color: var(--oca-fg-3, #777);
+    }
+    .oca-promo-popup-title {
+        margin: 4px 0 0;
+        font-size: 15px;
+        font-weight: var(--oca-fw-bold, 700);
+        line-height: 1.3;
+        color: var(--oca-fg-1, #111611);
+    }
+    .oca-promo-popup-text {
+        margin: 6px 0 0;
+        font-size: 13px;
+        line-height: 1.45;
+        color: var(--oca-fg-2, #333);
+    }
+    .oca-promo-popup-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 12px;
+        padding: 10px 16px;
+        border-radius: 10px;
+        background: var(--oca-magenta, #b512ce);
+        color: #fff !important;
+        font-size: 14px;
+        font-weight: var(--oca-fw-bold, 700);
+        text-decoration: none;
+    }
+    .oca-promo-popup-btn:hover,
+    .oca-promo-popup-btn:focus {
+        background: var(--oca-magenta-hover, #9c0eb3);
+        color: #fff !important;
+        text-decoration: none;
+    }
+
+    /* Phones: the same stacked card, run to the full width of the screen and
+       docked to the bottom. Deliberately NOT centered on the viewport.
+       Google counts "a popup that covers the main content ... while they are
+       looking through the page" as an intrusive interstitial -- the 20-second
+       delay does not exempt it -- while "banners that use a reasonable amount
+       of screen space and are easily dismissible" are fine. Mid-screen is also
+       where Auto ads puts its in-content units, so a centered card would land
+       on top of one far more often than a docked one does. */
+    @media (max-width: 600px) {
+        .oca-promo-popup {
+            left: 10px;
+            right: 10px;
+            width: auto;
+            max-width: none;
+            bottom: calc(10px + env(safe-area-inset-bottom) + var(--oca-pp-anchor, 0px));
+        }
+        .oca-promo-popup-media img { height: 96px; }
+        /* The copy is authored per page, so clamp it rather than trusting every
+           future caller to keep it short -- an unbounded card would grow into
+           the screen space the placement depends on not taking. */
+        .oca-promo-popup-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .oca-promo-popup-btn {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 12px;
+            padding: 12px 16px;
+        }
+    }
+
+    /* Short viewports get trimmed, and these rules are deliberately keyed on
+       HEIGHT ALONE rather than on the phone breakpoint. A phone in landscape is
+       740x360 -- wide enough to miss a max-width query entirely, short enough
+       that the full card is 85% of the screen, which is an interstitial however
+       it is labelled. Height is what the reader actually runs out of. */
+    @media (max-width: 600px) and (max-height: 700px) {
+        .oca-promo-popup-media img { height: 64px; }
+        .oca-promo-popup-text { -webkit-line-clamp: 2; line-clamp: 2; }
+    }
+    /* Small phone: the body copy goes, the headline and button carry it. */
+    @media (max-height: 620px) {
+        .oca-promo-popup-text { display: none; }
+    }
+    /* Landscape phone: artwork goes too, leaving the compact row shape. */
+    @media (max-height: 480px) {
+        .oca-promo-popup-media { display: none; }
+        .oca-promo-popup-body { padding: 12px 42px 12px 14px; }
+        .oca-promo-popup-close { top: 8px; right: 8px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .oca-promo-popup { transition: none; transform: none; }
+    }
+</style>
+
+<aside id="oca-promo-popup" class="oca-promo-popup" hidden
+       role="complementary" aria-label="Sponsored · Lawsuit: Social Media Addiction Lawsuit">
+    <button type="button" class="oca-promo-popup-close" aria-label="Close">
+        <svg class="oca-icon" width="0.688em" height="1em" viewBox="0 0 352 512" fill="currentColor" style="vertical-align:-.125em;" aria-hidden="true" focusable="false"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg>    </button>
+        <a class="oca-promo-popup-media" href="https://injuryclaims.com/social-media-addiction-lawsuit?aid=84&amp;cid=41&amp;subid1=cvs"
+       rel="sponsored noopener nofollow" target="_blank" tabindex="-1" aria-hidden="true" onclick="gtag('event', 'click', {'event_category': 'engagement', 'event_label': 'SM Lawsuit - CVS - Popup'});">
+        <img src="https://openclassactions.com/assets/images/social-media-addiction2.webp" alt=""
+             width="340" height="112" loading="lazy" decoding="async" fetchpriority="low">
+    </a>
+    <div class="oca-promo-popup-body">
+        <p class="oca-promo-popup-eyebrow">Sponsored · Lawsuit</p>
+        <p class="oca-promo-popup-title">Social Media Addiction Lawsuit</p>
+                <p class="oca-promo-popup-text">Lawsuits allege Instagram, TikTok, Snapchat and YouTube were designed to be addictive to minors. Free, confidential case review.</p>
+                <a class="oca-promo-popup-btn" href="https://injuryclaims.com/social-media-addiction-lawsuit?aid=84&amp;cid=41&amp;subid1=cvs"
+           rel="sponsored noopener nofollow" target="_blank" onclick="gtag('event', 'click', {'event_category': 'engagement', 'event_label': 'SM Lawsuit - CVS - Popup'});">
+            See If You Qualify <svg class="oca-icon" width="0.875em" height="1em" viewBox="0 0 448 512" fill="currentColor" style="vertical-align:-.125em;" aria-hidden="true" focusable="false"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </a>
+    </div>
+    </aside>
+
+<script>
+    (function () {
+        var el = document.getElementById('oca-promo-popup');
+        if (!el) { return; }
+
+        var DELAY = 20000;
+        var STORE_KEY = 'oca_pp_social-media';
+        var PER_DAY = false;
+        var IMG = "https://openclassactions.com/assets/images/social-media-addiction2.webp";
+
+        /* Frequency cap. Dismissing or clicking retires the popup for the rest
+           of the session (or 24h), so a reader is interrupted once, not on every
+           page view. Storage can throw in a locked-down browser — a popup is not
+           worth an exception, so every access is guarded and failure means
+           "show it", the same as a first visit. */
+        function seen() {
+            try {
+                if (PER_DAY) {
+                    var t = parseInt(localStorage.getItem(STORE_KEY) || '0', 10);
+                    return t > 0 && (Date.now() - t) < 86400000;
+                }
+                return sessionStorage.getItem(STORE_KEY) === '1';
+            } catch (e) { return false; }
+        }
+        function retire() {
+            try {
+                if (PER_DAY) { localStorage.setItem(STORE_KEY, String(Date.now())); }
+                else { sessionStorage.setItem(STORE_KEY, '1'); }
+            } catch (e) { /* private mode / storage disabled — nothing to do */ }
+        }
+        if (seen()) { return; }
+
+        /* Height of a Google bottom ANCHOR ad, so the card sits above it rather
+           than over it. Auto ads wraps its anchor iframe in a fixed container
+           pinned to the viewport bottom; that shape is what is matched here,
+           not a class name, because the class names are not contractual. */
+        function anchorHeight() {
+            var vh = window.innerHeight || 0;
+            var best = 0;
+            var nodes = document.querySelectorAll(
+                'ins.adsbygoogle, iframe[id^="aswift_"], iframe[name^="aswift_"], iframe[id^="google_ads_iframe"]'
+            );
+            for (var i = 0; i < nodes.length; i++) {
+                for (var p = nodes[i]; p && p !== document.body; p = p.parentElement) {
+                    var cs = window.getComputedStyle(p);
+                    if (cs.position !== 'fixed') { continue; }
+                    var r = p.getBoundingClientRect();
+                    if (r.height > 0 && r.height < 200 && Math.abs(r.bottom - vh) < 4 && r.height > best) {
+                        best = r.height;
+                    }
+                    break;
+                }
+            }
+            return Math.round(best);
+        }
+
+        /* Is something already covering the screen — a Google vignette, the
+           Funding Choices ad-block message, a consent dialog? Opening on top of
+           one would obscure an ad and stack two interruptions. Matched by shape
+           (a fixed direct child of <body> covering most of the viewport) rather
+           than by vendor selectors, which change without notice. */
+        function overlayUp() {
+            var vw = window.innerWidth || 0;
+            var vh = window.innerHeight || 0;
+            var kids = document.body.children;
+            for (var i = 0; i < kids.length; i++) {
+                var k = kids[i];
+                if (k === el) { continue; }
+                var tag = k.tagName;
+                if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'LINK' || tag === 'NOSCRIPT') { continue; }
+                var cs = window.getComputedStyle(k);
+                if (cs.position !== 'fixed' || cs.display === 'none' || cs.visibility === 'hidden'
+                    || parseFloat(cs.opacity) < 0.1) { continue; }
+                var r = k.getBoundingClientRect();
+                /* Big but parked off-screen is not covering anything. Without this
+                   a hidden-by-translate drawer would defer the popup forever. */
+                if (r.right <= 0 || r.bottom <= 0 || r.left >= vw || r.top >= vh) { continue; }
+                if (r.width >= vw * 0.8 && r.height >= vh * 0.8) { return true; }
+            }
+            return false;
+        }
+
+        function setAnchorOffset() {
+            el.style.setProperty('--oca-pp-anchor', anchorHeight() + 'px');
+        }
+
+        var elapsed = 0;
+        /* Seed the clock now rather than on the first tick, so a 20-second delay
+           opens at 20 seconds and not at 21. */
+        var last = document.visibilityState === 'visible' ? Date.now() : null;
+        var warmed = false;
+        var open = false;
+        /* Stop retrying eventually. If a full-screen overlay is still up three
+           minutes past the mark, it is an ad-block wall or a consent dialog the
+           reader has not answered, and there is nothing worth waiting for. */
+        var giveUpAt = DELAY + 180000;
+        var timer = window.setInterval(tick, 1000);
+
+        function tick() {
+            if (document.visibilityState === 'visible') {
+                var now = Date.now();
+                if (last !== null) { elapsed += now - last; }
+                last = now;
+            } else {
+                last = null;   /* background time is not reading time */
+            }
+            /* Warm the artwork just before opening so a lazy image does not pop
+               in after the card does. */
+            if (!warmed && IMG && elapsed >= DELAY - 3000) {
+                warmed = true;
+                var pre = new Image();
+                pre.src = IMG;
+            }
+            if (elapsed >= DELAY) { show(); }
+            if (!open && elapsed >= giveUpAt) { window.clearInterval(timer); }
+        }
+
+        function show() {
+            if (open) { return; }
+            /* An AdSense vignette or consent dialog owns the screen — wait for
+               it. The interval keeps running, so this retries every second. */
+            if (overlayUp()) { return; }
+            open = true;
+            window.clearInterval(timer);
+            setAnchorOffset();
+            el.hidden = false;
+            void el.offsetWidth;              /* commit the hidden->shown frame so the transition runs */
+            el.classList.add('is-open');
+            /* An anchor ad can arrive after the card does, and rotating a phone
+               changes its height. */
+            window.setTimeout(setAnchorOffset, 1500);
+            window.addEventListener('resize', setAnchorOffset);
+            document.addEventListener('keydown', onKey);
+        }
+
+        function close() {
+            retire();
+            el.classList.remove('is-open');
+            window.clearInterval(timer);
+            window.removeEventListener('resize', setAnchorOffset);
+            document.removeEventListener('keydown', onKey);
+            window.setTimeout(function () { el.hidden = true; }, 300);
+        }
+
+        function onKey(e) {
+            if (e.key === 'Escape' || e.key === 'Esc') { close(); }
+        }
+
+        el.querySelector('.oca-promo-popup-close').addEventListener('click', close);
+
+        /* A click through to the offer retires it too — the reader acted, so
+           bringing it back on the next page would just be noise. The gtag call
+           is the anchor's own onclick attribute and fires first. */
+                var links = el.querySelectorAll('a');
+                for (var i = 0; i < links.length; i++) {
+            links[i].addEventListener('click', retire);
+        }
+
+        document.addEventListener('visibilitychange', tick);
+    })();
+</script>
+
+    <!-- Footer — redesign 2026 -->
+<style>
+    /* Privacy-status badge in the footer "Your Privacy Choices" link.
+       Only renders when the user is actually opted out (server-side
+       cookie / Sec-GPC, or client-side navigator.globalPrivacyControl).
+       Scoped class names so nothing else on the site can conflict. */
+    .oca-privacy-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 1;
+        padding: 3px 8px;
+        border-radius: 999px;
+        background: rgba(10, 125, 59, 0.10);
+        color: #0a7d3b;
+        border: 1px solid rgba(10, 125, 59, 0.28);
+        white-space: nowrap;
+        letter-spacing: 0.02em;
+    }
+    .oca-privacy-badge__dot {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #0a7d3b;
+        box-shadow: 0 0 0 2px rgba(10, 125, 59, 0.18);
+    }
+    /* GPC variant gets a subtle different tint so users (and you) can
+       tell at a glance which signal source is active. */
+    .oca-privacy-badge--gpc {
+        background: rgba(30, 58, 138, 0.08);
+        color: #1e3a8a;
+        border-color: rgba(30, 58, 138, 0.28);
+    }
+    .oca-privacy-badge--gpc .oca-privacy-badge__dot {
+        background: #1e3a8a;
+        box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.18);
+    }
+    /* ---- Sitewide email signup band (below the link columns) ----
+       The footer is the one component on every page, so this is the
+       broadest-reach signup surface on the site. Scoped .ofs-* /
+       .oca-foot-signup names deliberately avoid the orphaned
+       .footer-signup rule still sitting in style.css from the old
+       Mailchimp footer, now deleted along with this change.
+
+       Colors are picked against the footer's rgb(17,22,17) black:
+       white heading 18.3:1, gray-300 sub 11.1:1, #d98ae6 links 7.6:1,
+       #ff8a9b error 8.2:1. Brand magenta #b512ce is only 3.4:1 on this
+       background, so it is used for the BUTTON FILL (white-on-magenta
+       is 5.3:1) and never for text. */
+    .oca-foot-signup {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 18px 48px;
+        align-items: center;
+        padding: 26px 0 0;
+        margin: 28px 0 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .oca-foot-signup .ofs-eyebrow {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #d98ae6;
+        margin: 0 0 8px;
+    }
+    .oca-foot-signup h5 {
+        color: #fff;
+        font-size: 19px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        line-height: 1.25;
+        margin: 0 0 6px;
+    }
+    .oca-foot-signup .ofs-sub {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.5;
+        color: #bdccd6;
+    }
+    .oca-foot-signup form { margin: 0; }
+    .oca-foot-signup .ofs-row { display: flex; gap: 8px; align-items: stretch; }
+    .oca-foot-signup .ofs-input {
+        flex: 1 1 auto;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 12px 14px;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 10px;
+        background: #fff;
+        color: #111;
+        font-family: inherit;
+        font-size: 14px;
+        outline: none;
+        transition: border-color .15s ease, box-shadow .15s ease;
+    }
+    .oca-foot-signup .ofs-input::placeholder { color: #5f6b76; }
+    .oca-foot-signup .ofs-input:focus {
+        border-color: #b512ce;
+        box-shadow: 0 0 0 3px rgba(181, 18, 206, 0.35);
+    }
+    .oca-foot-signup .ofs-btn {
+        flex: 0 0 auto;
+        background: #b512ce;
+        color: #fff;
+        border: 0;
+        border-radius: 10px;
+        padding: 12px 22px;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background .2s;
+    }
+    .oca-foot-signup .ofs-btn:hover { background: #9c0eb3; }
+    .oca-foot-signup .ofs-tiny {
+        margin: 9px 0 0;
+        font-size: 11px;
+        line-height: 1.45;
+        color: #bdccd6;
+    }
+    .oca-foot-signup .ofs-tiny a { color: #d98ae6; text-decoration: underline; }
+    .oca-foot-signup .ofs-error {
+        display: none;
+        margin: 9px 0 0;
+        font-size: 12px;
+        font-weight: 600;
+        color: #ff8a9b;
+    }
+    .oca-foot-signup .ofs-error.visible { display: block; }
+
+    /* Captcha slot stays collapsed until the field is focused, so the
+       footer carries no blank 51px gap on any of the ~3,300 pages that
+       render it. transform:scale shrinks pixels but not the layout box,
+       so the inner box is pinned to the scaled 304x78 -> ~198x51. */
+    .oca-foot-signup .ofs-captcha {
+        height: 0;
+        overflow: hidden;
+        transition: height .18s ease, margin .18s ease;
+    }
+    .oca-foot-signup .ofs-captcha.armed { height: 51px; margin: 10px 0 0; }
+    .oca-foot-signup .ofs-captcha .ofs-captcha-box { width: 198px; height: 51px; overflow: hidden; }
+    .oca-foot-signup .ofs-captcha .g-recaptcha { transform: scale(.65); transform-origin: top left; }
+
+    @media (max-width: 900px) {
+        .oca-foot-signup { grid-template-columns: 1fr; gap: 14px; padding-top: 22px; margin-top: 22px; }
+        .oca-foot-signup .ofs-row { flex-direction: column; }
+        .oca-foot-signup .ofs-btn { width: 100%; padding: 13px 22px; }
+    }
+</style>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+
+            <!-- Brand + social -->
+            <div class="footer-brand-col">
+                <a href="/" class="brand">OpenClassActions<span class="dot">.</span>com</a>
+                <div class="social">
+                    <a href="https://www.facebook.com/groups/openclassactions" target="_blank" rel="noopener" aria-label="OpenClassActions on Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
+                    </a>
+                    <a href="https://www.youtube.com/@OpenClassActions" target="_blank" rel="noopener" aria-label="OpenClassActions on YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/></svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@openclassactions" target="_blank" rel="noopener" aria-label="OpenClassActions on TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/openclassactionscom/" target="_blank" rel="noopener" aria-label="OpenClassActions on Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Browse column: sections + case-type pillars -->
+            <div>
+                <h5>Browse</h5>
+                <ul>
+                    <li><a href="https://openclassactions.com/news.php">Latest News</a></li>
+                    <li><a href="https://openclassactions.com/settlements.php">Latest Settlements</a></li>
+                    <li><a href="https://openclassactions.com/no-proof-class-action-settlements.php">No Proof Required</a></li>
+                    <li><a href="https://openclassactions.com/closed-class-actions.php">Closed Class Actions</a></li>
+                    <li><a href="https://openclassactions.com/settlements-archive.php">Settlement Archive</a></li>
+                    <li><a href="https://openclassactions.com/investigations/hot-data-breaches.php">Data Breaches</a></li>
+                    <li><a href="https://openclassactions.com/recalls.php">Recalls</a></li>
+                    <li><a href="https://openclassactions.com/auto-renewal-class-actions.php">Auto Renewal Class Actions</a></li>
+                    <li><a href="https://openclassactions.com/securities-class-actions.php">Securities Class Actions</a></li>
+                    <li><a href="https://openclassactions.com/tcpa-class-actions.php">TCPA Class Actions</a></li>
+                    <li><a href="https://openclassactions.com/wage-hour-class-actions.php">Wage &amp; Hour Class Actions</a></li>
+                    <li><a href="https://openclassactions.com/tariff-class-actions.php">Tariff Refund Class Actions</a></li>
+                    <li><a href="https://openclassactions.com/washington-job-posting-pay-transparency-settlements.php">Washington Job Posting Settlements</a></li>
+                </ul>
+            </div>
+
+            <!-- Learn column -->
+            <div>
+                <h5>Learn</h5>
+                <ul>
+                    <li><a href="https://openclassactions.com/blog.php">Blog</a></li>
+                    <li><a href="https://openclassactions.com/class-action-dictionary.php">Class Action Dictionary</a></li>
+                    <li><a href="https://openclassactions.com/learn.php">Learn + Resources</a></li>
+                    <li><a href="https://openclassactions.com/class-action-investigations.php">Join Investigations</a></li>
+                    <li><a href="https://openclassactions.com/mass-torts.php">Mass Tort Lawsuits</a></li>
+                    <li><a href="https://openclassactions.com/investigations/medical-malpractice-class-action.php">Medical Malpractice Investigations</a></li>
+                    <li><a href="https://openclassactions.com/investigations/employer-unpaid-wages-overtime-lawsuit.php">Unpaid Wages &amp; Overtime</a></li>
+                </ul>
+            </div>
+
+            <!-- About column -->
+            <div>
+                <h5>About</h5>
+                <ul>
+                    <li><a href="https://openclassactions.com/about.php">About Us + Contact</a></li>
+                    <li><a href="https://openclassactions.com/privacy.php">Privacy Policy</a></li>
+                    <li><a href="https://openclassactions.com/ccpa.php">CCPA / CPRA Notice</a></li>
+                    <li><a href="https://openclassactions.com/terms.php">Terms of Service</a></li>
+                    <li><a href="https://openclassactions.com/editorial-policy.php">Editorial Policy &amp; AI Disclosure</a></li>
+                    <li><a href="https://openclassactions.com/advertising-disclosure.php">Advertising Disclosure</a></li>
+                    <li><a href="https://openclassactions.com/dmca.php">DMCA / Copyright Policy</a></li>
+                    <li><a href="https://openclassactions.com/careers.php">Careers</a></li>
+                    <li>
+                                                <a href="https://openclassactions.com/ccpa.php"
+                           style="display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap"
+                           title="Do Not Sell or Share My Personal Information (California Privacy Choices)"
+                           data-privacy-source="none">
+                            <!-- Privacy Choices toggle icon (CPPA-style: blue rounded
+                                 rectangle with white check + opt-out toggle). Per 11
+                                 CCR §7026(a) a single link with the opt-out icon
+                                 plus the "Your Privacy Choices" label is one of the
+                                 two compliant footer patterns. The link itself is
+                                 the universal "Do Not Sell or Share" entry point. -->
+                            <svg width="30" height="14" viewBox="0 0 30 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="flex:none">
+                                <rect width="30" height="14" rx="2" fill="#1e3a8a"/>
+                                <path d="M5.4 9.7L3.2 7.5l1.1-1.1 1.1 1.1 3.5-3.5 1.1 1.1L5.4 9.7z" fill="#fff"/>
+                                <circle cx="22.5" cy="7" r="3.6" fill="#fff"/>
+                                <circle cx="22.5" cy="7" r="2.2" fill="#1e3a8a"/>
+                            </svg>
+                            <span>Your Privacy Choices</span>
+                                                    </a>
+                        <script>
+                            // Edge case: navigator.globalPrivacyControl can be
+                            // true even when the Sec-GPC header isn't sent (some
+                            // browsers / extensions only expose the JS API). If
+                            // so, promote the badge from "Opt-Out Active" to
+                            // "GPC Active" client-side. Also handles the case
+                            // where the user enables GPC mid-session: on next
+                            // page nav the server will see Sec-GPC and render
+                            // correctly, but this gives instant feedback now.
+                            (function () {
+                                try {
+                                    var link = document.querySelector('a[data-privacy-source]');
+                                    if (!link) return;
+                                    var gpcOn = (typeof navigator !== 'undefined'
+                                        && navigator.globalPrivacyControl === true);
+                                    var current = link.getAttribute('data-privacy-source');
+                                    if (gpcOn && current !== 'gpc') {
+                                        // Inject or upgrade the badge.
+                                        link.setAttribute('data-privacy-source', 'gpc');
+                                        var badge = link.querySelector('.oca-privacy-badge');
+                                        if (!badge) {
+                                            badge = document.createElement('span');
+                                            badge.className = 'oca-privacy-badge oca-privacy-badge--gpc';
+                                            badge.innerHTML = '<span class="oca-privacy-badge__dot" aria-hidden="true"></span>GPC Active';
+                                            link.appendChild(badge);
+                                        } else {
+                                            badge.classList.remove('oca-privacy-badge--cookie');
+                                            badge.classList.add('oca-privacy-badge--gpc');
+                                            badge.lastChild.textContent = 'GPC Active';
+                                        }
+                                    }
+                                } catch (e) { /* fail open: never block footer render */ }
+                            })();
+                        </script>
+                    </li>
+                    <li><a href="https://openclassactions.com/lawyers.php">Law Firms and Claims Administrators</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SITEWIDE EMAIL SIGNUP — same Sendy list and hidden fields as the
+             hero/mid-feed forms on index.php and data/post_form.php. Distinct
+             gtag event_label so footer signups are attributable once a live
+             analytics property is installed.
+
+             NOTE: this block deliberately does NOT emit a recaptcha/api.js
+             <script> tag. On article pages data/post_form.php already loads it
+             (a second tag re-renders the widgets and breaks them), and on pages
+             without that partial the loader below injects it on first focus. -->
+        <div class="oca-foot-signup">
+            <div class="ofs-copy">
+                <span class="ofs-eyebrow">Free settlement alerts</span>
+                <h5>Never miss a claim deadline.</h5>
+                <p class="ofs-sub">New class action settlements and closing deadlines, sent to your inbox.</p>
+            </div>
+            <div class="ofs-form">
+                <form action="https://sendy.openclassactions.com/subscribe" method="POST"
+                    accept-charset="utf-8" data-oca-signup="footer" data-oca-label="sendy_footer_signup">
+                    <div class="ofs-row">
+                        <label for="foot-email" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;">Email address</label>
+                        <input type="email" name="email" id="foot-email" placeholder="you@email.com"
+                            autocomplete="email" inputmode="email" required class="required email ofs-input" />
+                        <div style="display:none;">
+                            <label for="foot-hp">HP</label>
+                            <input type="text" name="hp" id="foot-hp" tabindex="-1" autocomplete="off" />
+                        </div>
+                        <input type="hidden" name="list" value="2oeQlI1UGcVzOJvVaqH2Zg" />
+                        <input type="hidden" name="subform" value="yes" />
+                        <input type="submit" value="Subscribe" name="submit" class="ofs-btn" />
+                    </div>
+
+                    <div class="ofs-captcha">
+                        <div class="ofs-captcha-box">
+                            <div class="g-recaptcha" data-sitekey="6Lek_3crAAAAAKdbPhGz2WT9JARJ1CgHH9YhhC6V"></div>
+                        </div>
+                    </div>
+
+                    <p class="ofs-error" role="alert">Confirm the checkbox above, then press Subscribe.</p>
+                    <p class="ofs-tiny">Free, unsubscribe anytime. California residents: see our
+                        <a href="https://openclassactions.com/ccpa.php" target="_blank" rel="noopener">Notice at Collection &amp; Privacy Choices</a>.</p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Canonical role disclosure + FTC affiliate / advertising disclosure.
+             Single source of truth for what OCA is and isn't, served from
+             data/oca-role-disclosure.php so every page that includes the
+             footer states it identically. Inconsistent self-descriptions
+             across pages are an unfair-trade-practice exposure. -->
+        <div class="disclaimer">
+            <span class="oca-role-disclosure">
+    OpenClassActions.com is an informational publishing platform and a marketing / referral platform.
+    We are not a law firm, settlement administrator, claims administrator, or government agency, and we
+    do not provide legal advice. No attorney-client relationship is created by using this site,
+    submitting a form, or communicating with us.
+</span>
+            Submission of any form does not guarantee representation, compensation, eligibility, or
+            participation in any lawsuit or settlement. Class action claim forms are submitted under penalty
+            of perjury &mdash; submit only truthful information.
+            OpenClassActions.com participates in affiliate and advertising programs and may receive
+            compensation from certain links, products, services, or sponsored partnerships.
+            See our
+            <a href="https://openclassactions.com/terms.php">Terms</a>,
+            <a href="https://openclassactions.com/privacy.php">Privacy</a>,
+            <a href="https://openclassactions.com/editorial-policy.php">Editorial Policy</a>,
+            and <a href="https://openclassactions.com/advertising-disclosure.php">Advertising Disclosure</a>.
+        </div>
+
+        <script>
+            /* Footer signup: captcha arming, lazy loader, and submit guard.
+
+               The loader is lazy on purpose. This form renders on every page on
+               the site, and the overwhelming majority of visitors never touch
+               it — so injecting api.js only on first interaction means those
+               pageviews make no connection to Google at all. It also keeps this
+               block from double-loading the script on article pages, where
+               data/post_form.php already ships a static tag: if grecaptcha is
+               already present (or another loader is in flight) this does
+               nothing, and that loader's auto-render picks up the widget below.
+
+               The submit guard catches an unticked box and answers inline
+               rather than POSTing and letting Sendy return a raw error page.
+               It fails open when no g-recaptcha-response field exists yet, so
+               a slow script can never block a real subscriber. */
+            (function () {
+                var form = document.querySelector('form[data-oca-signup="footer"]');
+                if (!form) return;
+                var email = form.querySelector('input[type="email"]');
+                var slot = form.querySelector('.ofs-captcha');
+                var error = form.querySelector('.ofs-error');
+                if (!email || !slot) return;
+
+                function loadRecaptcha() {
+                    if (window.grecaptcha || window.__ocaRecaptchaLoading) return;
+                    /* Checking window.grecaptcha alone is not enough: on article
+                       pages data/post_form.php ships a static async api.js tag,
+                       and grecaptcha stays undefined until it finishes loading.
+                       A visitor who focuses this field during that window would
+                       get a SECOND tag injected, which re-renders and breaks
+                       both widgets. Look for the tag itself, not just its
+                       result. */
+                    if (document.querySelector('script[src*="recaptcha/api.js"]')) return;
+                    window.__ocaRecaptchaLoading = true;
+                    var s = document.createElement('script');
+                    s.src = 'https://www.google.com/recaptcha/api.js';
+                    s.async = true;
+                    s.defer = true;
+                    document.head.appendChild(s);
+                }
+
+                function arm() { slot.classList.add('armed'); loadRecaptcha(); }
+                ['focus', 'mouseover', 'touchstart', 'input'].forEach(function (evt) {
+                    email.addEventListener(evt, arm, { passive: true });
+                });
+
+                form.addEventListener('submit', function (e) {
+                    arm();
+                    var box = form.querySelector('textarea[name="g-recaptcha-response"]');
+                    if (box && !box.value) {
+                        e.preventDefault();
+                        if (error) error.classList.add('visible');
+                        return;
+                    }
+                    if (error) error.classList.remove('visible');
+                });
+            })();
+        </script>
+
+        <div class="copyright">Open Class Actions LLC &copy; 2026</div>
+    </div>
+</footer>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"4010c1f79fd34e55a32365375f11a3c1","r":1,"spa":2}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3b2fe99fac1b971',t:'MTc4OTQyNjY4Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>

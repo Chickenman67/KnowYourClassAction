@@ -1,0 +1,32 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+
+# --- Local state and caches ---
+# This repository is PUBLIC. Anything personal must stay out of it.
+# The HTTP cache and the local SQLite database are disposable and never committed.
+.cache/
+.state/
+*.sqlite3
+*.sqlite3-journal
+
+# --- Local environment / secrets ---
+# Telegram bot token, Cloudflare token, etc. NEVER belong in this repo.
+.env
+.env.*
+!.env.example
+.secrets/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
