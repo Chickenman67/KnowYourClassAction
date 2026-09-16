@@ -8,6 +8,12 @@ Usage:
     kya --pages               # also enrich ~260 case pages (~1 request/s)
     kya --pages --site        # also render the static site into docs/
     kya --limit 5             # smoke run against the first entries only
+    kya --whoami              # bot identity + chats that have messaged it
+    kya --send-test-message   # one test message with Done / Not mine buttons
+    kya --notify-digest       # diff against the stored snapshot and send the news
+
+Telegram credentials come from the environment or the repo .env (see
+.env.example); they are never read from config.yaml, which is committed.
 """
 
 from __future__ import annotations
@@ -19,7 +25,7 @@ from kya.config import load_config
 from kya.http import PoliteClient
 from kya.sources.openclassactions_index import parse_index
 from kya.sources.openclassactions_page import parse_page
-from kya.store import connect, export_json, save_settlements
+from kya.store import connect, export_json, load_snapshot, save_settlements
 
 INDEX_URL = "https://openclassactions.com/llms.txt"
 
@@ -29,7 +35,54 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--pages", action="store_true", help="enrich with case pages")
     parser.add_argument("--limit", type=int, default=None, help="smoke-run cap")
     parser.add_argument("--site", action="store_true", help="also render docs/")
+    parser.add_argument(
+        "--whoami", action="store_true", help="print bot identity and known chats, then exit"
+    )
+    parser.add_argument(
+        "--send-test-message",
+        action="store_true",
+        help="send one test message with Done / Not mine buttons, then exit",
+    )
+    parser.add_argument(
+        "--notify-digest",
+        action="store_true",
+        help="diff against the stored snapshot and send a Telegram digest",
+    )
     args = parser.parse_args(argv)
+
+    # --- Telegram commands: no index fetch needed, exit before any scraping ---
+    telegram_only = args.whoami or args.send_test_message or args.notify_digest
+    if telegram_only:
+        from kya import notify
+
+        try:
+            bot, chat_id = notify.bootstrap()
+        except notify.TelegramError as exc:
+            print(f"telegram: {exc}")
+            return 1
+
+        if args.whoami:
+            return notify.cmd_whoami(bot)
+
+        if args.send_test_message:
+            if not chat_id:
+                print(
+                    "telegram: KYA_TELEGRAM_CHAT_ID is not set. Run `kya --whoami` "
+                    "after messaging the bot, then put the chat id in .env."
+                )
+                return 1
+            return notify.cmd_send_test_message(bot, chat_id)
+
+        # --notify-digest: fall through to the build below, but remember to send.
+        if not chat_id:
+            print(
+                "telegram: KYA_TELEGRAM_CHAT_ID is not set. Run `kya --whoami` "
+                "after messaging the bot, then put the chat id in .env."
+            )
+            return 1
+        send_digest = True
+    else:
+        send_digest = False
 
     config = load_config()
     client = PoliteClient(
@@ -75,6 +128,7 @@ def main(argv: list[str] | None = None) -> int:
             warned += 1
 
     conn = connect(config.db_path)
+    previous_snapshot = load_snapshot(conn) if send_digest else None
     written = save_settlements(conn, settlements)
     target = export_json(
         settlements,
@@ -96,4 +150,18 @@ def main(argv: list[str] | None = None) -> int:
             urgent_days=config.deadlines.urgent_days,
         )
         print(f"site: {len(outputs)} files -> {outputs[0].parent}")
+
+    if send_digest:
+        from kya import notify
+
+        bot, chat_id = notify.bootstrap()
+        status = notify.cmd_notify_digest(
+            bot, chat_id, settlements, previous=previous_snapshot
+        )
+        if status != 0:
+            return status
     return 0
+
+
+if __name__ == "__main__":  # pragma: no cover
+    raise SystemExit(main())
