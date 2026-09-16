@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Know Your Class Action — open settlements, deadlines and proof rules</title>
+<meta name="description" content="A tracked ledger of open U.S. class-action settlements: what you can get, what proof it takes, and when the window closes.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <p class="masthead__kicker">Money you may already be owed — tracked, sorted, and dated</p>
+  <h1 class="masthead__title">Know Your Class Action</h1>
+  <div class="masthead__meta">
+    <span>Index verified <strong>{{ index_updated or today_display }}</strong></span>
+    <span aria-hidden="true">·</span>
+    <span>{{ total }} cases in {{ lane_names|length }} lanes</span>
+    <span aria-hidden="true">·</span>
+    <span>Not legal advice</span>
+  </div>
+</header>
+
+{# ---- the deadline runway ------------------------------------------- #}
+<section class="runway" aria-label="Deadline runway: every open deadline in the next {{ horizon_days }} days">
+  <h2 class="rule-label">Deadline runway · next {{ horizon_days }} days</h2>
+  {% if ticks %}
+  <div class="runway__ruler" role="img" aria-label="{{ ticks|length }} deadlines between today and {{ horizon_days }} days out; leftmost closes soonest">
+    <div class="runway__base"></div>
+    {% for m in months %}
+    <div class="runway__month" style="left: {{ m.pos_pct }}%"><span>{{ m.label }}</span></div>
+    {% endfor %}
+    {% for t in ticks %}
+    <a class="tick tick--{{ t.tier|default('none')|lower }} {% if t.urgency %}tick--{{ t.urgency }}{% endif %}"
+       style="left: {{ t.pos_pct }}%"
+       href="#lane-claimable"
+       title="{{ t.title }} — {{ t.deadline_display }} ({{ t.days_left }} day{{ '' if t.days_left == 1 else 's' }} left)"><span class="visually-hidden">{{ t.title }}: {{ t.deadline_display }}</span></a>
+    {% endfor %}
+  </div>
+  <div class="runway__legend">
+    <span class="legend__item"><i class="dot dot--urgent"></i> ≤3 days</span>
+    <span class="legend__item"><i class="dot dot--soon"></i> ≤7 days</span>
+    <span class="legend__note">tick color = payout tier (S highest · F varies) · hover a tick for the case</span>
+  </div>
+  {% else %}
+  <p class="runway__empty">No claim windows close in the next {{ horizon_days }} days. The lanes below carry the full picture.</p>
+  {% endif %}
+</section>
+
+{# ---- filters --------------------------------------------------------- #}
+<div class="filters" role="group" aria-label="Filter the ledger">
+  <label>State
+    <select id="filter-state">
+      <option value="">All</option>
+      {% for s in states %}<option value="{{ s }}">{{ s }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>Proof
+    <select id="filter-proof">
+      <option value="">All</option>
+      <option value="L0">Automatic</option>
+      <option value="L1">No proof</option>
+      <option value="L2">Notice ID</option>
+      <option value="L3">Documents</option>
+      <option value="L4">Dual-tier</option>
+      <option value="unknown">Unknown</option>
+    </select>
+  </label>
+  <label>Tier
+    <select id="filter-tier">
+      <option value="">All</option>
+      {% for t in ['S','A','B','C','D','E','F'] %}<option value="{{ t }}">{{ t }}</option>{% endfor %}
+      <option value="none">Unrated</option>
+    </select>
+  </label>
+  <button type="button" id="filter-reset">Reset</button>
+  <output id="filter-count" aria-live="polite"></output>
+</div>
+
+{# ---- the four lanes -------------------------------------------------- #}
+{% for name in lane_names %}{% set rows = lanes[name] %}
+<section class="lane lane--{{ name }}" id="lane-{{ name }}">
+  <header class="lane__head">
+    <h2 class="lane__title">{{ lane_headings[name][0] }}</h2>
+    <p class="lane__sub">{{ lane_headings[name][1] }}</p>
+    <span class="lane__count">{{ rows|length }}</span>
+  </header>
+  {% if rows %}
+  <ol class="ledger">
+    {% for r in rows %}
+    <li class="row {% if r.urgency %}row--{{ r.urgency }}{% endif %}"
+        data-states="{{ r.states|join(' ') }}"
+        data-proof="{{ r.proof_level or 'unknown' }}"
+        data-tier="{{ r.payout_tier or 'none' }}">
+      <div class="row__when">
+        <span class="row__prefix">{{ r.deadline_prefix }}</span>
+        {% if r.deadline_iso %}<time datetime="{{ r.deadline_iso }}">{{ r.deadline_display }}</time>{% else %}<span class="row__nodate">—</span>{% endif %}
+        {% if r.urgency == 'urgent' %}<span class="flag flag--urgent">closes now</span>
+        {%- elif r.urgency == 'soon' %}<span class="flag flag--soon">closing</span>{% endif %}
+      </div>
+      <div class="row__what">
+        <a class="row__title" href="{{ r.url }}" rel="noopener">{{ r.title }}</a>
+        <div class="row__badges">
+          <span class="sticker sticker--tier-{{ r.payout_tier|default('none')|lower }}">{{ r.sticker }}</span>
+          <span class="badge">{{ r.proof_badge }}</span>
+          <span class="row__geo">{{ r.geo }}</span>
+          {% for f in r.flags %}<span class="badge badge--warn">{{ f }}</span>{% endfor %}
+        </div>
+      </div>
+      <div class="row__side">
+        <span class="row__ev">{{ r.ev_display }}{% if r.ev_confidence %} <span class="row__conf">{{ r.ev_confidence }}</span>{% endif %}</span>
+        <span class="row__links">
+          {%- if r.claim_url %}<a href="{{ r.claim_url }}" rel="noopener">claim portal</a>{% endif %}
+          {%- if r.official_website %}<a href="{{ r.official_website }}" rel="noopener">official site</a>{% endif %}
+        </span>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+  <p class="lane__filtered-empty" hidden>No cases in this lane match the filters.</p>
+  {% else %}
+  <p class="lane__empty">Nothing in this lane right now.</p>
+  {% endif %}
+</section>
+{% endfor %}
+
+<footer class="colophon">
+  <p>Settlement data compiled from <a href="https://openclassactions.com" rel="noopener">openclassactions.com</a>.
+  Payout and proof figures reflect what those sources publish — always verify on the official claim portal before acting.</p>
+  <p>Know Your Class Action is a personal tracker. It is <strong>not legal advice</strong>, is not a law firm,
+  and is not affiliated with any settlement administrator, court, or claims agent.</p>
+  <p class="colophon__stamp">Built {{ generated_at }} · index verified {{ index_updated or today_display }} · <a href="data/settlements.json">download the dataset</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+{
+  "openclassactions_llms.txt": {
+    "bytes": 75971,
+    "captured_at": "2026-09-14T22:57:41Z",
+    "file": "openclassactions_llms.txt",
+    "sha256_16": "4a365e8a11e68267",
+    "status": 200,
+    "url": "https://openclassactions.com/llms.txt"
+  },
+  "openclassactions_robots.txt": {
+    "bytes": 558,
+    "captured_at": "2026-09-14T22:57:42Z",
+    "file": "openclassactions_robots.txt",
+    "sha256_16": "d37f87e2df264ac4",
+    "status": 200,
+    "url": "https://openclassactions.com/robots.txt"
+  },
+  "page_country_bank_overdraft": {
+    "bytes": 125413,
+    "captured_at": "2026-09-14T22:57:46Z",
+    "file": "page_country_bank_overdraft.html",
+    "sha256_16": "c62be015d813fcba",
+    "status": 200,
+    "url": "https://openclassactions.com/settlements/country-bank-savings-overdraft-nsf-fee-settlement.php"
+  },
+  "page_cvs_digital_privacy": {
+    "bytes": 143385,
+    "captured_at": "2026-09-14T22:57:45Z",
+    "file": "page_cvs_digital_privacy.html",
+    "sha256_16": "2169173ee47fc204",
+    "status": 200,
+    "url": "https://openclassactions.com/settlements/cvs-digital-privacy-class-action-settlement.php"
+  },
+  "page_diisocyanates_antitrust": {
+    "bytes": 138362,
+    "captured_at": "2026-09-14T22:57:48Z",
+    "file": "page_diisocyanates_antitrust.html",
+    "sha256_16": "987ed1dc20141a96",
+    "status": 200,
+    "url": "https://openclassactions.com/settlements/diisocyanates-mdi-tdi-antitrust-class-action-settlement.php"
+  },
+  "page_equifax_credit_score": {
+    "bytes": 113354,
+    "captured_at": "2026-09-14T22:57:49Z",
+    "file": "page_equifax_credit_score.html",
+    "sha256_16": "541b74cb48d42ce6",
+    "status": 200,
+    "url": "https://openclassactions.com/settlements/equifax-credit-score-error-class-action-settlement.php"
+  },
+  "page_hearthside_child_labor": {
+    "bytes": 122493,
+    "captured_at": "2026-09-14T22:57:47Z",
+    "file": "page_hearthside_child_labor.html",
+    "sha256_16": "a5de686b387b9735",
+    "status": 200,
+    "url": "https://openclassactions.com/settlements/hearthside-illinois-child-labor-assurance.php"
+  },
+  "page_kia_window_regulator": {
+    "bytes": 127787,
+    "captured_at": "2026-09-14T22:57:43Z",
+    "file": "page_kia_window_regulator.html",
+    "sha256_16": "2fa78be87f3716d4",
+    "status": 200,
+    "url": "https://openclassactions.com/settlements/kia-window-regulator-class-action-settlement.php"
+  },
+  "page_ryobi_mower_recall": {
+    "bytes": 131045,
+    "captured_at": "2026-09-14T22:57:50Z",
+    "file": "page_ryobi_mower_recall.html",
+    "sha256_16": "3c51972548da5ea2",
+    "status": 200,
+    "url": "https://openclassactions.com/lawsuits/product-liability/ryobi-40v-mower-fire-class-action-lawsuit.php"
+  },
+  "page_schuster_data_breach": {
+    "bytes": 127129,
+    "captured_at": "2026-09-14T22:57:44Z",
+    "file": "page_schuster_data_breach.html",
+    "sha256_16": "6e48bfa7b6659031",
+    "status": 200,
+    "url": "https://openclassactions.com/settlements/data-breaches/schuster-data-breach-class-action-settlement.php"
+  }
+}
