@@ -1,0 +1,72 @@
+# Daily build: dataset + static site + Telegram digest.
+#
+# Pages is configured as a legacy build from main:/docs, so committing the
+# rebuilt docs/ IS the deploy. The dataset and site are committed too — the
+# build is deterministic, so a run shows up as a reviewable diff rather than
+# a rewrite (tests/test_store.py holds that line).
+#
+# There is deliberately no push trigger: GITHUB_TOKEN pushes don't retrigger
+# workflows, but a local push would re-scrape the whole index for nothing.
+# The digest's snapshot semantics need a single build per run, so everything
+# happens in one `kya --pages --site --notify-digest` invocation.
+
+name: build
+
+on:
+  schedule:
+    - cron: "23 6 * * *" # daily 06:23 UTC, deliberately off the hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kya-build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # The polite client's disk cache: today's run saves it, tomorrow's run
+      # restores it, so a transient network failure degrades to yesterday's
+      # stale copy instead of a dead run.
+      - name: Restore the polite HTTP cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: kya-http-${{ github.run_id }}
+          restore-keys: kya-http-
+
+      - name: Install
+        run: pip install -e ".[dev]"
+
+      - name: Test
+        run: python -m pytest --tb=short
+
+      - name: Build dataset, site, and send the digest
+        env:
+          KYA_TELEGRAM_BOT_TOKEN: ${{ secrets.KYA_TELEGRAM_BOT_TOKEN }}
+          KYA_TELEGRAM_CHAT_ID: ${{ secrets.KYA_TELEGRAM_CHAT_ID }}
+          KYA_TELEGRAM_WEBHOOK_SECRET: ${{ secrets.KYA_TELEGRAM_WEBHOOK_SECRET }}
+          KYA_DECISIONS_URL: ${{ secrets.KYA_DECISIONS_URL }}
+        run: kya --pages --site --notify-digest
+
+      - name: Commit the rebuilt dataset and site
+        run: |
+          git config user.name "kya-bot"
+          git config user.email "kya-bot@users.noreply.github.com"
+          git add docs data
+          if git diff --cached --quiet; then
+            echo "nothing changed - nothing to publish"
+          else
+            git commit -m "build: dataset + site (run ${{ github.run_id }})"
+            git push
+          fi

@@ -233,7 +233,7 @@ def test_digest_skips_cases_already_decided_by_the_worker() -> None:
         bot,
         123,
         settlements,
-        previous={},
+        previous={"gone": {"id": "gone", "title": "Gone Case"}},
         decisions={"case-a": {"action": "done"}},
         out=lines.append,
     )
@@ -254,11 +254,27 @@ def test_digest_degrades_to_unfiltered_when_the_worker_is_down(monkeypatch) -> N
     bot = notify.TelegramBot("token", transport=fake)
     lines: list[str] = []
     status = notify.cmd_notify_digest(
-        bot, 123, [settlement_fixture("case-a", "Case A")], previous={}, out=lines.append
+        bot,
+        123,
+        [settlement_fixture("case-a", "Case A")],
+        previous={"gone": {"id": "gone", "title": "Gone Case"}},
+        out=lines.append,
     )
     assert status == 0, "a decisions outage must not silence the digest"
     assert "decisions unavailable" in "\n".join(lines)
     assert any(c[0] == "sendMessage" for c in fake.calls)
+
+
+def test_a_fresh_store_is_a_baseline_not_news() -> None:
+    fake = FakeTelegram()
+    bot = notify.TelegramBot("token", transport=fake)
+    lines: list[str] = []
+    settlements = [settlement_fixture("case-a", "Case A"), settlement_fixture("case-b", "Case B")]
+    status = notify.cmd_notify_digest(bot, 123, settlements, previous={}, out=lines.append)
+    assert status == 0
+    joined = "\n".join(lines)
+    assert "baseline established (2 cases)" in joined
+    assert not fake.calls, "the first run must not report the whole index as NEW"
 
 
 def test_fetch_decisions_reads_the_worker_json_and_fails_loudly() -> None:

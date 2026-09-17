@@ -162,7 +162,7 @@ src/kya/
   run.py           the kya console entry point
   templates/       index.html.j2 plus static assets (style.css, app.js, favicon)
 worker/            Cloudflare Worker webhook + KV (Milestone C), node-tested
-tests/             229 offline tests over captured live fixtures
+tests/             231 offline tests over captured live fixtures
 tools/             build, fixture capture, and warning-audit CLIs
 ```
 
@@ -172,7 +172,8 @@ tools/             build, fixture capture, and warning-audit CLIs
 - [x] Milestone B - Telegram notifications with inline *Done / Not mine* buttons
 - [x] Milestone C - Cloudflare Worker webhook + KV state (`worker/`; decisions
   filter future digests; deploy steps in `worker/README.md`)
-- [ ] Scheduled GitHub Actions builds + GitHub Pages deploy
+- [x] Scheduled GitHub Actions builds + GitHub Pages deploy (`.github/workflows/build.yml`,
+  daily 06:23 UTC; Pages serves `docs/` from `main`)
 - [ ] Secondary sources (CourtListener, topclassactions RSS) and cross-checks
 
 ## Disclaimers
