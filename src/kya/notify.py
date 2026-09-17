@@ -475,9 +475,14 @@ def cmd_set_webhook(bot: TelegramBot, base_url: str, *, environ=None, out=print)
 
 def cmd_decisions(*, environ=None, getter=None, out=print) -> int:
     """Print the decisions recorded by the webhook worker."""
-    decisions = fetch_decisions(merge_environ(environ), getter=getter)
+    env = merge_environ(environ)
+    url = (env.get(ENV_DECISIONS_URL) or "").strip()
+    decisions = fetch_decisions(env, getter=getter)
     if not decisions:
-        out("decisions: none recorded (or KYA_DECISIONS_URL not set)")
+        if url:
+            out(f"decisions: none recorded yet ({url})")
+        else:
+            out("decisions: KYA_DECISIONS_URL not set - nothing to read")
         return 0
     for settlement_id, record in sorted(decisions.items()):
         action = record.get("action", "?") if isinstance(record, dict) else record

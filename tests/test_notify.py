@@ -326,7 +326,18 @@ def test_decisions_cli_with_nothing_configured_says_so() -> None:
     lines: list[str] = []
     status = notify.cmd_decisions(environ={notify.ENV_TOKEN: "t"}, out=lines.append)
     assert status == 0
-    assert "none recorded" in "\n".join(lines)
+    assert "KYA_DECISIONS_URL not set" in "\n".join(lines)
+
+
+def test_decisions_cli_with_a_configured_worker_names_it_when_empty() -> None:
+    lines: list[str] = []
+    env = {notify.ENV_TOKEN: "t", notify.ENV_DECISIONS_URL: "https://w.test/decisions"}
+    status = notify.cmd_decisions(
+        environ=env, getter=lambda url, headers: (200, '{"ok": true, "decisions": {}}'),
+        out=lines.append,
+    )
+    assert status == 0
+    assert "none recorded yet (https://w.test/decisions)" in "\n".join(lines)
 
 
 def test_a_blank_token_is_an_actionable_error() -> None:

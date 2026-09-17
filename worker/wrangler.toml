@@ -6,4 +6,4 @@ compatibility_date = "2024-12-01"
 #   npx wrangler kv namespace create DECISIONS
 [[kv_namespaces]]
 binding = "DECISIONS"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+id = "1994510a8d904610b3b5d508d8a05d0b"
