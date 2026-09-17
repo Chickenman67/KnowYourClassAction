@@ -521,6 +521,14 @@ def cmd_notify_digest(
 
             db_path = find_repo_root() / ".state" / "kya.sqlite3"
         previous = load_snapshot(store_connect(db_path))
+    if not previous:
+        # A fresh store is a baseline, not news: without this guard the first
+        # scheduled run would report every case in the index as NEW.
+        out(
+            f"digest: baseline established ({len(settlements)} cases); "
+            "the first run stores a baseline instead of reporting every case as new"
+        )
+        return 0
     current = [s.model_dump(mode="json") for s in settlements]
     from kya.config import load_config
 
