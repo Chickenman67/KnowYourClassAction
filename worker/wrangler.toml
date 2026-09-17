@@ -1,0 +1,9 @@
+name = "kya-webhook"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+
+# Create the namespace and paste its id here:
+#   npx wrangler kv namespace create DECISIONS
+[[kv_namespaces]]
+binding = "DECISIONS"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"

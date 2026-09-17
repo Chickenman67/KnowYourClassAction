@@ -11,6 +11,8 @@ Usage:
     kya --whoami              # bot identity + chats that have messaged it
     kya --send-test-message   # one test message with Done / Not mine buttons
     kya --notify-digest       # diff against the stored snapshot and send the news
+    kya --set-webhook URL     # register the Milestone C worker as the webhook
+    kya --decisions           # print decisions recorded by the worker
 
 Telegram credentials come from the environment or the repo .env (see
 .env.example); they are never read from config.yaml, which is committed.
@@ -48,7 +50,31 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="diff against the stored snapshot and send a Telegram digest",
     )
+    parser.add_argument(
+        "--set-webhook",
+        metavar="URL",
+        default=None,
+        help="register the Milestone C worker (base URL) as Telegram's webhook",
+    )
+    parser.add_argument(
+        "--decisions",
+        action="store_true",
+        help="print decisions recorded by the webhook worker, then exit",
+    )
     args = parser.parse_args(argv)
+
+    # --- webhook / decisions: self-contained Telegram worker calls -----------
+    if args.set_webhook or args.decisions:
+        from kya import notify
+
+        try:
+            if args.set_webhook:
+                bot, _ = notify.bootstrap()
+                return notify.cmd_set_webhook(bot, args.set_webhook)
+            return notify.cmd_decisions()
+        except notify.TelegramError as exc:
+            print(f"telegram: {exc}")
+            return 1
 
     # --- Telegram commands: no index fetch needed, exit before any scraping ---
     telegram_only = args.whoami or args.send_test_message or args.notify_digest

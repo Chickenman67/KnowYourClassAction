@@ -108,6 +108,8 @@ class FakeTelegram:
                     {"message": {"chat": {"id": 555, "type": "private", "first_name": "David"}}},
                 ],
             }
+        if method in ("setWebhook", "answerCallbackQuery", "editMessageReplyMarkup"):
+            return {"ok": True, "result": {}}
         raise AssertionError(f"unexpected method {method}")
 
 
@@ -210,6 +212,121 @@ def test_credentials_come_from_the_environment_only() -> None:
         {"KYA_TELEGRAM_BOT_TOKEN": "  abc  ", "KYA_TELEGRAM_CHAT_ID": "77"}
     )
     assert (token, chat_id) == ("abc", "77")
+
+
+# --- Milestone C: the decisions loop -------------------------------------------
+def settlement_fixture(sid: str, title: str):
+    from kya.models import Settlement
+
+    return Settlement(id=sid, source_url="https://example.com", title=title, tiers=[])
+
+
+def test_digest_skips_cases_already_decided_by_the_worker() -> None:
+    fake = FakeTelegram()
+    bot = notify.TelegramBot("token", transport=fake)
+    settlements = [
+        settlement_fixture("case-a", "Decided Case"),
+        settlement_fixture("case-b", "Fresh Case"),
+    ]
+    lines: list[str] = []
+    status = notify.cmd_notify_digest(
+        bot,
+        123,
+        settlements,
+        previous={},
+        decisions={"case-a": {"action": "done"}},
+        out=lines.append,
+    )
+    assert status == 0
+    assert "skipping 1 case(s) already decided" in "\n".join(lines)
+    sends = [c for c in fake.calls if c[0] == "sendMessage"]
+    assert len(sends) == 1
+    assert "Fresh Case" in sends[0][1]["text"]
+    assert "Decided Case" not in sends[0][1]["text"]
+
+
+def test_digest_degrades_to_unfiltered_when_the_worker_is_down(monkeypatch) -> None:
+    def boom(*args, **kwargs):
+        raise notify.TelegramError("HTTP 503 from https://w.test/decisions")
+
+    monkeypatch.setattr(notify, "fetch_decisions", boom)
+    fake = FakeTelegram()
+    bot = notify.TelegramBot("token", transport=fake)
+    lines: list[str] = []
+    status = notify.cmd_notify_digest(
+        bot, 123, [settlement_fixture("case-a", "Case A")], previous={}, out=lines.append
+    )
+    assert status == 0, "a decisions outage must not silence the digest"
+    assert "decisions unavailable" in "\n".join(lines)
+    assert any(c[0] == "sendMessage" for c in fake.calls)
+
+
+def test_fetch_decisions_reads_the_worker_json_and_fails_loudly() -> None:
+    calls: list[tuple[str, dict]] = []
+
+    def getter(url: str, headers: dict) -> tuple[int, str]:
+        calls.append((url, headers))
+        return 200, '{"ok": true, "decisions": {"case-a": {"action": "done"}}}'
+
+    env = {notify.ENV_DECISIONS_URL: "https://w.test/decisions", notify.ENV_WEBHOOK_SECRET: "s"}
+    assert notify.fetch_decisions(env, getter=getter) == {"case-a": {"action": "done"}}
+    assert calls == [("https://w.test/decisions", {"Authorization": "Bearer s"})]
+
+    with pytest.raises(notify.TelegramError, match="HTTP 403"):
+        notify.fetch_decisions(env, getter=lambda url, headers: (403, "forbidden"))
+
+    with pytest.raises(notify.TelegramError, match="non-JSON"):
+        notify.fetch_decisions(env, getter=lambda url, headers: (200, "<html>"))
+
+
+def test_fetch_decisions_with_no_url_configured_never_touches_the_network() -> None:
+    def must_not_fetch(url, headers):
+        raise AssertionError("no URL configured - nothing to fetch")
+
+    assert notify.fetch_decisions({notify.ENV_WEBHOOK_SECRET: "s"}, getter=must_not_fetch) == {}
+
+
+def test_set_webhook_registers_the_url_with_the_shared_secret() -> None:
+    fake = FakeTelegram()
+    bot = notify.TelegramBot("token", transport=fake)
+    lines: list[str] = []
+    env = {notify.ENV_TOKEN: "t", notify.ENV_WEBHOOK_SECRET: "shh"}
+    status = notify.cmd_set_webhook(bot, "https://w.workers.dev/", environ=env, out=lines.append)
+    assert status == 0
+    assert fake.calls == [
+        (
+            "setWebhook",
+            {"url": "https://w.workers.dev/telegram", "secret_token": "shh"},
+        )
+    ]
+    assert "webhook set: https://w.workers.dev/telegram" in "\n".join(lines)
+
+
+def test_set_webhook_without_a_secret_is_refused_before_any_call() -> None:
+    bot = notify.TelegramBot("token", transport=FakeTelegram())
+    with pytest.raises(notify.TelegramError, match="KYA_TELEGRAM_WEBHOOK_SECRET"):
+        notify.cmd_set_webhook(bot, "https://w.workers.dev", environ={notify.ENV_TOKEN: "t"})
+
+
+def test_decisions_cli_lists_what_the_worker_recorded() -> None:
+    lines: list[str] = []
+    env = {notify.ENV_TOKEN: "t", notify.ENV_DECISIONS_URL: "https://w.test/decisions"}
+    status = notify.cmd_decisions(
+        environ=env,
+        getter=lambda url, headers: (200, '{"decisions": {"case-a": {"action": "done"}}}'),
+        out=lines.append,
+    )
+    assert status == 0
+    joined = "\n".join(lines)
+    assert "case-a: done" in joined
+    assert "1 recorded" in joined
+
+
+def test_decisions_cli_with_nothing_configured_says_so() -> None:
+    lines: list[str] = []
+    status = notify.cmd_decisions(environ={notify.ENV_TOKEN: "t"}, out=lines.append)
+    assert status == 0
+    assert "none recorded" in "\n".join(lines)
 
 
 def test_a_blank_token_is_an_actionable_error() -> None:

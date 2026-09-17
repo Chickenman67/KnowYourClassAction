@@ -32,6 +32,8 @@ from kya.site_build import money_sticker
 
 ENV_TOKEN = "KYA_TELEGRAM_BOT_TOKEN"
 ENV_CHAT_ID = "KYA_TELEGRAM_CHAT_ID"
+ENV_WEBHOOK_SECRET = "KYA_TELEGRAM_WEBHOOK_SECRET"
+ENV_DECISIONS_URL = "KYA_DECISIONS_URL"
 
 API_ROOT = "https://api.telegram.org"
 
@@ -105,9 +107,6 @@ def parse_callback_data(data: str | None) -> tuple[str, str] | None:
     if len(parts) != 3:
         return None
     namespace, action, settlement_id = parts
-    if namespace != CALLBACK_NAMESPACE or action not in ACTIONS or not settlement_id:
-        return None
-    return action, settlement_id
     if namespace != CALLBACK_NAMESPACE or action not in ACTIONS or not settlement_id:
         return None
     return action, settlement_id
@@ -300,6 +299,31 @@ class TelegramBot:
         """Updates for --whoami chat discovery (no offset bookkeeping needed)."""
         return self._execute("getUpdates", {"limit": 100})
 
+    def set_webhook(self, url: str, *, secret_token: str | None = None) -> None:
+        """Point Telegram's webhook at the worker (Milestone C)."""
+        payload: dict = {"url": url}
+        if secret_token:
+            payload["secret_token"] = secret_token
+        self._execute("setWebhook", payload)
+
+    def answer_callback_query(self, callback_query_id: str, text: str) -> None:
+        """Stop the button's spinner and show the user a toast."""
+        self._execute(
+            "answerCallbackQuery",
+            {"callback_query_id": callback_query_id, "text": text},
+        )
+
+    def clear_message_buttons(self, chat_id, message_id: int) -> None:
+        """Strip the inline keyboard once a decision is recorded."""
+        self._execute(
+            "editMessageReplyMarkup",
+            {
+                "chat_id": chat_id,
+                "message_id": message_id,
+                "reply_markup": {"inline_keyboard": []},
+            },
+        )
+
 
 # --------------------------------------------------------------------------
 # Credentials: env first, .env file as fallback. Never config.yaml.
@@ -334,8 +358,12 @@ def _parse_env_file(path) -> dict[str, str]:
     return values
 
 
-def bootstrap(environ: Mapping[str, str] | None = None) -> tuple[TelegramBot, str | None]:
-    """Token + chat id from the process env, falling back to the repo .env."""
+def merge_environ(environ: Mapping[str, str] | None = None) -> dict[str, str]:
+    """Process environment overlaid with the repo .env when the token is absent.
+
+    Every credential lookup goes through this, so a command body only ever sees
+    one merged mapping and never has to know where a value came from.
+    """
     import os
 
     from kya.config import find_repo_root
@@ -345,13 +373,58 @@ def bootstrap(environ: Mapping[str, str] | None = None) -> tuple[TelegramBot, st
         env_file = find_repo_root() / ".env"
         if env_file.is_file():
             env.update(_parse_env_file(env_file))
-    token, chat_id = load_credentials(env)
+    return env
+
+
+def bootstrap(environ: Mapping[str, str] | None = None) -> tuple[TelegramBot, str | None]:
+    """Token + chat id from the process env, falling back to the repo .env."""
+    token, chat_id = load_credentials(merge_environ(environ))
     return TelegramBot(token), chat_id
 
 
 # --------------------------------------------------------------------------
 # CLI command bodies (wired into kya.run)
 # --------------------------------------------------------------------------
+
+
+# --------------------------------------------------------------------------
+# Decisions (Milestone C): read the state the webhook worker records
+# --------------------------------------------------------------------------
+
+
+def fetch_decisions(
+    environ: Mapping[str, str] | None = None, *, getter=None
+) -> dict[str, dict]:
+    """Decisions recorded by the webhook worker, keyed by settlement id.
+
+    Returns ``{}`` when ``KYA_DECISIONS_URL`` is unset, so a build without the
+    worker still runs. The bearer token is the same webhook secret the worker
+    already guards Telegram updates with - one secret, two doors.
+    """
+    import os
+
+    env = environ if environ is not None else os.environ
+    url = (env.get(ENV_DECISIONS_URL) or "").strip()
+    if not url:
+        return {}
+    token = (env.get(ENV_WEBHOOK_SECRET) or "").strip()
+    headers = {"Authorization": f"Bearer {token}"} if token else {}
+    if getter is None:
+        import requests
+
+        def getter(target: str, request_headers: dict) -> tuple[int, str]:
+            response = requests.get(target, headers=request_headers, timeout=15)
+            return response.status_code, response.text
+
+    status, text = getter(url, headers)
+    if status != 200:
+        raise TelegramError(f"decisions fetch failed: HTTP {status} from {url}")
+    try:
+        body = json.loads(text)
+    except ValueError as exc:
+        raise TelegramError(f"decisions fetch: non-JSON response from {url}") from exc
+    decisions = body.get("decisions") if isinstance(body, dict) else None
+    return decisions if isinstance(decisions, dict) else {}
 
 
 def cmd_whoami(bot: TelegramBot, out=print) -> int:
@@ -385,6 +458,34 @@ def cmd_send_test_message(bot: TelegramBot, chat_id, out=print) -> int:
     return 0
 
 
+def cmd_set_webhook(bot: TelegramBot, base_url: str, *, environ=None, out=print) -> int:
+    """Register the worker as Telegram's webhook, with the shared secret."""
+    env = merge_environ(environ)
+    secret = (env.get(ENV_WEBHOOK_SECRET) or "").strip()
+    if not secret:
+        raise TelegramError(
+            f"{ENV_WEBHOOK_SECRET} is not set - generate one (python -c "
+            '"import secrets; print(secrets.token_urlsafe(32))") and put it in .env'
+        )
+    url = base_url.rstrip("/") + "/telegram"
+    bot.set_webhook(url, secret_token=secret)
+    out(f"webhook set: {url}")
+    return 0
+
+
+def cmd_decisions(*, environ=None, getter=None, out=print) -> int:
+    """Print the decisions recorded by the webhook worker."""
+    decisions = fetch_decisions(merge_environ(environ), getter=getter)
+    if not decisions:
+        out("decisions: none recorded (or KYA_DECISIONS_URL not set)")
+        return 0
+    for settlement_id, record in sorted(decisions.items()):
+        action = record.get("action", "?") if isinstance(record, dict) else record
+        out(f"  {settlement_id}: {action}")
+    out(f"decisions: {len(decisions)} recorded")
+    return 0
+
+
 def cmd_notify_digest(
     bot: TelegramBot,
     chat_id,
@@ -393,12 +494,18 @@ def cmd_notify_digest(
     previous: dict | None = None,
     out=print,
     db_path=None,
+    decisions: Mapping[str, dict] | None = None,
 ) -> int:
     """Diff the stored snapshot against this build and deliver the news.
 
     ``previous`` is the snapshot as it existed *before* this run's upsert;
     passing it is essential when the caller has already saved, or every diff
     comes back empty. When omitted it is loaded from the store.
+
+    ``decisions`` (the webhook worker's recorded Done / Not mine presses)
+    filters cases the user has already ruled on. When not supplied it is
+    fetched if ``KYA_DECISIONS_URL`` is configured; a worker outage degrades
+    to an unfiltered digest rather than silence.
     """
     from kya.diff import diff_snapshots
     from kya.store import connect as store_connect, load_snapshot
@@ -414,6 +521,16 @@ def cmd_notify_digest(
 
     soon_days = load_config().deadlines.soon_days
     events = diff_snapshots(previous, current, soon_days=soon_days)
+    if decisions is None:
+        try:
+            decisions = fetch_decisions()
+        except TelegramError as exc:
+            out(f"digest: decisions unavailable ({exc}); sending unfiltered")
+            decisions = {}
+    decided = [e for e in events if e.settlement_id in decisions]
+    if decided:
+        out(f"digest: skipping {len(decided)} case(s) already decided")
+        events = [e for e in events if e.settlement_id not in decisions]
     return cmd_notify_digest_events(bot, chat_id, events, out=out)
 
 
