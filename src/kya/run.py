@@ -24,12 +24,36 @@ import argparse
 
 from kya.build import build_all
 from kya.config import load_config
-from kya.http import PoliteClient
+from kya.http import FetchError, PoliteClient
 from kya.sources.openclassactions_index import parse_index
 from kya.sources.openclassactions_page import parse_page
 from kya.store import connect, export_json, load_snapshot, save_settlements
 
 INDEX_URL = "https://openclassactions.com/llms.txt"
+
+
+def fetch_pages(client, entries, *, out=print) -> dict:
+    """Fetch case pages; each entry may degrade to index-only.
+
+    The polite client raises :class:`FetchError` when a request fails at the
+    connection level (retries exhausted), and the first scheduled run proved a
+    single flaky page will otherwise kill an unattended build mid-scrape. One
+    dead page must cost one index-only settlement, never the whole run.
+    """
+    pages: dict = {}
+    for i, entry in enumerate(entries, 1):
+        result = None
+        try:
+            result = client.get(entry.url)
+        except FetchError as exc:
+            out(f"  page {entry.slug}: {exc}")
+        if result is not None and result.ok:
+            pages[entry.slug] = parse_page(result.text, entry.url)
+        elif result is not None:
+            out(f"  page {entry.slug}: HTTP {result.status_code}")
+        if i % 25 == 0:
+            out(f"  ...{i}/{len(entries)} pages")
+    return pages
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -136,14 +160,7 @@ def main(argv: list[str] | None = None) -> int:
 
     pages = {}
     if args.pages:
-        for i, entry in enumerate(entries, 1):
-            result = client.get(entry.url)
-            if result.ok:
-                pages[entry.slug] = parse_page(result.text, entry.url)
-            else:
-                print(f"  page {entry.slug}: HTTP {result.status_code}")
-            if i % 25 == 0:
-                print(f"  ...{i}/{len(entries)} pages")
+        pages = fetch_pages(client, entries)
 
     settlements = build_all(document, pages or None)
     by_lane: dict[str, int] = {}
