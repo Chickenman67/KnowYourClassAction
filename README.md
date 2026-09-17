@@ -4,11 +4,10 @@ A free, self-updating tracker for US class-action settlements, split by **how
 big the money is**, **what it takes to claim it**, and **when the window
 closes**. Not legal advice, not a law firm, not a settlement administrator.
 
-Current state: **Milestones A and B complete** — the pipeline publishes a
-static site, and the Telegram bot delivers diffs as messages with inline
-*Done / Not mine* buttons (recording those decisions is the Milestone C
-webhook). The Cloudflare worker and scheduled GitHub Actions runs are on the
-roadmap below.
+Current state: **Milestones A–C complete** — the pipeline publishes a static
+site, the Telegram bot delivers diffs with inline *Done / Not mine* buttons,
+and the Cloudflare Worker records those presses into KV so decided cases stop
+re-appearing. Scheduled GitHub Actions runs are on the roadmap below.
 
 ## Why this exists
 
@@ -99,7 +98,7 @@ python tools/build_dataset.py --limit 5   # smoke run without installing
 python tools/audit_warnings.py      # group the build's warnings by shape
 ```
 
-### Telegram setup (Milestone B)
+### Telegram + decisions (Milestones B and C)
 
 Credentials live in `.env` (gitignored — this repo is public); see
 `.env.example`. Nothing is ever read from `config.yaml`, which is committed.
@@ -117,6 +116,26 @@ Small digests send one message per case with the two buttons; a busy day
 degrades gracefully into a grouped digest (chunked to Telegram's 4096-char
 limit). Titles and details are HTML-escaped — scraped prose is untrusted
 input, and an unescaped `<` must never inject markup.
+
+To record the button presses, deploy the worker (full steps in
+`worker/README.md`):
+
+```bash
+cd worker && npx wrangler kv namespace create DECISIONS   # id -> wrangler.toml
+npx wrangler deploy
+npx wrangler secret put TELEGRAM_BOT_TOKEN
+npx wrangler secret put WEBHOOK_SECRET
+```
+
+then, from the repo root — after putting `KYA_TELEGRAM_WEBHOOK_SECRET` in
+`.env` (same value as the worker secret):
+
+```bash
+kya --set-webhook https://kya-webhook.<your-subdomain>.workers.dev
+kya --decisions           # what has been pressed so far
+# add KYA_DECISIONS_URL=https://kya-webhook.<your-subdomain>.workers.dev/decisions
+# to .env and digests stop re-reporting decided cases
+```
 
 The same pipeline runs locally or in CI: it needs no credentials, writes
 `data/settlements.json` plus the static site into `docs/` for GitHub Pages,
@@ -138,10 +157,12 @@ src/kya/
   deadlines.py     deadline parsing, soon/urgent windows
   diff.py          change events between runs (new / payout changed / deadline soon)
   store.py         SQLite store + data/settlements.json export
+  notify.py        Telegram delivery + decisions client (transport injected, offline-tested)
   site_build.py    Jinja2 -> docs/ static site
   run.py           the kya console entry point
   templates/       index.html.j2 plus static assets (style.css, app.js, favicon)
-tests/             221 offline tests over captured live fixtures
+worker/            Cloudflare Worker webhook + KV (Milestone C), node-tested
+tests/             229 offline tests over captured live fixtures
 tools/             build, fixture capture, and warning-audit CLIs
 ```
 
@@ -149,8 +170,8 @@ tools/             build, fixture capture, and warning-audit CLIs
 
 - [x] Milestone A - pipeline, dataset, static site
 - [x] Milestone B - Telegram notifications with inline *Done / Not mine* buttons
-  (delivery + CLI; recording button presses lands with the Milestone C webhook)
-- [ ] Milestone C - Cloudflare Worker webhook + KV state
+- [x] Milestone C - Cloudflare Worker webhook + KV state (`worker/`; decisions
+  filter future digests; deploy steps in `worker/README.md`)
 - [ ] Scheduled GitHub Actions builds + GitHub Pages deploy
 - [ ] Secondary sources (CourtListener, topclassactions RSS) and cross-checks
 
