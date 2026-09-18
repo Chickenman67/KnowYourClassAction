@@ -219,8 +219,9 @@ tools/             build, fixture capture, and warning-audit CLIs
   daily 06:23 UTC; Pages serves `docs/` from `main`)
 - [x] Secondary sources (CourtListener dockets, topclassactions RSS) and
   cross-checks (`src/kya/xref.py`; links render beside each row; failures
-  degrade to no link, never to a wrong one — verified live against the real
-  feed and API, where 5 of 6 lookups verified and the sixth was left unlinked)
+  degrade to no link, never to a wrong one — verified live in the scheduled run:
+  6 news matches and 21 docket links across the 25 highest-value claimable
+  cases, the remaining 4 left unlinked rather than guessed)
 
 ## Disclaimers
 
