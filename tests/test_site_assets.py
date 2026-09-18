@@ -117,6 +117,24 @@ def test_dataset_lands_where_the_page_links_it(built: Path) -> None:
     assert payload["settlements"], "dataset shipped with no settlements"
 
 
+def test_tier_attribute_uses_bare_tier_values(built: Path) -> None:
+    """``data-tier`` must hold S/A-F (or 'none'), never a rendered enum.
+
+    The filter dropdown in ``app.js`` compares its option values against this
+    attribute verbatim. ``{{ r.payout_tier }}`` renders a ``PayoutTier`` member
+    through ``str()`` as ``PayoutTier.A``, so every tier option filtered every
+    row out - while the sticker next to it stayed correct, because its
+    ``|lower`` filter happens to call the *str method* and yields ``'a'``.
+    """
+    html = (built / "index.html").read_text(encoding="utf-8")
+    tiers = set(re.findall(r'data-tier="([^"]*)"', html))
+    assert tiers <= {"none", "S", "A", "B", "C", "D", "E", "F"}, tiers
+    # And the dropdown's option values must line up with what rows carry.
+    options = set(re.findall(r'<option[^>]*value="([^"]*)"', html))
+    assert "none" in options
+    assert tiers - {"none"} <= options, f"rows carry tiers the dropdown lacks: {tiers - {'none'} - options}"
+
+
 def test_stylesheet_does_not_nest_rules(built: Path) -> None:
     """No rule may sit inside another rule: that means a block is unclosed."""
     css = (built / "style.css").read_text(encoding="utf-8")

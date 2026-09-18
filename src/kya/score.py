@@ -132,8 +132,16 @@ def estimate_ev(
 
 
 def apply_scoring(settlement: Settlement, **ev_kwargs) -> Settlement:
-    """Fill in ``payout_tier`` and the ``ev_*`` fields, in place of mutating magic."""
-    settlement.payout_tier = assign_payout_tier(settlement)
+    """Fill in ``payout_tier`` and the ``ev_*`` fields, in place of mutating magic.
+
+    ``payout_tier`` is written directly, after validation, so it bypasses
+    ``use_enum_values`` and would otherwise stay a ``PayoutTier`` enum. A
+    str-mixin enum JSON-dumps as its value (``"S"``) but Jinja renders it via
+    ``str()`` as ``"PayoutTier.S"`` - which is exactly how the site shipped a
+    tier dropdown that filtered every row out. Hence the same ``.value``
+    coercion the ``ev_confidence`` line below already uses.
+    """
+    settlement.payout_tier = getattr(assign_payout_tier(settlement), "value", None)
     ev, confidence, note = estimate_ev(settlement, **ev_kwargs)
     settlement.ev_estimate = ev
     settlement.ev_confidence = getattr(confidence, "value", confidence)

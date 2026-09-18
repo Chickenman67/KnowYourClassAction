@@ -128,3 +128,22 @@ def test_apply_scoring_populates_all_fields() -> None:
     # Best achievable path: half of the $4,000 maximum, low confidence.
     assert settlement.ev_estimate == 2_000
     assert settlement.ev_confidence == Confidence.LOW.value
+
+
+def test_apply_scoring_stores_a_plain_string_tier() -> None:
+    """``payout_tier`` must be ``str``, not ``PayoutTier``, after scoring.
+
+    The assignment happens after validation, so ``use_enum_values`` never sees
+    it: without an explicit ``.value`` the field keeps its enum, and while a
+    str-mixin enum JSON-dumps as ``"A"``, Jinja renders it through ``str()`` as
+    ``"PayoutTier.A"`` - which is exactly how the live site shipped a tier
+    dropdown where every option filtered every row out. The type is the bug,
+    so assert the type, not just the value.
+    """
+    settlement = _settlement("$50 Cash or Up to $4,000")
+    apply_scoring(settlement)
+    assert type(settlement.payout_tier) is str
+
+    empty = _settlement("")
+    apply_scoring(empty)
+    assert empty.payout_tier is None
