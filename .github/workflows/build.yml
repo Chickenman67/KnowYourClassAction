@@ -57,12 +57,17 @@ jobs:
           KYA_TELEGRAM_CHAT_ID: ${{ secrets.KYA_TELEGRAM_CHAT_ID }}
           KYA_TELEGRAM_WEBHOOK_SECRET: ${{ secrets.KYA_TELEGRAM_WEBHOOK_SECRET }}
           KYA_DECISIONS_URL: ${{ secrets.KYA_DECISIONS_URL }}
+          # Optional: raises the CourtListener rate limit. Unset resolves to an
+          # empty string, which the docket phase treats as anonymous access.
+          KYA_COURTLISTENER_TOKEN: ${{ secrets.KYA_COURTLISTENER_TOKEN }}
         run: kya --pages --site --notify-digest
 
       - name: Commit the rebuilt dataset and site
         run: |
           git config user.name "kya-bot"
           git config user.email "kya-bot@users.noreply.github.com"
+          # data/ carries the digest's snapshot too, which is what lets the next
+          # run tell "new" from "already reported" - see src/kya/store.py.
           git add docs data
           if git diff --cached --quiet; then
             echo "nothing changed - nothing to publish"

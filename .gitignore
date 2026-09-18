@@ -31,3 +31,7 @@ desktop.ini
 .idea/
 *.swp
 worker/.wrangler/
+
+# --- Local build output ---
+# Full-build logs written while verifying a live run; never part of the repo.
+*.log

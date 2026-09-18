@@ -37,6 +37,11 @@ _PROOF_BADGES = {
     "L4": "Dual-tier",
 }
 
+# Secondary-source link labels, keyed by the ref kind kya.xref attaches. A
+# docket link is a court record (independent verification), a news link is
+# another outlet's coverage - so they must not read the same.
+_XREF_LABELS = {"news": "in the news", "docket": "docket"}
+
 _DEADLINE_PREFIX = {
     "claim": "Claim by",
     "opt_out": "Opt out by",
@@ -129,6 +134,7 @@ class RowView:
     official_website: str | None = None
     status_text: str | None = None
     flags: list[str] = field(default_factory=list)
+    xrefs: list[tuple[str, str]] = field(default_factory=list)
 
 
 def build_row(s: Settlement, *, today: date_cls, soon_days: int, urgent_days: int) -> RowView:
@@ -177,6 +183,11 @@ def build_row(s: Settlement, *, today: date_cls, soon_days: int, urgent_days: in
         official_website=s.official_website,
         status_text=s.status_text,
         flags=flags,
+        xrefs=[
+            (_XREF_LABELS.get(name, name), refs[0]["href"])
+            for name, refs in sorted(s.cross_refs.items())
+            if refs and refs[0].get("href")
+        ],
     )
 
 

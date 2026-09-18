@@ -86,13 +86,50 @@ parser fixes above eliminated.
 - The **official claim portal** linked on every card is the authority. Figures
   here exist because a human read a settlement agreement; they carry a
   `verified_as_of` stamp and expire visibly.
-- CourtListener and topclassactions RSS are planned secondary sources.
+- CourtListener and topclassactions RSS are the secondary sources — see below.
+
+### Secondary sources: independence, not decoration
+
+Two more sources feed every row, and neither is load-bearing: each phase
+degrades to a no-op on failure, because a wrong link is worse than no link.
+Results land in `data/settlements.json` as `cross_refs` and render as small
+links beside the claim portal.
+
+- **topclassactions.com RSS** → an *in the news* link, when their headline is
+  convincingly the same case. Two gates must both pass: non-generic token
+  Jaccard ≥ 0.5, and at least two of the settlement's distinctive (longest,
+  non-boilerplate) tokens repeated in the feed title. Legal and domain
+  boilerplate is stripped before scoring, so "class action settlement" and
+  "data breach" cannot inflate a match, and dollar figures — which match only
+  their own case — can never decide one. One feed item may back at most two
+  settlements, so a generic headline cannot fan out across the index.
+- **CourtListener docket search** → a *docket* link: an independent, court-side
+  record, for the 25 highest-expected-value claimable cases. The query is built
+  from the **case title the page captured**, never from the headline, and the
+  top hit must repeat at least two query tokens in its case name — so the
+  fallback is no link rather than a wrong court record. Anonymous access works;
+  `KYA_COURTLISTENER_TOKEN` only raises the rate limit. The first 401/403/429
+  stops the phase instead of burning 25 dead queries.
+
+Live probe (the real feed and the real API, against the 269-case dataset): the
+feed carried exactly 100 items — three weeks, so the parser's cap truncates
+nothing — and matched 6 settlements, every one a genuine counterpart. 5 of the
+6 docket lookups verified; the one without a confident hit was left unlinked.
+
+Two deliberate limits. Evidence links are **never the way in**: they render
+below the claim portal, and a link is only ever labelled *in the news* or
+*docket* — a court record can never be relabelled as a place to file a claim
+(the NZXT page files its docket under "Official Website", so that link is
+dropped and the row is flagged instead). And because the feed rotates, a match
+can appear or vanish between polls, so `cross_refs` is deliberately **outside**
+the diff's watched set: a new link is never worth a notification, and a quiet
+day must not buzz the phone because a headline rolled off the end of a feed.
 
 ## Running it
 
 ```bash
 pip install -e .[dev]
-python -m pytest                    # 221 tests, all offline (fixtures captured live)
+python -m pytest                    # 264 tests, all offline (fixtures captured live)
 kya --pages --site                  # full build: dataset + docs/ site
 python tools/build_dataset.py --limit 5   # smoke run without installing
 python tools/audit_warnings.py      # group the build's warnings by shape
@@ -174,7 +211,9 @@ tools/             build, fixture capture, and warning-audit CLIs
   filter future digests; deploy steps in `worker/README.md`)
 - [x] Scheduled GitHub Actions builds + GitHub Pages deploy (`.github/workflows/build.yml`,
   daily 06:23 UTC; Pages serves `docs/` from `main`)
-- [ ] Secondary sources (CourtListener, topclassactions RSS) and cross-checks
+- [x] Secondary sources (CourtListener dockets, topclassactions RSS) and
+  cross-checks (`src/kya/xref.py`; links render beside each row; failures
+  degrade to no link, never to a wrong one)
 
 ## Disclaimers
 

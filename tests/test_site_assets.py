@@ -157,6 +157,51 @@ def test_nesting_detector_allows_at_rules_and_single_line_rules() -> None:
     assert depth == 0
 
 
+def test_cross_references_render_as_labeled_links(tmp_path: Path, settlements) -> None:
+    """A verified secondary source must reach the page, labeled by its kind.
+
+    Cross-references only exist on settlements the live build matched, so a
+    render of the captured fixtures never emits them - which is exactly how a
+    dead template loop, or an unstyled link, would go unnoticed. The stylesheet
+    invariant above is exercised here too: this markup is the only place
+    ``row__xref`` appears.
+    """
+    enriched = [
+        s.model_copy(
+            update={
+                "cross_refs": {
+                    "news": [
+                        {
+                            "label": "in the news",
+                            "href": "https://topclassactions.com/example/",
+                            "source": "topclassactions",
+                        }
+                    ],
+                    "docket": [
+                        {
+                            "label": "docket",
+                            "href": "https://www.courtlistener.com/docket/1/example/",
+                            "source": "courtlistener",
+                        }
+                    ],
+                }
+            }
+        )
+        for s in settlements
+    ]
+    out = tmp_path / "site"
+    render_site(enriched, out_dir=out)
+    html = (out / "index.html").read_text(encoding="utf-8")
+
+    assert "https://topclassactions.com/example/" in html
+    assert "https://www.courtlistener.com/docket/1/example/" in html
+    assert ">in the news<" in html
+    assert ">docket<" in html
+    assert 'class="row__xref"' in html
+    css = (out / "style.css").read_text(encoding="utf-8")
+    assert ".row__xref" in css, "the xref link renders unstyled"
+
+
 def test_packaging_metadata_ships_every_template_file() -> None:
     """package-data must match reality, or a wheel install has no template."""
     pyproject = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))

@@ -55,6 +55,31 @@ def test_no_change_produces_no_events() -> None:
     assert events == []
 
 
+def test_secondary_source_links_are_not_news() -> None:
+    """A changing ``cross_refs`` set must never notify anyone.
+
+    The news feed rotates its 100 items continuously, and a match may appear or
+    vanish between polls as a headline rolls off the end - so if the diff
+    watched cross-references, a quiet day would buzz the phone about links.
+    They are evidence attached to a case, not a change *to* the case.
+    """
+    old = {**record(), "cross_refs": {}}
+    new = {
+        **record(),
+        "cross_refs": {
+            "news": [
+                {"label": "in the news", "href": "https://tca/a/", "source": "topclassactions"},
+                {"label": "in the news", "href": "https://tca/b/", "source": "topclassactions"},
+            ],
+            "docket": [
+                {"label": "docket", "href": "https://cl/d/1/", "source": "courtlistener"}
+            ],
+        },
+    }
+    assert diff_snapshots(snapshot(old), [new], today=TODAY) == []
+    assert diff_snapshots(snapshot(new), [old], today=TODAY) == []
+
+
 def test_payout_increase_is_detected_figure_to_figure() -> None:
     old = record(amount_max=100.0)
     new = record(amount_max=250.0)

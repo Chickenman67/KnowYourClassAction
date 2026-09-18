@@ -27,7 +27,7 @@ from kya.config import load_config
 from kya.http import FetchError, PoliteClient
 from kya.sources.openclassactions_index import parse_index
 from kya.sources.openclassactions_page import parse_page
-from kya.store import connect, export_json, load_snapshot, save_settlements
+from kya.store import connect, export_json, load_snapshot_file, save_settlements, write_snapshot_file
 
 INDEX_URL = "https://openclassactions.com/llms.txt"
 
@@ -163,6 +163,18 @@ def main(argv: list[str] | None = None) -> int:
         pages = fetch_pages(client, entries)
 
     settlements = build_all(document, pages or None)
+
+    # Secondary sources are additive: each phase degrades to a no-op, and a
+    # cross-reference is attached only when the match verifies. See xref.py.
+    from kya import xref
+
+    settlements = xref.attach_cross_references(
+        settlements,
+        client,
+        news_enabled=config.sources.news_enabled,
+        docket_top_cases=config.sources.docket_top_cases,
+    )
+
     by_lane: dict[str, int] = {}
     warned = 0
     for s in settlements:
@@ -171,7 +183,10 @@ def main(argv: list[str] | None = None) -> int:
             warned += 1
 
     conn = connect(config.db_path)
-    previous_snapshot = load_snapshot(conn) if send_digest else None
+    # The digest's baseline comes from the committed snapshot file, not from
+    # SQLite: a scheduled run starts in a container with no .state/, and an
+    # empty baseline means every case reads as new and the digest goes silent.
+    previous_snapshot = load_snapshot_file(config.snapshot_path) if send_digest else None
     written = save_settlements(conn, settlements)
     target = export_json(
         settlements,
@@ -203,6 +218,12 @@ def main(argv: list[str] | None = None) -> int:
         )
         if status != 0:
             return status
+        # Recorded only after delivery succeeds: a failed notification must be
+        # retried next run, not swallowed by a snapshot that says "already
+        # reported". The file is committed alongside the dataset, so tomorrow's
+        # run diffs against exactly what today's run published.
+        snapshot = write_snapshot_file(config.snapshot_path, settlements)
+        print(f"snapshot: {len(settlements)} cases -> {snapshot}")
     return 0
 
 

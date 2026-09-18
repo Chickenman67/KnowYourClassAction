@@ -40,6 +40,12 @@ class PathsConfig:
     data_json: str = "data/settlements.json"
     site_dir: str = "docs"
     db_path: str = ".state/kya.sqlite3"
+    # The digest's memory of the previous build. Committed on purpose: the
+    # SQLite query store is disposable and gitignored, so a scheduled run in a
+    # fresh container would find it empty, treat every case as new, and take
+    # the baseline path - the digest would never fire. Keeping it beside the
+    # dataset it describes also makes each run's changes reviewable in git.
+    snapshot_json: str = "data/snapshot.json"
     fixture_dir: str = "tests/fixtures"
 
 
@@ -72,6 +78,18 @@ class DeadlinesConfig:
 
 
 @dataclass(frozen=True)
+class SourcesConfig:
+    """Secondary-source cross-checks (``kya.xref``).
+
+    Both phases degrade to no-ops on failure; these knobs only bound how much
+    they attempt, never whether the build survives them.
+    """
+
+    news_enabled: bool = True
+    docket_top_cases: int = 25
+
+
+@dataclass(frozen=True)
 class Config:
     root: Path
     user_agent: str
@@ -80,6 +98,7 @@ class Config:
     lanes: LanesConfig = field(default_factory=LanesConfig)
     scoring: ScoringConfig = field(default_factory=ScoringConfig)
     deadlines: DeadlinesConfig = field(default_factory=DeadlinesConfig)
+    sources: SourcesConfig = field(default_factory=SourcesConfig)
 
     # --- resolved paths -------------------------------------------------
     def path(self, relative: str) -> Path:
@@ -98,6 +117,10 @@ class Config:
     @property
     def db_path(self) -> Path:
         return self.path(self.paths.db_path)
+
+    @property
+    def snapshot_path(self) -> Path:
+        return self.path(self.paths.snapshot_json)
 
     @property
     def fixture_dir_path(self) -> Path:
@@ -150,4 +173,5 @@ def load_config(path: Path | str | None = None, root: Path | None = None) -> Con
         lanes=_build(LanesConfig, _section(raw, "lanes")),
         scoring=_build(ScoringConfig, _section(raw, "scoring")),
         deadlines=_build(DeadlinesConfig, _section(raw, "deadlines")),
+        sources=_build(SourcesConfig, _section(raw, "sources")),
     )

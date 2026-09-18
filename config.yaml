@@ -37,3 +37,11 @@ deadlines:
   soon_days: 7
   urgent_days: 3
   final_days: 1
+
+# Secondary-source cross-checks (kya.xref). Both phases are additive: each one
+# degrades to a no-op when the source is down, and a link is attached only when
+# the match verifies - a wrong link would be worse than no link.
+sources:
+  news_enabled: true      # topclassactions.com RSS -> "in the news" links
+  docket_top_cases: 25    # CourtListener lookups for the top-N claimable cases
+                          # by expected value (~1 polite request each)
