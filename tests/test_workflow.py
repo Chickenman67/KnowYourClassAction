@@ -1,16 +1,27 @@
-"""The scheduled workflow's invariants, pinned because they fail *silently*.
+"""The two workflows' invariants, pinned because they fail *silently*.
 
 None of this is enforced by application code - it lives in YAML - and every
 item here breaks in a way that leaves the build green: notifications duplicate,
 or quietly stop, or the digest reports changes that never happened. That is
 exactly the class of bug a test has to hold, because nothing else will.
 
+Covered here:
+
+* ``build.yml`` - the scheduled build: triggers, one invocation per run,
+  serialized concurrency, wired credentials, write access to publish.
+* ``checks.yml`` - the push-triggered validation. It exists because a workflow
+  file GitHub cannot parse *never runs*, so a typo in build.yml would stop the
+  daily build with no failed run to notice. Pinning it here matters for the
+  same reason ``build.yml`` has no push trigger: these are the rules that keep
+  the two files from quietly defeating each other.
+
 The concurrency test is the one that earns its keep. ``cancel-in-progress:
 true`` looks like the obvious fix for "two runs shouldn't overlap" and is what
 a reasonable person would reach for - I did. It would break the digest: a
 cancelled run may have already sent its notification without committing the
 snapshot, so its replacement re-reads the old baseline and notifies the same
-cases a second time. Serializing is what keeps notifications single.
+cases a second time. Serializing is what keeps notifications single - and
+``checks.yml``, which has no side effects, wants exactly the opposite.
 """
 
 from __future__ import annotations
@@ -21,7 +32,9 @@ import pytest
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-WORKFLOW = ROOT / ".github" / "workflows" / "build.yml"
+WORKFLOWS = ROOT / ".github" / "workflows"
+WORKFLOW = WORKFLOWS / "build.yml"
+CHECKS = WORKFLOWS / "checks.yml"
 
 # Every one of these silently disables notifications when it goes missing: the
 # digest prints "not set" and exits 0, so the run still succeeds.
@@ -38,8 +51,7 @@ def workflow() -> dict:
     return yaml.safe_load(WORKFLOW.read_text(encoding="utf-8"))
 
 
-@pytest.fixture(scope="module")
-def triggers(workflow: dict) -> dict:
+def _triggers(workflow: dict) -> dict:
     """The ``on:`` block.
 
     ``on`` is a YAML 1.1 boolean, so PyYAML returns the key ``True`` rather
@@ -51,13 +63,51 @@ def triggers(workflow: dict) -> dict:
     return block
 
 
+@pytest.fixture(scope="module")
+def checks() -> dict:
+    return yaml.safe_load(CHECKS.read_text(encoding="utf-8"))
+
+
+@pytest.fixture(scope="module")
+def triggers(workflow: dict) -> dict:
+    return _triggers(workflow)
+
+
+@pytest.fixture(scope="module")
+def checks_triggers(checks: dict) -> dict:
+    return _triggers(checks)
+
+
 def _run_commands(workflow: dict) -> list[str]:
-    return [step["run"] for step in workflow["jobs"]["build"]["steps"] if "run" in step]
+    return [
+        step["run"]
+        for job in workflow["jobs"].values()
+        for step in job["steps"]
+        if "run" in step
+    ]
+
+
+def _cron_problem(expr: str) -> str | None:
+    """Why this cron is not a valid daily schedule, or ``None``.
+
+    An invalid cron is accepted by the API and simply never fires, which is the
+    quietest failure in the file. actionlint checks this properly in CI; this
+    keeps the same ground covered in the offline suite.
+    """
+    fields = expr.split()
+    if len(fields) != 5:
+        return f"{expr!r} has {len(fields)} fields, expected 5"
+    minute, hour = fields[0], fields[1]
+    for name, value, high in (("minute", minute, 59), ("hour", hour, 23)):
+        if value.isdigit() and int(value) > high:
+            return f"{name} {value!r} is out of range"
+    return None
 
 
 def test_the_daily_schedule_exists_and_is_off_the_hour(triggers: dict) -> None:
     crons = [entry["cron"] for entry in triggers.get("schedule") or []]
     assert len(crons) == 1, f"expected exactly one schedule, found {crons}"
+    assert _cron_problem(crons[0]) is None, _cron_problem(crons[0])
     minute, hour = crons[0].split()[:2]
     assert minute != "0", "an on-the-hour cron competes with everyone else's"
     assert "*" not in minute and "*" not in hour, f"{crons[0]} is not a daily run"
@@ -120,3 +170,64 @@ def test_the_digest_credentials_are_wired_from_secrets(workflow: dict) -> None:
 def test_it_may_commit_and_deploy(workflow: dict) -> None:
     """The run pushes docs/ and data/, which is also the Pages deploy."""
     assert workflow["permissions"]["contents"] == "write"
+
+
+# --- checks.yml: everything that validates a push -----------------------------------
+
+
+def test_something_validates_every_push(checks_triggers: dict) -> None:
+    """A workflow file GitHub cannot parse never runs - so nothing catches it.
+
+    build.yml is schedule-only by design, which leaves the nightly run as the
+    only thing that ever reads the repo. A typo in it would stop the schedule
+    with no failed run to notice, so a push-triggered workflow has to exist.
+    """
+    assert "push" in checks_triggers
+    assert "pull_request" in checks_triggers
+
+
+def test_the_workflow_linter_is_pinned_twice(checks: dict) -> None:
+    """Pinned so a new actionlint release cannot fail this repo on its own.
+
+    The script is fetched from the release tag rather than ``main`` so it
+    cannot change under us, and the version is passed explicitly: the script
+    shipped with the v1.7.12 tag still defaults to 1.7.11, so relying on its
+    default would silently lint with a different version than the one named.
+    """
+    install = next(cmd for cmd in _run_commands(checks) if "download-actionlint" in cmd)
+    assert "/v1.7.12/scripts/download-actionlint.bash" in install, "the script is not tag-pinned"
+    assert "/main/scripts/" not in install, "a moving branch must not be the source"
+    assert install.rstrip().endswith("1.7.12") or " 1.7.12" in install, (
+        "the actionlint version must be passed explicitly"
+    )
+
+
+def test_checks_runs_the_test_suite(checks: dict) -> None:
+    """The tests guarding build.yml must not depend on build.yml running.
+
+    They lived only in the nightly workflow, so if that file stopped being
+    valid - the exact failure this workflow exists to catch - the tests that
+    describe its invariants would never execute either.
+    """
+    runs = " ".join(_run_commands(checks))
+    assert "pytest" in runs
+    assert "pip install" in runs
+
+
+def test_checks_cannot_write_to_the_repository(checks: dict) -> None:
+    """Read-only on purpose: publishing is the daily build's job alone."""
+    assert checks["permissions"]["contents"] == "read"
+
+
+def test_cancelling_superseded_checks_is_correct_where_it_is_wrong_for_builds(
+    checks: dict, workflow: dict
+) -> None:
+    """The two workflows want opposite settings, and both are deliberate.
+
+    A superseded check has no side effects, so cancelling it saves minutes. A
+    superseded *build* may already have sent a notification without committing
+    the snapshot, so cancelling it would make its replacement repeat that
+    notification.
+    """
+    assert checks["concurrency"]["cancel-in-progress"] is True
+    assert workflow["concurrency"]["cancel-in-progress"] is False
