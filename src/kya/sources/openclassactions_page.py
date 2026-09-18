@@ -28,6 +28,7 @@ from __future__ import annotations
 import json
 import re
 from dataclasses import dataclass, field as dc_field
+from urllib.parse import urlsplit
 
 from bs4 import BeautifulSoup
 
@@ -38,6 +39,28 @@ __all__ = ["Fact", "CaseDetails", "PageData", "parse_page"]
 FACTS_SELECTOR = "section.settlement-facts"
 DETAILS_SELECTOR = "section.settlement-case-details"
 CLAIM_LINK_SELECTORS = ("a.file-claim", "a[href][class*=claim]", ".file-claim")
+
+# Hosts that publish court records and reporting, and can never accept a claim.
+# The "Official Website" detail block sometimes holds one of these instead of a
+# settlement site: NZXT's page reads "CourtListener Docket - Burns v. Fragile",
+# and the docket URL then became the row's *claim portal* link - sending
+# readers somewhere that cannot take their claim.
+_RECORD_HOSTS = ("courtlistener.com", "law.justia.com", "casetext.com", "unicourt.com")
+_RECORD_PATH_HINTS = ("/docket/", "/opinion/")
+
+
+def is_court_record_link(url: str | None) -> bool:
+    """True for a link to a court record rather than a settlement's own site."""
+    if not url:
+        return False
+    parts = urlsplit(url)
+    host = parts.netloc.lower()
+    if host.startswith("www."):
+        host = host[4:]
+    if any(host == name or host.endswith("." + name) for name in _RECORD_HOSTS):
+        return True
+    path = parts.path.lower()
+    return any(hint in path for hint in _RECORD_PATH_HINTS)
 
 
 @dataclass
@@ -258,7 +281,10 @@ def _parse_claim_url(soup: BeautifulSoup, details: CaseDetails) -> str | None:
 
     A claimable page exposes an ``a.file-claim`` pointing at the administrator's
     portal. When it is absent, the official settlement website is a better
-    fallback than nothing at all.
+    fallback than nothing at all - unless it is not a settlement website. The
+    "Official Website" block sometimes carries a court record instead (NZXT:
+    "CourtListener Docket - Burns v. Fragile"), and a docket cannot accept a
+    claim, so it is refused here rather than presented as the way in.
     """
     for selector in CLAIM_LINK_SELECTORS:
         for link in soup.select(selector):
@@ -266,7 +292,10 @@ def _parse_claim_url(soup: BeautifulSoup, details: CaseDetails) -> str | None:
             cleaned = cleaner_url(href if isinstance(href, str) else None)
             if cleaned and cleaned.startswith("http"):
                 return cleaned
-    return details.links.get("Official Website")
+    fallback = details.links.get("Official Website")
+    if fallback and not is_court_record_link(fallback):
+        return fallback
+    return None
 
 
 def _parse_title(soup: BeautifulSoup) -> str | None:

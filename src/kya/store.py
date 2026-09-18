@@ -1,15 +1,21 @@
-"""Persistence: SQLite for diffing across runs, JSON for publishing.
+"""Persistence: a committed snapshot for diffing, SQLite for local querying.
 
-SQLite is the *memory* - it survives between polls so the diff engine can
-answer "what changed?". The JSON file is the *publication* - it is what the
-static site and (later) the Cloudflare Worker read, and it carries no state
-beyond the current snapshot.
+The digest's *memory* is ``data/snapshot.json``, which is committed. It has to
+be: the scheduled build runs in a fresh container where ``.state/`` does not
+exist, so a snapshot kept only in SQLite would be empty every single day, every
+case would look new, and the digest would take its baseline path and stay
+silent forever. Keeping it in the repo also means each run's changes are
+reviewable next to the dataset they describe.
+
+The SQLite database stays as the disposable local query store - rebuildable
+from a single run, and never committed.
 """
 
 from __future__ import annotations
 
 import json
 import sqlite3
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -101,6 +107,50 @@ def load_snapshot(conn: sqlite3.Connection) -> dict[str, dict]:
         row[0]: json.loads(row[1])
         for row in conn.execute("SELECT id, record FROM settlements")
     }
+
+
+def load_snapshot_file(path: Path | str) -> dict[str, dict]:
+    """The previous build's snapshot, read from the committed JSON file.
+
+    Missing, empty or unreadable all mean the same thing to the caller - no
+    previous build - and the digest handles that case (it stays silent and
+    establishes a baseline). Raising here would trade a missed notification for
+    a failed run, so the failure is swallowed with a warning on stderr.
+    """
+    target = Path(path)
+    if not target.is_file():
+        return {}
+    try:
+        payload = json.loads(target.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        print(f"warning: could not read snapshot {target}: {exc}", file=sys.stderr)
+        return {}
+    records = payload.get("settlements") if isinstance(payload, dict) else None
+    if not isinstance(records, dict):
+        return {}
+    return {str(key): value for key, value in records.items() if isinstance(value, dict)}
+
+
+def write_snapshot_file(path: Path | str, settlements: list[Settlement]) -> Path:
+    """Persist this build as the next run's baseline. Deterministic output.
+
+    Keys are sorted so an unchanged build produces a byte-identical file: the
+    snapshot is committed, and churn there would bury the real diff.
+    """
+    records = {s.id: s.model_dump(mode="json") for s in settlements}
+    target = Path(path)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(
+        json.dumps(
+            {"generated_at": _now(), "count": len(records), "settlements": records},
+            ensure_ascii=False,
+            indent=1,
+            sort_keys=True,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    return target
 
 
 def export_json(

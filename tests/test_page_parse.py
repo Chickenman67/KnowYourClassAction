@@ -17,6 +17,7 @@ import pytest
 from kya.sources.openclassactions_page import (
     derive_category,
     find_faq_answer,
+    is_court_record_link,
     parse_page,
 )
 
@@ -184,6 +185,63 @@ def test_find_faq_answer(kia_html: str) -> None:
     answer = find_faq_answer(page, "service card")
     assert answer is not None
     assert "No." in answer or "choose" in answer
+
+
+# --------------------------------------------------------------------------
+# The claim portal must be somewhere a claim can actually be filed
+# --------------------------------------------------------------------------
+_RECORD_PAGE = """
+<html><body>
+<h1>NZXT Flex PC Rental Settlement</h1>
+<section class="settlement-facts">
+  <div class="fact"><span class="fact-label">Status</span>
+  <span class="fact-value">Claims Open</span></div>
+</section>
+<section class="settlement-case-details">
+  <div class="detail"><span class="detail-label">Case Title</span>
+  <span class="detail-value">Burns v. Fragile, Inc. and NZXT, Inc.</span></div>
+  <div class="detail"><span class="detail-label">Official Website</span>
+  <span class="detail-value"><a href="https://www.courtlistener.com/docket/71033918/burns-v-fragile-inc/?utm_source=openclassactions.com">CourtListener Docket</a></span></div>
+</section>
+</body></html>
+"""
+
+
+def test_a_court_record_is_never_offered_as_the_claim_portal() -> None:
+    """Regression: NZXT's "Official Website" block is a CourtListener docket.
+
+    The docket is real and correct for the case - and it cannot accept a claim.
+    Because the page publishes no ``a.file-claim``, the docket became the
+    fallback, and the row's *claim portal* button pointed at a court record.
+    """
+    page = parse_page(_RECORD_PAGE, url="nzxt")
+    assert page.details.links["Official Website"].startswith(
+        "https://www.courtlistener.com/docket/"
+    )
+    assert page.claim_url is None
+
+
+def test_a_real_settlement_site_is_still_used_as_the_fallback() -> None:
+    html = _RECORD_PAGE.replace(
+        "https://www.courtlistener.com/docket/71033918/burns-v-fragile-inc/"
+        "?utm_source=openclassactions.com",
+        "https://nzxtflexsettlement.com/claim?utm_source=openclassactions.com",
+    ).replace("CourtListener Docket", "Settlement Website")
+    page = parse_page(html, url="nzxt")
+    assert page.claim_url == "https://nzxtflexsettlement.com/claim"
+
+
+def test_court_record_detection_is_host_and_path_aware() -> None:
+    assert is_court_record_link("https://www.courtlistener.com/docket/1/x/")
+    assert is_court_record_link("https://courtlistener.com/x")
+    assert is_court_record_link("https://law.justia.com/cases/federal/x/")
+    assert is_court_record_link("https://example.com/docket/12/x/")
+    assert not is_court_record_link("https://kiawindowregulatorsettlement.com/")
+    # The host check must match a real host, not a domain that merely contains
+    # its name - so this needs a path with no record hint to isolate it.
+    assert not is_court_record_link("https://courtlistener.com.evil.example/x")
+    assert not is_court_record_link(None)
+    assert not is_court_record_link("")
 
 
 def test_every_captured_page_parses_without_warnings(

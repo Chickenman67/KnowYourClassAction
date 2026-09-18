@@ -222,6 +222,7 @@ class Settlement(BaseModel):
     verified_as_of: str | None = None
     content_hash: str = ""
     warnings: list[str] = Field(default_factory=list)
+    cross_refs: dict[str, list[dict[str, str]]] = Field(default_factory=dict)
 
     def simplest_tier(self) -> BenefitTier | None:
         """The tier requiring the least proof - the easy-money path, if any."""

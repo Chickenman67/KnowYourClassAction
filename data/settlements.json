@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-17T23:03:12+00:00",
+ "generated_at": "2026-09-18T01:42:39+00:00",
  "index_updated": "2026-09-17",
  "count": 269,
  "settlements": [
@@ -51,7 +51,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "a4af51d0d71c5f03",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "activision-blizzard-shareholder-class-action-settlement",
@@ -117,7 +118,8 @@
    "content_hash": "86c4a9706e550d5f",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "stanford-federal-credit-union-overdraft-nsf-fee-settlement",
@@ -181,7 +183,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "1a4defa41f287240",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "country-bank-savings-overdraft-nsf-fee-settlement",
@@ -245,7 +248,8 @@
    "last_modified": "2026-07-16T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "d020debd95088f24",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "continental-resources-shareholder-class-action-settlement",
@@ -311,7 +315,8 @@
    "content_hash": "6a1ca295290da87c",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "google-play-store-700-million-antitrust-class-action-settlement",
@@ -377,7 +382,8 @@
    "content_hash": "0e3e7c792dcb1ed0",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "acct-holdings-esop-erisa-class-action-settlement",
@@ -442,7 +448,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "e97260ba8453e018",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "aion-management-virginia-apartment-fees-class-action-settlement",
@@ -508,7 +515,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "f234957f6e7d4274",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "new-amazon-returns-class-action-settlement",
@@ -572,7 +580,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "74514b89cca87c2a",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "amazon-pennsylvania-unpaid-wages-class-action-settlement",
@@ -636,7 +645,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "a467f552b1eb64bb",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "big-als-washington-non-compete-class-action-settlement",
@@ -702,7 +712,8 @@
    "last_modified": "2026-07-30T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "28ebb4fc21b1f3d6",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "blue-ridge-power-warn-act-class-action-settlement",
@@ -753,7 +764,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "f6fe0c034e944a22",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "camc-bariatric-hiatal-hernia-class-action-settlement",
@@ -822,7 +834,8 @@
    "content_hash": "fec0a32061a506a5",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "caseys-tobacco-surcharge-erisa-class-action-settlement",
@@ -887,7 +900,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "04503572fdbdd039",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "cibc-nsf-fee-settlement-canada",
@@ -949,7 +963,8 @@
    "last_modified": "2026-07-08T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "fcefe2296304e0fa",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "costa-del-mar-sunglasses-repair-fee-class-action-settlement",
@@ -1014,7 +1029,25 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "ef6e61e80f719907",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "news": [
+     {
+      "label": "in the news",
+      "href": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/23-9m-costa-del-mar-sunglasses-repair-class-action-settlement/",
+      "source": "topclassactions",
+      "title": "$23.9M Costa Del Mar sunglasses repair class action settlement",
+      "date": "Thu, 10 Sep 2026 18:00:00 +0000"
+     },
+     {
+      "label": "in the news",
+      "href": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/4-095m-costa-del-mar-sunglasses-warranty-class-action-settlement/",
+      "source": "topclassactions",
+      "title": "$4.095M Costa Del Mar sunglasses warranty class action settlement",
+      "date": "Thu, 17 Sep 2026 17:00:00 +0000"
+     }
+    ]
+   }
   },
   {
    "id": "costa-del-mar-sunglasses-warranty-fee-class-action-settlement",
@@ -1079,7 +1112,25 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "ca74cd19b2c7256c",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "news": [
+     {
+      "label": "in the news",
+      "href": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/4-095m-costa-del-mar-sunglasses-warranty-class-action-settlement/",
+      "source": "topclassactions",
+      "title": "$4.095M Costa Del Mar sunglasses warranty class action settlement",
+      "date": "Thu, 17 Sep 2026 17:00:00 +0000"
+     },
+     {
+      "label": "in the news",
+      "href": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/23-9m-costa-del-mar-sunglasses-repair-class-action-settlement/",
+      "source": "topclassactions",
+      "title": "$23.9M Costa Del Mar sunglasses repair class action settlement",
+      "date": "Thu, 10 Sep 2026 18:00:00 +0000"
+     }
+    ]
+   }
   },
   {
    "id": "crst-expedited-california-truck-driver-paga-class-action-settlement",
@@ -1147,7 +1198,8 @@
    "content_hash": "14afa995b2bb0f5d",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "dovenmuehle-mortgage-pay-to-pay-fee-settlement",
@@ -1211,7 +1263,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "3d4695c5d6bd93b5",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "drata-sdr-overtime-misclassification-class-action-settlement",
@@ -1273,7 +1326,8 @@
    "last_modified": "2026-08-20T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "43c7423b7c456583",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "firstcash-military-lending-act-settlement",
@@ -1337,7 +1391,8 @@
    "content_hash": "b49572dde827bb7c",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "guitar-center-wage-and-hour-class-action-settlement",
@@ -1387,7 +1442,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "7df50d410363a5e4",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "hunter-warfield-unlicensed-rental-collections-settlement",
@@ -1453,7 +1509,8 @@
    "last_modified": "2026-07-17T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "39bb31ad5d29b153",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "long-county-georgia-fire-fees-class-action-settlement",
@@ -1520,7 +1577,8 @@
    "last_modified": "2026-07-27T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "579ea853a6bd41c2",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "mymichigan-health-403b-erisa-class-action-settlement",
@@ -1584,7 +1642,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "59c3e2f29a376858",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "north-highland-esop-erisa-class-action-settlement",
@@ -1649,7 +1708,8 @@
    "last_modified": "2026-09-07T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "3c305c702068ff64",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "olinsky-associates-data-breach-settlement",
@@ -1713,7 +1773,8 @@
    "last_modified": "2026-09-17T19:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "6bdc755b4c5db8b9",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "powerschool-stockholders-class-action-settlement",
@@ -1778,7 +1839,8 @@
    "last_modified": "2026-09-01T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "fc05f32ebdbc39e6",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "ppl-cdpap-caregivers-settlement",
@@ -1842,7 +1904,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "592d854ac124b8bf",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "providence-health-401k-forfeiture-class-action-settlement",
@@ -1906,7 +1969,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "fe3a104e01338f8f",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "ricoh-usa-retirement-savings-plan-erisa-class-action-settlement",
@@ -1970,7 +2034,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "6120f646d4a604e3",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "saint-gobain-washington-job-postings-class-action-settlement",
@@ -2036,7 +2101,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "b65bf223fa6ca809",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "scale-ai-contributor-misclassification-class-action-settlement",
@@ -2102,7 +2168,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "0479a72270c10e34",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "smith-nephew-401k-erisa-class-action-settlement",
@@ -2166,7 +2233,8 @@
    "last_modified": "2026-07-30T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "1bce11254852a685",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "social-security-class-action-lawsuit",
@@ -2228,7 +2296,8 @@
    "last_modified": "2026-06-24",
    "verified_as_of": "2026-09-17",
    "content_hash": "03dc8e989feb5ebd",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "springfield-police-student-officer-wage-class-action-settlement",
@@ -2294,7 +2363,8 @@
    "last_modified": "2026-09-17T20:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "930126ed9922da5d",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "tennessee-farmers-mutual-total-loss-class-action-settlement",
@@ -2358,7 +2428,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "fa7a3c8a697dc963",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "money-source-tcpa-prerecorded-calls-class-action-settlement",
@@ -2422,7 +2493,8 @@
    "last_modified": "2026-08-03T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "bdfb3777300a62dc",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "trader-joes-california-wage-hour-paga-class-action-settlement",
@@ -2490,7 +2562,8 @@
    "content_hash": "455646a06edc81d2",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "transamerica-direct-recognition-life-class-action-settlement",
@@ -2555,7 +2628,8 @@
    "last_modified": "2026-08-22T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "d63c45592bd64452",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "honda-recall-2025",
@@ -2605,7 +2679,8 @@
    "content_hash": "8b16175f01e2b243",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "bowflex-dumbbell-recall",
@@ -2655,7 +2730,8 @@
    "content_hash": "2937368164f1f6ae",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "clorox-pine-sol-recall",
@@ -2703,7 +2779,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "39f06bc48716ef34",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "ocoopa-rechargeable-hand-warmer-recall",
@@ -2767,7 +2844,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "4027459da983e459",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "silk-beverage-class-action-settlement-canada",
@@ -2815,7 +2893,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "611a5b05b4f72244",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "weber-grill-brush-recall",
@@ -2879,7 +2958,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "9a6ae3aa9611fd21",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "zicam-cold-remedy-nasal-swabs-recall",
@@ -2943,7 +3023,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "80d519987b923976",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "pork-price-fixing-class-action-settlement",
@@ -3009,7 +3090,18 @@
    "content_hash": "c01b3f3bbb1fde3b",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {
+    "news": [
+     {
+      "label": "in the news",
+      "href": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/117m-pork-price-fixing-class-action-settlement/",
+      "source": "topclassactions",
+      "title": "$117M pork price-fixing class action settlement",
+      "date": "Tue, 15 Sep 2026 18:00:00 +0000"
+     }
+    ]
+   }
   },
   {
    "id": "consumer-fragrances-class-action-settlement",
@@ -3060,9 +3152,9 @@
    "verified_as_of": "2026-09-17",
    "content_hash": "0c6aa48a9f989023",
    "warnings": [
-    "no proof requirement published",
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "holley-securities-class-action-settlement",
@@ -3126,7 +3218,8 @@
    "last_modified": "2026-09-16T09:00:00-04:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "a7f9df18485e7e45",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "zymergen-ipo-securities-class-action-settlement",
@@ -3190,7 +3283,8 @@
    "content_hash": "84278d675e7feafa",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "gilt-bond-antitrust-class-action-settlement",
@@ -3238,7 +3332,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "d7acd8768466ad31",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "nyc-taxi-limousine-commission-license-suspension-class-action-settlement",
@@ -3304,7 +3399,19 @@
    "content_hash": "4befd8a876e8f28c",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/7994497/nnebe-v-daus/",
+      "source": "courtlistener",
+      "title": "Nnebe v. Daus",
+      "court": "2d Cir.",
+      "docket_number": "18-866"
+     }
+    ]
+   }
   },
   {
    "id": "edgio-securities-class-action-settlement",
@@ -3368,7 +3475,8 @@
    "content_hash": "a05e907338e8db05",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "burke-visa-mastercard-atm-fees-settlement",
@@ -3418,7 +3526,18 @@
    "last_modified": "2026-09-11T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "4cfa2c4d1121bd37",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "news": [
+     {
+      "label": "in the news",
+      "href": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/167-5m-visa-mastercard-non-bank-atm-class-action-settlement/",
+      "source": "topclassactions",
+      "title": "$167.5M Visa, Mastercard non-bank ATM class action settlement",
+      "date": "Wed, 16 Sep 2026 18:00:00 +0000"
+     }
+    ]
+   }
   },
   {
    "id": "twist-bioscience-securities-class-action-settlement",
@@ -3482,7 +3601,8 @@
    "last_modified": "2026-09-09T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "03764eb36265e698",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "danaher-securities-class-action-settlement",
@@ -3548,7 +3668,8 @@
    "content_hash": "1d52fb4012a3dd8f",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "seagate-securities-class-action-settlement",
@@ -3612,7 +3733,8 @@
    "content_hash": "c53bd74a44216fe9",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "mercedes-benz-aem-incentive-bluetec-diesel-settlement",
@@ -3676,7 +3798,8 @@
    "content_hash": "5b802734ad71cf2c",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "toyota-forklift-class-action-settlement",
@@ -3738,7 +3861,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "94385a86e2103566",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "ncaa-tennis-prize-money-class-action-settlement",
@@ -3804,7 +3928,19 @@
    "content_hash": "9537988356ac85b5",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/68351957/brantmeier-v-national-collegiate-athletic-association/",
+      "source": "courtlistener",
+      "title": "BRANTMEIER v. NATIONAL COLLEGIATE ATHLETIC ASSOCIATION",
+      "court": "M.D.N.C.",
+      "docket_number": "1:24-cv-00238"
+     }
+    ]
+   }
   },
   {
    "id": "stitch-fix-securities-class-action-settlement",
@@ -3868,7 +4004,8 @@
    "content_hash": "08e4b6422e0ecfcd",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "hain-celestial-securities-class-action-settlement",
@@ -3932,7 +4069,8 @@
    "content_hash": "40115a1fd9a7a333",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "diisocyanates-mdi-tdi-antitrust-class-action-settlement",
@@ -3999,7 +4137,8 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
     "page deadline 2026-11-02 differs from index 2026-10-13; page wins"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "hearthside-illinois-child-labor-assurance",
@@ -4064,7 +4203,8 @@
    "warnings": [
     "no proof requirement published",
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "irhythm-technologies-securities-class-action-settlement",
@@ -4128,7 +4268,8 @@
    "content_hash": "5107e4a3f0c83e7d",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "service-spot-parking-reservation-fees-california-class-action-settlement",
@@ -4196,7 +4337,8 @@
    "content_hash": "b9818d78f6401ab9",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "flo-health-app-privacy-settlement",
@@ -4261,7 +4403,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "8e7e7d0267260d6b",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "co-diagnostics-securities-class-action-settlement",
@@ -4327,7 +4470,8 @@
    "content_hash": "769bb5eab6288b62",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "domestic-airlines-price-fixing-class-action-settlement",
@@ -4377,7 +4521,8 @@
    "content_hash": "fed6ca12667204f1",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "hyundai-kia-airbag-control-units-class-action-settlement",
@@ -4441,7 +4586,8 @@
    "content_hash": "af2acbfe77367ef0",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "chemocentryx-securities-class-action-settlement",
@@ -4505,7 +4651,8 @@
    "content_hash": "a2bd275117ba94e8",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "hormel-seaboard-pork-class-action-settlement",
@@ -4555,7 +4702,8 @@
    "content_hash": "b816eb78eb17c1f1",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "oppenheimer-cash-sweep-class-action-settlement",
@@ -4619,7 +4767,19 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "622c19f64274dff6",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/70477926/liberty-capital-group-v-oppenheimer-holdings-inc/",
+      "source": "courtlistener",
+      "title": "Liberty Capital Group v. Oppenheimer Holdings Inc.",
+      "court": "S.D.N.Y.",
+      "docket_number": "1:25-cv-04822"
+     }
+    ]
+   }
   },
   {
    "id": "toyota-airbag-class-action",
@@ -4683,7 +4843,8 @@
    "content_hash": "cefff6472650065b",
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "generic-drugs-price-fixing-class-action-settlement",
@@ -4745,7 +4906,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "db64b09314c1948c",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "john-deere-right-to-repair-class-action-settlement",
@@ -4809,7 +4971,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "2b43e45805b13b0e",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "700credit-data-breach-settlement",
@@ -4886,7 +5049,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "466c9fb4abe713a8",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "abc-legal-services-data-breach-settlement",
@@ -4950,7 +5114,8 @@
    "last_modified": "2026-09-04T16:00:00-04:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "1cbce4add02e6ec2",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "aetna-lumbar-artificial-disc-replacement-class-action-settlement",
@@ -5016,7 +5181,19 @@
    "content_hash": "3681321f25399069",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/16033329/brian-hendricks-v-aetna-life-insurance-company/",
+      "source": "courtlistener",
+      "title": "Brian Hendricks v. Aetna Life Insurance Company",
+      "court": "C.D. Cal.",
+      "docket_number": "2:19-cv-06840"
+     }
+    ]
+   }
   },
   {
    "id": "albany-college-of-pharmacy-data-breach-settlement",
@@ -5093,7 +5270,8 @@
    "last_modified": "2026-09-01T16:00:00-04:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "fa3362c8bc38043a",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "albany-gastroenterology-data-breach-settlement",
@@ -5170,7 +5348,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "2a26201b0c03412b",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "altrua-healthshare-tcpa-prerecorded-calls-class-action-settlement",
@@ -5234,7 +5413,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "87f55feb4b64ed12",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "american-vision-partners-data-breach-settlement",
@@ -5311,7 +5491,8 @@
    "last_modified": "2026-08-31T12:00:00-04:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "6497c123f3708828",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "americold-data-breach-settlement",
@@ -5401,7 +5582,19 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "a4f74309f4bf9cbc",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/68131578/bracy-v-americold-logistics-llc/",
+      "source": "courtlistener",
+      "title": "Bracy v. Americold Logistics LLC",
+      "court": "N.D. Ga.",
+      "docket_number": "1:23-cv-05743"
+     }
+    ]
+   }
   },
   {
    "id": "amn-healthcare-interpretation-call-recording-class-action-settlement",
@@ -5467,7 +5660,8 @@
    "last_modified": "2026-09-01T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "b1dcf5dc645effed",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "anthem-grandfathered-rx-prescription-drug-settlement",
@@ -5529,7 +5723,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "0797c2810f4d2037",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "apollomd-data-breach-settlement",
@@ -5606,7 +5801,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "1bf76cccd19b73a7",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "arrowhead-regional-computing-consortium-data-breach-settlement",
@@ -5670,7 +5866,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "203307943d7b6c24",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "atrium-health-pixel-tracking-class-action-settlement",
@@ -5747,7 +5944,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "3024708f7bfa648a",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "autobell-car-wash-data-breach-settlement",
@@ -5824,7 +6022,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "b5623bd9f8446379",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "bayhealth-pixel-tracking-class-action-settlement",
@@ -5888,7 +6087,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "f8379df4426b975e",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "beef-and-pork-wages-class-action-settlement",
@@ -5940,7 +6140,8 @@
    "content_hash": "5f093cdb17663b31",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "bestway-above-ground-pools-class-action-settlement",
@@ -6017,7 +6218,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "5385e1d1c042a3f4",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "bradford-scott-data-sharetec-data-breach-settlement",
@@ -6094,7 +6296,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "2b412bca5a0d1084",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "brevard-skin-cancer-center-data-breach-settlement",
@@ -6171,7 +6374,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "85c4f248864fdba9",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "bail-bond-insurers-price-fixing-class-action-settlement",
@@ -6237,7 +6441,19 @@
    "content_hash": "58593d871627612f",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/14689660/in-re-california-bail-bond-antitrust-litigation/",
+      "source": "courtlistener",
+      "title": "In re California Bail Bond Antitrust Litigation",
+      "court": "N.D. Cal.",
+      "docket_number": "4:19-cv-00717"
+     }
+    ]
+   }
   },
   {
    "id": "california-casualty-data-breach-settlement",
@@ -6314,7 +6530,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "5ca6ecc1a9ed1897",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "california-institution-abuse-lawsuit",
@@ -6378,7 +6595,8 @@
    "content_hash": "9c99e557fa2a1969",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "carter-credit-union-data-breach-settlement",
@@ -6455,7 +6673,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "1cdd87ad330a219f",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "central-maine-healthcare-data-breach-settlement",
@@ -6532,7 +6751,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "b663421902e49b01",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "central-valley-meat-data-breach-class-action-settlement",
@@ -6596,7 +6816,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "fc0f560f5b2e7607",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "certainteed-organic-shingles-class-action-settlement",
@@ -6662,7 +6883,8 @@
    "content_hash": "8179f858a5b40cf4",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "cibc-renaissance-mutual-funds-trailing-commissions-settlement",
@@ -6724,7 +6946,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "23577a8c54403ea6",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "clay-platte-family-medicine-data-breach-settlement",
@@ -6801,7 +7024,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "8347d95c7a1eb1db",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "coleman-professional-services-data-breach-settlement",
@@ -6878,7 +7102,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "e665fef37698baf3",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "columbus-regional-health-pixel-tracking-class-action-settlement",
@@ -6944,7 +7169,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "2ff12916bedaf4b7",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "community-dental-care-data-breach-settlement",
@@ -7021,7 +7247,18 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "bf4aac611452e516",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "news": [
+     {
+      "label": "in the news",
+      "href": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/community-dental-care-data-breach-class-action-settlement/",
+      "source": "topclassactions",
+      "title": "Community Dental Care data breach class action settlement",
+      "date": "Mon, 07 Sep 2026 18:00:00 +0000"
+     }
+    ]
+   }
   },
   {
    "id": "community-realty-management-data-breach-settlement",
@@ -7098,7 +7335,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "b3d7e30060194016",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "concora-credit-tcpa-prerecorded-calls-class-action-settlement",
@@ -7162,7 +7400,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "6ec64fa7da9a9c86",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "cone-health-pixel-tracking-class-action-settlement",
@@ -7226,7 +7465,19 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "bda3946376016241",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/17060225/moses-h-cone-memorial-hospital-operating-corporation-v-azar/",
+      "source": "courtlistener",
+      "title": "MOSES H. CONE MEMORIAL HOSPITAL OPERATING CORPORATION v. AZAR",
+      "court": "D.D.C.",
+      "docket_number": "1:20-cv-00951"
+     }
+    ]
+   }
   },
   {
    "id": "connectoncall-data-breach-settlement",
@@ -7303,7 +7554,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "03a77acf57cd1ef0",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "covenant-transport-washington-job-postings-class-action-settlement",
@@ -7369,7 +7621,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "19d37caefcf6d02f",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "cpap-medical-supplies-data-breach-settlement",
@@ -7433,7 +7686,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "69d941c83f91ca27",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "csx-livingston-kentucky-train-derailment-class-action-settlement",
@@ -7499,7 +7753,19 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "b19ecb4eadb4f89a",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/68599622/webb-v-csx-transportation-inc/",
+      "source": "courtlistener",
+      "title": "Webb v. CSX Transportation, Inc.",
+      "court": "E.D. Ky.",
+      "docket_number": "6:23-cv-00211"
+     }
+    ]
+   }
   },
   {
    "id": "cvs-digital-privacy-class-action-settlement",
@@ -7563,7 +7829,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "bf55a83064b3555b",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "dairy-farmers-of-america-data-breach-settlement",
@@ -7640,7 +7907,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "9c41faac36ce5eb9",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "dap-health-data-breach-settlement",
@@ -7717,7 +7985,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "62a3ee421469dc7f",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "dennys-new-york-unpaid-wages-settlement",
@@ -7783,7 +8052,8 @@
    "content_hash": "16a268dae24e6d07",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "docketwise-data-breach-settlement",
@@ -7860,7 +8130,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "9b745c07da9e6986",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "dominos-san-francisco-health-care-fee-class-action-settlement",
@@ -7939,7 +8210,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "f255ad62b3c07540",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "doxim-data-breach-settlement",
@@ -8016,7 +8288,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "e916cf3dde94115a",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "dr-squatch-natural-class-action-settlement",
@@ -8080,7 +8353,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "d4bfef1af0fc2d11",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "drug-and-alcohol-treatment-services-data-breach-settlement",
@@ -8157,7 +8431,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "b51049f632bc6133",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "efs-advisors-aviben-data-breach-settlement",
@@ -8234,7 +8509,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "568bece8ae8ef21b",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "eisner-advisory-group-data-breach-settlement",
@@ -8311,7 +8587,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "6da61d56f4ae48cc",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "emanate-health-pixel-privacy-class-action-settlement",
@@ -8375,7 +8652,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "91eb4d85f6e0f57c",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "emblemhealth-senior-care-copay-class-action-settlement",
@@ -8441,7 +8719,8 @@
    "last_modified": "2026-09-06T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "0d19b7b1fa005cb1",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "equinox-data-breach-settlement",
@@ -8518,7 +8797,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "574bc5eee55bf873",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "excel-fitness-data-breach-settlement",
@@ -8595,7 +8875,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "9188503b974d7409",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "ey-bank-of-america-moveit-data-breach-settlement",
@@ -8672,7 +8953,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "03992b6c098a595f",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "fairchild-medical-center-pixel-tracking-class-action-settlement",
@@ -8738,7 +9020,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "add888af756d6a15",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "fastbucks-new-mexico-restitution-program",
@@ -8804,7 +9087,8 @@
    "content_hash": "f20b35c99bbdeda9",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "finwise-bank-data-breach-settlement",
@@ -8868,7 +9152,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "854449e3c19de986",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "first-baptist-church-hammond-data-breach-settlement",
@@ -8947,7 +9232,8 @@
    "content_hash": "de263655ac27d093",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "bucio-fn-logistics-california-wage-paga-class-action-settlement",
@@ -9015,7 +9301,8 @@
    "content_hash": "ad2b6b9dd53b8ac8",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "forbes-website-tracker-privacy-class-action-settlement",
@@ -9081,7 +9368,19 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "3a5d5ef31dc681a8",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/69488112/berman-v-forbes-media-llc/",
+      "source": "courtlistener",
+      "title": "Berman v. Forbes Media LLC",
+      "court": "N.D. Cal.",
+      "docket_number": "3:24-cv-09287"
+     }
+    ]
+   }
   },
   {
    "id": "fort-wayne-medical-education-program-data-breach-settlement",
@@ -9158,7 +9457,8 @@
    "last_modified": "2026-09-04T16:00:00-04:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "77f97c8a80825df3",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "fujifilm-diosynth-data-breach-settlement",
@@ -9235,7 +9535,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "08da50bd2a2b5e84",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "furniture-mart-usa-data-breach-settlement",
@@ -9312,7 +9613,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "8211e98f64d772a8",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "geico-clue-report-fcra-class-action-settlement",
@@ -9376,7 +9678,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "16e8503b5154d5a7",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "globe-life-american-income-life-data-breach-settlement",
@@ -9440,7 +9743,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "e00ce1ef3193bee3",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "gotham-steel-granite-stone-bell-howell-cookware-settlement",
@@ -9507,7 +9811,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "06f1a0f93c72fba4",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "hcf-management-data-breach-settlement",
@@ -9584,7 +9889,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "8fd381b20559a448",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "healthcare-services-group-data-breach-settlement",
@@ -9661,7 +9967,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "8338eaa2c9d22eea",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "hefty-recycling-bags-settlement",
@@ -9709,7 +10016,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "0c85ba682e1c80be",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "heritage-south-credit-union-data-breach-settlement",
@@ -9773,7 +10081,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "8982db940f7ee8d1",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "high-5-games-social-casino-class-action-settlement",
@@ -9839,7 +10148,19 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "38d0a2dd41b9aca7",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/71143865/johnston-v-high-5-entertainment-llc/",
+      "source": "courtlistener",
+      "title": "Johnston v. High 5 Entertainment, LLC",
+      "court": "M.D. Ala.",
+      "docket_number": "3:25-cv-00652"
+     }
+    ]
+   }
   },
   {
    "id": "highlands-oncology-group-data-breach-settlement",
@@ -9916,7 +10237,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "441369307aee6b7d",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "hirevue-bipa-biometric-privacy-class-action-settlement",
@@ -9982,7 +10304,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "753967ea9bce1e10",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "hydromax-usa-job-postings-washington-class-action-settlement",
@@ -10048,7 +10371,19 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "de2df9307dd01189",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/71197000/hill-v-hydromax-usa-llc/",
+      "source": "courtlistener",
+      "title": "Hill v. Hydromax USA LLC",
+      "court": "W.D. Wash.",
+      "docket_number": "2:25-cv-01621"
+     }
+    ]
+   }
   },
   {
    "id": "hyundai-kia-multistate-immobilizer-theft-settlement",
@@ -10110,7 +10445,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "0f0d709be9eab0f0",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "illinois-institution-abuse-lawsuit",
@@ -10176,7 +10512,8 @@
    "content_hash": "c55b7c340f672334",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "indian-boarding-homes-class-action-settlement",
@@ -10238,7 +10575,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "23389f2d4a63c707",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "inotiv-data-breach-settlement",
@@ -10315,7 +10653,8 @@
    "last_modified": "2026-09-17T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "b448786056bec1b4",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "international-shoppes-data-breach-settlement",
@@ -10392,7 +10731,8 @@
    "last_modified": "2026-09-01T16:00:00-04:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "08dcf50c6a23f805",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "iod-datavant-pennsylvania-medical-records-fees-class-action-settlement",
@@ -10458,7 +10798,8 @@
    "last_modified": "2026-09-14T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "53de9245465c7d7f",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "jacks-family-restaurants-data-breach-settlement",
@@ -10535,7 +10876,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "4555f01be6309f44",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "just4veterans-va-claim-fees-class-action-settlement",
@@ -10599,7 +10941,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "bb6fbac6732efbdd",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "kaiser-permanente-out-of-network-mental-health-california-class-action-settlement",
@@ -10665,7 +11008,8 @@
    "content_hash": "e81ac46329b8bcb4",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "keurig-k-supreme-settlement",
@@ -10713,7 +11057,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "22cbded6d6c431b7",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "kia-window-regulator-class-action-settlement",
@@ -10777,7 +11122,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "3769e018a957fdc2",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "kornit-digital-securities-class-action-settlement",
@@ -10843,7 +11189,8 @@
    "content_hash": "574e7a7a1ef2e6ce",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "kroger-savings-club-prescription-pricing-class-action-settlement",
@@ -10909,7 +11256,8 @@
    "content_hash": "8f25dcf1daa8511a",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "la-jolla-group-data-breach-settlement",
@@ -10999,7 +11347,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "d6a5d6a60d393335",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "lands-end-data-breach-class-action-settlement",
@@ -11076,7 +11425,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "704898780163dee6",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "leesa-helix-bear-brooklyn-bedding-mattress-discount-settlement",
@@ -11153,7 +11503,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "d7cfec9de1d7093d",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "levoit-air-purifier-hepa-class-action-settlement",
@@ -11217,7 +11568,8 @@
    "last_modified": "2026-09-06T16:00:00-04:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "3265ce80c8366742",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "lifestance-pixel-tracking-class-action-settlement",
@@ -11281,7 +11633,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "3f59e9a0159d494c",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "limetree-bay-refinery-class-action-settlement",
@@ -11347,7 +11700,19 @@
    "content_hash": "cda347031de87f77",
    "warnings": [
     "proof level differs from the index (index=L3, page=L2)"
-   ]
+   ],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/67038729/wooten-v-limetree-bay-terminals/",
+      "source": "courtlistener",
+      "title": "Wooten v. Limetree Bay Terminals",
+      "court": "D.V.I.",
+      "docket_number": "1:23-cv-00012"
+     }
+    ]
+   }
   },
   {
    "id": "livehealth-online-privacy-class-action-settlement",
@@ -11411,7 +11776,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "b031a6b7b9e69822",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "lloyds-syndicate-insurance-class-action-settlement",
@@ -11475,7 +11841,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "f6d0d7e44b2b515a",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "ftc-match-group-settlement",
@@ -11524,9 +11891,9 @@
    "verified_as_of": "2026-09-17",
    "content_hash": "5bb7a9757e339a6c",
    "warnings": [
-    "no proof requirement published",
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "mcna-dental-data-breach-settlement",
@@ -11590,7 +11957,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "b37b4377d03f8fe7",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "mental-health-association-data-breach-settlement",
@@ -11667,7 +12035,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "1af5820ca9fe271d",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "metropolis-parking-tennessee-settlement",
@@ -11731,7 +12100,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "2b4c177ba2e42567",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "mg217-coal-tar-shampoo-benzene-class-action-settlement",
@@ -11808,7 +12178,8 @@
    "last_modified": "2026-09-10T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "35c61d11ffba5efa",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "modernizing-medicine-modmed-data-breach-settlement",
@@ -11885,7 +12256,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "61a7950a5c538084",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "moodswings-ticket-service-charge-class-action-settlement",
@@ -11969,7 +12341,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "7a92db7390d0c940",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "mortgage-investors-group-data-breach-settlement",
@@ -12046,7 +12419,8 @@
    "last_modified": "2026-09-03T16:00:00-04:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "fa9868f28c8cca87",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "mount-sinai-data-privacy-class-action-settlement",
@@ -12110,7 +12484,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "640df254d8d8547f",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "muscatine-power-and-water-data-breach-settlement",
@@ -12174,7 +12549,8 @@
    "last_modified": "2026-09-16T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "fe1e21d5c3e2b94d",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "naper-grove-vision-care-data-breach-settlement",
@@ -12251,7 +12627,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "386c714c2b187a4e",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "homebuyer-antitrust-class-action-settlement",
@@ -12315,7 +12692,19 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "01e5fbb236aed3d1",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/71629303/tuccori-v-at-world-properties-llc/",
+      "source": "courtlistener",
+      "title": "Tuccori v. At World Properties, LLC",
+      "court": "J.P.M.L.",
+      "docket_number": "1:24-cv-00150"
+     }
+    ]
+   }
   },
   {
    "id": "national-tenant-network-fcra-postcard-class-action-settlement",
@@ -12379,7 +12768,19 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "d2d37318e7c5d1ad",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/67544565/clermont-v-national-tenant-network-inc/",
+      "source": "courtlistener",
+      "title": "CLERMONT v. NATIONAL TENANT NETWORK, INC.",
+      "court": "D.N.J.",
+      "docket_number": "2:23-cv-03545"
+     }
+    ]
+   }
   },
   {
    "id": "navy-federal-unauthorized-personal-loan-class-action-settlement",
@@ -12443,7 +12844,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "8cccd44a2dde19dc",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "neutrogena-skin360-bipa-settlement",
@@ -12509,7 +12911,19 @@
    "last_modified": "2026-09-15T12:00:00-04:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "7014ce49739016f4",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/63340635/melzer-v-johnson-johnson-consumer-inc/",
+      "source": "courtlistener",
+      "title": "MELZER v. JOHNSON & JOHNSON CONSUMER INC.",
+      "court": "D.N.J.",
+      "docket_number": "3:22-cv-03149"
+     }
+    ]
+   }
   },
   {
    "id": "nj-lenders-data-breach-settlement",
@@ -12586,7 +13000,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "80e5444ee8257fce",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "northrop-grumman-canoga-park-groundwater-contamination-class-action-settlement",
@@ -12652,7 +13067,19 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "7ebc4021fffee0f3",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/69120156/behar-et-al-v-northrop-grumman-corporation-et-al/",
+      "source": "courtlistener",
+      "title": "Behar, et al. v. Northrop Grumman Corporation, et al.",
+      "court": "9th Cir.",
+      "docket_number": "24-4324"
+     }
+    ]
+   }
   },
   {
    "id": "nyc-central-booking-class-action-settlement",
@@ -12718,7 +13145,8 @@
    "last_modified": "2026-09-06T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "d77f2820e66b09db",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "nyc-strip-search-class-action-settlement",
@@ -12784,7 +13212,19 @@
    "last_modified": "2026-09-13T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "7f11f7199613184a",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/4320553/lewis-v-city-of-new-york/",
+      "source": "courtlistener",
+      "title": "Lewis v. City of New York",
+      "court": "E.D.N.Y",
+      "docket_number": "1:10-cv-04205"
+     }
+    ]
+   }
   },
   {
    "id": "nzxt-flex-pc-rental-class-action-settlement",
@@ -12837,8 +13277,8 @@
    "case_number": "4:25-cv-06604-JST",
    "court": "U.S. District Court, Northern District of California",
    "administrator": null,
-   "official_website": "https://www.courtlistener.com/docket/71033918/burns-v-fragile-inc/",
-   "claim_url": "https://www.courtlistener.com/docket/71033918/burns-v-fragile-inc/",
+   "official_website": null,
+   "claim_url": null,
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a non-cash remedy",
@@ -12848,8 +13288,9 @@
    "content_hash": "0a068f9bb9dc572d",
    "warnings": [
     "no proof requirement published",
-    "no proof requirement published"
-   ]
+    "source links a court record where the settlement website belongs"
+   ],
+   "cross_refs": {}
   },
   {
    "id": "oreilly-auto-parts-tcpa-text-message-class-action-settlement",
@@ -12913,7 +13354,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "9eaa9c81091dda88",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "ohio-nightclub-dancer-unpaid-wages-class-action-settlement",
@@ -12979,7 +13421,19 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "cc7e3909d27c4058",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/5347881/hogan-v-cleveland-ave-restaurant-inc/",
+      "source": "courtlistener",
+      "title": "Hogan v. Cleveland Ave Restaurant, Inc.",
+      "court": "S.D. Ohio",
+      "docket_number": "2:15-cv-02883"
+     }
+    ]
+   }
   },
   {
    "id": "on-q-financial-data-breach-settlement",
@@ -13056,7 +13510,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "66a4855dfcce539e",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "onepoint-patient-care-data-breach-settlement",
@@ -13133,7 +13588,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "ce78ae27d903f71e",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "onetouchpoint-data-breach-class-action-settlement",
@@ -13210,7 +13666,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "02c234a31c416185",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "palm-beach-tan-tcpa-text-message-class-action-settlement",
@@ -13274,7 +13731,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "441c774501044062",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "palomar-health-medical-group-data-breach-settlement",
@@ -13351,7 +13809,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "178ebec8acc17372",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "peco-foods-data-breach-settlement",
@@ -13415,7 +13874,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "e91ad60ddbc09a32",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "people-data-labs-colorado-cell-phone-number-class-action-settlement",
@@ -13483,7 +13943,19 @@
    "content_hash": "88062b6e35f7fe74",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/71878245/cochrane-v-people-data-labs-inc/",
+      "source": "courtlistener",
+      "title": "Cochrane v. People Data Labs, Inc.",
+      "court": "N.D. Cal.",
+      "docket_number": "3:25-cv-09533"
+     }
+    ]
+   }
   },
   {
    "id": "physicians-primary-care-southwest-florida-data-breach-settlement",
@@ -13560,7 +14032,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "dd6eba602faa693a",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "pierce-county-library-system-data-breach-settlement",
@@ -13637,7 +14110,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "5b0383b2a268f956",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "lsc-planned-parenthood-lab-data-breach-settlement",
@@ -13701,7 +14175,8 @@
    "last_modified": "2026-09-16T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "26387d325dbec3f4",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "quality-inn-seatac-seawind-washington-job-postings-class-action-settlement",
@@ -13753,7 +14228,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "fb74190144831bb4",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "raging-waters-processing-fee-class-action-settlement",
@@ -13817,7 +14293,8 @@
    "last_modified": "2026-09-04T16:00:00-04:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "6118b4f0b7337e5d",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "fca-3-6l-valve-train-warranty-class-action-settlement",
@@ -13896,7 +14373,8 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
     "proof level differs from the index (index=L3, page=L2)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "red-robin-washington-job-postings-class-action-settlement",
@@ -13962,7 +14440,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "08175d417d36c4bb",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "regional-urology-ochsner-lsu-data-breach-settlement",
@@ -14039,7 +14518,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "1c1a3e3e971525a5",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "rapid-investments-axiom-bank-release-card-class-action-settlement",
@@ -14103,7 +14583,19 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "010df7e04aa18bcc",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/69554156/hall-v-rapid-investments-llc/",
+      "source": "courtlistener",
+      "title": "Hall v. Rapid Investments LLC",
+      "court": "W.D. Wash.",
+      "docket_number": "3:25-cv-05039"
+     }
+    ]
+   }
   },
   {
    "id": "realpage-rental-software-antitrust-class-action-settlement",
@@ -14169,7 +14661,8 @@
    "content_hash": "4791dc47ba7c21f0",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "tcpa-spam-text-messages-annoying",
@@ -14220,7 +14713,8 @@
    "warnings": [
     "no proof requirement published",
     "no quick-facts block found"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "roblox-child-predator-lawsuit",
@@ -14284,7 +14778,8 @@
    "content_hash": "e429fb116e635429",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "rockley-photonics-securities-class-action-settlement",
@@ -14350,7 +14845,8 @@
    "content_hash": "a1d4b1f272d4e71a",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "rolling-stone-magazine-class-action-settlement",
@@ -14398,7 +14894,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "db2e800ae07dc320",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "sansone-group-data-breach-settlement",
@@ -14475,7 +14972,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "21c17afeae0aa018",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "sanyo-solar-panel-class-action-settlement",
@@ -14523,7 +15021,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "cc2e4a21ee3dcf06",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "schnucks-rewards-points-sales-tax-class-action-settlement",
@@ -14589,7 +15088,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "5df3415af069e1a5",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "situsamc-data-breach-settlement",
@@ -14666,7 +15166,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "b735cacf797b2f42",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "social-media-addiction-lawsuit",
@@ -14714,7 +15215,8 @@
    "last_modified": "2026-08-25",
    "verified_as_of": "2026-09-17",
    "content_hash": "e5b52ac4b49c3f3f",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "southern-graphics-data-breach-settlement",
@@ -14791,7 +15293,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "52edc116702465d9",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "sportsmans-guide-firearm-privacy-class-action-settlement",
@@ -14857,7 +15360,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "79e234bc5a2fb4ae",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "sps-technologies-abington-fire-class-action-settlement",
@@ -14923,7 +15427,8 @@
    "last_modified": "2026-09-08T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "f09ab2cd23f02c2a",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "star-casualty-florida-total-loss-fees-class-action-settlement",
@@ -14989,7 +15494,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "7280b3d0e3fed952",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "state-farm-louisiana-total-loss-purchasing-fees-settlement",
@@ -15055,7 +15561,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "c09bdda652fe999c",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "steel-warehouse-data-breach-settlement",
@@ -15132,7 +15639,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "99a26bc14201621b",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "stockpile-data-breach-settlement",
@@ -15196,7 +15704,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "6a662b9d100cd49c",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "suffolk-county-red-light-camera-fee-class-action-settlement",
@@ -15260,7 +15769,8 @@
    "last_modified": "2026-09-17T19:00:00-04:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "e03c28f99c49106c",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "sugared-bronzed-tcpa-text-message-class-action-settlement",
@@ -15324,7 +15834,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "b7e50ddf7002274a",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "summit-medical-group-data-breach-settlement",
@@ -15388,7 +15899,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "526c764eecd59915",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "susan-b-allen-memorial-hospital-data-breach-settlement",
@@ -15452,7 +15964,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "e01626bdefdc31bf",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "system-pavers-data-breach-settlement",
@@ -15529,7 +16042,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "3a9443113c05cefd",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "talkdesk-washington-job-postings-class-action-settlement",
@@ -15595,7 +16109,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "5b54fb977f9f1e4f",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "tbj-drywall-and-taping-unpaid-salary-settlement",
@@ -15643,7 +16158,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "3d1e8ec99e50fa30",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "ted-foundation-vppa-video-privacy-settlement",
@@ -15720,7 +16236,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "72e83fed1d61a6e6",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "tesla-supercharger-idle-fee-class-action-settlement",
@@ -15786,7 +16303,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "29377c403eb54e72",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "tift-regional-health-system-data-breach-settlement",
@@ -15863,7 +16381,18 @@
    "last_modified": "2026-09-14T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "d71f2481f679759c",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "news": [
+     {
+      "label": "in the news",
+      "href": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/1-2m-tift-regional-health-system-data-breach-class-action-settlement/",
+      "source": "topclassactions",
+      "title": "$1.2M Tift Regional Health System data breach class action settlement",
+      "date": "Tue, 08 Sep 2026 17:00:00 +0000"
+     }
+    ]
+   }
   },
   {
    "id": "total-vision-data-breach-settlement",
@@ -15942,7 +16471,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "0bc4a669f55a5d11",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "transunion-bankruptcy-remark-fcra-class-action-settlement",
@@ -16006,7 +16536,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "59ad5c06214f387b",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "travelers-new-mexico-uim-class-action-settlement",
@@ -16072,7 +16603,8 @@
    "content_hash": "c4531d5b198bc9e5",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "turkey-price-fixing-class-action-settlement",
@@ -16136,7 +16668,19 @@
    "last_modified": "2026-09-16T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "4176f408e9589915",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/16610105/in-re-turkey-antitrust-litigation/",
+      "source": "courtlistener",
+      "title": "IN RE TURKEY ANTITRUST LITIGATION",
+      "court": "N.D. Ill.",
+      "docket_number": "1:19-cv-08318"
+     }
+    ]
+   }
   },
   {
    "id": "twitter-musk-stock-verdict-class-action",
@@ -16198,7 +16742,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "04e5bfd088415a1b",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "university-of-hawaii-data-breach-settlement",
@@ -16275,7 +16820,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "297490167bf4887d",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "usa-clinics-group-tcpa-text-message-class-action-settlement",
@@ -16339,7 +16885,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "2cea8a5ed94364a5",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "valley-oaks-health-data-breach-settlement",
@@ -16416,7 +16963,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "709542144191cb6d",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "vasindas-around-the-clock-care-data-breach-settlement",
@@ -16493,7 +17041,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "ef9e9ad34a20a2f0",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "volkswagen-atlas-water-pump-class-action-settlement",
@@ -16557,7 +17106,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "f0ed463068839cdc",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "vsl3-probiotic-class-action-settlement",
@@ -16623,7 +17173,8 @@
    "content_hash": "7700b5994402bb18",
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "waste-connections-rate-increase-fuel-surcharge-class-action-settlement",
@@ -16689,7 +17240,8 @@
    "content_hash": "cc5fd31fdab31138",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "wayne-memorial-hospital-data-breach-settlement",
@@ -16766,7 +17318,8 @@
    "last_modified": "2026-09-16T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "3a7a7052f61bf1c4",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "wellstar-health-system-pixel-tracking-privacy-class-action-settlement",
@@ -16832,7 +17385,8 @@
    "content_hash": "061c150c50357967",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "whirlpool-fridges-class-action-settlement",
@@ -16912,7 +17466,8 @@
    "warnings": [
     "no proof requirement published",
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "wpm-pathology-salina-regional-data-breach-settlement",
@@ -16989,7 +17544,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "6df941751f7bdb67",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "xactus-credit-plus-fcra-class-action-settlement",
@@ -17053,7 +17609,8 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-17",
    "content_hash": "eacff2db14758ed4",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "yes-communities-data-breach-settlement",
@@ -17130,7 +17687,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "df0af801bf10688d",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "zonolite-vermiculite-attic-insulation-class-action-settlement",
@@ -17194,7 +17752,8 @@
    "content_hash": "820efecca771252f",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "apple-watch-software-support-class-action-lawsuit",
@@ -17246,7 +17805,8 @@
    "content_hash": "e7e947f2a45e11c5",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "baby-brezza-formula-machine-class-action-lawsuit",
@@ -17298,7 +17858,8 @@
    "content_hash": "b114ea2ffa4417b5",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "logitech-tariff-refund-class-action-lawsuit",
@@ -17350,7 +17911,8 @@
    "content_hash": "67d16127c0af8a09",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "microsoft-k12-student-data-privacy-class-action-lawsuit",
@@ -17400,7 +17962,8 @@
    "content_hash": "f9b6cdd370ea4bd5",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "louisville-ladder-attic-ladder-recall-class-action-lawsuit",
@@ -17465,7 +18028,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "d221109082ba118c",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "ryobi-40v-mower-fire-class-action-lawsuit",
@@ -17530,7 +18094,8 @@
    "last_modified": null,
    "verified_as_of": "2026-09-17",
    "content_hash": "44b1af9bd4f870d4",
-   "warnings": []
+   "warnings": [],
+   "cross_refs": {}
   },
   {
    "id": "afff-firefighting-foam-cancer-lawsuit",
@@ -17594,7 +18159,8 @@
    "content_hash": "ffab33573e05fd4c",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "lifemd-data-privacy-investigation",
@@ -17659,7 +18225,8 @@
    "warnings": [
     "no proof requirement published",
     "no quick-facts block found"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "medical-scope-infection-lawsuit",
@@ -17723,7 +18290,8 @@
    "content_hash": "7c92fc44e59d961f",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "employer-unpaid-wages-overtime-lawsuit",
@@ -17787,7 +18355,8 @@
    "content_hash": "0b368da7411676b8",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "equifax-credit-score-error-class-action-settlement",
@@ -17838,9 +18407,9 @@
    "verified_as_of": "2026-09-17",
    "content_hash": "7bbc4601479351b9",
    "warnings": [
-    "no proof requirement published",
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "harvard-morgue-donor-families-class-action-settlement",
@@ -17889,9 +18458,9 @@
    "verified_as_of": "2026-09-17",
    "content_hash": "3bb8ca85ca14677c",
    "warnings": [
-    "no proof requirement published",
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   },
   {
    "id": "labcorp-website-tracking-class-action-settlement",
@@ -17958,7 +18527,8 @@
    "content_hash": "77937aa385aef8c5",
    "warnings": [
     "no proof requirement published"
-   ]
+   ],
+   "cross_refs": {}
   }
  ]
 }

@@ -114,6 +114,7 @@
         <span class="row__links">
           {%- if r.claim_url %}<a href="{{ r.claim_url }}" rel="noopener">claim portal</a>{% endif %}
           {%- if r.official_website %}<a href="{{ r.official_website }}" rel="noopener">official site</a>{% endif %}
+          {%- for label, href in r.xrefs %}<a class="row__xref" href="{{ href }}" rel="noopener">{{ label }}</a>{% endfor %}
         </span>
       </div>
     </li>

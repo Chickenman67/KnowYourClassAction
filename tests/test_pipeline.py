@@ -11,6 +11,24 @@ from kya.sources.openclassactions_page import parse_page
 
 FIXTURES = Path(__file__).parent / "fixtures"
 
+# NZXT's real page shape: a quick-facts block, a case-details block whose
+# "Official Website" entry holds a CourtListener docket, and no a.file-claim.
+_DOCKET_PAGE = """
+<html><body>
+<h1>NZXT Flex PC Rental Settlement</h1>
+<section class="settlement-facts">
+  <div class="fact"><span class="fact-label">Status</span>
+  <span class="fact-value">Claims Open</span></div>
+</section>
+<section class="settlement-case-details">
+  <div class="detail"><span class="detail-label">Case Title</span>
+  <span class="detail-value">Burns v. Fragile, Inc. and NZXT, Inc.</span></div>
+  <div class="detail"><span class="detail-label">Official Website</span>
+  <span class="detail-value"><a href="https://www.courtlistener.com/docket/71033918/burns-v-fragile-inc/">CourtListener Docket</a></span></div>
+</section>
+</body></html>
+"""
+
 
 @pytest.fixture(scope="module")
 def pages() -> dict:
@@ -125,6 +143,57 @@ def test_schuster_id_gate_is_not_reported_as_documents(settlements) -> None:
     assert sch.proof_required is True
     assert not any("differs" in w for w in sch.warnings)
     assert "receipts" in (sch.proof_detail or "").lower()
+
+
+def test_no_settlement_repeats_a_warning(settlements) -> None:
+    """The same warning twice reads as two problems.
+
+    Both the index pass and the page pass call ``classify_proof``, and a page
+    that publishes no proof requirement yields "no proof requirement published"
+    from each - so five rows in the live dataset carried it duplicated. Merge
+    is where the two passes meet, so merge is where repeats are collapsed.
+    """
+    offenders = {
+        s.id: [w for w in s.warnings if s.warnings.count(w) > 1]
+        for s in settlements
+        if len(s.warnings) != len(set(s.warnings))
+    }
+    assert not offenders, f"duplicated warnings: {offenders}"
+
+
+def test_a_docket_is_never_the_official_settlement_website(settlements) -> None:
+    """No row may present a court record as its own site."""
+    from kya.sources.openclassactions_page import is_court_record_link
+
+    for s in settlements:
+        for url in (s.claim_url, s.official_website):
+            assert not (
+                url and is_court_record_link(url)
+            ), f"{s.id} links a court record as its own site: {url}"
+
+
+def test_a_rejected_site_is_recorded_not_silently_dropped() -> None:
+    """Regression: NZXT's source page files its docket under "Official Website".
+
+    The link is dropped rather than relabelled, because a docket cannot take a
+    claim - and the omission is recorded, because a row whose site was rejected
+    must not look like a row that never had one.
+    """
+    from kya.build import merge_page
+    from kya.models import Settlement
+
+    settlement = Settlement(
+        id="nzxt-flex-pc-rental-class-action-settlement",
+        source_url="https://openclassactions.com/settlements/nzxt.php",
+        title="NZXT Flex PC Rental $3.45M Settlement",
+    )
+    page = parse_page(_DOCKET_PAGE, url="nzxt")
+
+    merged = merge_page(settlement, page)
+
+    assert merged.official_website is None
+    assert merged.claim_url is None
+    assert any("court record" in w for w in merged.warnings)
 
 
 def test_ryobi_is_a_recall_in_the_investigation_lane(settlements) -> None:

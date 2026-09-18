@@ -483,6 +483,14 @@ a { color: inherit; }
 
 .row__links a:hover { color: var(--accent); }
 
+/* Secondary sources: another outlet's coverage, or the court record itself.
+   They are evidence, not the way in - so they sit below the claim portal.
+   Scoped to .row__links a so this beats that rule's own color and size. */
+.row__links a.row__xref {
+  font-size: 0.68rem;
+  opacity: 0.8;
+}
+
 /* ---- colophon ------------------------------------------------------- */
 
 .colophon {

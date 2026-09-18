@@ -22,7 +22,7 @@ from kya.models import Settlement
 from kya.normalize import classify_proof, normalize_payout, parse_fund_size
 from kya.score import apply_scoring
 from kya.sources.openclassactions_index import IndexDocument, IndexEntry
-from kya.sources.openclassactions_page import PageData
+from kya.sources.openclassactions_page import PageData, is_court_record_link
 from kya.textutil import collapse_ws
 
 
@@ -73,6 +73,18 @@ def _detail_link(details, *labels: str) -> str | None:
         if value:
             return value
     return None
+
+
+def _dedupe(items: list[str]) -> list[str]:
+    """Drop repeated warnings, keeping first-seen order.
+
+    The index pass and the page pass can reach the same conclusion: a page that
+    publishes no proof requirement yields "no proof requirement published" from
+    both ``classify_proof`` calls, and five rows in the live dataset carried it
+    twice. A warning printed twice reads as two problems. Distinct claims are
+    all kept - disagreement is the whole point of the list.
+    """
+    return list(dict.fromkeys(items))
 
 
 def _fund_size(entry: IndexEntry, tiers) -> float | None:
@@ -221,14 +233,23 @@ def merge_page(
     settlement.case_number = _detail_value(page.details, "Case Number")
     settlement.court = _detail_value(page.details, "Court")
     settlement.administrator = _detail_value(page.details, "Administrator")
-    settlement.official_website = _detail_link(
-        page.details, "Official Website", "Settlement Website"
-    )
+    official = _detail_link(page.details, "Official Website", "Settlement Website")
+    if official and is_court_record_link(official):
+        # Labelling a docket "official site" would send readers to a page that
+        # cannot help them, so the link is dropped - and the omission recorded,
+        # because a missing link and a settlement that has no site look
+        # identical on the row. NZXT is the live example.
+        settlement.warnings.append(
+            "source links a court record where the settlement website belongs"
+        )
+        official = None
+    settlement.official_website = official
     settlement.claim_url = page.claim_url or settlement.claim_url
     settlement.status_text = page.fact_value("Settlement Status") or settlement.status_text
 
     settlement.warnings.extend(page.warnings)
     settlement.extra_dates = _extra_dates(page)
+    settlement.warnings = _dedupe(settlement.warnings)
     return apply_scoring(settlement)
 
 
