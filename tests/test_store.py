@@ -19,7 +19,7 @@ import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from kya.store import connect, export_json, load_snapshot, save_settlements
+from kya.store import connect, export_json, load_dataset_file, load_snapshot, save_settlements
 
 
 def _read(path: Path) -> dict:
@@ -161,3 +161,43 @@ def test_connect_creates_the_parent_directory(tmp_path) -> None:
     conn = connect(tmp_path / "nested" / "state" / "kya.sqlite3")
     assert (tmp_path / "nested" / "state").is_dir()
     conn.close()
+
+
+# --- reading the previous build back ------------------------------------------------
+
+
+def test_load_dataset_file_indexes_the_previous_build_by_id(tmp_path, settlements) -> None:
+    """The list-shaped export comes back as ``{id: record}``.
+
+    The published dataset is a *list*, unlike the snapshot's dict, and it is
+    what a fresh CI checkout has to hand. Cross-reference carry-over reads it,
+    so the two shapes must not be confused.
+    """
+    path = export_json(settlements, tmp_path / "settlements.json")
+    previous = load_dataset_file(path)
+    assert set(previous) == {s.id for s in settlements}
+    assert previous[settlements[0].id]["case_title"] == settlements[0].case_title
+
+
+def test_load_dataset_file_treats_missing_and_broken_files_as_no_build(tmp_path) -> None:
+    """A first run, and a corrupt file, are both normal states - not failures.
+
+    Raising here would turn a readable-again-tomorrow file into a failed daily
+    run, whose cost (no build at all) is far higher than a missing link.
+    """
+    assert load_dataset_file(tmp_path / "absent.json") == {}
+    broken = tmp_path / "broken.json"
+    broken.write_text("{ not json", encoding="utf-8")
+    assert load_dataset_file(broken) == {}
+    wrong_shape = tmp_path / "wrong.json"
+    wrong_shape.write_text(json.dumps({"settlements": {"a": {}}}), encoding="utf-8")
+    assert load_dataset_file(wrong_shape) == {}
+
+
+def test_load_dataset_file_skips_records_without_an_id(tmp_path) -> None:
+    path = tmp_path / "settlements.json"
+    path.write_text(
+        json.dumps({"settlements": [{"id": "good"}, {"no_id": True}, "not a record"]}),
+        encoding="utf-8",
+    )
+    assert load_dataset_file(path) == {"good": {"id": "good"}}

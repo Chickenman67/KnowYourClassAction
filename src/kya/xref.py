@@ -9,7 +9,10 @@ down must cost nothing, and a wrong link is worse than no link:
   weeks - so the parser's cap covers all of it.
 * **CourtListener docket search** ("docket"): an independent, court-side
   verification link for the highest-value claimable cases. Anonymous access
-  works; a ``KYA_COURTLISTENER_TOKEN`` raises the rate limit.
+  works; a ``KYA_COURTLISTENER_TOKEN`` raises the rate limit. Because only that
+  window is re-checked each run and it is ranked by expected value, a verified
+  link is carried forward for any case that slid out of it - see
+  :func:`carry_forward_dockets`.
 
 Matching is token-based Jaccard with stopwords removed, because scraped titles
 embed dollar figures ("$9.37M Concora Credit TCPA...") that must not decide a
@@ -357,12 +360,44 @@ def apply(
     ]
 
 
+def carry_forward_dockets(
+    settlements: Sequence[Settlement],
+    previous: Mapping[str, Mapping] | None,
+) -> dict[str, list[dict[str, str]]]:
+    """Docket links already verified, kept for cases this run did not re-check.
+
+    Only the top cases by expected value are looked up each run, and that
+    ranking moves whenever an estimate is revised - so a case can slide out of
+    scope and silently lose a court record it already had. A verified docket
+    URL does not stop being correct, so it is carried forward instead.
+
+    The carry is scoped to cases whose case title is unchanged: the link is the
+    record for *that* proceeding, so a title that moved means the old hit may
+    describe a different case, and the link waits for a lookup to re-establish
+    it. ``previous`` is ``{id: record}`` from the last published dataset.
+    """
+    if not previous:
+        return {}
+    carried: dict[str, list[dict[str, str]]] = {}
+    for settlement in settlements:
+        old = previous.get(settlement.id)
+        if not isinstance(old, dict):
+            continue
+        if (old.get("case_title") or None) != (settlement.case_title or None):
+            continue
+        refs = (old.get("cross_refs") or {}).get("docket")
+        if isinstance(refs, list) and refs and isinstance(refs[0], dict):
+            carried[settlement.id] = [dict(ref) for ref in refs if isinstance(ref, dict)]
+    return carried
+
+
 def attach_cross_references(
     settlements: Sequence[Settlement],
     client: PoliteClient,
     *,
     news_enabled: bool = True,
     docket_top_cases: int = 25,
+    previous: Mapping[str, Mapping] | None = None,
     out: Callable[[str], None] = print,
 ) -> list[Settlement]:
     """Both secondary-source phases, each degrading independently to a no-op."""
@@ -393,6 +428,17 @@ def attach_cross_references(
         out(f"  docket lookups failed: {exc}")
         docket_refs = {}
 
-    enriched = apply(settlements, news_refs, docket_refs)
-    out(f"xref: {len(news_refs)} news link(s), {len(docket_refs)} docket link(s)")
+    # A fresh lookup wins: carry-over exists only for cases this run did not
+    # re-resolve, so it is filtered down to those before it is applied.
+    carried = {
+        settlement_id: refs
+        for settlement_id, refs in carry_forward_dockets(settlements, previous).items()
+        if settlement_id not in docket_refs
+    }
+
+    enriched = apply(settlements, news_refs, carried, docket_refs)
+    out(
+        f"xref: {len(news_refs)} news link(s), {len(docket_refs)} docket link(s)"
+        + (f", {len(carried)} carried forward" if carried else "")
+    )
     return enriched

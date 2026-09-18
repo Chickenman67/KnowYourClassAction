@@ -282,6 +282,95 @@ def test_the_news_phase_can_be_switched_off_without_a_request() -> None:
     assert client.calls and all("search" in url for url in client.calls)
 
 
+# --- carried-forward docket links ---------------------------------------------------
+
+_DOCKET_REF = {
+    "label": "docket",
+    "href": "https://www.courtlistener.com/docket/1/webb-v-csx/",
+    "source": "courtlistener",
+    "title": "Webb v. CSX Transportation, Inc.",
+}
+
+
+def _previous(**overrides) -> dict:
+    """A prior dataset record for ``case-a``, with a verified docket link."""
+    record = {
+        "id": "case-a",
+        "case_title": "Webb v. CSX Transportation, Inc.",
+        "cross_refs": {"docket": [dict(_DOCKET_REF)]},
+    }
+    record.update(overrides)
+    return {"case-a": record}
+
+
+def test_a_case_out_of_lookup_scope_keeps_its_verified_docket_link() -> None:
+    """Only the top cases by expected value are re-checked each run.
+
+    A case that slides out of that window must not lose the court record it
+    already had - it was verified against an unchanged case title, and a docket
+    URL does not stop being correct. Losing it would also churn the committed
+    dataset, and churn there buries the real diff.
+    """
+    cases = [settlement("case-a", case_title="Webb v. CSX Transportation, Inc.")]
+    assert xref.carry_forward_dockets(cases, _previous()) == {"case-a": [_DOCKET_REF]}
+
+
+def test_a_changed_case_title_drops_the_carried_link() -> None:
+    """The link is the record for *that* proceeding.
+
+    If the page's case title moves, the old hit may describe a different case,
+    so the link is dropped rather than carried - it waits for a lookup.
+    """
+    cases = [settlement("case-a", case_title="Some Other Case v. Someone")]
+    assert xref.carry_forward_dockets(cases, _previous()) == {}
+
+
+def test_carry_forward_is_a_no_op_without_a_previous_build() -> None:
+    cases = [settlement("case-a", case_title="Webb v. CSX Transportation, Inc.")]
+    assert xref.carry_forward_dockets(cases, None) == {}
+    assert xref.carry_forward_dockets(cases, {}) == {}
+
+
+def test_carry_forward_ignores_a_case_that_was_never_here() -> None:
+    cases = [settlement("case-a", case_title="Webb v. CSX Transportation, Inc.")]
+    assert xref.carry_forward_dockets(cases, {"unrelated": {"id": "unrelated"}}) == {}
+
+
+def test_a_fresh_lookup_replaces_the_carried_link() -> None:
+    """Carry-over is a fallback, never a cache that outranks a new result."""
+    client = FakeClient({"search": (200, json.dumps({"results": [DOCKET_RESULT]}))})
+    s = settlement(
+        "turkey", "Turkey Price-Fixing - $93.5M", case_title="In re Turkey Antitrust Litigation"
+    )
+    previous = {
+        "turkey": {
+            "id": "turkey",
+            "case_title": "In re Turkey Antitrust Litigation",
+            "cross_refs": {"docket": [_DOCKET_REF]},
+        }
+    }
+    out = xref.attach_cross_references([s], client, previous=previous, news_enabled=False)
+    href = out[0].cross_refs["docket"][0]["href"]
+    assert href == "https://www.courtlistener.com/docket/12345/in-re-turkey/"
+    assert href != _DOCKET_REF["href"]
+
+
+def test_a_rate_limited_phase_keeps_previously_verified_links() -> None:
+    """The failure mode this exists for: CI runs anonymous, so a 429 is real.
+
+    The phase stops on the first refusal - and every link found by an earlier
+    run survives it, which is what "degrade, never lose data" has to mean here.
+    """
+    client = FakeClient({"search": (429, "")})
+    s = settlement("case-a", "CSX Derailment", case_title="Webb v. CSX Transportation, Inc.")
+    lines: list[str] = []
+    out = xref.attach_cross_references(
+        [s], client, previous=_previous(), news_enabled=False, out=lines.append
+    )
+    assert out[0].cross_refs == {"docket": [_DOCKET_REF]}
+    assert any("429" in line for line in lines)
+
+
 def test_apply_merges_both_kinds_and_leaves_the_inputs_alone() -> None:
     matched = settlement("a", "Case A")
     other = settlement("b", "Case B")

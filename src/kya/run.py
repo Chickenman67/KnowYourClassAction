@@ -27,7 +27,14 @@ from kya.config import load_config
 from kya.http import FetchError, PoliteClient
 from kya.sources.openclassactions_index import parse_index
 from kya.sources.openclassactions_page import parse_page
-from kya.store import connect, export_json, load_snapshot_file, save_settlements, write_snapshot_file
+from kya.store import (
+    connect,
+    export_json,
+    load_dataset_file,
+    load_snapshot_file,
+    save_settlements,
+    write_snapshot_file,
+)
 
 INDEX_URL = "https://openclassactions.com/llms.txt"
 
@@ -173,6 +180,11 @@ def main(argv: list[str] | None = None) -> int:
         client,
         news_enabled=config.sources.news_enabled,
         docket_top_cases=config.sources.docket_top_cases,
+        # Only the top cases are re-checked each run, so a case that slid out of
+        # that window keeps the court record it already had. The previous
+        # published dataset is the right source: it is committed, so it exists
+        # in a fresh CI container where .state/ does not.
+        previous=load_dataset_file(config.data_json_path),
     )
 
     by_lane: dict[str, int] = {}
