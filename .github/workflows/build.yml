@@ -43,9 +43,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      # Action versions are kept current because GitHub retires the Node
+      # runtime an action declares: checkout@v4 declares Node 20, which is
+      # already being forced onto Node 24, and the nightly build would fail
+      # once that support goes. Every one of these uses no inputs beyond
+      # python-version, so the v7 majors are safe for us - v7's headline change
+      # is blocking fork checkouts for pull_request_target/workflow_run, which
+      # this repo does not use.
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -53,7 +60,7 @@ jobs:
       # restores it, so a transient network failure degrades to yesterday's
       # stale copy instead of a dead run.
       - name: Restore the polite HTTP cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: .cache
           key: kya-http-${{ github.run_id }}
