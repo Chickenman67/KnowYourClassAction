@@ -4,10 +4,12 @@ A free, self-updating tracker for US class-action settlements, split by **how
 big the money is**, **what it takes to claim it**, and **when the window
 closes**. Not legal advice, not a law firm, not a settlement administrator.
 
-Current state: **Milestones A–C complete** — the pipeline publishes a static
-site, the Telegram bot delivers diffs with inline *Done / Not mine* buttons,
-and the Cloudflare Worker records those presses into KV so decided cases stop
-re-appearing. Scheduled GitHub Actions runs are on the roadmap below.
+Current state: **Milestones A–C complete, and running themselves** — a daily
+GitHub Actions build republishes the static site, the Telegram bot delivers
+diffs with inline *Done / Not mine* buttons, the Cloudflare Worker records those
+presses into KV so decided cases stop re-appearing, and each row carries
+cross-checked links to a court docket and to other coverage. Details and the
+roadmap are below.
 
 ## Why this exists
 
@@ -108,13 +110,16 @@ links beside the claim portal.
   from the **case title the page captured**, never from the headline, and the
   top hit must repeat at least two query tokens in its case name — so the
   fallback is no link rather than a wrong court record. Anonymous access works;
-  `KYA_COURTLISTENER_TOKEN` only raises the rate limit. The first 401/403/429
-  stops the phase instead of burning 25 dead queries — and every link an
-  earlier run verified survives that stop, because a docket link is carried
-  forward for any case this run did not re-check (scoped to an unchanged case
-  title, since the link is the record for *that* proceeding). The alternative
-  was worse than it sounds: because the window is ranked by expected value, a
-  case could slide out of it and silently lose a court record it already had.
+  `KYA_COURTLISTENER_TOKEN` only raises the rate limit — for the scheduled run,
+  `gh secret set KYA_COURTLISTENER_TOKEN`. A *wrong* token is worse than none:
+  an invalid one reads as HTTP 401, which stops the phase, where anonymous
+  access would have quietly succeeded. The first 401/403/429 stops the phase
+  instead of burning 25 dead queries — and every link an earlier run verified
+  survives that stop, because a docket link is carried forward for any case
+  this run did not re-check (scoped to an unchanged case title, since the link
+  is the record for *that* proceeding). The alternative was worse than it
+  sounds: because the window is ranked by expected value, a case could slide
+  out of it and silently lose a court record it already had.
 
 Live probe (the real feed and the real API, against the 269-case dataset): the
 feed carried exactly 100 items — three weeks, so the parser's cap truncates
@@ -134,7 +139,7 @@ day must not buzz the phone because a headline rolled off the end of a feed.
 
 ```bash
 pip install -e .[dev]
-python -m pytest                    # 280 tests, all offline (fixtures captured live)
+python -m pytest                    # 285 tests, all offline (fixtures captured live)
 kya --pages --site                  # full build: dataset + docs/ site
 python tools/build_dataset.py --limit 5   # smoke run without installing
 python tools/audit_warnings.py      # group the build's warnings by shape
@@ -213,8 +218,11 @@ src/kya/
   run.py           the kya console entry point
   templates/       index.html.j2 plus static assets (style.css, app.js, favicon)
 worker/            Cloudflare Worker webhook + KV (Milestone C), node-tested
-tests/             231 offline tests over captured live fixtures
+tests/             285 offline tests over captured live fixtures
 tools/             build, fixture capture, and warning-audit CLIs
+.github/workflows/
+  build.yml        daily build: dataset + site + digest, then commit (which is the deploy)
+  checks.yml       every push: actionlint on the workflows + the offline suite
 ```
 
 ## Roadmap
@@ -230,6 +238,11 @@ tools/             build, fixture capture, and warning-audit CLIs
   degrade to no link, never to a wrong one — verified live in the scheduled run:
   6 news matches and 21 docket links across the 25 highest-value claimable
   cases, the remaining 4 left unlinked rather than guessed)
+- [x] Push-triggered validation (`.github/workflows/checks.yml`; actionlint plus
+  the offline suite). A workflow file GitHub cannot parse *never runs*, so a
+  typo in `build.yml` would stop the daily build with no failed run to notice —
+  and the tests that describe its invariants would never run either, since they
+  only lived inside it.
 
 ## Disclaimers
 
