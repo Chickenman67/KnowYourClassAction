@@ -21,11 +21,13 @@ Telegram credentials come from the environment or the repo .env (see
 from __future__ import annotations
 
 import argparse
+import sys
+from collections.abc import Mapping, Sequence
 
 from kya.build import build_all
 from kya.config import load_config
 from kya.http import FetchError, PoliteClient
-from kya.sources.openclassactions_index import parse_index
+from kya.sources.openclassactions_index import IndexEntry, parse_index
 from kya.sources.openclassactions_page import parse_page
 from kya.store import (
     connect,
@@ -63,11 +65,54 @@ def fetch_pages(client, entries, *, out=print) -> dict:
     return pages
 
 
+# A collapsed build is far more likely to be a source-shape change than a real
+# exodus of cases. The index is fetched with no schema to validate against, so
+# a redesign, an A/B variant or a CDN error page all arrive as HTTP 200 and
+# parse to nothing - and publishing that would overwrite the dataset, blank the
+# site, and reset the digest's baseline. The baseline part is what makes it
+# silent: an empty snapshot is treated as "establish a baseline and stay quiet",
+# so the next healthy run would notify nobody about the 273 cases that had
+# vanished. A collapse therefore stops the run before anything is written.
+_COLLAPSE_FRACTION = 0.5
+_MIN_PREVIOUS_FOR_GUARD = 20
+
+
+def _collapse_reason(
+    entries: Sequence[IndexEntry],
+    previous: Mapping[str, object],
+    *,
+    allow_shrink: bool,
+) -> str | None:
+    """Why this build must not replace the published one, or ``None`` if it may.
+
+    Deliberately conservative, and quiet in the two cases where it cannot know
+    anything: a first run has no previous dataset to compare against, and below
+    the floor a proportion is noise rather than signal.
+    """
+    if not entries:
+        return "the index parsed to zero entries"
+    if allow_shrink:
+        return None
+    if len(previous) < _MIN_PREVIOUS_FOR_GUARD:
+        return None
+    if len(entries) < len(previous) * _COLLAPSE_FRACTION:
+        return (
+            f"the index parsed to {len(entries)} entries, under half of the "
+            f"{len(previous)} cases already published"
+        )
+    return None
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Build the class-action dataset and site.")
     parser.add_argument("--pages", action="store_true", help="enrich with case pages")
     parser.add_argument("--limit", type=int, default=None, help="smoke-run cap")
     parser.add_argument("--site", action="store_true", help="also render docs/")
+    parser.add_argument(
+        "--allow-shrink",
+        action="store_true",
+        help="publish even if the index collapsed (bypasses the data-loss guard)",
+    )
     parser.add_argument(
         "--whoami", action="store_true", help="print bot identity and known chats, then exit"
     )
@@ -165,6 +210,29 @@ def main(argv: list[str] | None = None) -> int:
         document.entries = entries
     print(f"index: {len(entries)} entries (last updated {document.last_updated})")
 
+    # Loaded here, before anything is written, because two things need it: the
+    # collapse guard below, and cross-reference carry-over further down. It is
+    # the committed dataset, so it exists in a fresh CI container.
+    previous_dataset = load_dataset_file(config.data_json_path)
+
+    # Checked before the page scrape on purpose: when the source is broken,
+    # 273 doomed page fetches are minutes spent to reach the same refusal.
+    collapse = _collapse_reason(
+        entries,
+        previous_dataset,
+        # A --limit smoke run is meant to be tiny, so proportion says nothing.
+        allow_shrink=bool(args.limit) or args.allow_shrink,
+    )
+    if collapse:
+        print(f"refusing to publish: {collapse}", file=sys.stderr)
+        print(
+            "the index markup may have changed shape; nothing was written, so the "
+            "published dataset and site are untouched. Pass --allow-shrink to publish "
+            "anyway.",
+            file=sys.stderr,
+        )
+        return 1
+
     pages = {}
     if args.pages:
         pages = fetch_pages(client, entries)
@@ -181,10 +249,8 @@ def main(argv: list[str] | None = None) -> int:
         news_enabled=config.sources.news_enabled,
         docket_top_cases=config.sources.docket_top_cases,
         # Only the top cases are re-checked each run, so a case that slid out of
-        # that window keeps the court record it already had. The previous
-        # published dataset is the right source: it is committed, so it exists
-        # in a fresh CI container where .state/ does not.
-        previous=load_dataset_file(config.data_json_path),
+        # that window keeps the court record it already had.
+        previous=previous_dataset,
     )
 
     by_lane: dict[str, int] = {}
