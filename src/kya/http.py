@@ -31,13 +31,22 @@ __all__ = ["PoliteClient", "FetchResult", "FetchError", "RobotsDisallowed"]
 
 
 class FetchError(RuntimeError):
-    """A request failed in a way the caller should know about."""
+    """A request failed in a way the caller should know about.
+
+    Both halves are kept when both are known. Reporting only the status threw
+    away the useful half in the cases that need it most: a 200 whose body would
+    not parse read as a bare ``HTTP 200``, and a 404 lost its status entirely
+    and surfaced as "request failed with no response" - which is untrue, and the
+    only thing an operator had to go on.
+    """
 
     def __init__(self, url: str, status_code: Optional[int] = None, message: str = ""):
         self.url = url
         self.status_code = status_code
-        detail = f"HTTP {status_code}" if status_code else message
-        super().__init__(f"{url}: {detail}".strip().rstrip(":"))
+        parts = [f"HTTP {status_code}"] if status_code else []
+        if message:
+            parts.append(message)
+        super().__init__(f"{url}: {': '.join(parts)}".strip().rstrip(":"))
 
 
 class RobotsDisallowed(FetchError):
@@ -175,6 +184,9 @@ class PoliteClient:
             if result.ok:
                 self._write_cache(result)
                 return result
+            # A final response that is not ok still has a reason worth keeping:
+            # without this it fell through as "no response", losing the status.
+            last_error = FetchError(url, response.status_code, response.reason or "")
             break
 
         # Everything failed. Serve a stale cache rather than losing the run.
@@ -224,13 +236,17 @@ class PoliteClient:
         return parser.can_fetch(self.user_agent, url)
 
     def _load_robots(self, scheme: str, host: str) -> Optional[RobotFileParser]:
+        """The host's parsed robots.txt, or ``None`` to fail open.
+
+        ``get`` either returns an ok result or raises, so a status check here
+        would be unreachable: an unreachable or refused robots.txt arrives as
+        the exception below, and no rules means "allowed".
+        """
         robots_url = f"{scheme}://{host}/robots.txt"
         try:
             # check_robots=False prevents infinite recursion
             result = self.get(robots_url, cache_ttl=self.ROBOTS_TTL_SECONDS, check_robots=False)
         except FetchError:
-            return None
-        if not result.ok:
             return None
         parser = RobotFileParser()
         parser.parse(result.text.splitlines())

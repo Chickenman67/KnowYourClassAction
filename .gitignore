@@ -7,6 +7,8 @@ dist/
 .venv/
 venv/
 .pytest_cache/
+.coverage
+htmlcov/
 
 # --- Local state and caches ---
 # This repository is PUBLIC. Anything personal must stay out of it.
