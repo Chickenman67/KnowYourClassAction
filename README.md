@@ -181,6 +181,12 @@ The dataset is deterministic — rebuilding unchanged sources moves at most the
 `generated_at` line, so a scheduled run shows up as a reviewable diff rather
 than a rewrite of every record (`tests/test_store.py` holds that line).
 
+`cross_refs` are the one deliberately *live* field: feed items rotate out of
+the RSS window and docket links are re-resolved, so those few lines churn
+daily. Nothing downstream diffs them — only new cases, changed money, moved or
+closing deadlines and lane changes raise an event — so churn in the file never
+becomes a notification.
+
 ## Repository layout
 
 ```
@@ -213,7 +219,8 @@ tools/             build, fixture capture, and warning-audit CLIs
   daily 06:23 UTC; Pages serves `docs/` from `main`)
 - [x] Secondary sources (CourtListener dockets, topclassactions RSS) and
   cross-checks (`src/kya/xref.py`; links render beside each row; failures
-  degrade to no link, never to a wrong one)
+  degrade to no link, never to a wrong one — verified live against the real
+  feed and API, where 5 of 6 lookups verified and the sixth was left unlinked)
 
 ## Disclaimers
 
