@@ -41,7 +41,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
+      # Keep action majors current - see the note in build.yml.
+      - uses: actions/checkout@v7
 
       # Pinned twice on purpose. The script comes from the release tag rather
       # than main so it cannot change under this repo, and the version is
@@ -62,9 +63,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
