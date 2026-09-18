@@ -134,7 +134,7 @@ day must not buzz the phone because a headline rolled off the end of a feed.
 
 ```bash
 pip install -e .[dev]
-python -m pytest                    # 273 tests, all offline (fixtures captured live)
+python -m pytest                    # 280 tests, all offline (fixtures captured live)
 kya --pages --site                  # full build: dataset + docs/ site
 python tools/build_dataset.py --limit 5   # smoke run without installing
 python tools/audit_warnings.py      # group the build's warnings by shape
