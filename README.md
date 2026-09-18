@@ -139,10 +139,15 @@ day must not buzz the phone because a headline rolled off the end of a feed.
 
 ```bash
 pip install -e .[dev]
-python -m pytest                    # 296 tests, all offline (fixtures captured live)
+python -m pytest                    # 339 tests, all offline (fixtures captured live)
 kya --pages --site                  # full build: dataset + docs/ site
 python tools/build_dataset.py --limit 5   # smoke run without installing
 python tools/audit_warnings.py      # group the build's warnings by shape
+
+# Coverage (~92% overall, http.py at 100%). Not a CI gate - the number is a
+# prompt to look, not a target to satisfy.
+pip install coverage && python -m coverage run --source=src/kya -m pytest tests/
+python -m coverage report --sort=cover
 ```
 
 ### Telegram + decisions (Milestones B and C)
@@ -237,7 +242,7 @@ src/kya/
   run.py           the kya console entry point
   templates/       index.html.j2 plus static assets (style.css, app.js, favicon)
 worker/            Cloudflare Worker webhook + KV (Milestone C), node-tested
-tests/             296 offline tests over captured live fixtures
+tests/             339 offline tests over captured live fixtures
 tools/             build, fixture capture, and warning-audit CLIs
 .github/workflows/
   build.yml        daily build: dataset + site + digest, then commit (which is the deploy)
@@ -266,6 +271,11 @@ tools/             build, fixture capture, and warning-audit CLIs
   source-shape change arrives as HTTP 200 and parses to nothing, which would
   otherwise overwrite the dataset, blank the site, and reset the digest's
   baseline so the loss went unreported.
+- [x] The polite client's failure behaviour under test (`tests/test_http.py`):
+  retry with capped backoff, the per-host crawl delay, `robots.txt` (including
+  failing open), and the disk cache — whose stale-cache fallback is the promise
+  that a dead network costs freshness rather than the run. `http.py` was the
+  only module with no test file, at 29% coverage against 87% for the package.
 
 ## Disclaimers
 
