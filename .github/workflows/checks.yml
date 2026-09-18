@@ -76,3 +76,28 @@ jobs:
 
       - name: Test
         run: python -m pytest --tb=short
+
+  node:
+    name: node tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+
+      # The Cloudflare Worker's tests: the webhook, the callback contract, and
+      # the press bookkeeping. They existed well before this job did and had
+      # never once run in CI - only by hand, which means the Milestone C suite
+      # was unprotected against exactly the kind of edit that breaks it.
+      - name: Worker webhook tests
+        working-directory: worker
+        run: npm test
+
+      # The site's filter logic, the last untested behaviour in the shipped
+      # product. Plain script, no dependencies, but it decides what a reader
+      # actually sees.
+      - name: Site filter tests
+        run: node --test tests/js/site_filters.test.mjs

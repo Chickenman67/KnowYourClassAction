@@ -140,6 +140,8 @@ day must not buzz the phone because a headline rolled off the end of a feed.
 ```bash
 pip install -e .[dev]
 python -m pytest                    # 339 tests, all offline (fixtures captured live)
+node --test tests/js/site_filters.test.mjs   # 17 tests: the site's filter logic
+cd worker && npm test && cd ..      # 13 tests: the Telegram webhook + decision loop
 kya --pages --site                  # full build: dataset + docs/ site
 python tools/build_dataset.py --limit 5   # smoke run without installing
 python tools/audit_warnings.py      # group the build's warnings by shape
@@ -242,11 +244,11 @@ src/kya/
   run.py           the kya console entry point
   templates/       index.html.j2 plus static assets (style.css, app.js, favicon)
 worker/            Cloudflare Worker webhook + KV (Milestone C), node-tested
-tests/             339 offline tests over captured live fixtures
+tests/             339 pytest tests over captured live fixtures, plus js/ (node)
 tools/             build, fixture capture, and warning-audit CLIs
 .github/workflows/
   build.yml        daily build: dataset + site + digest, then commit (which is the deploy)
-  checks.yml       every push: actionlint on the workflows + the offline suite
+  checks.yml       every push: actionlint, the pytest suite, and the node suites
 ```
 
 ## Roadmap
@@ -276,6 +278,10 @@ tools/             build, fixture capture, and warning-audit CLIs
   failing open), and the disk cache — whose stale-cache fallback is the promise
   that a dead network costs freshness rather than the run. `http.py` was the
   only module with no test file, at 29% coverage against 87% for the package.
+- [x] The site's filter logic under test (`tests/js/site_filters.test.mjs`, 17
+  node tests, no DOM dependency) — the last untested behaviour in the shipped
+  product, and verified again in a real browser against the live page. The same
+  job now runs the Worker's 13 tests, which had never run in CI at all.
 
 ## Disclaimers
 
