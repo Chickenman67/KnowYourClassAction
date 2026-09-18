@@ -139,7 +139,7 @@ day must not buzz the phone because a headline rolled off the end of a feed.
 
 ```bash
 pip install -e .[dev]
-python -m pytest                    # 285 tests, all offline (fixtures captured live)
+python -m pytest                    # 296 tests, all offline (fixtures captured live)
 kya --pages --site                  # full build: dataset + docs/ site
 python tools/build_dataset.py --limit 5   # smoke run without installing
 python tools/audit_warnings.py      # group the build's warnings by shape
@@ -187,6 +187,25 @@ kya --decisions           # what has been pressed so far
 The same pipeline runs locally or in CI: it needs no credentials, writes
 `data/settlements.json` plus the static site into `docs/` for GitHub Pages,
 and keeps its disposable SQLite query store under `.state/` (gitignored).
+
+### A collapsed build is refused, not published
+
+The index is fetched with no schema to validate against, so a redesign, an A/B
+variant or a CDN error page all arrive as **HTTP 200 and parse to zero
+entries** (verified against the real parser). Nothing used to stand between
+that and the published files — a source-shape change would have overwritten the
+dataset, blanked the live site, and reset the digest's baseline. The baseline
+is the silent part: an empty snapshot means *"establish one and stay quiet"*, so
+the next healthy run would notify nobody about the cases that had disappeared.
+
+So the build now refuses when the index collapses — zero entries, or under half
+of what is already published — before it scrapes a single page, prints why, and
+exits non-zero so the scheduled run goes red instead of green-and-empty.
+`--allow-shrink` publishes anyway, and a `--limit` smoke run is exempt because
+proportion means nothing at that size (`tests/test_run_guard.py` holds all of
+it, including that `main` really consults the guard rather than only the
+zero-entry check).
+
 The dataset is deterministic — rebuilding unchanged sources moves at most the
 `generated_at` line, so a scheduled run shows up as a reviewable diff rather
 than a rewrite of every record (`tests/test_store.py` holds that line).
@@ -218,7 +237,7 @@ src/kya/
   run.py           the kya console entry point
   templates/       index.html.j2 plus static assets (style.css, app.js, favicon)
 worker/            Cloudflare Worker webhook + KV (Milestone C), node-tested
-tests/             285 offline tests over captured live fixtures
+tests/             296 offline tests over captured live fixtures
 tools/             build, fixture capture, and warning-audit CLIs
 .github/workflows/
   build.yml        daily build: dataset + site + digest, then commit (which is the deploy)
@@ -243,6 +262,10 @@ tools/             build, fixture capture, and warning-audit CLIs
   typo in `build.yml` would stop the daily build with no failed run to notice —
   and the tests that describe its invariants would never run either, since they
   only lived inside it.
+- [x] A data-loss guard on the build (`_collapse_reason` in `src/kya/run.py`): a
+  source-shape change arrives as HTTP 200 and parses to nothing, which would
+  otherwise overwrite the dataset, blank the site, and reset the digest's
+  baseline so the loss went unreported.
 
 ## Disclaimers
 
