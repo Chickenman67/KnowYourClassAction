@@ -9,6 +9,13 @@
 # workflows, but a local push would re-scrape the whole index for nothing.
 # The digest's snapshot semantics need a single build per run, so everything
 # happens in one `kya --pages --site --notify-digest` invocation.
+#
+# Reading the Actions tab: a run named "pages-build-deployment" (event:
+# `dynamic`) is GitHub deploying docs/, not a second build. Only "build" runs
+# scrape, notify, and commit.
+#
+# tests/test_workflow.py pins the invariants this file depends on — every one
+# of them fails silently, with a green build.
 
 name: build
 
@@ -21,6 +28,13 @@ permissions:
   contents: write
 
 concurrency:
+  # One build at a time, and deliberately never cancel the one in progress.
+  # The digest depends on that: a queued run checks out main *after* the
+  # previous run committed its snapshot, so it diffs against the updated
+  # baseline and stays quiet. Cancelling instead would kill a run that had
+  # already sent its digest but not yet committed the snapshot, and its
+  # replacement would read the old baseline and notify the same cases twice.
+  # tests/test_workflow.py holds this line.
   group: kya-build
   cancel-in-progress: false
 
