@@ -131,6 +131,34 @@ def load_snapshot_file(path: Path | str) -> dict[str, dict]:
     return {str(key): value for key, value in records.items() if isinstance(value, dict)}
 
 
+def load_dataset_file(path: Path | str) -> dict[str, dict]:
+    """The previous published dataset, read from its committed JSON file.
+
+    Used to carry verified cross-references across builds: only the top cases
+    by expected value are re-checked each run, so a case that slid out of that
+    window would otherwise lose the court record it already had.
+
+    Missing, empty or unreadable all mean the same thing - no previous build -
+    because a first run from nothing is a normal state, not a failure.
+    """
+    target = Path(path)
+    if not target.is_file():
+        return {}
+    try:
+        payload = json.loads(target.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        print(f"warning: could not read dataset {target}: {exc}", file=sys.stderr)
+        return {}
+    records = payload.get("settlements") if isinstance(payload, dict) else None
+    if not isinstance(records, list):
+        return {}
+    return {
+        str(record["id"]): record
+        for record in records
+        if isinstance(record, dict) and isinstance(record.get("id"), str)
+    }
+
+
 def write_snapshot_file(path: Path | str, settlements: list[Settlement]) -> Path:
     """Persist this build as the next run's baseline. Deterministic output.
 

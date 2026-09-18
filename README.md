@@ -109,7 +109,12 @@ links beside the claim portal.
   top hit must repeat at least two query tokens in its case name — so the
   fallback is no link rather than a wrong court record. Anonymous access works;
   `KYA_COURTLISTENER_TOKEN` only raises the rate limit. The first 401/403/429
-  stops the phase instead of burning 25 dead queries.
+  stops the phase instead of burning 25 dead queries — and every link an
+  earlier run verified survives that stop, because a docket link is carried
+  forward for any case this run did not re-check (scoped to an unchanged case
+  title, since the link is the record for *that* proceeding). The alternative
+  was worse than it sounds: because the window is ranked by expected value, a
+  case could slide out of it and silently lose a court record it already had.
 
 Live probe (the real feed and the real API, against the 269-case dataset): the
 feed carried exactly 100 items — three weeks, so the parser's cap truncates
@@ -129,7 +134,7 @@ day must not buzz the phone because a headline rolled off the end of a feed.
 
 ```bash
 pip install -e .[dev]
-python -m pytest                    # 264 tests, all offline (fixtures captured live)
+python -m pytest                    # 273 tests, all offline (fixtures captured live)
 kya --pages --site                  # full build: dataset + docs/ site
 python tools/build_dataset.py --limit 5   # smoke run without installing
 python tools/audit_warnings.py      # group the build's warnings by shape
@@ -181,11 +186,14 @@ The dataset is deterministic — rebuilding unchanged sources moves at most the
 `generated_at` line, so a scheduled run shows up as a reviewable diff rather
 than a rewrite of every record (`tests/test_store.py` holds that line).
 
-`cross_refs` are the one deliberately *live* field: feed items rotate out of
-the RSS window and docket links are re-resolved, so those few lines churn
-daily. Nothing downstream diffs them — only new cases, changed money, moved or
-closing deadlines and lane changes raise an event — so churn in the file never
-becomes a notification.
+`cross_refs` are the one deliberately *live* field: news links follow the RSS
+window, so those few lines turn over as items rotate out. Docket links are
+stable by contrast — only the top cases by expected value are re-checked each
+run, and a link that was once verified is carried forward for any case that
+slid out of that window, so a court record is never lost to a ranking shuffle.
+Nothing downstream diffs cross-references at all — only new cases, changed
+money, moved or closing deadlines and lane changes raise an event — so churn in
+the file never becomes a notification.
 
 ## Repository layout
 
