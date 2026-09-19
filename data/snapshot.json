@@ -1,6 +1,6 @@
 {
- "count": 273,
- "generated_at": "2026-09-18T20:52:21+00:00",
+ "count": 271,
+ "generated_at": "2026-09-19T11:18:05+00:00",
  "settlements": {
   "700credit-data-breach-settlement": {
    "administrator": null,
@@ -77,7 +77,7 @@
     }
    ],
    "title": "700Credit Data Breach Settlement — $50 Cash or Up to $2,500 + 2 Years Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "abc-legal-services-data-breach-settlement": {
@@ -142,7 +142,7 @@
     }
    ],
    "title": "ABC Legal Services $2.5M Data Breach Settlement — Est. $50 Cash Plus Up to $5,000 + Credit Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "acct-holdings-esop-erisa-class-action-settlement": {
@@ -208,7 +208,7 @@
     }
    ],
    "title": "ACCT Holdings ESOP $8.75M ERISA Settlement — No Claim Form, No Opt-Out",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "activision-blizzard-shareholder-class-action-settlement": {
@@ -273,7 +273,7 @@
     }
    ],
    "title": "$250M Activision Blizzard Shareholder Settlement (Microsoft Merger)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -351,7 +351,7 @@
     }
    ],
    "title": "Aetna Lumbar Artificial Disc Replacement (L-ADR) Coverage Class Action Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -416,7 +416,7 @@
     }
    ],
    "title": "AFFF Firefighting Foam Cancer Lawsuit — Military Base & Firefighter Exposure",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -485,7 +485,7 @@
     }
    ],
    "title": "AION Management Virginia Apartment Fee Settlement — About $141 Automatically, No Claim Form",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "albany-college-of-pharmacy-data-breach-settlement": {
@@ -563,7 +563,7 @@
     }
    ],
    "title": "Albany College of Pharmacy Data Breach Settlement — $25 Cash or Up to $5,080 + 2 Years of Credit Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "albany-gastroenterology-data-breach-settlement": {
@@ -641,7 +641,7 @@
     }
    ],
    "title": "Albany Gastroenterology Data Breach Settlement — $10 Cash or Up to $2,500 + Automatic Medical Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "altrua-healthshare-tcpa-prerecorded-calls-class-action-settlement": {
@@ -706,7 +706,7 @@
     }
    ],
    "title": "Altrua HealthShare & Health Admins TCPA Prerecorded Call Settlement — Up to $700",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "amazon-pennsylvania-unpaid-wages-class-action-settlement": {
@@ -771,7 +771,7 @@
     }
    ],
    "title": "Amazon $3M Pennsylvania Unpaid-Wages Settlement — Automatic Payments",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "american-vision-partners-data-breach-settlement": {
@@ -849,7 +849,7 @@
     }
    ],
    "title": "American Vision Partners Data Breach Settlement — Pro Rata Cash or Up to $3,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "americold-data-breach-settlement": {
@@ -951,7 +951,7 @@
     }
    ],
    "title": "Americold Data Breach Settlement — $200 or $100 Cash, or Up to $25,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "amn-healthcare-interpretation-call-recording-class-action-settlement": {
@@ -1018,7 +1018,7 @@
     }
    ],
    "title": "AMN Healthcare $4.5M Interpretation Recording Settlement — Pro Rata, Capped at $10,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "anthem-grandfathered-rx-prescription-drug-settlement": {
@@ -1081,7 +1081,7 @@
     }
    ],
    "title": "Anthem Grandfathered Rx Settlement — Reimbursement for Denied Brand-Name Drugs",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "apollomd-data-breach-settlement": {
@@ -1159,7 +1159,7 @@
     }
    ],
    "title": "ApolloMD Data Breach Settlement — $75 Cash or Up to $5,000 + Medical Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "apple-watch-software-support-class-action-lawsuit": {
@@ -1210,7 +1210,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Apple Watch Software Support Class Action Lawsuit",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -1277,7 +1277,7 @@
     }
    ],
    "title": "Arrowhead (ARCC) Data Breach Settlement — 2 Years of Credit Monitoring + Up to $80",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "atrium-health-pixel-tracking-class-action-settlement": {
@@ -1355,7 +1355,7 @@
     }
    ],
    "title": "Atrium Health Pixel Privacy Settlement — Pro Rata Cash or Up to $10, Claim by September 28",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "autobell-car-wash-data-breach-settlement": {
@@ -1433,7 +1433,7 @@
     }
    ],
    "title": "Autobell Car Wash Data Breach Settlement — $45 Cash or Up to $5,000 Documented",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "baby-brezza-formula-machine-class-action-lawsuit": {
@@ -1484,7 +1484,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Baby Brezza Formula Machine Class Action Lawsuit",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -1562,7 +1562,7 @@
     }
    ],
    "title": "California Bail Bond Price-Fixing Settlements — ~$69M",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -1629,7 +1629,7 @@
     }
    ],
    "title": "Bayhealth Pixel Privacy Settlement — $25 Cash for MyChart Website Users",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "beef-and-pork-wages-class-action-settlement": {
@@ -1680,7 +1680,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Beef & Pork Plant Workers $202.7M Wage-Fixing Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -1760,7 +1760,7 @@
     }
    ],
    "title": "Bestway Above-Ground Pool Settlement — $40 With No Receipt or 10% Back With Proof",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "big-als-washington-non-compete-class-action-settlement": {
@@ -1827,7 +1827,7 @@
     }
    ],
    "title": "Big Al's $450K Washington Non-Compete Settlement — Automatic Payment",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "blue-ridge-power-warn-act-class-action-settlement": {
@@ -1879,7 +1879,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Blue Ridge Power $3.07M WARN Act Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "bowflex-dumbbell-recall": {
@@ -1928,7 +1928,7 @@
    "status_text": null,
    "tiers": [],
    "title": "BowFlex Adjustable Dumbbells Recall",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -2008,7 +2008,7 @@
     }
    ],
    "title": "Bradford-Scott Data (Sharetec) Data Breach Settlement — ~$100 Cash or Up to $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "brevard-skin-cancer-center-data-breach-settlement": {
@@ -2086,7 +2086,7 @@
     }
    ],
    "title": "Brevard Skin & Cancer Center Data Breach Settlement — $45 or Up to $2,500",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "bucio-fn-logistics-california-wage-paga-class-action-settlement": {
@@ -2153,7 +2153,7 @@
     }
    ],
    "title": "FN Logistics (Fashion Nova) $5.565M California Wage & PAGA Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -2216,7 +2216,7 @@
    "status_text": null,
    "tiers": [],
    "title": "$167.5M Visa & Mastercard Nonbank ATM Fee Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "california-casualty-data-breach-settlement": {
@@ -2294,7 +2294,7 @@
     }
    ],
    "title": "California Casualty Data Breach Settlement — $50 Cash or Up to $4,000 + 2 Years of Credit Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "california-institution-abuse-lawsuit": {
@@ -2357,7 +2357,7 @@
     }
    ],
    "title": "California Institutional Abuse Lawsuit — New Filing Window for Survivors",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -2427,7 +2427,7 @@
     }
    ],
    "title": "CAMC $40M Bariatric Surgery Hernia Class Action Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -2494,7 +2494,7 @@
     }
    ],
    "title": "Canadian Armed Forces Racism Settlement — $5,000 to $35,000 CAD",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "carter-credit-union-data-breach-settlement": {
@@ -2572,7 +2572,7 @@
     }
    ],
    "title": "Carter Credit Union Data Breach Settlement — $50 Cash or Up to $2,500",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "caseys-tobacco-surcharge-erisa-class-action-settlement": {
@@ -2638,7 +2638,7 @@
     }
    ],
    "title": "Casey's $5.1M Tobacco Surcharge ERISA Settlement — Automatic Payment",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "central-maine-healthcare-data-breach-settlement": {
@@ -2716,7 +2716,7 @@
     }
    ],
    "title": "Central Maine Healthcare Data Breach Settlement — About $50 Cash or Up to $5,000 + Medical Records Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "central-valley-meat-data-breach-class-action-settlement": {
@@ -2781,7 +2781,7 @@
     }
    ],
    "title": "Central Valley Meat Data Breach Settlement — Up to $5,000 + $75 California Payment",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "certainteed-organic-shingles-class-action-settlement": {
@@ -2846,7 +2846,7 @@
     }
    ],
    "title": "CertainTeed Organic Shingles Class Action Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -2911,7 +2911,7 @@
     }
    ],
    "title": "$69M ChemoCentryx Securities Settlement (CCXI)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -2976,7 +2976,7 @@
     }
    ],
    "title": "CIBC $10M NSF Fee Settlement (Canada) — Automatic Payments If Approved",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "cibc-renaissance-mutual-funds-trailing-commissions-settlement": {
@@ -3039,7 +3039,7 @@
     }
    ],
    "title": "CIBC & Renaissance Mutual Funds $11M Trailing Commissions Settlement — $32 CAD for Former CIBC Fund Holders",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "clay-platte-family-medicine-data-breach-settlement": {
@@ -3117,7 +3117,7 @@
     }
    ],
    "title": "Clay-Platte Family Medicine Data Breach Settlement — Up to $15,000 or Pro Rata Cash",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "clorox-pine-sol-recall": {
@@ -3166,7 +3166,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Clorox® Pine-Sol® Voluntary Recall",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "co-diagnostics-securities-class-action-settlement": {
@@ -3231,7 +3231,7 @@
     }
    ],
    "title": "$6.5M Co-Diagnostics Securities Settlement (CODX)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -3311,7 +3311,7 @@
     }
    ],
    "title": "Coleman Professional Services Data Breach Settlement — ~$70 Cash or Up to $5,000 + Credit Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "columbus-regional-health-pixel-tracking-class-action-settlement": {
@@ -3378,7 +3378,7 @@
     }
    ],
    "title": "Columbus Regional Health Pixel Tracking Settlement — $25.50 for Indiana Portal Users",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "community-dental-care-data-breach-settlement": {
@@ -3466,7 +3466,7 @@
     }
    ],
    "title": "Community Dental Care Data Breach Settlement — $50 or Up to $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "community-realty-management-data-breach-settlement": {
@@ -3544,7 +3544,7 @@
     }
    ],
    "title": "Community Realty Management (CRM) Data Breach Settlement — $20 Cash or Up to $2,000 + 2 Years Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "concora-credit-tcpa-prerecorded-calls-class-action-settlement": {
@@ -3609,7 +3609,7 @@
     }
    ],
    "title": "Concora Credit TCPA Prerecorded Call Settlement — An Estimated $250 to $650",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "cone-health-pixel-tracking-class-action-settlement": {
@@ -3685,7 +3685,7 @@
     }
    ],
    "title": "Cone Health Pixel Tracking Settlement — An Equal Share of $1.765M",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "connectoncall-data-breach-settlement": {
@@ -3763,7 +3763,7 @@
     }
    ],
    "title": "ConnectOnCall $4.95M Data Breach Settlement — Up to $75 With ID Required, or Up to $5,000 Documented",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "consumer-fragrances-class-action-settlement": {
@@ -3814,7 +3814,7 @@
    "status_text": null,
    "tiers": [],
    "title": "$11M Fragrance End-User Antitrust Class Action Settlement (IFF)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -3881,7 +3881,7 @@
     }
    ],
    "title": "$60M Continental Resources Shareholder Settlement (Hamm Buyout)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -3966,7 +3966,7 @@
     }
    ],
    "title": "Costa Del Mar $23.9M Sunglasses Repair Fee Settlement — Automatic Payments",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "costa-del-mar-sunglasses-warranty-fee-class-action-settlement": {
@@ -4049,7 +4049,7 @@
     }
    ],
    "title": "Costa Del Mar $4.095M Sunglasses Warranty Fee Settlement — Automatic Payments",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "country-bank-savings-overdraft-nsf-fee-settlement": {
@@ -4114,7 +4114,7 @@
     }
    ],
    "title": "$495K Country Bank for Savings Overdraft & NSF Fee Settlement — Automatic Payments",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "covenant-transport-washington-job-postings-class-action-settlement": {
@@ -4181,7 +4181,7 @@
     }
    ],
    "title": "Covenant Transport Washington Job Postings Settlement — Estimated $921, Capped at $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "cpap-medical-supplies-data-breach-settlement": {
@@ -4246,7 +4246,7 @@
     }
    ],
    "title": "CPAP Medical Supplies Data Breach Settlement — Up to $5,000 Documented Plus Medical Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "crst-expedited-california-truck-driver-paga-class-action-settlement": {
@@ -4313,7 +4313,7 @@
     }
    ],
    "title": "CRST Expedited $14.5M California Truck Driver Class Action & PAGA Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -4382,7 +4382,7 @@
     }
    ],
    "title": "CSX Livingston, Kentucky Train Derailment Settlement — Up to $4,000 per Household",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "cvs-digital-privacy-class-action-settlement": {
@@ -4447,7 +4447,7 @@
     }
    ],
    "title": "CVS Digital Privacy Settlement — Up to $5 Without Proof",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "dairy-farmers-of-america-data-breach-settlement": {
@@ -4525,7 +4525,7 @@
     }
    ],
    "title": "Dairy Farmers of America (DFA) Data Breach Settlement — $55 Cash or Up to $4,500 + Credit Monitoring (Claim Form Required for All Benefits)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "danaher-securities-class-action-settlement": {
@@ -4590,7 +4590,7 @@
     }
    ],
    "title": "$172.5M Danaher Securities Settlement (DHR)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -4670,7 +4670,7 @@
     }
    ],
    "title": "DAP Health Data Breach Settlement — ~$25 Cash, $75 More in CA, or Up to $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "dennys-new-york-unpaid-wages-settlement": {
@@ -4735,7 +4735,7 @@
     }
    ],
    "title": "Denny’s New York $440K Unpaid Wages Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -4802,7 +4802,7 @@
     }
    ],
    "title": "$37.65M Diisocyanates (MDI & TDI) Price-Fixing Settlements",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
     "page deadline 2026-11-02 differs from index 2026-10-13; page wins"
@@ -4883,7 +4883,7 @@
     }
    ],
    "title": "Docketwise Data Breach Settlement — $50 With No Proof, or Up to $5,000 Documented",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "domestic-airlines-price-fixing-class-action-settlement": {
@@ -4932,7 +4932,7 @@
    "status_text": null,
    "tiers": [],
    "title": "$60M United® Southwest® Delta® American Airlines®",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -5014,7 +5014,7 @@
     }
    ],
    "title": "Domino's San Francisco Health Care Fee Settlement — 75% Voucher or 50% Cash",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "dovenmuehle-mortgage-pay-to-pay-fee-settlement": {
@@ -5079,7 +5079,7 @@
     }
    ],
    "title": "Dovenmuehle $9M Mortgage Pay-to-Pay Fee Settlement — Automatic Payment (NC)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "doxim-data-breach-settlement": {
@@ -5157,7 +5157,7 @@
     }
    ],
    "title": "Doxim Data Breach Settlement — ~$100 Cash or Up to $5,000 + Credit Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "dr-squatch-natural-class-action-settlement": {
@@ -5222,7 +5222,7 @@
     }
    ],
    "title": "Dr. Squatch $9M \"Natural\" Labeling Settlement — $0.50 per Product, Up to $12.50",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "drata-sdr-overtime-misclassification-class-action-settlement": {
@@ -5285,7 +5285,7 @@
     }
    ],
    "title": "Drata $1.3M SDR Overtime Settlement — Automatic Payment",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "drug-and-alcohol-treatment-services-data-breach-settlement": {
@@ -5363,7 +5363,7 @@
     }
    ],
    "title": "Drug and Alcohol Treatment Services (DATS) Data Breach Settlement — Up to $5,000 or Pro Rata Cash",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "eagle-pharmaceuticals-securities-class-action-settlement": {
@@ -5428,7 +5428,7 @@
     }
    ],
    "title": "$9.5M Eagle Pharmaceuticals Securities Settlement (EGRX)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -5493,7 +5493,7 @@
     }
    ],
    "title": "$15M Edgio Securities Class Action Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -5573,7 +5573,7 @@
     }
    ],
    "title": "EFS Advisors & Aviben Data Breach Settlement — $50 Cash or Up to $2,500 + a Year of Credit Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "eisner-advisory-group-data-breach-settlement": {
@@ -5651,7 +5651,7 @@
     }
    ],
    "title": "EisnerAmper Data Breach Settlement — ~$100 Cash or Up to $5,000 + Credit Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "emanate-health-pixel-privacy-class-action-settlement": {
@@ -5716,7 +5716,7 @@
     }
    ],
    "title": "Emanate Health Pixel Privacy Settlement — Pro Rata Cash for California Patients",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "emblemhealth-senior-care-copay-class-action-settlement": {
@@ -5783,7 +5783,7 @@
     }
    ],
    "title": "EmblemHealth $53M Senior Care Co-Pay Settlement — NYC Retiree Reimbursement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "employer-unpaid-wages-overtime-lawsuit": {
@@ -5846,7 +5846,7 @@
     }
    ],
    "title": "Unpaid Wages & Overtime — Hold Your Employer Accountable",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -5899,7 +5899,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Equifax $100M Credit Score Error Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -5979,7 +5979,7 @@
     }
    ],
    "title": "Equinox Data Breach Settlement — Up to $5,000 or ~$100 Cash + Credit Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "excel-fitness-data-breach-settlement": {
@@ -6057,7 +6057,7 @@
     }
    ],
    "title": "Excel Fitness Data Breach Settlement — $50 Cash or Up to $4,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "ey-bank-of-america-moveit-data-breach-settlement": {
@@ -6135,7 +6135,7 @@
     }
    ],
    "title": "EY & Bank of America $2.5M MOVEit Data Breach Settlement — $100 Cash or Documented Losses",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "fairchild-medical-center-pixel-tracking-class-action-settlement": {
@@ -6202,7 +6202,7 @@
     }
    ],
    "title": "Fairchild Medical Center Pixel Tracking Settlement — $25 Cash Plus a Year of Privacy Protection",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "fastbucks-new-mexico-restitution-program": {
@@ -6267,7 +6267,7 @@
     }
    ],
    "title": "FastBucks New Mexico Loan Restitution Program",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -6346,7 +6346,7 @@
     }
    ],
    "title": "Ram, Jeep, Dodge & Chrysler 3.6L Valve Train Warranty Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
     "proof level differs from the index (index=L3, page=L2)"
@@ -6414,7 +6414,7 @@
     }
    ],
    "title": "FinWise Bank Data Breach Settlement — Up to $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "first-baptist-church-hammond-data-breach-settlement": {
@@ -6492,7 +6492,7 @@
     }
    ],
    "title": "First Baptist Church of Hammond Data Breach Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -6557,7 +6557,7 @@
     }
    ],
    "title": "FirstCash $5M Military Lending Act Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -6625,7 +6625,7 @@
     }
    ],
    "title": "$59.5M Flo Period Tracker Privacy Settlement — No Proof, Claim by Oct. 15",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "forbes-website-tracker-privacy-class-action-settlement": {
@@ -6703,7 +6703,7 @@
     }
    ],
    "title": "Forbes $10M Website Tracking Settlement — Pro Rata Cash for California Readers",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "fort-wayne-medical-education-program-data-breach-settlement": {
@@ -6781,7 +6781,7 @@
     }
    ],
    "title": "Fort Wayne Medical Education Program Data Breach Settlement — $40 Cash or Up to $5,500 + 2 Years of Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "ftc-match-group-settlement": {
@@ -6830,7 +6830,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Match Group $14M FTC Settlement (Match.com)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -6910,7 +6910,7 @@
     }
    ],
    "title": "Fujifilm Diosynth Data Breach Settlement — $50 Cash or Up to $2,500 Documented",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "furniture-mart-usa-data-breach-settlement": {
@@ -6988,7 +6988,7 @@
     }
    ],
    "title": "Furniture Mart USA Data Breach Settlement — $75 Cash or Up to $4,600",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "geico-clue-report-fcra-class-action-settlement": {
@@ -7053,7 +7053,7 @@
     }
    ],
    "title": "GEICO $1.65M C.L.U.E. Report Settlement — Automatic Payment",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "generic-drugs-price-fixing-class-action-settlement": {
@@ -7116,7 +7116,7 @@
     }
    ],
    "title": "$850M+ Generic Drug Price-Fixing Settlements — End-Payer Claims Open",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "gilt-bond-antitrust-class-action-settlement": {
@@ -7165,7 +7165,7 @@
    "status_text": null,
    "tiers": [],
    "title": "$12M Citigroup HSBC RBC Morgan Stanley Investment Bonds Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "globe-life-american-income-life-data-breach-settlement": {
@@ -7230,7 +7230,7 @@
     }
    ],
    "title": "Globe Life & American Income Life Data Breach Settlement — Up to $5,000 Plus $72 Lost Time",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "google-play-store-700-million-antitrust-class-action-settlement": {
@@ -7295,7 +7295,7 @@
     }
    ],
    "title": "$700M Google Play Store Consumer Antitrust Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -7365,7 +7365,7 @@
     }
    ],
    "title": "Gotham Steel, Granitestone & Bell & Howell Cookware Settlement — $6 a Pan, Up to $12",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "guitar-center-wage-and-hour-class-action-settlement": {
@@ -7416,7 +7416,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Guitar Center $2.4M Wage and Hour Class Action Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "hain-celestial-securities-class-action-settlement": {
@@ -7479,7 +7479,7 @@
     }
    ],
    "title": "$35M Hain Celestial Securities Settlement (HAIN)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -7530,7 +7530,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Harvard $53M Morgue Settlement for Donor Families",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -7610,7 +7610,7 @@
     }
    ],
    "title": "HCF Management Data Breach Settlement — $35 Cash or Up to $4,000 + Credit Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "healthcare-services-group-data-breach-settlement": {
@@ -7688,7 +7688,7 @@
     }
    ],
    "title": "Healthcare Services Group $3M Data Breach Settlement — Pro Rata Cash or Up to $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "hearthside-illinois-child-labor-assurance": {
@@ -7751,7 +7751,7 @@
     }
    ],
    "title": "$4.5M Hearthside Illinois Child-Labor Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published",
     "tiers derived from the page fact (index had no payout text)"
@@ -7803,7 +7803,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Hefty Garbage \"Recycling\" Bags Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "heritage-south-credit-union-data-breach-settlement": {
@@ -7868,7 +7868,7 @@
     }
    ],
    "title": "Heritage South Credit Union Data Breach Settlement — Up to $2,000 + Credit Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "high-5-games-social-casino-class-action-settlement": {
@@ -7946,7 +7946,7 @@
     }
    ],
    "title": "High 5 Games Social Casino Settlement — $12M–$30M for Washington Virtual Coin Buyers",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "highland-health-systems-data-breach-settlement": {
@@ -8024,7 +8024,7 @@
     }
    ],
    "title": "Highland Health Systems Data Breach Settlement — ~$85 or Up to $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "highlands-oncology-group-data-breach-settlement": {
@@ -8102,7 +8102,7 @@
     }
    ],
    "title": "Highlands Oncology Data Breach Settlement — $50 Cash or Up to $4,250 Plus 3 Years of Medical Data Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "hirevue-bipa-biometric-privacy-class-action-settlement": {
@@ -8169,7 +8169,7 @@
     }
    ],
    "title": "HireVue $3.75M Biometric Privacy Settlement — About $150 for Illinois Video Interviews",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "holley-securities-class-action-settlement": {
@@ -8234,7 +8234,7 @@
     }
    ],
    "title": "$12.75M Holley Securities Settlement — Estimated $0.16 per Share (HLLY)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "homebuyer-antitrust-class-action-settlement": {
@@ -8310,7 +8310,7 @@
     }
    ],
    "title": "NAR Homebuyer Antitrust Settlement — $120.3M for MLS Home Purchases",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "honda-recall-2025": {
@@ -8359,7 +8359,7 @@
    "status_text": null,
    "tiers": [],
    "title": "300K Honda and Acura Vehicle Recall",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -8410,7 +8410,7 @@
    "status_text": null,
    "tiers": [],
    "title": "$7.3M Hormel and Seaboard Pork Class Action Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -8479,7 +8479,7 @@
     }
    ],
    "title": "Hunter Warfield $350 Unlicensed Rental Collections Settlement — Automatic Payment (MD)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "hydromax-usa-job-postings-washington-class-action-settlement": {
@@ -8557,7 +8557,7 @@
     }
    ],
    "title": "Hydromax USA Washington Job Postings Settlement — Equal Share of Up to $382,500",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "hyundai-kia-airbag-control-units-class-action-settlement": {
@@ -8620,7 +8620,7 @@
     }
    ],
    "title": "$62.1M Hyundai & Kia Airbag Control Units Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -8685,7 +8685,7 @@
     }
    ],
    "title": "Hyundai & Kia Multistate Immobilizer Theft Settlement — Up to $4,500 for Theft Damage",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "illinois-institution-abuse-lawsuit": {
@@ -8750,7 +8750,7 @@
     }
    ],
    "title": "Illinois Institutional Abuse Lawsuit — No Filing Deadline for Most Childhood Claims",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -8815,7 +8815,7 @@
     }
    ],
    "title": "Indian Boarding Homes Class Action Settlement — $10,000 Plus Up to $200,000 for Abuse",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "inotiv-data-breach-settlement": {
@@ -8893,7 +8893,7 @@
     }
    ],
    "title": "Inotiv Data Breach Settlement — $45 With No Documentation, or Up to $4,580 Documented, Plus 2 Years of Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "international-shoppes-data-breach-settlement": {
@@ -8971,7 +8971,7 @@
     }
    ],
    "title": "International Shoppes Data Breach Settlement — $50 or Up to $4,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "iod-datavant-pennsylvania-medical-records-fees-class-action-settlement": {
@@ -9038,7 +9038,7 @@
     }
    ],
    "title": "IOD/Datavant Medical Records Fee Settlement — 35% Refund on Pennsylvania Copying Charges",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "irhythm-technologies-securities-class-action-settlement": {
@@ -9101,7 +9101,7 @@
     }
    ],
    "title": "$45M iRhythm Technologies Securities Settlement (IRTC)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -9181,7 +9181,7 @@
     }
    ],
    "title": "Jack’s Family Restaurants Data Breach Settlement — $55 Cash or Up to $4,000 Documented Plus $80 Lost Time",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "john-deere-right-to-repair-class-action-settlement": {
@@ -9246,7 +9246,7 @@
     }
    ],
    "title": "$99M John Deere Right-to-Repair Settlement — Claims Open This Fall",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "just4veterans-va-claim-fees-class-action-settlement": {
@@ -9311,7 +9311,7 @@
     }
    ],
    "title": "Just4Veterans (J4V) $750K VA Disability Claim Fee Settlement — Refunds Capped at What You Paid",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "kaiser-permanente-out-of-network-mental-health-california-class-action-settlement": {
@@ -9376,7 +9376,7 @@
     }
    ],
    "title": "Kaiser Permanente Out-of-Network Mental Health Reimbursement (California)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -9427,7 +9427,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Keurig K-Supreme Coffee Maker Descaling Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "kia-window-regulator-class-action-settlement": {
@@ -9492,7 +9492,7 @@
     }
    ],
    "title": "Kia Window Regulator Settlement — Up to $400 per Repair",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "kornit-digital-securities-class-action-settlement": {
@@ -9557,7 +9557,7 @@
     }
    ],
    "title": "Kornit Digital $19.5M Securities Settlement (KRNT)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -9624,7 +9624,7 @@
     }
    ],
    "title": "Kroger $17M Prescription Drug Pricing Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -9717,7 +9717,7 @@
     }
    ],
    "title": "La Jolla Group Data Breach Settlement — $95 or $45 Cash, or Up to $2,000 Documented",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "labcorp-website-tracking-class-action-settlement": {
@@ -9783,7 +9783,7 @@
     }
    ],
    "title": "Labcorp Website Tracking Settlement — No Money, No Claim Form",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -9863,7 +9863,7 @@
     }
    ],
    "title": "Lands’ End Data Breach Settlement — ~$60 Cash or Up to $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "leesa-helix-bear-brooklyn-bedding-mattress-discount-settlement": {
@@ -9941,7 +9941,7 @@
     }
    ],
    "title": "Leesa, Helix, Bear & Brooklyn Bedding $110 Mattress Settlement — Cash or Store Credit",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "levoit-air-purifier-hepa-class-action-settlement": {
@@ -10006,7 +10006,7 @@
     }
    ],
    "title": "Levoit Core & EverestAir Air Purifier HEPA Settlement — $10 Digital Payment",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "lifemd-data-privacy-investigation": {
@@ -10069,7 +10069,7 @@
     }
    ],
    "title": "LifeMD Data Privacy Investigation — Health Intake Answers Allegedly Shared With Ad Networks",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published",
     "no quick-facts block found"
@@ -10137,7 +10137,7 @@
     }
    ],
    "title": "LifeStance Pixel Privacy Settlement — Pro Rata Cash from a $3M Fund",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "limetree-bay-refinery-class-action-settlement": {
@@ -10213,7 +10213,7 @@
     }
    ],
    "title": "Limetree Bay Refinery Settlement — $59.8M for Western St. Croix",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "proof level differs from the index (index=L3, page=L2)"
    ]
@@ -10280,7 +10280,7 @@
     }
    ],
    "title": "LiveHealth Online (Amwell) Privacy Settlement — Estimated $51 to $102",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "lloyds-syndicate-insurance-class-action-settlement": {
@@ -10345,7 +10345,7 @@
     }
    ],
    "title": "Lloyd's of London Syndicate Insurance Settlement — $3.57M Pro Rata by Premium Paid",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "logitech-tariff-refund-class-action-lawsuit": {
@@ -10396,7 +10396,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Logitech Tariff Refund Class Action Lawsuit",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -10466,7 +10466,7 @@
     }
    ],
    "title": "Long County, Georgia Fire Fee Settlement — $500K in Refunds",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "louisville-ladder-attic-ladder-recall-class-action-lawsuit": {
@@ -10532,7 +10532,7 @@
     }
    ],
    "title": "Louisville Ladder Attic Ladder Recall — Free Repair Kit for 1.77M Ladders",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "lsc-planned-parenthood-lab-data-breach-settlement": {
@@ -10597,7 +10597,7 @@
     }
    ],
    "title": "Planned Parenthood Lab Data Breach Settlement — Up to $1,000 Pro Rata",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "mcna-dental-data-breach-settlement": {
@@ -10662,7 +10662,7 @@
     }
    ],
    "title": "MCNA Dental Data Breach Settlement — Up to $2,500 Plus 2 Years of Medical Data Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "medical-scope-infection-lawsuit": {
@@ -10725,7 +10725,7 @@
     }
    ],
    "title": "Medical Scope Infection Lawsuit — Endoscopy & ERCP",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -10805,7 +10805,7 @@
     }
    ],
    "title": "Mental Health Association Data Breach Settlement — $40 Cash or Up to $5,000 + $75 Lost Time + 3 Years of Credit Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "mercedes-benz-aem-incentive-bluetec-diesel-settlement": {
@@ -10868,7 +10868,7 @@
     }
    ],
    "title": "$2,000 Mercedes-Benz BlueTEC Diesel AEM Incentive Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -10935,7 +10935,7 @@
     }
    ],
    "title": "Metropolis $6.5M Tennessee Parking Settlement — Refunds for Overcharges, Tickets & Boots",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "mg217-coal-tar-shampoo-benzene-class-action-settlement": {
@@ -11013,7 +11013,7 @@
     }
    ],
    "title": "MG217 Coal Tar Shampoo Settlement — Up to $7 a Bottle, or a $25 Voucher",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "microsoft-k12-student-data-privacy-class-action-lawsuit": {
@@ -11062,7 +11062,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Microsoft K-12 Student Data Privacy Class Action",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -11142,7 +11142,7 @@
     }
    ],
    "title": "Modernizing Medicine (ModMed) Data Breach Settlement — About $75 Cash or Up to $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "money-source-tcpa-prerecorded-calls-class-action-settlement": {
@@ -11207,92 +11207,7 @@
     }
    ],
    "title": "The Money Source $1.5M TCPA Prerecorded Call Settlement — Automatic Payment",
-   "verified_as_of": "2026-09-18",
-   "warnings": []
-  },
-  "moodswings-ticket-service-charge-class-action-settlement": {
-   "administrator": "Kroll Settlement Administration LLC",
-   "case_number": "Index No. 628144/2025",
-   "case_title": "Oliva, et al. v. Moodswings, LLC",
-   "category": null,
-   "claim_url": "https://www.moodswingsticketingsettlement.com/",
-   "content_hash": "7a92db7390d0c940",
-   "court": "Supreme Court of the State of New York, County of Nassau",
-   "cross_refs": {},
-   "deadline": {
-    "date": "2026-09-18",
-    "kind": "claim",
-    "note": null,
-    "raw": "September 18, 2026"
-   },
-   "ev_confidence": "low",
-   "ev_estimate": null,
-   "ev_note": "payout not disclosed",
-   "extra_dates": {
-    "Final Approval Hearing": "December 17, 2026 at 9:15 AM"
-   },
-   "fund_size": null,
-   "fund_size_raw": null,
-   "geo": {
-    "country": null,
-    "label": "CA, CO, CT, MD, NY & TN residents",
-    "scope_type": "states",
-    "states": [
-     "CA",
-     "CO",
-     "CT",
-     "MD",
-     "NY",
-     "TN"
-    ]
-   },
-   "id": "moodswings-ticket-service-charge-class-action-settlement",
-   "index_updated": "2026-09-18",
-   "kind": "settlement",
-   "lane": "claimable",
-   "lane_reason": "open claim window",
-   "last_modified": null,
-   "official_website": "https://www.moodswingsticketingsettlement.com/",
-   "payout_raw": "Per-Ticket Cash or 25% Off",
-   "payout_sub": null,
-   "payout_tier": "D",
-   "proof_detail": "The online claim form will not open without the Class Member ID from the notice · no receipts or tickets to upload",
-   "proof_label_raw": "ID/code from notice required",
-   "proof_level": "L2",
-   "proof_required": true,
-   "source": "openclassactions",
-   "source_url": "https://openclassactions.com/settlements/moodswings-ticket-service-charge-class-action-settlement.php",
-   "status_text": null,
-   "tiers": [
-    {
-     "amount_max": null,
-     "amount_min": null,
-     "cap": null,
-     "confidence": "low",
-     "currency": "USD",
-     "label": "Per-Ticket Cash",
-     "payout_type": "undisclosed",
-     "per_unit": null,
-     "proof_level": "L2",
-     "requires_claim_form": true,
-     "source_text": "Per-Ticket Cash"
-    },
-    {
-     "amount_max": 25.0,
-     "amount_min": null,
-     "cap": null,
-     "confidence": "medium",
-     "currency": "USD",
-     "label": "25% Off",
-     "payout_type": "percent_of_recovery",
-     "per_unit": null,
-     "proof_level": "L2",
-     "requires_claim_form": true,
-     "source_text": "25% Off"
-    }
-   ],
-   "title": "Moodswings Ticket Service Charge Settlement — Per-Ticket Cash or 25% Off",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "mortgage-investors-group-data-breach-settlement": {
@@ -11370,7 +11285,7 @@
     }
    ],
    "title": "Mortgage Investors Group Data Breach Settlement — $45 Cash or Up to $2,000 + 1 Year of Credit Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "mount-sinai-data-privacy-class-action-settlement": {
@@ -11435,7 +11350,7 @@
     }
    ],
    "title": "Mount Sinai Data Privacy Settlement — Estimated $20 Cash + Medical Data Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "muscatine-power-and-water-data-breach-settlement": {
@@ -11500,7 +11415,7 @@
     }
    ],
    "title": "Muscatine Power and Water Data Breach Settlement — $525K",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "mymichigan-health-403b-erisa-class-action-settlement": {
@@ -11565,85 +11480,7 @@
     }
    ],
    "title": "MyMichigan Health $1.9M 403(b) ERISA Settlement — No Claim Form, No Opt-Out",
-   "verified_as_of": "2026-09-18",
-   "warnings": []
-  },
-  "naper-grove-vision-care-data-breach-settlement": {
-   "administrator": "Simpluris",
-   "case_number": "2025-LA-000922",
-   "case_title": "In re Naper Grove Data Breach Litigation",
-   "category": "Data Breaches",
-   "claim_url": "https://www.NaperGroveSettlement.com/",
-   "content_hash": "386c714c2b187a4e",
-   "court": "Circuit Court of the Eighteenth Judicial Circuit, DuPage County, Illinois",
-   "cross_refs": {},
-   "deadline": {
-    "date": "2026-09-18",
-    "kind": "claim",
-    "note": null,
-    "raw": "September 18, 2026"
-   },
-   "ev_confidence": "low",
-   "ev_estimate": 500.0,
-   "ev_note": "half of the published maximum",
-   "extra_dates": {
-    "Final Approval Hearing": "October 20, 2026 at 9:00 a.m. Central"
-   },
-   "fund_size": null,
-   "fund_size_raw": null,
-   "geo": {
-    "country": null,
-    "label": "",
-    "scope_type": "unspecified",
-    "states": []
-   },
-   "id": "naper-grove-vision-care-data-breach-settlement",
-   "index_updated": "2026-09-18",
-   "kind": "settlement",
-   "lane": "claimable",
-   "lane_reason": "open claim window",
-   "last_modified": null,
-   "official_website": "https://www.NaperGroveSettlement.com/",
-   "payout_raw": "Pro-Rata Cash or Up to $1,000, Claim by September 18",
-   "payout_sub": null,
-   "payout_tier": "A",
-   "proof_detail": "The online claim portal requires the Login ID & PIN printed on your mailed or emailed notice · no receipts are needed for the alternate pro-rata cash (and the paper Claim Form can be mailed with name & address only), but documentation is required for the up-to-$1,000 documented-loss option",
-   "proof_label_raw": "ID/code from notice required",
-   "proof_level": "L2",
-   "proof_required": true,
-   "source": "openclassactions",
-   "source_url": "https://openclassactions.com/settlements/data-breaches/naper-grove-vision-care-data-breach-settlement.php",
-   "status_text": null,
-   "tiers": [
-    {
-     "amount_max": null,
-     "amount_min": null,
-     "cap": null,
-     "confidence": "medium",
-     "currency": "USD",
-     "label": "Pro-Rata Cash",
-     "payout_type": "pro_rata_fund",
-     "per_unit": null,
-     "proof_level": "L2",
-     "requires_claim_form": true,
-     "source_text": "Pro-Rata Cash"
-    },
-    {
-     "amount_max": 1000.0,
-     "amount_min": null,
-     "cap": null,
-     "confidence": "medium",
-     "currency": "USD",
-     "label": "Up to $1,000",
-     "payout_type": "range",
-     "per_unit": null,
-     "proof_level": "L2",
-     "requires_claim_form": true,
-     "source_text": "Up to $1,000"
-    }
-   ],
-   "title": "Naper Grove Vision Care Data Breach Settlement — Pro-Rata Cash or Up to $1,000, Claim by September 18",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "national-tenant-network-fcra-postcard-class-action-settlement": {
@@ -11719,7 +11556,7 @@
     }
    ],
    "title": "National Tenant Network Eviction Postcard Settlement — $1.625M Fund",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "navy-federal-unauthorized-personal-loan-class-action-settlement": {
@@ -11784,7 +11621,7 @@
     }
    ],
    "title": "Navy Federal Unauthorized Personal Loan Settlement — Loan Canceled, Payments Refunded, Plus $250",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "ncaa-tennis-prize-money-class-action-settlement": {
@@ -11860,7 +11697,7 @@
     }
    ],
    "title": "$2M NCAA Tennis Prize Money Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -11940,7 +11777,7 @@
     }
    ],
    "title": "Neutrogena Skin360 BIPA Settlement — $4.7M for Illinois Users",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "new-amazon-returns-class-action-settlement": {
@@ -12005,7 +11842,7 @@
     }
    ],
    "title": "Amazon $309.5M Returns Class Action Settlement — Missing, Late & Reversed Refunds",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "nj-lenders-data-breach-settlement": {
@@ -12083,7 +11920,7 @@
     }
    ],
    "title": "NJ Lenders Data Breach Settlement — $40 Cash or Up to $2,500",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "north-highland-esop-erisa-class-action-settlement": {
@@ -12149,7 +11986,7 @@
     }
    ],
    "title": "North Highland ESOP $2.375M ERISA Settlement — No Claim Form, No Opt-Out",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "northrop-grumman-canoga-park-groundwater-contamination-class-action-settlement": {
@@ -12227,7 +12064,7 @@
     }
    ],
    "title": "Northrop Grumman $75M Canoga Park Contamination Settlement — Estimated $7,494–$21,110 per Home",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "nyc-central-booking-class-action-settlement": {
@@ -12294,7 +12131,7 @@
     }
    ],
    "title": "NYC Central Booking Settlement — Up to $475 for Each Detention",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "nyc-strip-search-class-action-settlement": {
@@ -12372,7 +12209,7 @@
     }
    ],
    "title": "NYC Strip Search Settlement — Pro Rata Share of $28M",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "nyc-taxi-limousine-commission-license-suspension-class-action-settlement": {
@@ -12448,7 +12285,7 @@
     }
    ],
    "title": "$140M NYC TLC License Suspension Class Action Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -12513,7 +12350,7 @@
     }
    ],
    "title": "NZXT Flex PC Rental $3.45M Settlement — Debt Forgiveness, Free PCs & Cash",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published",
     "source links a court record where the settlement website belongs"
@@ -12581,7 +12418,7 @@
     }
    ],
    "title": "OCOOPA Hand Warmer Recall — 1.5 Million Units, Full Refund",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "ohio-nightclub-dancer-unpaid-wages-class-action-settlement": {
@@ -12659,7 +12496,7 @@
     }
    ],
    "title": "Ohio Nightclub Dancer Unpaid Wages Settlement — $800K",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "olinsky-associates-data-breach-settlement": {
@@ -12724,7 +12561,7 @@
     }
    ],
    "title": "Olinsky & Associates Data Breach Settlement — $40 Automatic",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "on-q-financial-data-breach-settlement": {
@@ -12802,7 +12639,7 @@
     }
    ],
    "title": "On Q Financial Data Breach Settlement — About $50 or Up to $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "onepoint-patient-care-data-breach-settlement": {
@@ -12880,7 +12717,7 @@
     }
    ],
    "title": "OnePoint Patient Care Data Breach Settlement — ~$100 Cash or Up to $3,500",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "onetouchpoint-data-breach-class-action-settlement": {
@@ -12958,7 +12795,7 @@
     }
    ],
    "title": "OneTouchPoint Data Breach Settlement — $75 With No Documents or Up to $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "oreilly-auto-parts-tcpa-text-message-class-action-settlement": {
@@ -13023,7 +12860,7 @@
     }
    ],
    "title": "O'Reilly Auto Parts TCPA Text Message Settlement — Up to $22",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "palm-beach-tan-tcpa-text-message-class-action-settlement": {
@@ -13088,7 +12925,7 @@
     }
    ],
    "title": "Palm Beach Tan Text Message Settlement — Up to $1,500 Per Text",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "palomar-health-medical-group-data-breach-settlement": {
@@ -13166,7 +13003,7 @@
     }
    ],
    "title": "Palomar Health Medical Group $3.1M Data Breach Settlement — About $60 or Up to $5,000 Plus 2 Years of Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "peco-foods-data-breach-settlement": {
@@ -13231,7 +13068,7 @@
     }
    ],
    "title": "Peco Foods Data Breach Settlement — Up to $550 Cash Plus Documented Losses",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "people-data-labs-colorado-cell-phone-number-class-action-settlement": {
@@ -13309,7 +13146,7 @@
     }
    ],
    "title": "People Data Labs $6.36M Colorado Cell Phone Number Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -13389,7 +13226,7 @@
     }
    ],
    "title": "Physicians' Primary Care FL Data Breach Settlement — Up to $5,000 or ~$100",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "pierce-county-library-system-data-breach-settlement": {
@@ -13467,7 +13304,7 @@
     }
    ],
    "title": "Pierce County Library System Data Breach Settlement — $70 Cash or Up to $4,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "pork-price-fixing-class-action-settlement": {
@@ -13542,7 +13379,7 @@
     }
    ],
    "title": "$117M Pork Price-Fixing Class Action Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -13610,7 +13447,7 @@
     }
    ],
    "title": "PowerSchool $26.5M Stockholder Settlement — About $0.44 a Share, Paid Automatically",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "ppl-cdpap-caregivers-settlement": {
@@ -13675,7 +13512,7 @@
     }
    ],
    "title": "PPL $162M New York CDPAP Caregiver Wage Settlement — Automatic ~$680 Payments",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "providence-health-401k-forfeiture-class-action-settlement": {
@@ -13740,7 +13577,7 @@
     }
    ],
    "title": "Providence Health $42.7M 401(k) Forfeiture ERISA Settlement — Automatic Payment",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "quality-inn-seatac-seawind-washington-job-postings-class-action-settlement": {
@@ -13793,7 +13630,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Quality Inn SeaTac (Seawind Hotel) Washington Job Postings Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "raging-waters-processing-fee-class-action-settlement": {
@@ -13858,7 +13695,7 @@
     }
    ],
    "title": "Raging Waters $850K Ticket Processing Fee Settlement — Pro Rata Cash",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "rapid-investments-axiom-bank-release-card-class-action-settlement": {
@@ -13934,7 +13771,7 @@
     }
    ],
    "title": "Release Card Settlement (Rapid Financial Solutions & Axiom Bank) — $15 Minimum Plus 3× Your Card Fees",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "realpage-rental-software-antitrust-class-action-settlement": {
@@ -13999,7 +13836,7 @@
     }
    ],
    "title": "Renters: $359.9M Apartment Rent Price-Fixing Settlement (RealPage)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -14068,7 +13905,7 @@
     }
    ],
    "title": "Red Robin Washington Job Postings Settlement — Est. $573.43",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "regional-urology-ochsner-lsu-data-breach-settlement": {
@@ -14146,7 +13983,7 @@
     }
    ],
    "title": "Regional Urology & Ochsner LSU Health Data Breach Settlement — $40 Cash or Medical Monitoring Plus Up to $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "ricoh-usa-retirement-savings-plan-erisa-class-action-settlement": {
@@ -14211,7 +14048,7 @@
     }
    ],
    "title": "Ricoh USA Retirement Savings Plan $1.75M ERISA Settlement — 401(k) Fees, Stable Value Fund & Forfeitures",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "roblox-child-predator-lawsuit": {
@@ -14274,7 +14111,7 @@
     }
    ],
    "title": "Roblox Video Game Child Predator Lawsuits — Was Your Child Targeted",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published"
    ]
@@ -14341,7 +14178,7 @@
     }
    ],
    "title": "Rockley Photonics $10M Securities Settlement (RKLY)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -14392,7 +14229,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Rolling Stone Magazine Lifetime Subscriber Class Action Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "ryobi-40v-mower-fire-class-action-lawsuit": {
@@ -14458,7 +14295,7 @@
     }
    ],
    "title": "Ryobi 40V Mower Fire Recall — Free Replacement Mower",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "saint-gobain-washington-job-postings-class-action-settlement": {
@@ -14525,7 +14362,7 @@
     }
    ],
    "title": "Saint-Gobain & CertainTeed Washington Job Postings Settlement — Est. $1,271.91, Automatic Payment",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "sansone-group-data-breach-settlement": {
@@ -14603,7 +14440,7 @@
     }
    ],
    "title": "Sansone Group Data Breach Settlement — $45 Cash or Up to $3,500 + 2 Years of Credit Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "sanyo-solar-panel-class-action-settlement": {
@@ -14652,7 +14489,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Sanyo Solar Panel Delamination Class Action Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "scale-ai-contributor-misclassification-class-action-settlement": {
@@ -14719,7 +14556,7 @@
     }
    ],
    "title": "Scale AI $12.5M Worker Misclassification Settlement — Automatic Payment",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "schnucks-rewards-points-sales-tax-class-action-settlement": {
@@ -14786,7 +14623,7 @@
     }
    ],
    "title": "Schnucks Rewards Points Sales Tax Settlement — A Flat $7 per Valid Claim",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "seagate-securities-class-action-settlement": {
@@ -14849,7 +14686,7 @@
     }
    ],
    "title": "$175M Seagate Securities Settlement (STX)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -14918,7 +14755,7 @@
     }
    ],
    "title": "$500K Service Spot Parking Reservation Fee California Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -14969,7 +14806,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Silk & Great Value Plant-Based Beverage Recall Settlement (Canada)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "situsamc-data-breach-settlement": {
@@ -15047,7 +14884,7 @@
     }
    ],
    "title": "SitusAMC Data Breach Settlement — About $75 Cash or Up to $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "smith-nephew-401k-erisa-class-action-settlement": {
@@ -15112,7 +14949,7 @@
     }
    ],
    "title": "Smith & Nephew $350K 401(k) ERISA Settlement — Automatic Payment",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "social-media-addiction-lawsuit": {
@@ -15161,7 +14998,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Social Media Addiction Lawsuit for Minors",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "social-security-class-action-lawsuit": {
@@ -15224,7 +15061,7 @@
     }
    ],
    "title": "Social Security Class Action WON — Amended Final Judgment Entered (LNP v. Bisignano)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "south-central-bank-class-action-settlement": {
@@ -15275,7 +15112,7 @@
    "status_text": null,
    "tiers": [],
    "title": "$2.8M South Central Bank Kentucky Overdraft Fee Class Action Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "southern-graphics-data-breach-settlement": {
@@ -15353,7 +15190,7 @@
     }
    ],
    "title": "Southern Graphics Data Breach Settlement — Up to $3,500 or Pro Rata Cash",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "sportsmans-guide-firearm-privacy-class-action-settlement": {
@@ -15420,7 +15257,7 @@
     }
    ],
    "title": "Sportsman's Guide Firearm Privacy Settlement — Up to $145 for Pennsylvania Online Firearm Orders",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "springfield-police-student-officer-wage-class-action-settlement": {
@@ -15487,7 +15324,7 @@
     }
    ],
    "title": "Springfield Police Student Officer Wage Settlement — $825K",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "sps-technologies-abington-fire-class-action-settlement": {
@@ -15554,7 +15391,7 @@
     }
    ],
    "title": "SPS Technologies $5M Abington Fire Settlement — Up to $5,000 for Documented Losses",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "stanford-federal-credit-union-overdraft-nsf-fee-settlement": {
@@ -15619,7 +15456,7 @@
     }
    ],
    "title": "$450K Stanford Federal Credit Union Overdraft & NSF Fee Settlement — Automatic Payments",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "star-casualty-florida-total-loss-fees-class-action-settlement": {
@@ -15686,7 +15523,7 @@
     }
    ],
    "title": "Star Casualty Total Loss Settlement — Up to $279.85 Plus Interest",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "state-farm-louisiana-total-loss-purchasing-fees-settlement": {
@@ -15753,7 +15590,7 @@
     }
    ],
    "title": "State Farm Louisiana Total-Loss Purchasing Fees Settlement — A Flat $28.39",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "steel-warehouse-data-breach-settlement": {
@@ -15831,7 +15668,7 @@
     }
    ],
    "title": "Steel Warehouse Data Breach Settlement — $40 With No Proof, or Up to $5,000 Documented Plus $60 Lost Time",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "stitch-fix-securities-class-action-settlement": {
@@ -15894,7 +15731,7 @@
     }
    ],
    "title": "$32M Stitch Fix Securities Class Action Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -15961,7 +15798,7 @@
     }
    ],
    "title": "Stockpile Data Breach Settlement — Up to $90 Cash",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "suffolk-county-red-light-camera-fee-class-action-settlement": {
@@ -16026,7 +15863,7 @@
     }
    ],
    "title": "Suffolk County Red Light Camera Settlement — Up to $36 for Each $30 Administrative Fee",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "sugared-bronzed-tcpa-text-message-class-action-settlement": {
@@ -16091,7 +15928,7 @@
     }
    ],
    "title": "Sugared + Bronzed Text Message Settlement — An Estimated $110–$222",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "summit-medical-group-data-breach-settlement": {
@@ -16156,7 +15993,7 @@
     }
    ],
    "title": "Summit Medical Group Data Breach Settlement — Up to $2,545 Plus Medical Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "susan-b-allen-memorial-hospital-data-breach-settlement": {
@@ -16221,7 +16058,7 @@
     }
    ],
    "title": "Susan B. Allen Hospital Data Breach Settlement — Up to $100 Plus Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "system-pavers-data-breach-settlement": {
@@ -16299,7 +16136,7 @@
     }
    ],
    "title": "System Pavers Data Breach Settlement — Up to $3,000 or $80–$100 Cash",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "talkdesk-washington-job-postings-class-action-settlement": {
@@ -16366,7 +16203,7 @@
     }
    ],
    "title": "Talkdesk Washington Job Postings Settlement — Estimated $1,718, Capped at $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "tbj-drywall-and-taping-unpaid-salary-settlement": {
@@ -16415,7 +16252,7 @@
    "status_text": null,
    "tiers": [],
    "title": "TBJ Drywall and Taping Unpaid Wages Illinois Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "tcpa-spam-text-messages-annoying": {
@@ -16464,7 +16301,7 @@
    "status_text": null,
    "tiers": [],
    "title": "Replied STOP But Still Getting Spam Texts?",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published",
     "no quick-facts block found"
@@ -16545,7 +16382,7 @@
     }
    ],
    "title": "TED Video Privacy Settlement — 2 Free Months of Membership or $5 Cash",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "tennessee-farmers-mutual-total-loss-class-action-settlement": {
@@ -16610,7 +16447,7 @@
     }
    ],
    "title": "Tennessee Farmers Mutual $5.85M Total Loss Settlement — Automatic Payments",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "tesla-supercharger-idle-fee-class-action-settlement": {
@@ -16677,7 +16514,7 @@
     }
    ],
    "title": "Tesla Supercharger Idle Fee Settlement — Up to $350 + Fee Refunds",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "thinkware-dash-cam-class-action-settlement": {
@@ -16742,7 +16579,7 @@
     }
    ],
    "title": "Thinkware Dash Cam Settlement — $850K Over “Super Night Vision” Marketing",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "tift-regional-health-system-data-breach-settlement": {
@@ -16830,7 +16667,7 @@
     }
    ],
    "title": "Tift Regional Health System & Southwell Data Breach Settlement — ~$75 Cash or Up to $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "total-vision-data-breach-settlement": {
@@ -16910,7 +16747,7 @@
     }
    ],
    "title": "Total Vision Data Breach Settlement — Pro-Rata Cash or Up to $1,000, Claim by October 5",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "toyota-airbag-class-action": {
@@ -16973,7 +16810,7 @@
     }
    ],
    "title": "$78.5M Toyota Airbag Control Unit Settlement — Claims Open",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)"
    ]
@@ -17038,7 +16875,7 @@
     }
    ],
    "title": "$299.5M Toyota Forklift Emissions Settlement — Claims Open",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "trader-joes-california-wage-hour-paga-class-action-settlement": {
@@ -17105,7 +16942,7 @@
     }
    ],
    "title": "Trader Joe's $12.47M California Wage & Hour and PAGA Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -17173,7 +17010,7 @@
     }
    ],
    "title": "Transamerica $110M Direct Recognition Life Settlement — Automatic Payments",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "transunion-bankruptcy-remark-fcra-class-action-settlement": {
@@ -17238,7 +17075,7 @@
     }
    ],
    "title": "TransUnion $8.31M Bankruptcy Reporting Settlement — $100 to About $1,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "travelers-new-mexico-uim-class-action-settlement": {
@@ -17303,7 +17140,7 @@
     }
    ],
    "title": "Travelers New Mexico UIM Coverage Class Action Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -17381,7 +17218,7 @@
     }
    ],
    "title": "Turkey Price-Fixing Settlements — $93.5M, Claims Open Through October 30",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "twist-bioscience-securities-class-action-settlement": {
@@ -17446,7 +17283,7 @@
     }
    ],
    "title": "$17.05M Twist Bioscience Securities Settlement — Estimated $0.31 per Share",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "twitter-musk-stock-verdict-class-action": {
@@ -17509,7 +17346,7 @@
     }
    ],
    "title": "Twitter Stock Jury Verdict — Full Damages Plus Interest (Pampena v. Musk)",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "university-of-hawaii-data-breach-settlement": {
@@ -17587,7 +17424,7 @@
     }
    ],
    "title": "University of Hawaii Data Breach Settlement — $50 Cash or Up to $5,000",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "usa-clinics-group-tcpa-text-message-class-action-settlement": {
@@ -17652,7 +17489,7 @@
     }
    ],
    "title": "USA Clinics Group TCPA Text Message Settlement — $50 Per Text, Up to $150",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "valley-oaks-health-data-breach-settlement": {
@@ -17730,7 +17567,7 @@
     }
    ],
    "title": "Valley Oaks Health Data Breach Settlement — $40 With No Proof, or Up to $5,000 Documented Plus Medical Monitoring",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "vasindas-around-the-clock-care-data-breach-settlement": {
@@ -17808,7 +17645,7 @@
     }
    ],
    "title": "Vasindas' Around the Clock Care Data Breach Settlement — $70 Cash or Up to $2,500 Documented",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "volkswagen-atlas-water-pump-class-action-settlement": {
@@ -17873,7 +17710,7 @@
     }
    ],
    "title": "Volkswagen Atlas Water Pump Settlement — 80% Repair Reimbursement + Extended Warranty",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "vsl3-probiotic-class-action-settlement": {
@@ -17938,7 +17775,7 @@
     }
    ],
    "title": "VSL#3 Class Action Settlement — $20 a Bottle",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)"
    ]
@@ -18005,7 +17842,7 @@
     }
    ],
    "title": "Waste Connections $1.4M Commercial Billing Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -18072,7 +17909,7 @@
     }
    ],
    "title": "$8M CAD Wayland Group (Formerly Maricann) Securities Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -18152,7 +17989,7 @@
     }
    ],
    "title": "Wayne Memorial Hospital Data Breach Settlement — An Estimated $25 or Up to $5,000 Documented",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "weber-grill-brush-recall": {
@@ -18217,7 +18054,7 @@
     }
    ],
    "title": "Weber Grill Brush Recall — 3.2 Million Units Recalled",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "wellstar-health-system-pixel-tracking-privacy-class-action-settlement": {
@@ -18282,7 +18119,7 @@
     }
    ],
    "title": "Wellstar $4.25M Pixel Tracking Privacy Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -18362,7 +18199,7 @@
     }
    ],
    "title": "Whirlpool Refrigerator Wire Harness Class Action Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "no proof requirement published",
     "tiers derived from the page fact (index had no payout text)"
@@ -18443,7 +18280,7 @@
     }
    ],
    "title": "WPM Pathology & Salina Regional Data Breach Settlement — $45 or Up to $4,480",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "xactus-credit-plus-fcra-class-action-settlement": {
@@ -18508,7 +18345,7 @@
     }
    ],
    "title": "Xactus & Credit Plus $2.4M FCRA Credit Report Settlement — About $500",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "yes-communities-data-breach-settlement": {
@@ -18586,7 +18423,7 @@
     }
    ],
    "title": "YES Communities Data Breach Settlement — $50 With No Proof, or Up to $2,500 Documented Plus $80 Lost Time",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "zicam-cold-remedy-nasal-swabs-recall": {
@@ -18651,7 +18488,7 @@
     }
    ],
    "title": "Zicam Nasal Swab Recall — Refund for Recalled Cold Remedy Swabs",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": []
   },
   "zonolite-vermiculite-attic-insulation-class-action-settlement": {
@@ -18714,7 +18551,7 @@
     }
    ],
    "title": "Zonolite Vermiculite Attic Insulation Trust (ZAI Trust) Reimbursement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
@@ -18779,7 +18616,7 @@
     }
    ],
    "title": "$125M Zymergen IPO Securities Settlement",
-   "verified_as_of": "2026-09-18",
+   "verified_as_of": "2026-09-19",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ]
