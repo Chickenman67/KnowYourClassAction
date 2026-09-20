@@ -48,3 +48,9 @@ sources:
   settlesignal_enabled: true   # settlesignal.com catalog (CC-BY 4.0) -> deadline/
                                # proof cross-checks, "cross-checked" links
   settlesignal_import: true    # also import open cases no other source covers
+
+  # claimdepot.com directory -> a third opinion on deadline, proof and whether a
+  # case is still open. Verification only: it imports nothing, because a listing
+  # card carries no official claim link. 28 listing pages is the live size.
+  claimdepot_enabled: true
+  claimdepot_max_pages: 30

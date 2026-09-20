@@ -1,0 +1,8 @@
+User-agent: *
+Disallow:
+
+# Termly scanner
+User-agent: TermlyBot
+Allow: /
+
+Sitemap: https://www.claimdepot.com/sitemap.xml

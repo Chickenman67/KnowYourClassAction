@@ -39,9 +39,15 @@ _PROOF_BADGES = {
 
 # Secondary-source link labels, keyed by the ref kind kya.xref attaches. A
 # docket link is a court record (independent verification), a news link is
-# another outlet's coverage - so they must not read the same. A SettleSignal
-# link means the case's facts were checked against a second full catalog.
-_XREF_LABELS = {"news": "in the news", "docket": "docket", "settlesignal": "cross-checked"}
+# another outlet's coverage - so they must not read the same. A SettleSignal or
+# ClaimDepot link means the case's facts were checked against a second full
+# catalog; both carry the same label because they make the same promise.
+_XREF_LABELS = {
+    "news": "in the news",
+    "docket": "docket",
+    "settlesignal": "cross-checked",
+    "claimdepot": "cross-checked",
+}
 
 _DEADLINE_PREFIX = {
     "claim": "Claim by",
@@ -154,6 +160,17 @@ _WARNING_BADGES: tuple[tuple[str, str, bool], ...] = (
     ("no quick-facts block found", "details incomplete", True),
     ("differs from index", "deadline updated", False),
     ("source links a court record", "no settlement site found", True),
+    # Verification-catalog conflicts. These markers are phrased after the
+    # disagreement rather than after the source, so SettleSignal, ClaimDepot
+    # and any future catalog all read the same and no source can ship a
+    # sentence-length badge by being added later. The proof pair covers both
+    # directions, because "their X; ours Y" reads differently depending on
+    # which side demands proof.
+    ("lists claim deadline", "sources disagree on deadline", True),
+    ("says proof required; our sources say", "sources disagree on proof", True),
+    ("says no proof needed; our sources say", "sources disagree on proof", True),
+    ("but we have it in the", "sources disagree on status", True),
+    ("but we show it as open", "listed closed elsewhere", True),
 )
 
 

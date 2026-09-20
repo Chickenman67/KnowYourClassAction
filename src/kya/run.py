@@ -250,6 +250,18 @@ def main(argv: list[str] | None = None) -> int:
             import_new=config.sources.settlesignal_import,
         )
 
+    # ClaimDepot is a *third* opinion, so it runs after SettleSignal: it is
+    # verifying the dataset as it now stands, imports included. Verification
+    # only - a listing card has no official claim link to give a reader.
+    if config.sources.claimdepot_enabled:
+        from kya.sources import claimdepot
+
+        settlements = claimdepot.enrich(
+            settlements,
+            client,
+            max_pages=config.sources.claimdepot_max_pages,
+        )
+
     # Secondary sources are additive: each phase degrades to a no-op, and a
     # cross-reference is attached only when the match verifies. See xref.py.
     from kya import xref

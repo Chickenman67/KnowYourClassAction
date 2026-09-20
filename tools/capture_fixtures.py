@@ -79,6 +79,73 @@ PAGES: list[tuple[str, str, str]] = [
 ]
 
 
+# --- ClaimDepot ----------------------------------------------------------
+#
+# A second independent catalog (see ``kya.sources.claimdepot``). Its robots.txt
+# is fully permissive, which is the whole basis for reading it - so that file is
+# captured too, and a test asserts it stays permissive. If ClaimDepot tightens
+# its policy, recapturing fails the test loudly instead of us crawling quietly.
+CLAIMDEPOT_BASE = "https://www.claimdepot.com"
+
+CLAIMDEPOT_FEEDS: list[tuple[str, str]] = [
+    # The permission we rely on: captured so a policy change fails a test.
+    ("claimdepot_robots.txt", f"{CLAIMDEPOT_BASE}/robots.txt"),
+    # The newness signal - 100 newest settlements with pubDate. The sitemap's
+    # lastmod is a site-wide republish stamp and useless for this.
+    ("claimdepot_rss.xml", f"{CLAIMDEPOT_BASE}/settlements/rss.xml"),
+]
+
+# One detail page per shape the parser must survive.
+CLAIMDEPOT_PAGES: list[tuple[str, str, str]] = [
+    (
+        "claimdepot_page_renters_warehouse",
+        "settlements/renters-warehouse-security-deposit-class-action",
+        "preliminarily approved: no deadline, no days-remaining; proof reads "
+        "'Not Applicable' (an abstention) and is duplicated by a hidden variant; "
+        "claim button is href='#' so the real target is the Settlement Website",
+    ),
+    (
+        "claimdepot_page_washington_umpd",
+        "settlements/washington-umpd-settlement",
+        "open for claims with a real deadline and a case-specific claim portal on "
+        "forms.ksacms.com - the shared portal host that caused a false match once",
+    ),
+    (
+        "claimdepot_page_alaska_military_leave",
+        "settlements/alaska-military-leave-settlement",
+        "open for claims, 'Pro rata payment' payout, admin Simpluris; its settlement "
+        "site is one we already carry, so it exercises the cross-check path",
+    ),
+    (
+        "claimdepot_page_proof_required",
+        "settlements/limetree-bay-settlement",
+        "the one proof vocabulary value that is a real commitment: Proof Required",
+    ),
+    (
+        "claimdepot_page_no_proof",
+        "settlements/spd-settlement",
+        "the other real commitment - a 'No Proof' badge - on a case that is only "
+        "preliminarily approved, so the badge and an absent deadline coexist",
+    ),
+    (
+        "claimdepot_page_closed_with_claim_button",
+        "settlements/flushable-wipes-settlement",
+        "Closed yet still renders a SUBMIT CLAIM button - proof that status, not "
+        "the button, has to gate whether we import it",
+    ),
+]
+
+
+# The one page the parser actually reads. Its cards are server-rendered, so a
+# fixture pins the exact shape ``parse_listing_page`` depends on, and the walk
+# over 28 pages is the only traffic this source needs.
+#
+# NOTE: this name deliberately does not start with ``page_`` - the ``pages``
+# fixture in tests/conftest.py parses every ``page_*`` capture with the
+# openclassactions parser, which would misread a ClaimDepot capture.
+CLAIMDEPOT_LISTING = ("claimdepot_listing", f"{CLAIMDEPOT_BASE}/settlements")
+
+
 def sha256(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
 
@@ -91,14 +158,29 @@ def write_fixture(path: Path, text: str) -> None:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--list", action="store_true", help="list targets and exit")
+    parser.add_argument(
+        "--filter",
+        default=None,
+        help="only capture targets whose name contains this substring",
+    )
     args = parser.parse_args(argv)
 
     config = load_config()
     fixtures = config.fixture_dir_path
 
-    targets = [INDEX, ROBOTS] + [
-        (name, f"{BASE}/{path}") for name, path, _reason in PAGES
-    ]
+    targets = (
+        [INDEX, ROBOTS]
+        + [(name, f"{BASE}/{path}") for name, path, _reason in PAGES]
+        + [CLAIMDEPOT_LISTING]
+        + [(name, f"{CLAIMDEPOT_BASE}/{path}") for name, path, _reason in CLAIMDEPOT_PAGES]
+        + CLAIMDEPOT_FEEDS
+    )
+
+    if args.filter:
+        targets = [t for t in targets if args.filter in t[0]]
+        if not targets:
+            print(f"no targets match {args.filter!r}")
+            return 1
 
     if args.list:
         for name, url in targets:

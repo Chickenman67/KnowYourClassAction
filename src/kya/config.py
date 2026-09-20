@@ -92,6 +92,12 @@ class SourcesConfig:
     # source for cases no other feed carries. Both phases degrade to no-ops.
     settlesignal_enabled: bool = True
     settlesignal_import: bool = True
+    # ClaimDepot (claimdepot.com) - a third-party settlement directory used
+    # purely as a third opinion: deadline, proof and open/closed cross-checks
+    # plus a "cross-checked" link. It imports nothing (its cards carry no
+    # official claim link), and degrades to a no-op on failure.
+    claimdepot_enabled: bool = True
+    claimdepot_max_pages: int = 30
 
 
 @dataclass(frozen=True)

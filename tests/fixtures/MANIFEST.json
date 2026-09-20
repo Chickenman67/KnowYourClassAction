@@ -1,4 +1,76 @@
 {
+  "claimdepot_listing": {
+    "bytes": 512465,
+    "captured_at": "2026-09-20T17:07:17Z",
+    "file": "claimdepot_listing.html",
+    "sha256_16": "a4b830624eb6621e",
+    "status": 200,
+    "url": "https://www.claimdepot.com/settlements"
+  },
+  "claimdepot_page_alaska_military_leave": {
+    "bytes": 54290,
+    "captured_at": "2026-09-20T17:07:21Z",
+    "file": "claimdepot_page_alaska_military_leave.html",
+    "sha256_16": "f7af3e9ac816afba",
+    "status": 200,
+    "url": "https://www.claimdepot.com/settlements/alaska-military-leave-settlement"
+  },
+  "claimdepot_page_closed_with_claim_button": {
+    "bytes": 57452,
+    "captured_at": "2026-09-20T17:07:24Z",
+    "file": "claimdepot_page_closed_with_claim_button.html",
+    "sha256_16": "1b474f57676bd528",
+    "status": 200,
+    "url": "https://www.claimdepot.com/settlements/flushable-wipes-settlement"
+  },
+  "claimdepot_page_no_proof": {
+    "bytes": 53828,
+    "captured_at": "2026-09-20T17:07:23Z",
+    "file": "claimdepot_page_no_proof.html",
+    "sha256_16": "86f1e2df165d44d5",
+    "status": 200,
+    "url": "https://www.claimdepot.com/settlements/spd-settlement"
+  },
+  "claimdepot_page_proof_required": {
+    "bytes": 59308,
+    "captured_at": "2026-09-20T17:07:22Z",
+    "file": "claimdepot_page_proof_required.html",
+    "sha256_16": "d50b4886a3ece1d3",
+    "status": 200,
+    "url": "https://www.claimdepot.com/settlements/limetree-bay-settlement"
+  },
+  "claimdepot_page_renters_warehouse": {
+    "bytes": 55516,
+    "captured_at": "2026-09-20T17:07:19Z",
+    "file": "claimdepot_page_renters_warehouse.html",
+    "sha256_16": "952f19a30518ea4b",
+    "status": 200,
+    "url": "https://www.claimdepot.com/settlements/renters-warehouse-security-deposit-class-action"
+  },
+  "claimdepot_page_washington_umpd": {
+    "bytes": 56292,
+    "captured_at": "2026-09-20T17:07:20Z",
+    "file": "claimdepot_page_washington_umpd.html",
+    "sha256_16": "ef3904677138e2d1",
+    "status": 200,
+    "url": "https://www.claimdepot.com/settlements/washington-umpd-settlement"
+  },
+  "claimdepot_robots.txt": {
+    "bytes": 121,
+    "captured_at": "2026-09-20T17:07:25Z",
+    "file": "claimdepot_robots.txt",
+    "sha256_16": "a871b324f1cce1d2",
+    "status": 200,
+    "url": "https://www.claimdepot.com/robots.txt"
+  },
+  "claimdepot_rss.xml": {
+    "bytes": 84403,
+    "captured_at": "2026-09-20T17:07:26Z",
+    "file": "claimdepot_rss.xml",
+    "sha256_16": "8cd94904782f0273",
+    "status": 200,
+    "url": "https://www.claimdepot.com/settlements/rss.xml"
+  },
   "openclassactions_llms.txt": {
     "bytes": 75971,
     "captured_at": "2026-09-14T22:57:41Z",
