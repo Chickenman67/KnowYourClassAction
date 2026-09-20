@@ -468,27 +468,55 @@ a { color: inherit; }
 .row__links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.1rem 0.75rem;
+  gap: 0.3rem 0.35rem;
   justify-content: flex-end;
 }
 
+/* Row links are buttons, not afterthoughts: the claim portal is the whole
+   point of a row, so it gets the biggest target and the loudest style.
+   Secondary-source links stay quiet - they are evidence, not the way in. */
 .row__links a {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
   font-size: 0.72rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--ink-faint);
-  text-decoration-color: var(--rule-strong);
-  text-underline-offset: 3px;
+  text-decoration: none;
+  color: var(--ink-soft);
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
 }
 
-.row__links a:hover { color: var(--accent); }
+.row__links a:hover,
+.row__links a:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.row__links a.row__cta {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--paper-sunk);
+}
+
+.row__links a.row__cta:hover,
+.row__links a.row__cta:focus-visible {
+  background: var(--accent);
+  color: var(--paper);
+}
 
 /* Secondary sources: another outlet's coverage, or the court record itself.
-   They are evidence, not the way in - so they sit below the claim portal.
-   Scoped to .row__links a so this beats that rule's own color and size. */
+   They are evidence, not the way in - so they sit below the claim portal,
+   smaller and quieter. Scoped to .row__links a so this beats that rule's
+   own color and size. */
 .row__links a.row__xref {
   font-size: 0.68rem;
   opacity: 0.8;
+  border-color: var(--rule);
+  color: var(--ink-faint);
 }
 
 /* ---- colophon ------------------------------------------------------- */

@@ -220,6 +220,68 @@ def test_cross_references_render_as_labeled_links(tmp_path: Path, settlements) -
     assert ".row__xref" in css, "the xref link renders unstyled"
 
 
+def test_flagged_rows_say_why(built: Path, settlements) -> None:
+    """A warning badge must carry its reason, never a bare word 'flagged'.
+
+    The old build rendered ``flags`` as the literal string "flagged" and
+    dropped the actual warning texts - 71 of 273 live rows said nothing but
+    "flagged", which reads as alarm without information.
+    """
+    html = (built / "index.html").read_text(encoding="utf-8")
+    assert ">flagged<" not in html
+    for badge in re.findall(r'<span class="badge[^"]*">([^<]+)</span>', html):
+        assert badge.strip() != "flagged", "an unexplained flag reached the page"
+    # Every warn badge explains itself on hover.
+    for badge in re.findall(r'<span class="badge[^"]*badge--warn[^"]*"[^>]*>', html):
+        assert 'title="' in badge, f"caution badge without a reason: {badge}"
+
+    # And the mapping is exercised: a settlement with a warning renders its
+    # human label plus the full technical text in the tooltip.
+    warned = [s.model_copy(update={"warnings": ["no proof requirement published"]}) for s in settlements[:1]]
+    out = tmp_render(warned)
+    page = (out / "index.html").read_text(encoding="utf-8")
+    assert ">proof rules not published<" in page
+    assert 'title="no proof requirement published"' in page
+
+
+def tmp_render(rows, out_name: str = "site") -> Path:
+    import tempfile
+
+    out = Path(tempfile.mkdtemp()) / out_name
+    render_site(rows, out_dir=out)
+    return out
+
+
+def test_duplicate_links_are_collapsed(built: Path) -> None:
+    """One destination, one link inside a row.
+
+    Most administrators run the claim portal and the settlement site on the
+    same domain, so the old rows carried two links to one URL - halving the
+    click target for no new information.
+    """
+    html = (built / "index.html").read_text(encoding="utf-8")
+    for links in re.findall(r'<span class="row__links">(.*?)</span>', html, re.S):
+        hrefs = re.findall(r'href="([^"]+)"', links)
+        dupes = {h for h in hrefs if hrefs.count(h) > 1}
+        assert not dupes, f"a row links the same URL twice: {dupes}"
+
+
+def test_row_links_are_button_sized(built: Path) -> None:
+    """The claim portal is the point of a row - it must not be 9pt text.
+
+    Pins both halves of the contract: the template marks the primary link,
+    and the stylesheet gives row links real padding (a tap target) instead
+    of an underlined whisper.
+    """
+    html = (built / "index.html").read_text(encoding="utf-8")
+    assert 'class="row__cta"' in html, "the claim portal lost its primary style"
+    css = (built / "style.css").read_text(encoding="utf-8")
+    rule = re.search(r"\.row__links a \{(.*?)\}", css, re.S)
+    assert rule, ".row__links a styling vanished from the stylesheet"
+    assert "padding:" in rule.group(1) and "border:" in rule.group(1)
+    assert ".row__cta" in css, ".row__cta is styled nowhere"
+
+
 def test_packaging_metadata_ships_every_template_file() -> None:
     """package-data must match reality, or a wheel install has no template."""
     pyproject = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))

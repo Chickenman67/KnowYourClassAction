@@ -106,15 +106,16 @@
           <span class="sticker sticker--tier-{{ r.payout_tier|default('none')|lower }}">{{ r.sticker }}</span>
           <span class="badge">{{ r.proof_badge }}</span>
           <span class="row__geo">{{ r.geo }}</span>
-          {% for f in r.flags %}<span class="badge badge--warn">{{ f }}</span>{% endfor %}
+          {%- for label, reason, caution in r.flags %}<span class="badge{% if caution %} badge--warn{% endif %}" title="{{ reason }}">{{ label }}</span>{% endfor %}
         </div>
       </div>
       <div class="row__side">
         <span class="row__ev">{{ r.ev_display }}{% if r.ev_confidence %} <span class="row__conf">{{ r.ev_confidence }}</span>{% endif %}</span>
         <span class="row__links">
-          {%- if r.claim_url %}<a href="{{ r.claim_url }}" rel="noopener">claim portal</a>{% endif %}
-          {%- if r.official_website %}<a href="{{ r.official_website }}" rel="noopener">official site</a>{% endif %}
-          {%- for label, href in r.xrefs %}<a class="row__xref" href="{{ href }}" rel="noopener">{{ label }}</a>{% endfor %}
+          {%- if r.claim_url %}<a class="row__cta" href="{{ r.claim_url }}" rel="noopener" title="Official settlement site - where you file a claim">claim portal</a>
+          {%- elif r.official_website %}<a class="row__cta" href="{{ r.official_website }}" rel="noopener" title="Official settlement site">official site</a>{% endif %}
+          {%- if r.official_website %}<a href="{{ r.official_website }}" rel="noopener" title="Official settlement site (claims and case documents)">official site</a>{% endif %}
+          {%- for label, href in r.xrefs %}<a class="row__xref" href="{{ href }}" rel="noopener" title="Secondary source - evidence, not the claim page">{{ label }}</a>{% endfor %}
         </span>
       </div>
     </li>

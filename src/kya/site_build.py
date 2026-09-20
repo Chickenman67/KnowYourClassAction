@@ -129,12 +129,45 @@ class RowView:
     states: list[str] = field(default_factory=list)
     ev_display: str = "—"
     ev_confidence: str = ""
-    warnings: list[str] = field(default_factory=list)
+    # Each flag is (badge label, full reason, looks_like_a_caution). The badge
+    # shows the short label; the tooltip carries the technical text, so
+    # "flagged" is never shown without saying why.
+    flags: list[tuple[str, str, bool]] = field(default_factory=list)
     claim_url: str | None = None
     official_website: str | None = None
     status_text: str | None = None
-    flags: list[str] = field(default_factory=list)
+    warnings: list[str] = field(default_factory=list)
     xrefs: list[tuple[str, str]] = field(default_factory=list)
+
+
+# The site shows the *reason*, not a bare "flagged": each internal warning
+# phrase maps to a short human label, and the full text rides along as the
+# badge's tooltip. Ordered, first match wins - like classification. The last
+# element says whether the badge should look like a caution: provenance notes
+# ("figures came from the case page") are normal operation, while missing
+# proof rules or court-record links are things a claimant should know about.
+_WARNING_BADGES: tuple[tuple[str, str, bool], ...] = (
+    ("tiers derived from the page fact", "figures from case page", False),
+    ("proof level differs from the index", "sources disagree on proof", True),
+    ("no proof requirement published", "proof rules not published", True),
+    ("no quick-facts block found", "details incomplete", True),
+    ("differs from index", "deadline updated", False),
+    ("source links a court record", "no settlement site found", True),
+)
+
+
+def _flag_from_warning(warning: str) -> tuple[str, str, bool]:
+    for marker, label, caution in _WARNING_BADGES:
+        if marker in warning:
+            return label, warning, caution
+    return warning, warning, True
+
+
+def _same_site(a: str | None, b: str | None) -> bool:
+    """Same destination, ignoring scheme-case and a trailing slash."""
+    if not a or not b:
+        return False
+    return a.rstrip("/").lower() == b.rstrip("/").lower()
 
 
 def build_row(s: Settlement, *, today: date_cls, soon_days: int, urgent_days: int) -> RowView:
@@ -148,16 +181,21 @@ def build_row(s: Settlement, *, today: date_cls, soon_days: int, urgent_days: in
         elif days <= soon_days:
             urgency = "soon"
     ev = "—" if s.ev_estimate is None else f"~{_fmt_money(s.ev_estimate)}"
-    flags: list[str] = []
-    if s.warnings:
-        flags.append("flagged")
+    flags = [_flag_from_warning(w) for w in s.warnings]
     if str(s.kind) == "recall":
-        flags.append("recall remedy only")
+        flags.append(("recall remedy only", "the remedy is the recall program, not a claim form", True))
     if str(s.kind) == "investigation":
-        flags.append("nothing to claim yet")
+        flags.append(("nothing to claim yet", "an invitation to join the case, not a settlement", True))
     if str(s.deadline.kind) == "no_action":
-        flags.append("no deadline to miss")
+        flags.append(("no deadline to miss", "no action deadline - payments happen without a claim", False))
     prefix = _DEADLINE_PREFIX.get(str(s.deadline.kind), "Deadline")
+    # One destination, one link: most administrators run the claim portal and
+    # the settlement site on the same domain (220 of 259 rows at time of
+    # writing). Repeating it as "official site" halves the click target for
+    # no new information - the surviving link is labeled "claim portal".
+    official = s.official_website
+    if _same_site(s.claim_url, official):
+        official = None
     return RowView(
         id=s.id,
         lane=str(s.lane),
@@ -180,7 +218,7 @@ def build_row(s: Settlement, *, today: date_cls, soon_days: int, urgent_days: in
         ev_confidence=str(s.ev_confidence) if s.ev_estimate is not None else "",
         warnings=list(s.warnings),
         claim_url=s.claim_url,
-        official_website=s.official_website,
+        official_website=official,
         status_text=s.status_text,
         flags=flags,
         xrefs=[
