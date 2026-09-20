@@ -1,6 +1,6 @@
 {
  "count": 407,
- "generated_at": "2026-09-20T15:25:48+00:00",
+ "generated_at": "2026-09-20T18:43:48+00:00",
  "settlements": {
   "505-quick-cash-pawn-new-mexico": {
    "administrator": null,
@@ -10,7 +10,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/begaye-class-action",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -74,6 +82,13 @@
    "content_hash": "466c9fb4abe713a8",
    "court": "U.S. District Court, Eastern District of Michigan",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/700credit-data-breach-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/700credit-data-breach-settlement/",
@@ -161,6 +176,13 @@
    "content_hash": "1cbce4add02e6ec2",
    "court": "U.S. District Court, Western District of Washington",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/abc-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/abc-legal-services-data-breach-settlement/",
@@ -234,7 +256,15 @@
    "claim_url": "https://www.ACCTESOPSettlement.com/",
    "content_hash": "e97260ba8453e018",
    "court": "U.S. District Court, Eastern District of Pennsylvania",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/acct-esop-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-29",
     "kind": "objection",
@@ -290,7 +320,9 @@
    ],
    "title": "ACCT Holdings ESOP $8.75M ERISA Settlement — No Claim Form, No Opt-Out",
    "verified_as_of": "2026-09-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists claim deadline 2027-06-01 but our sources say 2026-10-29; ours kept"
+   ]
   },
   "acen-data-breach-settlement": {
    "administrator": null,
@@ -363,7 +395,15 @@
    "claim_url": "https://www.ActivisionBlizzardStockholderLitigation.com/",
    "content_hash": "86c4a9706e550d5f",
    "court": "Court of Chancery of the State of Delaware",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/activision-blizzard-stockholder-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-08-31",
     "kind": "objection",
@@ -497,7 +537,9 @@
    "title": "Aetna Lumbar Artificial Disc Replacement (L-ADR) Coverage Class Action Settlement",
    "verified_as_of": "2026-09-20",
    "warnings": [
-    "tiers derived from the page fact (index had no payout text)"
+    "tiers derived from the page fact (index had no payout text)",
+    "claimdepot lists claim deadline 2026-08-11 but our sources say 2026-09-29; ours kept",
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
    ]
   },
   "aetna-settlement": {
@@ -636,7 +678,15 @@
    "claim_url": "https://www.apartmentfeesclassaction.com/",
    "content_hash": "f234957f6e7d4274",
    "court": "U.S. District Court, Eastern District of Virginia, Richmond Division",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/apartment-fees-class-action",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-21",
     "kind": "claim",
@@ -693,7 +743,9 @@
    ],
    "title": "AION Management Virginia Apartment Fee Settlement — About $141 Automatically, No Claim Form",
    "verified_as_of": "2026-09-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists claim deadline 2023-10-10 but our sources say 2026-10-21; ours kept"
+   ]
   },
   "ais-infosource-data-breach-settlement": {
    "administrator": null,
@@ -766,7 +818,15 @@
    "claim_url": "https://www.alaskamilitaryleavesettlement.com/",
    "content_hash": "32cd1c88b9a64d3b",
    "court": "U.S. District Court, Western District of Washington",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/alaska-military-leave-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "no_action",
@@ -832,6 +892,13 @@
    "content_hash": "fa3362c8bc38043a",
    "court": "Supreme Court of the State of New York, Albany County",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/albany-college-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/albany-college-of-pharmacy-and-health-sciences-acphs-data-breach-settlement/",
@@ -919,6 +986,13 @@
    "content_hash": "2a26201b0c03412b",
    "court": "Circuit Court of the Eleventh Judicial Circuit, Miami-Dade County, Florida",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/albany-gastro-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/albany-gastroenterology-consultants-data-breach-settlement/",
@@ -1005,7 +1079,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/wear-and-tear-waiver-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -1069,6 +1151,13 @@
    "content_hash": "87f55feb4b64ed12",
    "court": "Circuit Court of LaSalle County, Illinois, Chancery Division",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/altrua-crown-tcpa-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/altrua-healthshare-crown-health-admins-tcpa-unwanted-calls-settlement/",
@@ -1207,7 +1296,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/arllc-wage-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -1260,7 +1357,9 @@
    ],
    "title": "Amazon Retail $2 Million Wage and Hour Class Action Settlement",
    "verified_as_of": "2026-06-19",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ]
   },
   "ambetter-centene-ghost-network-class-action-lawsuit": {
    "administrator": null,
@@ -1324,6 +1423,13 @@
    "content_hash": "6497c123f3708828",
    "court": "U.S. District Court, District of Arizona",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/american-vision-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/american-vision-partners-data-breach-settlement/",
@@ -1641,7 +1747,15 @@
    "claim_url": "https://www.amtrustsecuritieslitigation.com/notice-and-claim-form.aspx",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/amtrust-securities-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-07",
     "kind": "claim",
@@ -1704,7 +1818,15 @@
    "claim_url": "https://www.anixterdatasettlement.com/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/anixter-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-19",
     "kind": "claim",
@@ -1806,7 +1928,15 @@
    "claim_url": "https://protonbeamradiationtherapylitigation.com/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/proton-beam-radiation-therapy-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-10",
     "kind": "claim",
@@ -1869,7 +1999,15 @@
    "claim_url": "https://www.grandfatheredrxsettlement.com/",
    "content_hash": "0797c2810f4d2037",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/grandfathered-rx-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-10",
     "kind": "claim",
@@ -1996,6 +2134,13 @@
    "content_hash": "1bf76cccd19b73a7",
    "court": "U.S. District Court, Northern District of Georgia, Atlanta Division",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/apollomd-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/apollomd-data-breach-settlement/",
@@ -2136,6 +2281,13 @@
    "content_hash": "203307943d7b6c24",
    "court": "Minnesota Sixth Judicial District Court, St. Louis County",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/arrowhead-data-security-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/arrowhead-regional-computing-consortium-data-breach-settlement/",
@@ -2209,7 +2361,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/aspire-data-incident",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -2262,7 +2422,9 @@
    ],
    "title": "Aspire Health Alliance - Data Breach",
    "verified_as_of": "2026-09-14",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ]
   },
   "atrium-health-pixel-tracking-class-action-settlement": {
    "administrator": "Kroll Settlement Administration LLC",
@@ -2273,6 +2435,13 @@
    "content_hash": "3024708f7bfa648a",
    "court": "Superior Court of Mecklenburg County, North Carolina",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/atrium-health-pixel-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/atrium-health-pixel-data-privacy-settlement/",
@@ -2361,7 +2530,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/gilbert-att-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -2412,7 +2589,15 @@
    "claim_url": "https://www.attwagesettlement.com/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/att-wage-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -2476,6 +2661,13 @@
    "content_hash": "b5623bd9f8446379",
    "court": "Superior Court of Mecklenburg County, North Carolina",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/autobell-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/autobell-car-wash-data-breach-settlement-pauken-v-autobell-car-wash-llc/",
@@ -2693,7 +2885,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/weitz-br-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -2732,7 +2932,9 @@
    "tiers": [],
    "title": "Banana Republic $1.95M Labor Class Action Settlement",
    "verified_as_of": "2026-06-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ]
   },
   "bayhealth-pixel-tracking-class-action-settlement": {
    "administrator": "Simpluris",
@@ -2743,6 +2945,13 @@
    "content_hash": "f8379df4426b975e",
    "court": "Superior Court of the State of Delaware",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/bayhealth-pixel-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/bayhealth-pixel-privacy-settlement/",
@@ -2817,6 +3026,13 @@
    "content_hash": "5f093cdb17663b31",
    "court": "U.S. District Court, District of Colorado",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/beef-pork-wages",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/jbs-usa-food-2002m-beef-and-pork-worker-wage-settlement/",
@@ -2868,7 +3084,8 @@
    "verified_as_of": "2026-09-20",
    "warnings": [
     "no proof requirement published",
-    "settlesignal lists claim deadline 2026-10-07 but our sources say 2027-02-04; ours kept"
+    "settlesignal lists claim deadline 2026-10-07 but our sources say 2027-02-04; ours kept",
+    "claimdepot lists claim deadline 2027-03-26 but our sources say 2027-02-04; ours kept"
    ]
   },
   "benson-health-data-breach-settlement": {
@@ -2943,6 +3160,13 @@
    "content_hash": "5385e1d1c042a3f4",
    "court": "U.S. District Court, Northern District of Illinois",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/pool-settlement-bw",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/bestway-above-ground-pools-15000000-settlement-over-compression-straps-outside-the-support/",
@@ -3029,7 +3253,15 @@
    "claim_url": "https://www.BAIncSettlement.com/",
    "content_hash": "28ebb4fc21b1f3d6",
    "court": "Clark County Superior Court, Washington",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/ba-inc-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-08-24",
     "kind": "opt_out",
@@ -3096,7 +3328,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/bioness-stockholder-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -3222,7 +3462,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/epoa-settlement-boi",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -3271,7 +3519,15 @@
    "claim_url": "https://www.blueridgewarnactsettlement.com/",
    "content_hash": "f6fe0c034e944a22",
    "court": "U.S. Bankruptcy Court, Southern District of Texas, Houston Division",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/blue-ridge-warn-act-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "no_action",
@@ -3323,7 +3579,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/tobiason-v-bmo-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -3376,7 +3640,9 @@
    ],
    "title": "BMO Bank - Repossession Notices (Wisconsin)",
    "verified_as_of": "2026-09-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ]
   },
   "bowflex-dumbbell-recall": {
    "administrator": null,
@@ -3438,6 +3704,13 @@
    "content_hash": "2b412bca5a0d1084",
    "court": "U.S. District Court, Northern District of Indiana (Fort Wayne Division)",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/bradford-scott-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/bradford-scott-data-239388825-data-breach-settlement/",
@@ -3525,6 +3798,13 @@
    "content_hash": "85c4f248864fdba9",
    "court": "Circuit Court for Brevard County, Florida",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/brevard-skin-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/brevard-skin-cancer-center-data-breach-settlement/",
@@ -3611,7 +3891,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/mihalcean-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -3737,7 +4025,15 @@
    "claim_url": "https://www.buciovfnlogisticsclassaction.com/",
    "content_hash": "ad2b6b9dd53b8ac8",
    "court": "Superior Court of California, County of Los Angeles",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/bucio-v-fn-logistics-class-action",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-26",
     "kind": "claim",
@@ -3867,7 +4163,15 @@
    "claim_url": "https://teofilooverdraftfeessettlement.com/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/teofilo-overdraft-fees-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -3931,6 +4235,13 @@
    "content_hash": "5ca6ecc1a9ed1897",
    "court": "Superior Court of California, County of San Joaquin",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/ca-casualty-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/california-casualty-group-data-breach-settlement/",
@@ -4017,7 +4328,15 @@
    "claim_url": "https://gamblingfeesettlement.com",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/gambling-fee-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -4147,7 +4466,15 @@
    "claim_url": "https://www.calvertonparkclassaction.com",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/calverton-park-class-action",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -4200,7 +4527,9 @@
    ],
    "title": "Calverton Park $465K Vehicle Towing Class Action Settlement",
    "verified_as_of": "2026-06-17",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ]
   },
   "cambridge-health-alliance-595000-erisa-settlement": {
    "administrator": null,
@@ -4210,7 +4539,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/cambridge-health-erisa-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -4274,6 +4611,13 @@
    "content_hash": "fec0a32061a506a5",
    "court": "Circuit Court of Kanawha County, West Virginia",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/camc-bariatric-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/camc-hernia-surgery-settlement/",
@@ -4417,7 +4761,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/capital-one-erisa-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -4480,7 +4832,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/cd-kb-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -4533,7 +4893,9 @@
    ],
    "title": "Carpe Diem Pizza Washington Job Postings Settlement",
    "verified_as_of": "2026-07-17",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ]
   },
   "carrillo-v-los-angeles-partyworks-inc": {
    "administrator": null,
@@ -4592,7 +4954,15 @@
    "claim_url": "https://ccudatasettlement.com/",
    "content_hash": "1cdd87ad330a219f",
    "court": "1st Judicial District Court, Parish of Caddo, Louisiana",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/ccu-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-19",
     "kind": "claim",
@@ -4670,7 +5040,15 @@
    "claim_url": "https://www.CaseysTobaccoSurchargeSettlement.com/",
    "content_hash": "04503572fdbdd039",
    "court": "U.S. District Court, Southern District of Iowa",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/caseys-tobacco-surcharge-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-09-28",
     "kind": "objection",
@@ -4786,6 +5164,13 @@
    "content_hash": "b663421902e49b01",
    "court": "Business and Consumer Court for Androscoggin County, Maine",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/cmh-data-security-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/central-maine-healthcare-data-security-breach-settlement/",
@@ -4873,6 +5258,13 @@
    "content_hash": "fc0f560f5b2e7607",
    "court": "Superior Court of California, County of Kings",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/central-valley-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/central-valley-meat-co-data-breach/",
@@ -5085,7 +5477,15 @@
    "claim_url": "https://www.ChemoCentryxSecuritiesLitigation.com/",
    "content_hash": "a2bd275117ba94e8",
    "court": "U.S. District Court, Northern District of California",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/chemocentryx-securities-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-01",
     "kind": "claim",
@@ -5139,7 +5539,8 @@
    "title": "$69M ChemoCentryx Securities Settlement (CCXI)",
    "verified_as_of": "2026-09-20",
    "warnings": [
-    "tiers derived from the page fact (index had no payout text)"
+    "tiers derived from the page fact (index had no payout text)",
+    "claimdepot lists this as 'Pending Final Approval' but we have it in the 'claimable' lane"
    ]
   },
   "cibc-nsf-fee-settlement-canada": {
@@ -5276,7 +5677,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/chitwood-v-circa-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -5325,7 +5734,15 @@
    "claim_url": "https://www.overlandspecialdeterrentfeesettlement.com/brimmer-v-city-of-overland-claim-form-login/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/overland-special-deterrent-fee-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -5389,6 +5806,13 @@
    "content_hash": "8347d95c7a1eb1db",
    "court": "U.S. District Court, Western District of Missouri (Kansas City)",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/cpfm-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/clay-platte-family-medicine-clinic-1000000-data-breach-settlement/",
@@ -5591,7 +6015,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/hoban-coast-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -5655,6 +6087,13 @@
    "content_hash": "e665fef37698baf3",
    "court": "Portage County Court of Common Pleas, Ohio",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/coleman-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/coleman-professional-services-data-breach-settlement/",
@@ -5830,6 +6269,13 @@
    "content_hash": "b3d7e30060194016",
    "court": "Circuit Court for Miami-Dade County, Florida",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/crm-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/community-realty-management-data-breach-settlement/",
@@ -5916,7 +6362,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/epoa-settlement-cllc",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -5980,6 +6434,13 @@
    "content_hash": "6ec64fa7da9a9c86",
    "court": "U.S. District Court for the District of Oregon, Portland Division",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/seals-tcpa-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/seals-v-concora-credit-inc-tcpa-settlement/",
@@ -6132,6 +6593,13 @@
    "content_hash": "03a77acf57cd1ef0",
    "court": "U.S. District Court, Eastern District of New York",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/connect-on-call-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/connectoncall-data-breach-settlement/",
@@ -6271,7 +6739,15 @@
    "claim_url": "https://www.ContinentalShareholderLitigation.com/",
    "content_hash": "6a1ca295290da87c",
    "court": "District Court of Oklahoma County, State of Oklahoma",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/continental-shareholder-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-26",
     "kind": "objection",
@@ -6327,7 +6803,8 @@
    "title": "$60M Continental Resources Shareholder Settlement (Hamm Buyout)",
    "verified_as_of": "2026-09-20",
    "warnings": [
-    "tiers derived from the page fact (index had no payout text)"
+    "tiers derived from the page fact (index had no payout text)",
+    "claimdepot lists claim deadline 2022-11-22 but our sources say 2026-10-26; ours kept"
    ]
   },
   "cook-county-568m-race-discrimination-in-hiring-settlement": {
@@ -6338,7 +6815,15 @@
    "claim_url": "https://www.simpsoncookcountysettlement.com/Login",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/simpson-cook-county-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -6393,7 +6878,9 @@
    ],
    "title": "Cook County $5.68M Race Discrimination in Hiring Settlement",
    "verified_as_of": "2026-06-16",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ]
   },
   "costa-del-mar-sunglasses-repair-fee-class-action-settlement": {
    "administrator": "Epiq",
@@ -6569,7 +7056,15 @@
    "claim_url": "https://kimballfeessettlement.com/",
    "content_hash": "d020debd95088f24",
    "court": "Hampshire County Superior Court, Massachusetts",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/kimball-fees-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "no_action",
@@ -6634,7 +7129,15 @@
    "claim_url": "https://www.covenanttransportsettlement.com/",
    "content_hash": "19d37caefcf6d02f",
    "court": "King County Superior Court, Washington",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/covenant-transport-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-09",
     "kind": "claim",
@@ -6702,6 +7205,13 @@
    "content_hash": "69d941c83f91ca27",
    "court": "Circuit Court for Broward County, Florida",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/cpap-data-incident-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/brett-conner-v-cpap-medical-supplies-and-services-inc-data-incident-class-action-settlemen/",
@@ -6852,6 +7362,13 @@
    "content_hash": "14afa995b2bb0f5d",
    "court": "U.S. District Court, Central District of California",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/trucking-driver-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/crst-expedited-california-truck-driver-wage-settlement/",
@@ -6929,7 +7446,15 @@
    "claim_url": "https://www.livingstonderailmentsettlement.com/",
    "content_hash": "b19ecb4eadb4f89a",
    "court": "U.S. District Court, Eastern District of Kentucky",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/livingston-derailment-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-19",
     "kind": "claim",
@@ -7074,7 +7599,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/cvent-stockholders-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -7137,7 +7670,15 @@
    "claim_url": "https://www.cvsdigitalprivacysettlement.com/form/open",
    "content_hash": "bf55a83064b3555b",
    "court": "Circuit Court for the 17th Judicial Circuit, Broward County, Florida",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/cvs-digital-privacy-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-16",
     "kind": "claim",
@@ -7203,6 +7744,13 @@
    "content_hash": "9c41faac36ce5eb9",
    "court": "District Court of Wyandotte County, Kansas",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/dfa-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/dairy-farmers-of-america-data-breach-settlement/",
@@ -7289,7 +7837,15 @@
    "claim_url": "https://www.danahersecuritiessettlement.com/",
    "content_hash": "1d52fb4012a3dd8f",
    "court": "U.S. District Court for the District of Columbia",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/danaher-securities-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-09-20",
     "kind": "claim",
@@ -7357,6 +7913,13 @@
    "content_hash": "62a3ee421469dc7f",
    "court": "Superior Court of California, County of Riverside",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/dap-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/dap-health-data-breach-settlement/",
@@ -7443,7 +8006,15 @@
    "claim_url": "https://dartmouthhitchcockerisasettlement.com/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/dartmouth-hitchcock-erisa-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -7482,7 +8053,9 @@
    "tiers": [],
    "title": "Dartmouth-Hitchcock $850,000 ERISA Class Action Settlement",
    "verified_as_of": "2026-06-16",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ]
   },
   "davison-design-30000-washington-text-message-settlement": {
    "administrator": null,
@@ -7492,7 +8065,15 @@
    "claim_url": "https://www.millertextsettlement.com/submit-a-claim",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/miller-text-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-13",
     "kind": "claim",
@@ -7556,6 +8137,13 @@
    "content_hash": "16a268dae24e6d07",
    "court": null,
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/ny-dennys-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/new-york-dennys-reveille-top-line-spread-of-hours-wage-settlement/",
@@ -7681,7 +8269,15 @@
    "claim_url": "https://www.diisocyanatesantitrustlitigation.com/",
    "content_hash": "79be7065c8a1debf",
    "court": "U.S. District Court, Western District of Pennsylvania",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/diisocyanates-antitrust-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-02",
     "kind": "claim",
@@ -7992,7 +8588,15 @@
    "claim_url": "https://www.asifoodssettlement.com/",
    "content_hash": "f255ad62b3c07540",
    "court": "Superior Court of California, County of San Francisco",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/asi-foods-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-08",
     "kind": "claim",
@@ -8072,7 +8676,15 @@
    "claim_url": "https://www.nydoordashsettlement.com/claim-form-login/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/ny-doordash-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -8111,7 +8723,9 @@
    "tiers": [],
    "title": "NY OAG v DoorDash",
    "verified_as_of": "2026-06-29",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ]
   },
   "dovenmuehle-mortgage-pay-to-pay-fee-settlement": {
    "administrator": "ILYM Group, Inc.",
@@ -8122,6 +8736,13 @@
    "content_hash": "3d4695c5d6bd93b5",
    "court": "U.S. District Court, Middle District of North Carolina",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/dovenmuehle-phone-fee-lawsuit",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/dovenmuehle-phone-payment-fees-settlement/",
@@ -8196,6 +8817,13 @@
    "content_hash": "e916cf3dde94115a",
    "court": "U.S. District Court, Eastern District of Michigan, Southern Division (Hon. Terrence G. Berg)",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/doxim-data-security-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/doxim-55m-data-breach-settlement/",
@@ -8283,6 +8911,13 @@
    "content_hash": "d4bfef1af0fc2d11",
    "court": "Superior Court of California, County of Los Angeles",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/personal-care-products-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/dr-squatch-all-natural-product-claims-settlement/",
@@ -8356,7 +8991,15 @@
    "claim_url": "https://dratasettlement.com/electronic-payment-election.html",
    "content_hash": "43c7423b7c456583",
    "court": "Supreme Court of the State of New York, County of Nassau",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/drata-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "no_action",
@@ -8419,7 +9062,15 @@
    "claim_url": "https://www.claimsettlementportal.com/surveys/election/home.aspx",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/drexel-covid-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -8471,6 +9122,13 @@
    "content_hash": "b51049f632bc6133",
    "court": "Court of Common Pleas of Lackawanna County, Pennsylvania",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/dats-data-breach-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/drug-and-alcohol-treatment-services-data-breach/",
@@ -8557,7 +9215,15 @@
    "claim_url": "https://www.eaglepharmasecuritiessettlement.com/",
    "content_hash": "4449f5fc0150ce59",
    "court": "U.S. District Court, District of New Jersey — Hon. Michael A. Hammer",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/eagle-pharma-securities-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-16",
     "kind": "claim",
@@ -8687,7 +9353,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/tscm-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -8750,7 +9424,15 @@
    "claim_url": "https://www.edgiosecuritieslitigation.com/",
    "content_hash": "a05e907338e8db05",
    "court": "U.S. District Court, District of Arizona",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/edgio-securities-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-09-28",
     "kind": "claim",
@@ -8815,7 +9497,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/educative-renewal-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -8881,6 +9571,13 @@
    "content_hash": "568bece8ae8ef21b",
    "court": "Isanti County District Court, Minnesota",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/efs-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/efs-advisors-aviben-data-breach-settlement/",
@@ -9017,6 +9714,13 @@
    "content_hash": "6da61d56f4ae48cc",
    "court": "U.S. District Court, District of Minnesota",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/eisner-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/eisner-advisory-group-1050000-data-breach-settlement/",
@@ -9093,7 +9797,9 @@
    ],
    "title": "EisnerAmper Data Breach Settlement — ~$100 Cash or Up to $5,000 + Credit Monitoring",
    "verified_as_of": "2026-09-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists claim deadline 2026-10-09 but our sources say 2026-10-08; ours kept"
+   ]
   },
   "emanate-health-pixel-privacy-class-action-settlement": {
    "administrator": "EisnerAmper (Eisner Advisory Group LLC)",
@@ -9104,6 +9810,13 @@
    "content_hash": "91eb4d85f6e0f57c",
    "court": "Superior Court of California, County of Los Angeles",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/emanate-privacy-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/emanate-health-medical-center-data-privacy/",
@@ -9178,6 +9891,13 @@
    "content_hash": "0d19b7b1fa005cb1",
    "court": "Supreme Court of the State of New York, New York County",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/senior-care-copay-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/nyc-senior-care-15-co-pay-settlement-bianculli-v-city-of-new-york/",
@@ -9244,7 +9964,8 @@
    "title": "EmblemHealth $53M Senior Care Co-Pay Settlement — NYC Retiree Reimbursement",
    "verified_as_of": "2026-09-20",
    "warnings": [
-    "settlesignal says no proof needed; our sources say proof required"
+    "settlesignal says no proof needed; our sources say proof required",
+    "claimdepot says no proof needed; our sources say proof required"
    ]
   },
   "employer-unpaid-wages-overtime-lawsuit": {
@@ -9374,6 +10095,13 @@
    "content_hash": "574bc5eee55bf873",
    "court": "Supreme Court of the State of New York, Albany County",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/equinox-inc-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/equinox-inc-data-breach-settlement/",
@@ -9537,6 +10265,13 @@
    "content_hash": "9188503b974d7409",
    "court": "District Court of Oklahoma County, Oklahoma",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/excel-fitness-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/excel-fitness-management-data-breach-settlement/",
@@ -9624,6 +10359,13 @@
    "content_hash": "03992b6c098a595f",
    "court": "U.S. District Court, District of Massachusetts (Judge Allison D. Burroughs)",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/moveit-settlement-ey-boa",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/ernst-young-bank-of-america-moveit-data-breach-settlement/",
@@ -9710,7 +10452,15 @@
    "claim_url": "https://fairchilddatasettlement.com/",
    "content_hash": "add888af756d6a15",
    "court": "Superior Court of California, County of Siskiyou",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/fairchild-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-02",
     "kind": "claim",
@@ -9908,6 +10658,13 @@
    "content_hash": "d95d9a9ce19422d0",
    "court": "U.S. District Court, Central District of California",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/fca-warranty-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/fca-us-36l-engine-valve-train-warranty-settlement/",
@@ -9996,7 +10753,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/featherstone-fca-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -10035,7 +10800,9 @@
    "tiers": [],
    "title": "FCA US $3.8M Wage and Hour Class Action Settlement",
    "verified_as_of": "2026-09-14",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ]
   },
   "finwise-bank-data-breach-settlement": {
    "administrator": "Epiq Class Action & Claims Solutions, Inc.",
@@ -10045,7 +10812,15 @@
    "claim_url": "https://www.finwisedatasettlement.com/Login",
    "content_hash": "854449e3c19de986",
    "court": "U.S. District Court for the District of Utah",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/finwise-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-29",
     "kind": "claim",
@@ -10111,6 +10886,13 @@
    "content_hash": "de263655ac27d093",
    "court": "Indiana Commercial Court, Lake County Superior Court",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/fbc-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/first-baptist-church-of-hammond-indiana-inc-data-security-incident-settlement/",
@@ -10417,7 +11199,8 @@
    "title": "Forbes $10M Website Tracking Settlement — Pro Rata Cash for California Readers",
    "verified_as_of": "2026-09-20",
    "warnings": [
-    "settlesignal says no proof needed; our sources say proof required"
+    "settlesignal says no proof needed; our sources say proof required",
+    "claimdepot says no proof needed; our sources say proof required"
    ]
   },
   "fort-wayne-medical-education-program-data-breach-settlement": {
@@ -10429,6 +11212,13 @@
    "content_hash": "77f97c8a80825df3",
    "court": "Allen Superior Court 2, Indiana Commercial Court",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/fwmep-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/fort-wayne-medical-education-program-fwmep-data-breach-settlement/",
@@ -10630,6 +11420,13 @@
    "content_hash": "08da50bd2a2b5e84",
    "court": "Wake County Superior Court, North Carolina",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/flb-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/fujifilm-diosynth-biotechnologies-data-incident-settlement-johnson-v-fujifilm/",
@@ -10716,7 +11513,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/funko-stockholder-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -10779,7 +11584,15 @@
    "claim_url": "https://www.furmanfoodsdatasettlement.com/furman-claim-form-login/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/furman-foods-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-09-30",
     "kind": "claim",
@@ -10843,6 +11656,13 @@
    "content_hash": "8211e98f64d772a8",
    "court": "U.S. District Court, District of South Dakota",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/fmusa-data-breach-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/furniture-mart-usa-fmusa-data-breach-settlement/",
@@ -10992,7 +11812,15 @@
    "claim_url": "https://gardencityfirefeessettlement.com/#claim-forms",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/garden-city-fire-fees-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -11045,7 +11873,9 @@
    ],
    "title": "Garden City $1.4M Fire Fees Class Action Settlement",
    "verified_as_of": "2026-06-19",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ]
   },
   "geico-clue-report-fcra-class-action-settlement": {
    "administrator": "Court-appointed Settlement Administrator (not named in the Notice)",
@@ -11055,7 +11885,15 @@
    "claim_url": "https://www.Kohama2026Settlement.com/",
    "content_hash": "16e8503b5154d5a7",
    "court": "U.S. District Court, District of Maryland, Southern Division",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/kohama-2026-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "no_action",
@@ -11110,7 +11948,9 @@
    ],
    "title": "GEICO $1.65M C.L.U.E. Report Settlement — Automatic Payment",
    "verified_as_of": "2026-09-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ]
   },
   "generic-drugs-price-fixing-class-action-settlement": {
    "administrator": null,
@@ -11121,6 +11961,13 @@
    "content_hash": "db64b09314c1948c",
    "court": "U.S. District Court, Eastern District of Pennsylvania (End-Payer MDL)",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/generic-drugs-end-payer-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/generic-drugs-end-payer-antitrust-settlement/",
@@ -11192,7 +12039,15 @@
    "claim_url": "https://geotekcyberincident.com/",
    "content_hash": "a7ab76b94d3fbaa8",
    "court": "Superior Court of California, County of San Diego",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/geotek-cyber-incident",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-12-01",
     "kind": "claim",
@@ -11285,7 +12140,15 @@
    "claim_url": "https://giltbondsettlement.com/",
    "content_hash": "d7acd8768466ad31",
    "court": "U.S. District Court, Southern District of New York",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/gilt-bond-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -11324,7 +12187,9 @@
    "tiers": [],
    "title": "$12M Citigroup HSBC RBC Morgan Stanley Investment Bonds Settlement",
    "verified_as_of": "2026-09-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ]
   },
   "globe-life-american-income-life-data-breach-settlement": {
    "administrator": "Kroll Settlement Administration LLC",
@@ -11334,7 +12199,15 @@
    "claim_url": "https://www.aildatasettlement.com/",
    "content_hash": "e00ce1ef3193bee3",
    "court": "U.S. District Court, Western District of Texas, Waco Division",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/ail-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-19",
     "kind": "claim",
@@ -11399,7 +12272,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/1400-cahuenga-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -11438,7 +12319,9 @@
    "tiers": [],
    "title": "Godfrey Hotel Hollywood $675,000 Wage and Hour Settlement",
    "verified_as_of": "2026-06-19",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ]
   },
   "goodfellow-bros-2m-job-posting-class-action-settlement": {
    "administrator": null,
@@ -11448,7 +12331,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/epoa-settlement-gfc",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -11487,7 +12378,9 @@
    "tiers": [],
    "title": "Goodfellow Bros. $2M Job Posting Class Action Settlement",
    "verified_as_of": "2026-06-17",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ]
   },
   "google-play-store-700-million-antitrust-class-action-settlement": {
    "administrator": null,
@@ -11497,7 +12390,15 @@
    "claim_url": "https://www.googleplaystateagantitrustlitigation.com/",
    "content_hash": "0e3e7c792dcb1ed0",
    "court": "U.S. District Court, Northern District of California",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/google-play-state-ag-antitrust-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "no_action",
@@ -11614,6 +12515,13 @@
    "content_hash": "06f1a0f93c72fba4",
    "court": "Superior Court of California, County of Riverside",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/stainless-steel-cookware-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/gotham-steel-granite-stone-bell-howell-cookware-non-toxic-marketing-settlement/",
@@ -11804,7 +12712,15 @@
    "claim_url": "https://www.haincelestialsecuritiessettlement.com/",
    "content_hash": "40115a1fd9a7a333",
    "court": "U.S. District Court, Eastern District of New York — Hon. Lee G. Dunst",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/hain-celestial-securities-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-13",
     "kind": "claim",
@@ -11970,6 +12886,13 @@
    "content_hash": "8fd381b20559a448",
    "court": "Court of Common Pleas, Allen County, Ohio",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/hcf-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/hcf-management-data-breach-settlement/",
@@ -12057,6 +12980,13 @@
    "content_hash": "8338eaa2c9d22eea",
    "court": "U.S. District Court, Eastern District of Pennsylvania",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/healthcare-services-group-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/healthcare-services-group-data-breach-settlement/",
@@ -12211,6 +13141,13 @@
    "content_hash": "248aec7e53dbfb6e",
    "court": null,
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/hearthside-fs-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/hearthside-food-solutions-child-labor/",
@@ -12398,6 +13335,13 @@
    "content_hash": "8982db940f7ee8d1",
    "court": "Circuit Court for Talladega County, Alabama (29th Judicial Circuit)",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/hscu-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/heritage-south-credit-union-data-breach-settlement/",
@@ -12471,7 +13415,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/epoa-settlement-hc-llp",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -12667,7 +13619,9 @@
    ],
    "title": "High 5 Games Social Casino Settlement — $12M–$30M for Washington Virtual Coin Buyers",
    "verified_as_of": "2026-09-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists claim deadline 2027-01-04 but our sources say 2026-11-13; ours kept"
+   ]
   },
   "highland-health-systems-data-breach-settlement": {
    "administrator": "Simpluris",
@@ -12678,6 +13632,13 @@
    "content_hash": "49dec64e7e26cd2a",
    "court": "Circuit Court of Calhoun County, Alabama — Hon. Jennifer G. Weems",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/highland-data-breach-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/highland-health-systems-data-breach-settlement/",
@@ -12765,6 +13726,13 @@
    "content_hash": "441369307aee6b7d",
    "court": "Circuit Court for Washington County, Arkansas",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/highlands-oncology-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/highlands-oncology-group-data-breach-settlement/",
@@ -12851,7 +13819,15 @@
    "claim_url": "https://www.hirevelocitysettlement.com/",
    "content_hash": "2abb14f9eca20219",
    "court": "State Court of Fulton County, Georgia",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/hire-velocity-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-30",
     "kind": "claim",
@@ -12930,6 +13906,13 @@
    "content_hash": "753967ea9bce1e10",
    "court": "Circuit Court of Lake County, Illinois (Hon. Daniel L. Jasica)",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/video-interview-bipa-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/hirevue-375m-illinois-video-interview-biometrics-settlement/",
@@ -13005,7 +13988,15 @@
    "claim_url": "https://www.holleysecuritiessettlement.com/",
    "content_hash": "a7f9df18485e7e45",
    "court": "U.S. District Court, Western District of Kentucky, Bowling Green Division",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/holley-securities-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-19",
     "kind": "claim",
@@ -13249,6 +14240,13 @@
    "content_hash": "39bb31ad5d29b153",
    "court": "U.S. District Court, District of Maryland",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/hwi-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/hunter-warfield-unlicensed-rental-collections-settlement/",
@@ -13479,6 +14477,13 @@
    "content_hash": "0f0d709be9eab0f0",
    "court": null,
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/hk-multistate-immobilizer-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/kia-hyundai-settlement-offers-cash-and-security-upgrades-to-owners/",
@@ -13550,7 +14555,15 @@
    "claim_url": "https://www.ifittreadmillsettlement.com/claim-form-login/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/ifit-treadmill-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -13589,7 +14602,9 @@
    "tiers": [],
    "title": "Barclay v iFIT",
    "verified_as_of": "2026-06-16",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ]
   },
   "illinois-institution-abuse-lawsuit": {
    "administrator": null,
@@ -13729,7 +14744,15 @@
    "claim_url": "https://inotivdatabreachsettlement.com/",
    "content_hash": "b448786056bec1b4",
    "court": "Superior Court for Marion County, Indiana",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/inotiv-data-breach-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-12-02",
     "kind": "claim",
@@ -13807,7 +14830,15 @@
    "claim_url": "https://interactivebrokerssettlement.com/form/claim",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/interactive-brokers-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -13870,7 +14901,15 @@
    "claim_url": "https://www.smokersurchargeclassaction.com/submit-claim",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/smoker-surcharge-class-action",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -13923,7 +14962,9 @@
    ],
    "title": "International Motors Wellness Program Surcharge Settlement",
    "verified_as_of": "2026-06-18",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ]
   },
   "international-shoppes-data-breach-settlement": {
    "administrator": "Simpluris, Inc.",
@@ -14083,7 +15124,15 @@
    "claim_url": "https://www.iodsettlementpa.com/",
    "content_hash": "53de9245465c7d7f",
    "court": "Court of Common Pleas of Allegheny County, Pennsylvania",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/iod-settlement-pa",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-30",
     "kind": "claim",
@@ -14150,7 +15199,15 @@
    "claim_url": "https://www.iRhythmSecuritiesLitigation.com/",
    "content_hash": "5107e4a3f0c83e7d",
    "court": "U.S. District Court, Northern District of California",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/irhythm-securities-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-01",
     "kind": "claim",
@@ -14216,6 +15273,13 @@
    "content_hash": "4555f01be6309f44",
    "court": "U.S. District Court, Northern District of Alabama",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/jacks-data-breach-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/jacks-family-restaurants-data-breach-settlement/",
@@ -14302,7 +15366,15 @@
    "claim_url": "https://www.deererepairsettlement.com/submit-claim",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/deere-repair-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-12-31",
     "kind": "claim",
@@ -14479,7 +15551,15 @@
    "claim_url": "https://www.j4vsettlement.com/claims_filing.html",
    "content_hash": "bb6fbac6732efbdd",
    "court": "Circuit Court for Montgomery County, Maryland",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/j4v-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-05",
     "kind": "claim",
@@ -14544,7 +15624,15 @@
    "claim_url": "https://www.outofnetworkhealthclaims.com/",
    "content_hash": "e81ac46329b8bcb4",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/out-of-network-health-claims",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "conditional",
@@ -14611,7 +15699,15 @@
    "claim_url": "https://www.KSupremeSettlement.com/",
    "content_hash": "22cbded6d6c431b7",
    "court": "U.S. District Court, Southern District of New York",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/k-supreme-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2027-09-30",
     "kind": "claim",
@@ -14650,7 +15746,10 @@
    "tiers": [],
    "title": "Keurig K-Supreme Coffee Maker Descaling Settlement",
    "verified_as_of": "2026-09-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists claim deadline 2025-11-14 but our sources say 2027-09-30; ours kept",
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ]
   },
   "kia-georgia-hyundai-mobis-115m-tn-visa-settlement": {
    "administrator": null,
@@ -14660,7 +15759,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/mobis-al-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -14724,6 +15831,13 @@
    "content_hash": "3769e018a957fdc2",
    "court": "U.S. District Court, Central District of California",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/kia-window-regulator-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/kia-optima-sportage-window-regulator-settlement/",
@@ -14797,7 +15911,15 @@
    "claim_url": "https://www.kornitsecuritieslitigation.com/claim",
    "content_hash": "574e7a7a1ef2e6ce",
    "court": "U.S. District Court, District of New Jersey",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/kornit-securities-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-12-10",
     "kind": "claim",
@@ -14864,7 +15986,15 @@
    "claim_url": "https://www.krogersavingsclubsettlement.com/submit-claim",
    "content_hash": "8f25dcf1daa8511a",
    "court": "U.S. District Court, Southern District of Ohio",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/kroger-savings-club-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-12-21",
     "kind": "claim",
@@ -14920,7 +16050,8 @@
    "title": "Kroger $17M Prescription Drug Pricing Settlement",
    "verified_as_of": "2026-09-20",
    "warnings": [
-    "tiers derived from the page fact (index had no payout text)"
+    "tiers derived from the page fact (index had no payout text)",
+    "claimdepot says no proof needed; our sources say proof required"
    ]
   },
   "kucoin-22m-new-york-enforcement-action-settlement": {
@@ -14931,7 +16062,15 @@
    "claim_url": "https://www.kucoinnyagconsentorder.com/form/claim",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/kucoin-ny-ag-consent-order",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2029-02-28",
     "kind": "claim",
@@ -14984,7 +16123,9 @@
    ],
    "title": "KuCoin $22M New York Enforcement Action Settlement",
    "verified_as_of": "2026-06-19",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Settlement Approved' but we have it in the 'claimable' lane"
+   ]
   },
   "la-jolla-group-data-breach-settlement": {
    "administrator": "Analytics Consulting LLC",
@@ -14994,7 +16135,15 @@
    "claim_url": "https://ljgdatasettlement.com/",
    "content_hash": "d6a5d6a60d393335",
    "court": "Superior Court of California, County of Orange",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/ljg-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-23",
     "kind": "claim",
@@ -15085,7 +16234,15 @@
    "claim_url": "https://www.laboratorycorporationwebsitesettlement.com/",
    "content_hash": "77937aa385aef8c5",
    "court": "U.S. District Court, Middle District of North Carolina",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/laboratory-corporation-website-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -15154,6 +16311,13 @@
    "content_hash": "704898780163dee6",
    "court": "Circuit Court for Iowa County, Wisconsin",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/lands-end-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/lands-end-data-breach/",
@@ -15240,7 +16404,15 @@
    "claim_url": "https://www.NightBBSettlement.com/submit-claim",
    "content_hash": "d7cfec9de1d7093d",
    "court": "Superior Court of California, County of San Diego",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/night-bb-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-09-25",
     "kind": "claim",
@@ -15450,6 +16622,13 @@
    "content_hash": "3f59e9a0159d494c",
    "court": "U.S. District Court, District of Arizona",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/lifestance-pixel-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/lifestance-health-pixel-data-privacy-settlement/",
@@ -15603,7 +16782,15 @@
    "claim_url": "https://lincolncovidsettlement.com/notice.html",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/lincoln-covid-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -15658,7 +16845,9 @@
    ],
    "title": "Lincoln University - COVID Tuition",
    "verified_as_of": "2026-06-16",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ]
   },
   "livehealth-online-privacy-class-action-settlement": {
    "administrator": "Simpluris, Inc.",
@@ -15669,6 +16858,13 @@
    "content_hash": "b031a6b7b9e69822",
    "court": "Superior Court of California, County of Sacramento",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/livehealth-online-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/livehealth-online-data-privacy-settlement-polk-v-american-well-corp/",
@@ -15744,7 +16940,15 @@
    "claim_url": "https://www.syndicatesettlement.com/",
    "content_hash": "f6d0d7e44b2b515a",
    "court": "U.S. District Court, District of New Jersey",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/syndicate-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-30",
     "kind": "claim",
@@ -16062,6 +17266,13 @@
    "content_hash": "b37b4377d03f8fe7",
    "court": "U.S. District Court, Southern District of Florida",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/mcna-data-breach-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/mcna-dental-data-breach-settlement/",
@@ -16135,7 +17346,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/mdc-stockholder-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -16264,6 +17483,13 @@
    "content_hash": "1af5820ca9fe271d",
    "court": "Superior Court of Hampden County, Massachusetts",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/mha-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/mental-health-association-data-breach-settlement/",
@@ -16351,6 +17577,13 @@
    "content_hash": "5b802734ad71cf2c",
    "court": null,
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/mb-aem-incentive",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/mercedes-benz-emission-control-system-settlement/",
@@ -16424,7 +17657,15 @@
    "claim_url": "https://metropolitanuimsettlement.com/Login",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/metropolitan-uim-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -16463,7 +17704,9 @@
    "tiers": [],
    "title": "MetLife Auto Insurance $1.2M Class Action Settlement",
    "verified_as_of": "2026-06-19",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ]
   },
   "metropolis-parking-tennessee-settlement": {
    "administrator": "Rust Consulting",
@@ -16473,7 +17716,15 @@
    "claim_url": "https://www.metropolisparkingsettlement.com/",
    "content_hash": "2b4c177ba2e42567",
    "court": "Chancery Court of Davidson County, Tennessee — Twentieth Judicial District at Nashville",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/metropolis-parking-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-09",
     "kind": "claim",
@@ -16539,6 +17790,13 @@
    "content_hash": "35c61d11ffba5efa",
    "court": "U.S. District Court, Eastern District of Pennsylvania",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/mg217-shampoo-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/mg217-coal-tar-shampoo-settlement/",
@@ -16676,7 +17934,15 @@
    "claim_url": "https://mightycakefingerprintsettlement.com/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/mighty-cake-fingerprint-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -16717,7 +17983,9 @@
    "tiers": [],
    "title": "Mighty Cake Company - Biometric Privacy (Illinois)",
    "verified_as_of": "2026-06-16",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ]
   },
   "mobile-home-park-fee-violation-class-action-settlement": {
    "administrator": null,
@@ -16727,7 +17995,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/chavez-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -16791,6 +18067,13 @@
    "content_hash": "61a7950a5c538084",
    "court": "U.S. District Court, Southern District of Florida",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/modernizing-medicine-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/modernizing-medicine-modmed-data-breach-settlement/",
@@ -16878,6 +18161,13 @@
    "content_hash": "bdfb3777300a62dc",
    "court": "U.S. District Court for the District of Arizona",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/money-source-tcpa-class-action",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/hiller-v-the-money-source-inc/",
@@ -16951,7 +18241,15 @@
    "claim_url": "https://www.weedkillerclass.com/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/weed-killer-class",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -17004,7 +18302,9 @@
    ],
    "title": "King v. Monsanto Company",
    "verified_as_of": "2026-07-14",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Pending Court Approval' but we have it in the 'claimable' lane"
+   ]
   },
   "mortgage-investors-group-data-breach-settlement": {
    "administrator": "Simpluris",
@@ -17015,6 +18315,13 @@
    "content_hash": "fa9868f28c8cca87",
    "court": "Chancery Court for Davidson County, Tennessee",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/mig-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/mortgage-investors-group-data-breach-settlement/",
@@ -17102,6 +18409,13 @@
    "content_hash": "640df254d8d8547f",
    "court": "Circuit Court of the 17th Judicial Circuit in and for Broward County, Florida",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/mount-sinai-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/boggiano-et-al-v-mount-sinai-medical-center-of-florida/",
@@ -17175,7 +18489,15 @@
    "claim_url": "https://www.muscatinedatabreach.com/",
    "content_hash": "fe1e21d5c3e2b94d",
    "court": "Iowa District Court for Muscatine County",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/muscatine-data-breach",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-26",
     "kind": "claim",
@@ -17240,7 +18562,15 @@
    "claim_url": "https://www.mymichigansettlement.com/",
    "content_hash": "59c3e2f29a376858",
    "court": "U.S. District Court, Eastern District of Michigan",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/my-michigan-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-09-30",
     "kind": "objection",
@@ -17383,7 +18713,15 @@
    "claim_url": "https://settlementnpfu.com/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/settlement-npfu",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -17424,7 +18762,9 @@
    "tiers": [],
    "title": "Nature's Path Foods USA $1.4M Meal and Rest Break Settlement",
    "verified_as_of": "2026-06-16",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ]
   },
   "navy-federal-unauthorized-personal-loan-class-action-settlement": {
    "administrator": "Court-appointed Settlement Administrator (not named in the Notice)",
@@ -17434,7 +18774,15 @@
    "claim_url": "https://www.nfculoansettlement.com/",
    "content_hash": "8cccd44a2dde19dc",
    "court": "U.S. District Court, Eastern District of Virginia (Norfolk Division)",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/nfcu-loan-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-29",
     "kind": "claim",
@@ -17785,7 +19133,15 @@
    "claim_url": "https://www.nexteraerisasettlement.com/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/nextera-erisa-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -17838,7 +19194,9 @@
    ],
    "title": "NextEra Energy - Retirement Plans",
    "verified_as_of": "2026-06-16",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ]
   },
   "nibco": {
    "administrator": null,
@@ -17898,6 +19256,13 @@
    "content_hash": "80e5444ee8257fce",
    "court": "Superior Court of New Jersey, Passaic County",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/nj-lenders-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/nj-lenders-corp-data-breach-settlement/",
@@ -17984,7 +19349,15 @@
    "claim_url": "https://www.nhesopsettlement.com/",
    "content_hash": "3c305c702068ff64",
    "court": "U.S. District Court, Northern District of Georgia, Atlanta Division",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/nh-esop-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-06",
     "kind": "objection",
@@ -18040,7 +19413,9 @@
    ],
    "title": "North Highland ESOP $2.375M ERISA Settlement — No Claim Form, No Opt-Out",
    "verified_as_of": "2026-09-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists claim deadline 2026-11-05 but our sources say 2026-10-06; ours kept"
+   ]
   },
   "northrop-grumman-canoga-park-groundwater-contamination-class-action-settlement": {
    "administrator": "A.B. Data, Ltd.",
@@ -18128,7 +19503,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/ntn-gipa-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -18254,7 +19637,15 @@
    "claim_url": "https://www.centralbookingsettlement.com/submit-claim",
    "content_hash": "d77f2820e66b09db",
    "court": "U.S. District Court, Eastern District of New York",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/central-booking-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-19",
     "kind": "claim",
@@ -18686,7 +20077,15 @@
    "claim_url": "https://olinskydatasettlement.com/",
    "content_hash": "6bdc755b4c5db8b9",
    "court": "U.S. District Court, Northern District of New York",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/olinsky-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "no_action",
@@ -18752,6 +20151,13 @@
    "content_hash": "66a4855dfcce539e",
    "court": "Maricopa County Superior Court, Arizona",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/on-q-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/on-q-financial-data-breach-settlement/",
@@ -18839,6 +20245,13 @@
    "content_hash": "ce78ae27d903f71e",
    "court": "U.S. District Court, Western District of Kentucky, Louisville Division",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/onepoint-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/onepoint-patient-care-2115000-data-incident-settlement/",
@@ -18926,6 +20339,13 @@
    "content_hash": "02c234a31c416185",
    "court": "Circuit Court of Waukesha County, Wisconsin",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/otp-data-incident",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/onetouchpoint-otp-data-incident-settlement/",
@@ -19063,7 +20483,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/ohsu-class-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -19127,6 +20555,13 @@
    "content_hash": "9eaa9c81091dda88",
    "court": "Circuit Court of the Thirteenth Judicial Circuit, LaSalle County, Illinois",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/oreilly-rnd-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/oreilly-automotive-tcpa-text-message-class-action-settlement/",
@@ -19254,6 +20689,13 @@
    "content_hash": "441c774501044062",
    "court": "U.S. District Court, Middle District of North Carolina",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/hudson-class",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/palm-beach-tan-25m-unwanted-text-message-settlement/",
@@ -19416,7 +20858,15 @@
    "claim_url": "https://payactivdataincidentsettlement.com/form/claim/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/payactiv-data-incident-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -19469,7 +20919,9 @@
    ],
    "title": "Payactiv - Data Breach",
    "verified_as_of": "2026-09-14",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ]
   },
   "peco-foods-data-breach-settlement": {
    "administrator": "Eisner Advisory Group LLC",
@@ -19480,6 +20932,13 @@
    "content_hash": "e91ad60ddbc09a32",
    "court": "Circuit Court of Tuscaloosa County, Alabama",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/peco-foods-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/peco-foods-data-breach-settlement/",
@@ -19696,7 +21155,15 @@
    "claim_url": "https://williamsphhsettlement.digitaldisbursements.com",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/williams-phh-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -19762,7 +21229,9 @@
    ],
    "title": "PHH Mortgage $1.5M Debt Collection Class Action Settlement",
    "verified_as_of": "2026-06-19",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ]
   },
   "physicians-primary-care-southwest-florida-data-breach-settlement": {
    "administrator": null,
@@ -19773,6 +21242,13 @@
    "content_hash": "dd6eba602faa693a",
    "court": "Circuit Court, Twentieth Judicial Circuit, Lee County, Florida",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/physicians-primary-care-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/physicians-primary-care-data-breach-class-action-settlement/",
@@ -19860,6 +21336,13 @@
    "content_hash": "5b0383b2a268f956",
    "court": "Superior Court of Washington for Pierce County",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/pierce-county-library-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/pierce-county-library-system-data-breach-settlement/",
@@ -20023,7 +21506,15 @@
    "claim_url": "https://www.powerschoolstockholderslitigation.com/",
    "content_hash": "fc05f32ebdbc39e6",
    "court": "Court of Chancery of the State of Delaware",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/powerschool-stockholders-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-19",
     "kind": "objection",
@@ -20079,7 +21570,9 @@
    ],
    "title": "PowerSchool $26.5M Stockholder Settlement — About $0.44 a Share, Paid Automatically",
    "verified_as_of": "2026-09-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists claim deadline 2024-10-01 but our sources say 2026-10-19; ours kept"
+   ]
   },
   "ppl-cdpap-caregivers-settlement": {
    "administrator": "Atticus Administration",
@@ -20089,7 +21582,15 @@
    "claim_url": "https://www.publicpartnershipssettlement.com/",
    "content_hash": "592d854ac124b8bf",
    "court": "U.S. District Court, Eastern District of New York",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/public-partnerships-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-10",
     "kind": "claim",
@@ -20154,7 +21655,15 @@
    "claim_url": "https://www.2026providence401ksettlement.com/",
    "content_hash": "fe3a104e01338f8f",
    "court": "U.S. District Court, Western District of Washington",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/2026-providence-401k-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-06",
     "kind": "objection",
@@ -20219,7 +21728,15 @@
    "claim_url": "https://www.shisettlement.com/",
    "content_hash": "fb74190144831bb4",
    "court": "King County Superior Court, Washington",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/shi-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-09-25",
     "kind": "claim",
@@ -20273,6 +21790,13 @@
    "content_hash": "6118b4f0b7337e5d",
    "court": "Superior Court of California, County of Los Angeles",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/raging-waters-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/raging-waters-processing-fee-settlement/",
@@ -20346,7 +21870,15 @@
    "claim_url": "https://www.chrysler.com/webselfservice/fcanorth/VinInputForm.jsp",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/fca-ram-brake-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -20523,6 +22055,13 @@
    "content_hash": "4791dc47ba7c21f0",
    "court": "U.S. District Court, Middle District of Tennessee",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/realpage-rental-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/realpage-rental-software-antitrust-settlement/",
@@ -20666,6 +22205,13 @@
    "content_hash": "1c1a3e3e971525a5",
    "court": "District Court for the Parish of Caddo, Louisiana (First Judicial District)",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/regional-urology-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/regional-urology-data-breach-settlement/",
@@ -20752,7 +22298,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/rmic-plan-class-action",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -20943,7 +22497,15 @@
    "claim_url": "https://ricoherisasettlement.com/",
    "content_hash": "6120f646d4a604e3",
    "court": "U.S. District Court, Eastern District of Pennsylvania",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/ricoh-erisa-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-09-21",
     "kind": "objection",
@@ -20998,7 +22560,9 @@
    ],
    "title": "Ricoh USA Retirement Savings Plan $1.75M ERISA Settlement — 401(k) Fees, Stable Value Fund & Forfeitures",
    "verified_as_of": "2026-09-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists claim deadline 2026-10-06 but our sources say 2026-09-21; ours kept"
+   ]
   },
   "roblox-child-predator-lawsuit": {
    "administrator": null,
@@ -21073,7 +22637,15 @@
    "claim_url": "https://www.RockleySecuritiesSettlement.com/",
    "content_hash": "a1d4b1f272d4e71a",
    "court": "U.S. District Court, Central District of California",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/rockley-securities-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-15",
     "kind": "claim",
@@ -21189,7 +22761,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/rudeen-deposit-refund",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -21242,7 +22822,9 @@
    ],
    "title": "Rudeen Management $2.9M Washington Tenant Settlement",
    "verified_as_of": "2026-06-19",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ]
   },
   "ryobi-40v-mower-fire-class-action-lawsuit": {
    "administrator": null,
@@ -21318,7 +22900,15 @@
    "claim_url": "https://www.epoasettlementsgaai.com/",
    "content_hash": "b65bf223fa6ca809",
    "court": "Superior Court of Washington for King County",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/epoa-settlement-sgaai",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-08",
     "kind": "opt_out",
@@ -21385,7 +22975,15 @@
    "claim_url": "https://sansonedataincident.com/",
    "content_hash": "21c17afeae0aa018",
    "court": "Circuit Court of the City of St. Louis, Missouri",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/sansone-data-incident",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-13",
     "kind": "claim",
@@ -21522,6 +23120,13 @@
    "content_hash": "0479a72270c10e34",
    "court": "Superior Court of California, County of San Francisco",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/mckinney-scaleai-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/scale-ai-125m-california-wage-and-hour-settlement-mckinney-v-scale-ai/",
@@ -21587,7 +23192,9 @@
    ],
    "title": "Scale AI $12.5M Worker Misclassification Settlement — Automatic Payment",
    "verified_as_of": "2026-09-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ]
   },
   "schnucks-rewards-points-sales-tax-class-action-settlement": {
    "administrator": "Rust Consulting, Inc.",
@@ -21597,7 +23204,15 @@
    "claim_url": "https://www.schnuckstaxsettlement.com/",
    "content_hash": "5df3415af069e1a5",
    "court": "Circuit Court of St. Louis County, Missouri",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/schnucks-tax-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-03",
     "kind": "claim",
@@ -21664,7 +23279,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/sfc-bipa-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -21717,7 +23340,9 @@
    ],
    "title": "Seafood City Supermarket $300K BIPA Class Action Settlement",
    "verified_as_of": "2026-06-19",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ]
   },
   "seagate-securities-class-action-settlement": {
    "administrator": "Strategic Claims Services",
@@ -21727,7 +23352,15 @@
    "claim_url": "https://www.seagatesecuritieslitigation.com/",
    "content_hash": "c53bd74a44216fe9",
    "court": "U.S. District Court, Northern District of California — Hon. Rita F. Lin",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/seagate-securities-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-19",
     "kind": "claim",
@@ -21792,7 +23425,15 @@
    "claim_url": "https://servicespotsettlement.com/",
    "content_hash": "b9818d78f6401ab9",
    "court": "11th Judicial Circuit Court, Miami-Dade County, Florida",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/service-spot-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-12-17",
     "kind": "claim",
@@ -21911,6 +23552,13 @@
    "content_hash": "b735cacf797b2f42",
    "court": "U.S. District Court, Southern District of New York",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/samc-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/situsamc-data-breach-settlement/",
@@ -21997,7 +23645,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/skinspirit-essential-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -22036,7 +23692,9 @@
    "tiers": [],
    "title": "Skin Spirit Settlement",
    "verified_as_of": "2026-07-13",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ]
   },
   "smith-nephew-401k-erisa-class-action-settlement": {
    "administrator": null,
@@ -22046,7 +23704,15 @@
    "claim_url": "https://smithandnephewerisa.com/",
    "content_hash": "1bce11254852a685",
    "court": "U.S. District Court, District of Massachusetts",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/smith-and-nephew-erisa",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-09-04",
     "kind": "objection",
@@ -22101,7 +23767,9 @@
    ],
    "title": "Smith & Nephew $350K 401(k) ERISA Settlement — Automatic Payment",
    "verified_as_of": "2026-09-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists claim deadline 2018-08-30 but our sources say 2026-09-04; ours kept"
+   ]
   },
   "social-media-addiction-lawsuit": {
    "administrator": null,
@@ -22223,7 +23891,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/psn-digital-games-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -22287,6 +23963,13 @@
    "content_hash": "a4af51d0d71c5f03",
    "court": "Hardin Circuit Court, Commonwealth of Kentucky",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/johnson-overdraft-class-action",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/south-central-bank-overdraft-fees-settlement/",
@@ -22347,6 +24030,13 @@
    "content_hash": "52edc116702465d9",
    "court": "U.S. District Court, Western District of Kentucky",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/southern-graphics-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/southern-graphics-data-breach-settlement-davis-et-al-v-southern-graphics-inc/",
@@ -22433,7 +24123,15 @@
    "claim_url": "https://southstatebankdatasettlement.com/form/claim/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/southstate-bank-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -22486,7 +24184,9 @@
    ],
    "title": "SouthState Bank data breach",
    "verified_as_of": "2026-06-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ]
   },
   "spartan-despac-8-million-securities-class-action-settlement": {
    "administrator": null,
@@ -22496,7 +24196,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/spartan-despac-stockholder-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -22626,7 +24334,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/sh-pricing-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -22665,7 +24381,9 @@
    "tiers": [],
    "title": "SpotHero - Drip Pricing",
    "verified_as_of": "2026-09-14",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ]
   },
   "springfield-police-student-officer-wage-class-action-settlement": {
    "administrator": "Optime Administration",
@@ -22675,7 +24393,15 @@
    "claim_url": "https://spdsettlement.com/",
    "content_hash": "930126ed9922da5d",
    "court": "Palmer District Court, Hampden County, Massachusetts",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/spd-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "no_action",
@@ -22810,6 +24536,13 @@
    "content_hash": "1a4defa41f287240",
    "court": "Superior Court of California, County of Santa Clara",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/sfcu-fee-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/stanford-federal-credit-union-overdraft-fees/",
@@ -22884,6 +24617,13 @@
    "content_hash": "7280b3d0e3fed952",
    "court": "Circuit Court of the Eleventh Judicial Circuit, Miami-Dade County, Florida",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/star-casualty-total-loss-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/star-casualty-total-loss-fees-settlement/",
@@ -23022,7 +24762,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/sfb-notice-class",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -23086,6 +24834,13 @@
    "content_hash": "c09bdda652fe999c",
    "court": "U.S. District Court, Middle District of Louisiana (Chief Judge Shelly D. Dick)",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/louisiana-fees-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/state-farm-louisiana-total-loss-purchasing-fees-settlement/",
@@ -23163,7 +24918,15 @@
    "claim_url": "https://www.washingtonumpdsettlement.com/",
    "content_hash": "1576a9c9767a6037",
    "court": "U.S. District Court, Western District of Washington",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/washington-umpd-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-12-14",
     "kind": "claim",
@@ -23231,6 +24994,13 @@
    "content_hash": "99a26bc14201621b",
    "court": "Indiana Commercial Court, St. Joseph County Superior Court No. 4",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/steel-warehouse-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/steel-warehouse-company-data-breach-settlement/",
@@ -23317,7 +25087,15 @@
    "claim_url": "https://www.StitchFixSecuritiesLitigation.com/",
    "content_hash": "08e4b6422e0ecfcd",
    "court": "U.S. District Court, Northern District of California (San Jose Division)",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/stitch-fix-securities-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-07",
     "kind": "claim",
@@ -23383,6 +25161,13 @@
    "content_hash": "6a662b9d100cd49c",
    "court": "Superior Court of the State of California, County of Los Angeles",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/stockpile-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/stockpile-2020-data-breach-settlement/",
@@ -23521,7 +25306,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/studio-one-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -23570,7 +25363,15 @@
    "claim_url": "https://www.suffolkredlightsettlement.com/",
    "content_hash": "e03c28f99c49106c",
    "court": "Supreme Court of the State of New York, County of Suffolk",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/suffolk-red-light-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-12-08",
     "kind": "claim",
@@ -23636,6 +25437,13 @@
    "content_hash": "b7e50ddf7002274a",
    "court": "U.S. District Court, Central District of California",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/sb-tcpa-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/sugared-bronzed-unwanted-text-messages-tcpa-settlement/",
@@ -23712,6 +25520,13 @@
    "content_hash": "526c764eecd59915",
    "court": "Circuit Court for Knox County, Tennessee",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/summit-medical-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/summit-medical-group-data-breach-settlement/",
@@ -23786,6 +25601,13 @@
    "content_hash": "e01626bdefdc31bf",
    "court": "District Court of Butler County, Kansas",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/sbamh-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/susan-b-allen-memorial-hospital-sbamh-data-breach-settlement/",
@@ -23860,6 +25682,13 @@
    "content_hash": "3a9443113c05cefd",
    "court": "Superior Court of California, County of Orange",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/system-pavers-data-incident",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/system-pavers-350544-data-breach-settlement/",
@@ -23947,6 +25776,13 @@
    "content_hash": "5b54fb977f9f1e4f",
    "court": "King County Superior Court, Washington",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/epoa-settlement-tdi",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/talkdesk-washington-job-posting-settlement/",
@@ -24135,6 +25971,13 @@
    "content_hash": "72e83fed1d61a6e6",
    "court": "U.S. District Court, Southern District of New York",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/ted-vppa-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/sutton-v-ted-foundation-vppa-data-privacy-settlement/",
@@ -24287,6 +26130,13 @@
    "content_hash": "fa7a3c8a697dc963",
    "court": "Circuit Court of Montgomery County, TN (19th Judicial District)",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/auto-insurance-claim-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/tennessee-farmers-mutual-insurance-total-loss-claims/",
@@ -24360,7 +26210,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/terraform-stockholder-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -24424,6 +26282,13 @@
    "content_hash": "29377c403eb54e72",
    "court": "Superior Court of California, County of Alameda",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/tesla-idle-fee-class-action",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/tesla-supercharger-idle-fee-class-action-settlement-california/",
@@ -24501,7 +26366,15 @@
    "claim_url": "https://www.mradatasettlement.com/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/mra-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-07",
     "kind": "claim",
@@ -24615,7 +26488,15 @@
    "claim_url": "https://www.twcamerasettlement.com/",
    "content_hash": "e7a62240d9e41d2d",
    "court": "Superior Court of California, County of Placer",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/tw-camera-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-12-14",
     "kind": "claim",
@@ -24680,7 +26561,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/thompson-fees-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -24818,6 +26707,13 @@
    "content_hash": "0bc4a669f55a5d11",
    "court": "Superior Court of California, County of San Diego",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/total-vision-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/total-vision-data-breach-settlement/",
@@ -24896,7 +26792,10 @@
    ],
    "title": "Total Vision Data Breach Settlement — Pro-Rata Cash or Up to $1,000, Claim by October 5",
    "verified_as_of": "2026-09-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists claim deadline 2026-09-14 but our sources say 2026-10-05; ours kept",
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ]
   },
   "toyota-airbag-class-action": {
    "administrator": "Kroll Settlement Administration, LLC",
@@ -25123,7 +27022,15 @@
    "claim_url": "https://www.wrencvisettlement.com/",
    "content_hash": "d63c45592bd64452",
    "court": "U.S. District Court, Central District of California",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/wren-cvi-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-02",
     "kind": "opt_out",
@@ -25179,7 +27086,9 @@
    ],
    "title": "Transamerica $110M Direct Recognition Life Settlement — Automatic Payments",
    "verified_as_of": "2026-09-20",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists claim deadline 2016-01-01 but our sources say 2026-10-02; ours kept"
+   ]
   },
   "transamerica-life-insurance-57m-rate-increase-settlement": {
    "administrator": null,
@@ -25189,7 +27098,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/handorf-coi-class-action",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -25253,6 +27170,13 @@
    "content_hash": "59ad5c06214f387b",
    "court": "U.S. District Court, Eastern District of Pennsylvania",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/brooks-bankruptcy-class-action",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/brooks-v-transunion-bankruptcy-credit-reporting-settlement-fcra/",
@@ -25329,6 +27253,13 @@
    "content_hash": "c4531d5b198bc9e5",
    "court": "U.S. District Court, District of New Mexico",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/aguilar-uim-class-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/travelers-new-mexico-underinsured-motorist-uim-settlement/",
@@ -25529,7 +27460,15 @@
    "claim_url": "https://twistsecuritiessettlement.com/",
    "content_hash": "03764eb36265e698",
    "court": "U.S. District Court, Northern District of California",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/twist-securities-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-17",
     "kind": "claim",
@@ -25594,7 +27533,15 @@
    "claim_url": "https://twitteracquisitionlitigation.com/Home/SubmitClaim",
    "content_hash": "04e5bfd088415a1b",
    "court": "U.S. District Court, Northern District of California",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/twitter-acquisition-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-24",
     "kind": "claim",
@@ -25657,7 +27604,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/hoffman-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -25707,6 +27662,13 @@
    "content_hash": "297490167bf4887d",
    "court": "First Judicial Circuit Court for the State of Hawaii",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/uh-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/university-of-hawaii-data-breach-settlement/",
@@ -25793,7 +27755,15 @@
    "claim_url": "https://ustdatasettlement.com/form/claim/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/ust-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-09-28",
     "kind": "claim",
@@ -25869,7 +27839,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/us-bank-401k-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -25933,6 +27911,13 @@
    "content_hash": "2cea8a5ed94364a5",
    "court": "Circuit Court of the Eleventh Judicial Circuit in and for Miami-Dade County, Florida",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/usa-clinics-group-tcpa-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/usa-clinics-group-574350-tcpa-text-message-settlement/",
@@ -26008,7 +27993,15 @@
    "claim_url": "https://valleyoaksdatasettlement.com/",
    "content_hash": "709542144191cb6d",
    "court": "Superior Court No. 1 for Tippecanoe, Indiana",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/valley-oaks-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-09",
     "kind": "claim",
@@ -26086,7 +28079,15 @@
    "claim_url": "https://www.vasindasdatasettlement.com/",
    "content_hash": "ef9e9ad34a20a2f0",
    "court": "Superior Court of California, County of Kern",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/vasindas-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-23",
     "kind": "claim",
@@ -26164,7 +28165,15 @@
    "claim_url": "https://vintagewinesecuritiessettlement.com/file-a-claim-online/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/vintage-wine-securities-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-09",
     "kind": "claim",
@@ -26228,6 +28237,13 @@
    "content_hash": "f0ed463068839cdc",
    "court": "U.S. District Court, District of New Jersey",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/main-engine-water-pump-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/volkswagen-atlas-atlas-cross-sport-water-pump-defect-settlement/",
@@ -26302,6 +28318,13 @@
    "content_hash": "7700b5994402bb18",
    "court": "U.S. District Court, District of Maryland",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/vsl3-lawsuit",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/vsl3-probiotic-20-million-settlement/",
@@ -26366,7 +28389,8 @@
    "title": "VSL#3 Class Action Settlement — $20 a Bottle",
    "verified_as_of": "2026-09-20",
    "warnings": [
-    "proof level differs from the index (index=L2, page=L3)"
+    "proof level differs from the index (index=L2, page=L3)",
+    "claimdepot says no proof needed; our sources say proof required"
    ]
   },
   "wake-energy-llc-v-canvas-energy-llc": {
@@ -26440,7 +28464,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/walgreen-pharmacy-services-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -26503,7 +28535,15 @@
    "claim_url": "https://www.WalgreenCoSettlement.com",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/walgreen-co-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -26558,7 +28598,9 @@
    ],
    "title": "Naro v Walgreen Co",
    "verified_as_of": "2026-06-16",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ]
   },
   "waste-connections-rate-increase-fuel-surcharge-class-action-settlement": {
    "administrator": "Epiq Class Action & Claims Solutions",
@@ -26568,7 +28610,15 @@
    "claim_url": "https://www.pinnaclewastesettlement.com/",
    "content_hash": "cc5fd31fdab31138",
    "court": "U.S. District Court, District of South Carolina, Greenville Division",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/pinnacle-waste-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-22",
     "kind": "claim",
@@ -26635,7 +28685,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/watermark-services-settlement-info",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -26674,7 +28732,9 @@
    "tiers": [],
    "title": "Watermark Services IV $2.5M Class Action Settlement",
    "verified_as_of": "2026-06-19",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ]
   },
   "watershed-foods-122500-privacy-class-action-settlement": {
    "administrator": null,
@@ -26684,7 +28744,15 @@
    "claim_url": "https://www.watershedgipasettlement.com/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/watershed-gipa-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -26737,7 +28805,9 @@
    ],
    "title": "Watershed Foods $122,500 Privacy Class Action Settlement",
    "verified_as_of": "2026-06-17",
-   "warnings": []
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ]
   },
   "wayland-maricann-securities-class-action-settlement": {
    "administrator": "Berger Montague (Canada) PC",
@@ -26814,7 +28884,15 @@
    "claim_url": "https://www.wmhdatasettlement.com/",
    "content_hash": "3a7a7052f61bf1c4",
    "court": "Superior Court of Wayne County, Georgia",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/wmh-data-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-12-07",
     "kind": "claim",
@@ -27007,6 +29085,13 @@
    "content_hash": "061c150c50357967",
    "court": "U.S. District Court, Northern District of Georgia",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/wellstar-data-privacy-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/wellstar-health-system-website-pixel-data-privacy-settlement/",
@@ -27173,7 +29258,15 @@
    "claim_url": "https://www.claimsettlementportal.com/surveys/election/home.aspx",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/widener-covid-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -27237,6 +29330,13 @@
    "content_hash": "6df941751f7bdb67",
    "court": "District Court of Saline County, Kansas",
    "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/wpmpl-data-breach",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ],
     "settlesignal": [
      {
       "href": "https://settlesignal.com/settlements/wpm-pathology-laboratory-data-breach-settlement/",
@@ -27323,7 +29423,15 @@
    "claim_url": "https://www.wvhospitalsclassaction.com/",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/wv-hospitals-class-action",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-09-22",
     "kind": "claim",
@@ -27475,7 +29583,15 @@
    "claim_url": "https://yescommunitiesdataincident.com/",
    "content_hash": "df0af801bf10688d",
    "court": "U.S. District Court, District of Colorado",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/yes-communities-data-incident",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-11-05",
     "kind": "claim",
@@ -27553,7 +29669,15 @@
    "claim_url": null,
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/stonegate-settlements",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": null,
     "kind": "unparsed",
@@ -27665,7 +29789,15 @@
    "claim_url": "https://zdiclassactionsettlement.com/form/claim",
    "content_hash": "",
    "court": null,
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/zdi-class-action-settlement",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-09-28",
     "kind": "claim",
@@ -27907,7 +30039,15 @@
    "claim_url": "https://www.ZymergenSecuritiesLitigation.com/",
    "content_hash": "84278d675e7feafa",
    "court": "U.S. District Court, Northern District of California",
-   "cross_refs": {},
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "href": "https://www.claimdepot.com/settlements/zymergen-securities-litigation",
+      "label": "cross-checked",
+      "source": "claimdepot"
+     }
+    ]
+   },
    "deadline": {
     "date": "2026-10-11",
     "kind": "claim",

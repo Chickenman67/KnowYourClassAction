@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-20T15:25:46+00:00",
+ "generated_at": "2026-09-20T18:43:47+00:00",
  "index_updated": "2026-09-20",
  "count": 407,
  "settlements": [
@@ -64,7 +64,15 @@
    "verified_as_of": "2026-07-06",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/begaye-class-action",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "oracle-wage-settlement",
@@ -178,7 +186,15 @@
    "verified_as_of": "2026-06-17",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/wear-and-tear-waiver-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "republic-mortgage-insurance-wage-settlement",
@@ -241,7 +257,15 @@
    "verified_as_of": "2026-06-22",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/rmic-plan-class-action",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "amazon-retail-2-million-wage-and-hour-class-action-settlement",
@@ -303,8 +327,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-19",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/arllc-wage-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "apollo-management-v-lp-apollo-management-vi-lp-apollo-management-vii-lp-and-apollo-commodi",
@@ -429,8 +463,18 @@
    "last_modified": null,
    "verified_as_of": "2026-09-14",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/aspire-data-incident",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "att-washington-meal-and-rest-break-settlement",
@@ -493,7 +537,15 @@
    "verified_as_of": "2026-07-20",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/att-wage-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "banana-republic-195m-labor-class-action-settlement-2",
@@ -541,8 +593,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-20",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/weitz-br-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "bioness-89-million-securities-class-action-settlement",
@@ -605,7 +667,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/bioness-stockholder-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "blackbird-capital-partners-llc-andrew-d-kelley-and-paul-h-shumway",
@@ -717,7 +787,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/epoa-settlement-boi",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "bmo-bank-repossession-notices-wisconsin",
@@ -779,8 +857,18 @@
    "last_modified": null,
    "verified_as_of": "2026-09-20",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/tobiason-v-bmo-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "bridge-investment-group-holdings-security-deposit-settlement",
@@ -843,7 +931,15 @@
    "verified_as_of": "2026-06-17",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/mihalcean-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "brightspeed-solutions-539m-tech-support-fraud-redress-cfpb",
@@ -969,7 +1065,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/cambridge-health-erisa-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "google-wage-settlement",
@@ -1081,7 +1185,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/capital-one-erisa-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "carpe-diem-pizza-washington-job-postings-settlement",
@@ -1143,8 +1255,18 @@
    "last_modified": null,
    "verified_as_of": "2026-07-17",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/cd-kb-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "carrillo-v-los-angeles-partyworks-inc",
@@ -1242,7 +1364,15 @@
    "verified_as_of": "2026-09-14",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/chitwood-v-circa-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "coast-property-management-14m-tenant-fee-settlement",
@@ -1305,7 +1435,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/hoban-coast-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "concentric-llc-248m-washington-job-posting-settlement",
@@ -1368,7 +1506,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/epoa-settlement-cllc",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "cvent-holding-12m-stockholder-class-action-settlement",
@@ -1431,7 +1577,15 @@
    "verified_as_of": "2026-06-17",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/cvent-stockholders-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "early-warning-services-llc-bank-of-america-na-jpmorgan-chase-bank-na-wells-fargo-bank-na",
@@ -1557,7 +1711,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/tscm-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "eigen-labs-inc-1m-washington-job-applicant-settlement",
@@ -1793,8 +1955,18 @@
    "last_modified": null,
    "verified_as_of": "2026-09-14",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/featherstone-fca-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "fuegos-v-lompoc-investments-et-al",
@@ -1920,7 +2092,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/funko-stockholder-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "gametime-274m-ticket-fee-class-action-settlement",
@@ -2048,7 +2228,15 @@
    "verified_as_of": "2026-06-17",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/educative-renewal-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "att-wage-settlement",
@@ -2099,7 +2287,15 @@
    "verified_as_of": "2026-06-17",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/gilbert-att-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "godfrey-hotel-hollywood-675000-wage-and-hour-settlement-2",
@@ -2147,8 +2343,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-19",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/1400-cahuenga-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "goodfellow-bros-2m-job-posting-class-action-settlement",
@@ -2196,8 +2402,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-17",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/epoa-settlement-gfc",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "startek-wage-settlement",
@@ -2323,7 +2539,15 @@
    "verified_as_of": "2026-06-17",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/epoa-settlement-hc-llp",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "yzer-wage-settlement",
@@ -2421,7 +2645,15 @@
    "verified_as_of": "2026-07-06",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/hoffman-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "direct-energy-fee-settlement",
@@ -2549,7 +2781,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/interactive-brokers-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "invitation-homes-settlement",
@@ -2724,7 +2964,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/mobis-al-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "nuvision-credit-union-bank-fee-settlement",
@@ -2850,7 +3098,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/mdc-stockholder-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "mobile-home-park-fee-violation-class-action-settlement",
@@ -2913,7 +3169,15 @@
    "verified_as_of": "2026-06-17",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/chavez-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "ntn-bearing-143m-genetic-privacy-class-action-settlement",
@@ -2976,7 +3240,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ntn-gipa-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "oregon-health-science-university-discrimination-settlement",
@@ -3039,7 +3311,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ohsu-class-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "ami-expeditionary-healthcare-wage-settlement",
@@ -3443,8 +3723,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-19",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/rudeen-deposit-refund",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "seafood-city-supermarket-300k-bipa-class-action-settlement",
@@ -3506,8 +3796,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-19",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/sfc-bipa-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "guitar-center-wage-settlement",
@@ -3618,8 +3918,18 @@
    "last_modified": null,
    "verified_as_of": "2026-07-13",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/skinspirit-essential-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "sony-playstation-store-3",
@@ -3682,7 +3992,15 @@
    "verified_as_of": "2026-06-17",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/psn-digital-games-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "spartan-despac-8-million-securities-class-action-settlement",
@@ -3745,7 +4063,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/spartan-despac-stockholder-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "spothero-drip-pricing",
@@ -3793,8 +4119,18 @@
    "last_modified": null,
    "verified_as_of": "2026-09-14",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/sh-pricing-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "state-farm-bank-afni-110m-repossession-settlement",
@@ -3857,7 +4193,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/sfb-notice-class",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "stubhub-10m-deceptive-ticket-pricing-settlement",
@@ -3969,7 +4313,15 @@
    "verified_as_of": "2026-06-17",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/studio-one-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "tempoe-192m-lease-disclosure-redress-cfpb",
@@ -4095,7 +4447,15 @@
    "verified_as_of": "2026-07-20",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/teofilo-overdraft-fees-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "terraform-power-merger-8375m-securities-settlement",
@@ -4158,7 +4518,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/terraform-stockholder-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "the-management-association-775000-data-breaches-settlement-2",
@@ -4207,7 +4575,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/mra-data-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "thompson-v-iq-credit-union-settlement",
@@ -4256,7 +4632,15 @@
    "verified_as_of": "2026-09-14",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/thompson-fees-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "transamerica-life-insurance-57m-rate-increase-settlement",
@@ -4319,7 +4703,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/handorf-coi-class-action",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "trend-deploy-refunds",
@@ -4431,7 +4823,15 @@
    "verified_as_of": "2026-06-17",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/us-bank-401k-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "wake-energy-llc-v-canvas-energy-llc",
@@ -4557,7 +4957,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/walgreen-pharmacy-services-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "watermark-services-iv-25m-class-action-settlement",
@@ -4605,8 +5013,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-19",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/watermark-services-settlement-info",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "widener-university-800000-covid-19-tuition-settlement",
@@ -4669,7 +5087,15 @@
    "verified_as_of": "2026-06-19",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/widener-covid-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "pacific-bell-wage-settlement",
@@ -4783,7 +5209,15 @@
    "verified_as_of": "2026-06-17",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/stonegate-settlements",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "south-central-bank-class-action-settlement",
@@ -4841,6 +5275,13 @@
       "href": "https://settlesignal.com/settlements/south-central-bank-overdraft-fees-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: South Central Bank Overdraft Fees Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/johnson-overdraft-class-action",
+      "source": "claimdepot"
      }
     ]
    }
@@ -4910,7 +5351,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/activision-blizzard-stockholder-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "stanford-federal-credit-union-overdraft-nsf-fee-settlement",
@@ -4983,6 +5432,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Stanford Federal Credit Union - Overdraft Fees"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/sfcu-fee-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -5049,7 +5505,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "d020debd95088f24",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/kimball-fees-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "continental-resources-shareholder-class-action-settlement",
@@ -5114,9 +5578,18 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "6a1ca295290da87c",
    "warnings": [
-    "tiers derived from the page fact (index had no payout text)"
+    "tiers derived from the page fact (index had no payout text)",
+    "claimdepot lists claim deadline 2022-11-22 but our sources say 2026-10-26; ours kept"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/continental-shareholder-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "google-play-store-700-million-antitrust-class-action-settlement",
@@ -5183,7 +5656,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/google-play-state-ag-antitrust-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "acct-holdings-esop-erisa-class-action-settlement",
@@ -5248,8 +5729,18 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-20",
    "content_hash": "e97260ba8453e018",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists claim deadline 2027-06-01 but our sources say 2026-10-29; ours kept"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/acct-esop-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "aion-management-virginia-apartment-fees-class-action-settlement",
@@ -5315,8 +5806,18 @@
    "last_modified": null,
    "verified_as_of": "2026-09-20",
    "content_hash": "f234957f6e7d4274",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists claim deadline 2023-10-10 but our sources say 2026-10-21; ours kept"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/apartment-fees-class-action",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "alaska-airlines-military-leave-vacation-class-action-settlement",
@@ -5381,7 +5882,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "32cd1c88b9a64d3b",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/alaska-military-leave-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "new-amazon-returns-class-action-settlement",
@@ -5578,7 +6087,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "28ebb4fc21b1f3d6",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ba-inc-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "blue-ridge-power-warn-act-class-action-settlement",
@@ -5630,7 +6147,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "f6fe0c034e944a22",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/blue-ridge-warn-act-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "camc-bariatric-hiatal-hernia-class-action-settlement",
@@ -5708,6 +6233,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: CAMC Hernia Surgery Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/camc-bariatric-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -5775,7 +6307,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "04503572fdbdd039",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/caseys-tobacco-surcharge-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "cibc-nsf-fee-settlement-canada",
@@ -6081,6 +6621,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: CRST Expedited California Truck Driver Wage Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/trucking-driver-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -6155,6 +6702,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Dovenmuehle Phone Payment Fees Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/dovenmuehle-phone-fee-lawsuit",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -6219,7 +6773,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "43c7423b7c456583",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/drata-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "firstcash-military-lending-act-settlement",
@@ -6419,6 +6981,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Hunter Warfield Unlicensed Rental Collections Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/hwi-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -6553,7 +7122,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "59c3e2f29a376858",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/my-michigan-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "north-highland-esop-erisa-class-action-settlement",
@@ -6618,8 +7195,18 @@
    "last_modified": "2026-09-07T16:00:00+00:00",
    "verified_as_of": "2026-09-20",
    "content_hash": "3c305c702068ff64",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists claim deadline 2026-11-05 but our sources say 2026-10-06; ours kept"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/nh-esop-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "olinsky-associates-data-breach-settlement",
@@ -6684,7 +7271,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "6bdc755b4c5db8b9",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/olinsky-data-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "powerschool-stockholders-class-action-settlement",
@@ -6749,8 +7344,18 @@
    "last_modified": "2026-09-01T16:00:00+00:00",
    "verified_as_of": "2026-09-20",
    "content_hash": "fc05f32ebdbc39e6",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists claim deadline 2024-10-01 but our sources say 2026-10-19; ours kept"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/powerschool-stockholders-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "ppl-cdpap-caregivers-settlement",
@@ -6815,7 +7420,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "592d854ac124b8bf",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/public-partnerships-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "providence-health-401k-forfeiture-class-action-settlement",
@@ -6880,7 +7493,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "fe3a104e01338f8f",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/2026-providence-401k-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "ricoh-usa-retirement-savings-plan-erisa-class-action-settlement",
@@ -6944,8 +7565,18 @@
    "last_modified": null,
    "verified_as_of": "2026-09-20",
    "content_hash": "6120f646d4a604e3",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists claim deadline 2026-10-06 but our sources say 2026-09-21; ours kept"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ricoh-erisa-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "saint-gobain-washington-job-postings-class-action-settlement",
@@ -7012,7 +7643,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "b65bf223fa6ca809",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/epoa-settlement-sgaai",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "scale-ai-contributor-misclassification-class-action-settlement",
@@ -7078,7 +7717,9 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-20",
    "content_hash": "0479a72270c10e34",
-   "warnings": [],
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
+   ],
    "cross_refs": {
     "settlesignal": [
      {
@@ -7086,6 +7727,13 @@
       "href": "https://settlesignal.com/settlements/scale-ai-125m-california-wage-and-hour-settlement-mckinney-v-scale-ai/",
       "source": "settlesignal",
       "title": "SettleSignal: Scale AI $12.5M California Wage-and-Hour Settlement (McKinney v. Scale AI)"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/mckinney-scaleai-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -7152,8 +7800,18 @@
    "last_modified": "2026-07-30T16:00:00+00:00",
    "verified_as_of": "2026-09-20",
    "content_hash": "1bce11254852a685",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists claim deadline 2018-08-30 but our sources say 2026-09-04; ours kept"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/smith-and-nephew-erisa",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "social-security-class-action-lawsuit",
@@ -7283,7 +7941,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "930126ed9922da5d",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/spd-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "tennessee-farmers-mutual-total-loss-class-action-settlement",
@@ -7355,6 +8021,13 @@
       "href": "https://settlesignal.com/settlements/tennessee-farmers-mutual-insurance-total-loss-claims/",
       "source": "settlesignal",
       "title": "SettleSignal: Tennessee Farmers Mutual Insurance - Total Loss Claims"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/auto-insurance-claim-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -7429,6 +8102,13 @@
       "href": "https://settlesignal.com/settlements/hiller-v-the-money-source-inc/",
       "source": "settlesignal",
       "title": "SettleSignal: Hiller v The Money Source, Inc."
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/money-source-tcpa-class-action",
+      "source": "claimdepot"
      }
     ]
    }
@@ -7565,8 +8245,18 @@
    "last_modified": "2026-08-22T16:00:00+00:00",
    "verified_as_of": "2026-09-20",
    "content_hash": "d63c45592bd64452",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists claim deadline 2016-01-01 but our sources say 2026-10-02; ours kept"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/wren-cvi-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "acen-data-breach-settlement",
@@ -7755,7 +8445,15 @@
    "verified_as_of": "2026-07-06",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/amtrust-securities-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "anixter-center-data-breach-settlement",
@@ -7857,7 +8555,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/anixter-data-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "anthem-3625m-proton-beam-therapy-settlement",
@@ -7920,7 +8626,15 @@
    "verified_as_of": "2026-08-15",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/proton-beam-radiation-therapy-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "ifit-product-settlement",
@@ -7968,8 +8682,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-16",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ifit-treadmill-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "california-gambling-control-commission-fees-settlement",
@@ -8034,7 +8758,15 @@
    "verified_as_of": "2026-06-09",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/gambling-fee-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "calverton-park-425k-vehicle-towing-class-action-settlement",
@@ -8096,8 +8828,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-17",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/calverton-park-class-action",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "certainteed-horizon-shingles-settlement",
@@ -8223,7 +8965,15 @@
    "verified_as_of": "2026-06-17",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/overland-special-deterrent-fee-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "cook-county-568m-race-discrimination-in-hiring-settlement",
@@ -8287,8 +9037,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-16",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/simpson-cook-county-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "crossroads-trading-600000-data-breach-settlement",
@@ -8412,8 +9172,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-16",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/dartmouth-hitchcock-erisa-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "davison-design-30000-washington-text-message-settlement",
@@ -8476,7 +9246,15 @@
    "verified_as_of": "2026-09-13",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/miller-text-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "dodge-grand-caravan-sliding-doors",
@@ -8576,7 +9354,15 @@
    "verified_as_of": "2026-07-26",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/drexel-covid-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "furman-foods-furmanos-october-2024-data-breach-settlement",
@@ -8639,7 +9425,15 @@
    "verified_as_of": "2026-08-15",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/furman-foods-data-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "garden-city-14m-fire-fees-class-action-settlement",
@@ -8701,8 +9495,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-19",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/garden-city-fire-fees-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "new-hope-harvesting-wage-settlement",
@@ -8892,8 +9696,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-18",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/smoker-surcharge-class-action",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "john-deere-repair-services-antitrust-settlement",
@@ -8956,7 +9770,15 @@
    "verified_as_of": "2026-09-05",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/deere-repair-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "aetna-settlement",
@@ -9081,8 +9903,18 @@
    "last_modified": null,
    "verified_as_of": "2026-07-14",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Pending Court Approval' but we have it in the 'claimable' lane"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/weed-killer-class",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "kucoin-22m-new-york-enforcement-action-settlement",
@@ -9144,8 +9976,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-19",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Settlement Approved' but we have it in the 'claimable' lane"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/kucoin-ny-ag-consent-order",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "lincoln-university-covid-tuition",
@@ -9209,8 +10051,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-16",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/lincoln-covid-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "metlife-auto-insurance-12m-class-action-settlement",
@@ -9258,8 +10110,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-19",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/metropolitan-uim-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "mighty-cake-company-biometric-privacy-illinois",
@@ -9309,8 +10171,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-16",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/mighty-cake-fingerprint-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "penske-media-subscription-settlement",
@@ -9437,8 +10309,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-16",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/walgreen-co-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "natures-path-foods-usa-14m-meal-and-rest-break-settlement",
@@ -9488,8 +10370,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-16",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/settlement-npfu",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "nextera-energy-retirement-plans",
@@ -9551,8 +10443,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-16",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/nextera-erisa-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "nibco",
@@ -9649,8 +10551,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-29",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ny-doordash-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "payactiv-data-breach",
@@ -9712,8 +10624,18 @@
    "last_modified": null,
    "verified_as_of": "2026-09-14",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/payactiv-data-incident-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "phh-mortgage-15m-debt-collection-class-action-settlement",
@@ -9788,8 +10710,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-19",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/williams-phh-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "benson-health-data-breach-settlement",
@@ -9901,7 +10833,15 @@
    "verified_as_of": "2026-06-16",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/fca-ram-brake-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "des-moines-public-schools-wage-settlement",
@@ -10061,8 +11001,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-20",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/southstate-bank-data-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "theranos-blood-testing-services",
@@ -10203,7 +11153,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ust-data-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "vintage-wine-estates-securities-class-action-settlement",
@@ -10266,7 +11224,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/vintage-wine-securities-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "watershed-foods-122500-privacy-class-action-settlement",
@@ -10328,8 +11294,18 @@
    "last_modified": null,
    "verified_as_of": "2026-06-17",
    "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/watershed-gipa-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "welch",
@@ -10454,7 +11430,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/wv-hospitals-class-action",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "zale-delaware-sterling-jewelers-washington-job-posting-pay-transparency-settlement",
@@ -10517,7 +11501,15 @@
    "verified_as_of": "2026-09-13",
    "content_hash": "",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/zdi-class-action-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "zonolite-vermiculite-attic-insulation",
@@ -11156,7 +12148,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "a7f9df18485e7e45",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/holley-securities-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "zymergen-ipo-securities-class-action-settlement",
@@ -11221,7 +12221,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/zymergen-securities-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "gilt-bond-antitrust-class-action-settlement",
@@ -11269,8 +12277,18 @@
    "last_modified": null,
    "verified_as_of": "2026-09-20",
    "content_hash": "d7acd8768466ad31",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/gilt-bond-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "nyc-taxi-limousine-commission-license-suspension-class-action-settlement",
@@ -11413,7 +12431,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/edgio-securities-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "burke-visa-mastercard-atm-fees-settlement",
@@ -11539,7 +12565,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "03764eb36265e698",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/twist-securities-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "danaher-securities-class-action-settlement",
@@ -11606,7 +12640,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/danaher-securities-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "seagate-securities-class-action-settlement",
@@ -11671,7 +12713,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/seagate-securities-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "mercedes-benz-aem-incentive-bluetec-diesel-settlement",
@@ -11743,6 +12793,13 @@
       "href": "https://settlesignal.com/settlements/mercedes-benz-emission-control-system-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Mercedes-Benz Emission Control System Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/mb-aem-incentive",
+      "source": "claimdepot"
      }
     ]
    }
@@ -11962,7 +13019,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/stitch-fix-securities-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "hain-celestial-securities-class-action-settlement",
@@ -12027,7 +13092,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/hain-celestial-securities-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "diisocyanates-mdi-tdi-antitrust-class-action-settlement",
@@ -12095,7 +13168,15 @@
     "tiers derived from the page fact (index had no payout text)",
     "page deadline 2026-11-02 differs from index 2026-10-13; page wins"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/diisocyanates-antitrust-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "hearthside-illinois-child-labor-assurance",
@@ -12169,6 +13250,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Hearthside Food Solutions child labor"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/hearthside-fs-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -12235,7 +13323,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/irhythm-securities-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "service-spot-parking-reservation-fees-california-class-action-settlement",
@@ -12304,7 +13400,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/service-spot-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "flo-health-app-privacy-settlement",
@@ -12634,9 +13738,18 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "a2bd275117ba94e8",
    "warnings": [
-    "tiers derived from the page fact (index had no payout text)"
+    "tiers derived from the page fact (index had no payout text)",
+    "claimdepot lists this as 'Pending Final Approval' but we have it in the 'claimable' lane"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/chemocentryx-securities-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "hormel-seaboard-pork-class-action-settlement",
@@ -12832,6 +13945,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Generic Drugs End-Payer Antitrust Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/generic-drugs-end-payer-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -12967,7 +14087,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/eagle-pharma-securities-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "john-deere-right-to-repair-class-action-settlement",
@@ -13118,6 +14246,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: 700Credit Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/700credit-data-breach-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -13192,6 +14327,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: ABC Legal Services Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/abc-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -13258,7 +14400,9 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "3681321f25399069",
    "warnings": [
-    "tiers derived from the page fact (index had no payout text)"
+    "tiers derived from the page fact (index had no payout text)",
+    "claimdepot lists claim deadline 2026-08-11 but our sources say 2026-09-29; ours kept",
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
    ],
    "cross_refs": {
     "docket": [
@@ -13357,6 +14501,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Albany College of Pharmacy and Health Sciences (ACPHS) Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/albany-college-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -13444,6 +14595,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Albany Gastroenterology Consultants Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/albany-gastro-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -13517,6 +14675,13 @@
       "href": "https://settlesignal.com/settlements/altrua-healthshare-crown-health-admins-tcpa-unwanted-calls-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Altrua HealthShare / Crown (Health Admins) TCPA Unwanted Calls Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/altrua-crown-tcpa-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -13604,6 +14769,13 @@
       "href": "https://settlesignal.com/settlements/american-vision-partners-data-breach-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: American Vision Partners Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/american-vision-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -13849,7 +15021,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "0797c2810f4d2037",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/grandfathered-rx-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "apollomd-data-breach-settlement",
@@ -13935,6 +15115,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: ApolloMD Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/apollomd-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -14008,6 +15195,13 @@
       "href": "https://settlesignal.com/settlements/arrowhead-regional-computing-consortium-data-breach-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Arrowhead Regional Computing Consortium Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/arrowhead-data-security-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -14098,6 +15292,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Atrium Health Pixel Data Privacy Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/atrium-health-pixel-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -14185,6 +15386,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Autobell Car Wash Data Breach Settlement (Pauken v. Autobell Car Wash, LLC)"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/autobell-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -14259,6 +15467,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Bayhealth Pixel Privacy Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/bayhealth-pixel-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -14312,7 +15527,8 @@
    "content_hash": "5f093cdb17663b31",
    "warnings": [
     "no proof requirement published",
-    "settlesignal lists claim deadline 2026-10-07 but our sources say 2027-02-04; ours kept"
+    "settlesignal lists claim deadline 2026-10-07 but our sources say 2027-02-04; ours kept",
+    "claimdepot lists claim deadline 2027-03-26 but our sources say 2027-02-04; ours kept"
    ],
    "cross_refs": {
     "settlesignal": [
@@ -14321,6 +15537,13 @@
       "href": "https://settlesignal.com/settlements/jbs-usa-food-2002m-beef-and-pork-worker-wage-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: JBS USA Food $55M Beef and Pork Worker Wage Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/beef-pork-wages",
+      "source": "claimdepot"
      }
     ]
    }
@@ -14409,6 +15632,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Bestway Above-Ground Pools: $15,000,000 Settlement Over Compression Straps Outside the Support Legs"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/pool-settlement-bw",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -14496,6 +15726,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Bradford-Scott Data $2,393,888.25 Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/bradford-scott-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -14582,6 +15819,13 @@
       "href": "https://settlesignal.com/settlements/brevard-skin-cancer-center-data-breach-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Brevard Skin & Cancer Center Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/brevard-skin-data-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -14747,6 +15991,13 @@
       "href": "https://settlesignal.com/settlements/california-casualty-group-data-breach-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: California Casualty Group Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ca-casualty-data-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -14957,7 +16208,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "1cdd87ad330a219f",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ccu-data-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "central-maine-healthcare-data-breach-settlement",
@@ -15043,6 +16302,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Central Maine Healthcare Data Security Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/cmh-data-security-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -15116,6 +16382,13 @@
       "href": "https://settlesignal.com/settlements/central-valley-meat-co-data-breach/",
       "source": "settlesignal",
       "title": "SettleSignal: Central Valley Meat Co - Data Breach"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/central-valley-data-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -15343,6 +16616,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Clay-Platte Family Medicine Clinic $1,000,000 Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/cpfm-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -15429,6 +16709,13 @@
       "href": "https://settlesignal.com/settlements/coleman-professional-services-data-breach-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Coleman Professional Services Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/coleman-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -15605,6 +16892,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Community Realty Management Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/crm-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -15678,6 +16972,13 @@
       "href": "https://settlesignal.com/settlements/seals-v-concora-credit-inc-tcpa-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Seals v. Concora Credit Inc. TCPA Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/seals-tcpa-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -15844,6 +17145,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: ConnectOnCall Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/connect-on-call-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -15912,7 +17220,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "19d37caefcf6d02f",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/covenant-transport-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "cpap-medical-supplies-data-breach-settlement",
@@ -15985,6 +17301,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Brett Conner v. CPAP Medical Supplies and Services, Inc. Data Incident Class Action Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/cpap-data-incident-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -16053,7 +17376,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "b19ecb4eadb4f89a",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/livingston-derailment-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "cuso-financial-services-data-breach-settlement",
@@ -16196,7 +17527,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "bf55a83064b3555b",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/cvs-digital-privacy-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "dairy-farmers-of-america-data-breach-settlement",
@@ -16281,6 +17620,13 @@
       "href": "https://settlesignal.com/settlements/dairy-farmers-of-america-data-breach-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Dairy Farmers of America Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/dfa-data-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -16369,6 +17715,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: DAP Health Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/dap-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -16445,6 +17798,13 @@
       "href": "https://settlesignal.com/settlements/new-york-dennys-reveille-top-line-spread-of-hours-wage-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: New York Denny's (Reveille / Top Line) Spread of Hours Wage Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ny-dennys-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -16605,7 +17965,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "f255ad62b3c07540",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/asi-foods-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "doxim-data-breach-settlement",
@@ -16691,6 +18059,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Doxim $5.5M Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/doxim-data-security-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -16764,6 +18139,13 @@
       "href": "https://settlesignal.com/settlements/dr-squatch-all-natural-product-claims-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Dr. Squatch \"All Natural\" Product Claims Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/personal-care-products-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -16852,6 +18234,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Drug and Alcohol Treatment Services - Data Breach"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/dats-data-breach-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -16939,6 +18328,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: EFS Advisors / Aviben Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/efs-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -17017,7 +18413,9 @@
    "last_modified": null,
    "verified_as_of": "2026-09-20",
    "content_hash": "6da61d56f4ae48cc",
-   "warnings": [],
+   "warnings": [
+    "claimdepot lists claim deadline 2026-10-09 but our sources say 2026-10-08; ours kept"
+   ],
    "cross_refs": {
     "settlesignal": [
      {
@@ -17025,6 +18423,13 @@
       "href": "https://settlesignal.com/settlements/eisner-advisory-group-1050000-data-breach-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Eisner Advisory Group $1,050,000 Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/eisner-data-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -17100,6 +18505,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Emanate Health Medical Center - Data Privacy"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/emanate-privacy-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -17168,7 +18580,8 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "0d19b7b1fa005cb1",
    "warnings": [
-    "settlesignal says no proof needed; our sources say proof required"
+    "settlesignal says no proof needed; our sources say proof required",
+    "claimdepot says no proof needed; our sources say proof required"
    ],
    "cross_refs": {
     "settlesignal": [
@@ -17177,6 +18590,13 @@
       "href": "https://settlesignal.com/settlements/nyc-senior-care-15-co-pay-settlement-bianculli-v-city-of-new-york/",
       "source": "settlesignal",
       "title": "SettleSignal: NYC Senior Care $15 Co-Pay Settlement (Bianculli v. City of New York)"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/senior-care-copay-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -17265,6 +18685,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Equinox, Inc. Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/equinox-inc-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -17351,6 +18778,13 @@
       "href": "https://settlesignal.com/settlements/excel-fitness-management-data-breach-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Excel Fitness Management Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/excel-fitness-data-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -17439,6 +18873,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Ernst & Young / Bank of America MOVEit Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/moveit-settlement-ey-boa",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -17507,7 +18948,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "add888af756d6a15",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/fairchild-data-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "fastbucks-new-mexico-restitution-program",
@@ -17639,7 +19088,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "854449e3c19de986",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/finwise-data-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "first-baptist-church-hammond-data-breach-settlement",
@@ -17727,6 +19184,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: First Baptist Church of Hammond, Indiana, Inc. Data Security Incident Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/fbc-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -17797,7 +19261,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/bucio-v-fn-logistics-class-action",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "forbes-website-tracker-privacy-class-action-settlement",
@@ -17864,7 +19336,8 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "3a5d5ef31dc681a8",
    "warnings": [
-    "settlesignal says no proof needed; our sources say proof required"
+    "settlesignal says no proof needed; our sources say proof required",
+    "claimdepot says no proof needed; our sources say proof required"
    ],
    "cross_refs": {
     "docket": [
@@ -17963,6 +19436,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Fort Wayne Medical Education Program (FWMEP) Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/fwmep-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -18049,6 +19529,13 @@
       "href": "https://settlesignal.com/settlements/fujifilm-diosynth-biotechnologies-data-incident-settlement-johnson-v-fujifilm/",
       "source": "settlesignal",
       "title": "SettleSignal: Fujifilm Diosynth Biotechnologies Data Incident Settlement (Johnson v. Fujifilm)"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/flb-data-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -18137,6 +19624,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Furniture Mart, USA (FMUSA) Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/fmusa-data-breach-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -18202,8 +19696,18 @@
    "last_modified": null,
    "verified_as_of": "2026-09-20",
    "content_hash": "16e8503b5154d5a7",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/kohama-2026-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "geotek-data-breach-settlement",
@@ -18296,7 +19800,15 @@
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/geotek-cyber-incident",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "globe-life-american-income-life-data-breach-settlement",
@@ -18361,7 +19873,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "e00ce1ef3193bee3",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ail-data-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "gotham-steel-granite-stone-bell-howell-cookware-settlement",
@@ -18436,6 +19956,13 @@
       "href": "https://settlesignal.com/settlements/gotham-steel-granite-stone-bell-howell-cookware-non-toxic-marketing-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Gotham Steel, Granite Stone & Bell & Howell Cookware \"Non-Toxic\" Marketing Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/stainless-steel-cookware-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -18524,6 +20051,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: HCF Management Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/hcf-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -18610,6 +20144,13 @@
       "href": "https://settlesignal.com/settlements/healthcare-services-group-data-breach-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Healthcare Services Group Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/healthcare-services-group-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -18801,6 +20342,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Heritage South Credit Union Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/hscu-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -18868,7 +20416,9 @@
    "last_modified": null,
    "verified_as_of": "2026-09-20",
    "content_hash": "38d0a2dd41b9aca7",
-   "warnings": [],
+   "warnings": [
+    "claimdepot lists claim deadline 2027-01-04 but our sources say 2026-11-13; ours kept"
+   ],
    "cross_refs": {
     "docket": [
      {
@@ -18966,6 +20516,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Highland Health Systems Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/highland-data-breach-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -19053,6 +20610,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Highlands Oncology Group Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/highlands-oncology-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -19132,7 +20696,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "2abb14f9eca20219",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/hire-velocity-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "hirevue-bipa-biometric-privacy-class-action-settlement",
@@ -19206,6 +20778,13 @@
       "href": "https://settlesignal.com/settlements/hirevue-375m-illinois-video-interview-biometrics-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: HireVue $3.75M Illinois Video Interview Biometrics Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/video-interview-bipa-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -19358,6 +20937,13 @@
       "href": "https://settlesignal.com/settlements/kia-hyundai-settlement-offers-cash-and-security-upgrades-to-owners/",
       "source": "settlesignal",
       "title": "SettleSignal: Kia Hyundai settlement offers cash and security upgrades to owners"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/hk-multistate-immobilizer-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -19568,7 +21154,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "b448786056bec1b4",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/inotiv-data-breach-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "international-shoppes-data-breach-settlement",
@@ -19722,7 +21316,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "53de9245465c7d7f",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/iod-settlement-pa",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "jacks-family-restaurants-data-breach-settlement",
@@ -19808,6 +21410,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Jack's Family Restaurants Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/jacks-data-breach-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -19874,7 +21483,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "bb6fbac6732efbdd",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/j4v-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "kaiser-permanente-out-of-network-mental-health-california-class-action-settlement",
@@ -19941,7 +21558,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/out-of-network-health-claims",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "keurig-k-supreme-settlement",
@@ -19989,8 +21614,19 @@
    "last_modified": "2026-08-31T16:00:00+00:00",
    "verified_as_of": "2026-09-20",
    "content_hash": "22cbded6d6c431b7",
-   "warnings": [],
-   "cross_refs": {}
+   "warnings": [
+    "claimdepot lists claim deadline 2025-11-14 but our sources say 2027-09-30; ours kept",
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/k-supreme-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "kia-window-regulator-class-action-settlement",
@@ -20063,6 +21699,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Kia Optima & Sportage Window Regulator Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/kia-window-regulator-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -20131,7 +21774,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/kornit-securities-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "kroger-savings-club-prescription-pricing-class-action-settlement",
@@ -20196,9 +21847,18 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "8f25dcf1daa8511a",
    "warnings": [
-    "tiers derived from the page fact (index had no payout text)"
+    "tiers derived from the page fact (index had no payout text)",
+    "claimdepot says no proof needed; our sources say proof required"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/kroger-savings-club-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "la-jolla-group-data-breach-settlement",
@@ -20289,7 +21949,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "d6a5d6a60d393335",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ljg-data-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "lands-end-data-breach-class-action-settlement",
@@ -20375,6 +22043,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Lands’ End - Data Breach"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/lands-end-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -20454,7 +22129,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "d7cfec9de1d7093d",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/night-bb-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "levoit-air-purifier-hepa-class-action-settlement",
@@ -20593,6 +22276,13 @@
       "href": "https://settlesignal.com/settlements/lifestance-health-pixel-data-privacy-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: LifeStance Health Pixel Data Privacy Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/lifestance-pixel-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -20748,6 +22438,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: LiveHealth Online Data Privacy Settlement (Polk v. American Well Corp.)"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/livehealth-online-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -20814,7 +22511,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "f6d0d7e44b2b515a",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/syndicate-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "ftc-match-group-settlement",
@@ -20938,6 +22643,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: MCNA Dental Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/mcna-data-breach-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -21025,6 +22737,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Mental Health Association Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/mha-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -21091,7 +22810,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "2b4c177ba2e42567",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/metropolis-parking-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "mg217-coal-tar-shampoo-benzene-class-action-settlement",
@@ -21176,6 +22903,13 @@
       "href": "https://settlesignal.com/settlements/mg217-coal-tar-shampoo-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: MG217 Coal Tar Shampoo Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/mg217-shampoo-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -21264,6 +22998,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Modernizing Medicine (ModMed) Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/modernizing-medicine-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -21351,6 +23092,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Mortgage Investors Group Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/mig-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -21425,6 +23173,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Boggiano, et al. v. Mount Sinai Medical Center of Florida"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/mount-sinai-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -21491,7 +23246,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "fe1e21d5c3e2b94d",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/muscatine-data-breach",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "homebuyer-antitrust-class-action-settlement",
@@ -21710,7 +23473,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "8cccd44a2dde19dc",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/nfcu-loan-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "neutrogena-skin360-bipa-settlement",
@@ -21874,6 +23645,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: NJ Lenders Corp Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/nj-lenders-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -22020,7 +23798,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "d77f2820e66b09db",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/central-booking-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "nyc-strip-search-class-action-settlement",
@@ -22239,6 +24025,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: O'Reilly Automotive TCPA Text Message Class Action Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/oreilly-rnd-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -22404,6 +24197,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: On Q Financial Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/on-q-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -22490,6 +24290,13 @@
       "href": "https://settlesignal.com/settlements/onepoint-patient-care-2115000-data-incident-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: OnePoint Patient Care $2,115,000 Data Incident Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/onepoint-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -22578,6 +24385,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: OneTouchPoint (OTP) Data Incident Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/otp-data-incident",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -22653,6 +24467,13 @@
       "href": "https://settlesignal.com/settlements/palm-beach-tan-25m-unwanted-text-message-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Palm Beach Tan $2.5M Unwanted Text Message Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/hudson-class",
+      "source": "claimdepot"
      }
     ]
    }
@@ -22814,6 +24635,13 @@
       "href": "https://settlesignal.com/settlements/peco-foods-data-breach-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Peco Foods Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/peco-foods-data-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -22982,6 +24810,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Physicians Primary Care Data Breach Class Action Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/physicians-primary-care-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -23068,6 +24903,13 @@
       "href": "https://settlesignal.com/settlements/pierce-county-library-system-data-breach-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Pierce County Library System Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/pierce-county-library-data-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -23188,7 +25030,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "fb74190144831bb4",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/shi-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "raging-waters-processing-fee-class-action-settlement",
@@ -23260,6 +25110,13 @@
       "href": "https://settlesignal.com/settlements/raging-waters-processing-fee-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Raging Waters Processing Fee Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/raging-waters-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -23349,6 +25206,13 @@
       "href": "https://settlesignal.com/settlements/fca-us-36l-engine-valve-train-warranty-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: FCA US 3.6L Engine Valve Train Warranty Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/fca-warranty-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -23504,6 +25368,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Regional Urology Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/regional-urology-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -23657,6 +25528,13 @@
       "href": "https://settlesignal.com/settlements/realpage-rental-software-antitrust-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: RealPage Rental Software Antitrust Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/realpage-rental-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -23843,7 +25721,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/rockley-securities-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "rolling-stone-magazine-class-action-settlement",
@@ -23970,7 +25856,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "21c17afeae0aa018",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/sansone-data-incident",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "sanyo-solar-panel-class-action-settlement",
@@ -24095,7 +25989,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "5df3415af069e1a5",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/schnucks-tax-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "situsamc-data-breach-settlement",
@@ -24180,6 +26082,13 @@
       "href": "https://settlesignal.com/settlements/situsamc-data-breach-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: SitusAMC Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/samc-data-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -24316,6 +26225,13 @@
       "href": "https://settlesignal.com/settlements/southern-graphics-data-breach-settlement-davis-et-al-v-southern-graphics-inc/",
       "source": "settlesignal",
       "title": "SettleSignal: Southern Graphics Data Breach Settlement (Davis, et al. v. Southern Graphics, Inc.)"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/southern-graphics-data-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -24527,6 +26443,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Star Casualty Total Loss Fees Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/star-casualty-total-loss-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -24605,6 +26528,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: State Farm Louisiana Total Loss Purchasing Fees Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/louisiana-fees-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -24673,7 +26603,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "1576a9c9767a6037",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/washington-umpd-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "steel-warehouse-data-breach-settlement",
@@ -24759,6 +26697,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Steel Warehouse Company Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/steel-warehouse-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -24835,6 +26780,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Stockpile 2020 Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/stockpile-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -24901,7 +26853,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "e03c28f99c49106c",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/suffolk-red-light-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "sugared-bronzed-tcpa-text-message-class-action-settlement",
@@ -24975,6 +26935,13 @@
       "href": "https://settlesignal.com/settlements/sugared-bronzed-unwanted-text-messages-tcpa-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Sugared + Bronzed Unwanted Text Messages (TCPA) Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/sb-tcpa-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -25050,6 +27017,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Summit Medical Group Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/summit-medical-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -25123,6 +27097,13 @@
       "href": "https://settlesignal.com/settlements/susan-b-allen-memorial-hospital-sbamh-data-breach-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Susan B. Allen Memorial Hospital (SBAMH) Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/sbamh-data-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -25211,6 +27192,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: System Pavers $350,544 Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/system-pavers-data-incident",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -25286,6 +27274,13 @@
       "href": "https://settlesignal.com/settlements/talkdesk-washington-job-posting-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Talkdesk Washington Job Posting Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/epoa-settlement-tdi",
+      "source": "claimdepot"
      }
     ]
    }
@@ -25436,6 +27431,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Sutton v. TED Foundation VPPA Data Privacy Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ted-vppa-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -25514,6 +27516,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Tesla Supercharger Idle Fee Class Action Settlement (California)"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/tesla-idle-fee-class-action",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -25580,7 +27589,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "e7a62240d9e41d2d",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/tw-camera-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "tift-regional-health-system-data-breach-settlement",
@@ -25747,7 +27764,10 @@
    "last_modified": null,
    "verified_as_of": "2026-09-20",
    "content_hash": "0bc4a669f55a5d11",
-   "warnings": [],
+   "warnings": [
+    "claimdepot lists claim deadline 2026-09-14 but our sources say 2026-10-05; ours kept",
+    "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
+   ],
    "cross_refs": {
     "settlesignal": [
      {
@@ -25755,6 +27775,13 @@
       "href": "https://settlesignal.com/settlements/total-vision-data-breach-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Total Vision Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/total-vision-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -25832,6 +27859,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Brooks v. TransUnion Bankruptcy Credit Reporting Settlement (FCRA)"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/brooks-bankruptcy-class-action",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -25907,6 +27941,13 @@
       "href": "https://settlesignal.com/settlements/travelers-new-mexico-underinsured-motorist-uim-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Travelers New Mexico Underinsured Motorist (UIM) Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/aguilar-uim-class-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -26048,7 +28089,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "04e5bfd088415a1b",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/twitter-acquisition-litigation",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "university-of-hawaii-data-breach-settlement",
@@ -26134,6 +28183,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: University of Hawai'i Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/uh-data-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -26209,6 +28265,13 @@
       "href": "https://settlesignal.com/settlements/usa-clinics-group-574350-tcpa-text-message-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: USA Clinics Group $574,350 TCPA Text Message Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/usa-clinics-group-tcpa-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -26289,7 +28352,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "709542144191cb6d",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/valley-oaks-data-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "vasindas-around-the-clock-care-data-breach-settlement",
@@ -26367,7 +28438,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "ef9e9ad34a20a2f0",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/vasindas-data-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "volkswagen-atlas-water-pump-class-action-settlement",
@@ -26440,6 +28519,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: Volkswagen Atlas & Atlas Cross Sport Water Pump Defect Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/main-engine-water-pump-settlement",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -26506,7 +28592,8 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "7700b5994402bb18",
    "warnings": [
-    "proof level differs from the index (index=L2, page=L3)"
+    "proof level differs from the index (index=L2, page=L3)",
+    "claimdepot says no proof needed; our sources say proof required"
    ],
    "cross_refs": {
     "settlesignal": [
@@ -26515,6 +28602,13 @@
       "href": "https://settlesignal.com/settlements/vsl3-probiotic-20-million-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: VSL#3 Probiotic $20 Million Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/vsl3-lawsuit",
+      "source": "claimdepot"
      }
     ]
    }
@@ -26584,7 +28678,15 @@
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/pinnacle-waste-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "wayne-memorial-hospital-data-breach-settlement",
@@ -26662,7 +28764,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "3a7a7052f61bf1c4",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/wmh-data-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "wellstar-health-system-pixel-tracking-privacy-class-action-settlement",
@@ -26737,6 +28847,13 @@
       "href": "https://settlesignal.com/settlements/wellstar-health-system-website-pixel-data-privacy-settlement/",
       "source": "settlesignal",
       "title": "SettleSignal: Wellstar Health System Website Pixel Data Privacy Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/wellstar-data-privacy-settlement",
+      "source": "claimdepot"
      }
     ]
    }
@@ -26915,6 +29032,13 @@
       "source": "settlesignal",
       "title": "SettleSignal: WPM Pathology Laboratory Data Breach Settlement"
      }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/wpmpl-data-breach",
+      "source": "claimdepot"
+     }
     ]
    }
   },
@@ -27070,7 +29194,15 @@
    "verified_as_of": "2026-09-20",
    "content_hash": "df0af801bf10688d",
    "warnings": [],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/yes-communities-data-incident",
+      "source": "claimdepot"
+     }
+    ]
+   }
   },
   {
    "id": "zonolite-vermiculite-attic-insulation-class-action-settlement",
@@ -27963,7 +30095,15 @@
    "warnings": [
     "no proof requirement published"
    ],
-   "cross_refs": {}
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/laboratory-corporation-website-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
   }
  ]
 }
