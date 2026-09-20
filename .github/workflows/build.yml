@@ -85,8 +85,11 @@ jobs:
 
       - name: Commit the rebuilt dataset and site
         run: |
-          git config user.name "kya-bot"
-          git config user.email "kya-bot@users.noreply.github.com"
+          # Commit as the repository owner so the contributors graph stays a
+          # single identity - a bot account here becomes a permanent extra
+          # contributor.
+          git config user.name "Chickenman67"
+          git config user.email "142847431+Chickenman67@users.noreply.github.com"
           # data/ carries the digest's snapshot too, which is what lets the next
           # run tell "new" from "already reported" - see src/kya/store.py.
           git add docs data
