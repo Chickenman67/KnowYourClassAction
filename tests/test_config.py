@@ -23,6 +23,8 @@ def test_the_shipped_config_loads_and_carries_the_secondary_source_knobs() -> No
     assert config.root == ROOT
     assert config.sources.news_enabled is True
     assert config.sources.docket_top_cases == 25
+    assert config.sources.settlesignal_enabled is True
+    assert config.sources.settlesignal_import is True
 
 
 def test_a_config_without_the_sources_section_still_loads(tmp_path: Path) -> None:

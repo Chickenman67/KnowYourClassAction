@@ -239,6 +239,17 @@ def main(argv: list[str] | None = None) -> int:
 
     settlements = build_all(document, pages or None)
 
+    # SettleSignal (independent catalog) cross-checks and, when enabled,
+    # imports uncovered cases. Additive: degrades to a no-op when down.
+    if config.sources.settlesignal_enabled:
+        from kya.sources import settlesignal
+
+        settlements = settlesignal.enrich(
+            settlements,
+            client,
+            import_new=config.sources.settlesignal_import,
+        )
+
     # Secondary sources are additive: each phase degrades to a no-op, and a
     # cross-reference is attached only when the match verifies. See xref.py.
     from kya import xref

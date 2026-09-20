@@ -87,6 +87,11 @@ class SourcesConfig:
 
     news_enabled: bool = True
     docket_top_cases: int = 25
+    # SettleSignal (settlesignal.com) - a free CC-BY 4.0 settlement catalog
+    # used as an independent cross-check, and optionally as a discovery
+    # source for cases no other feed carries. Both phases degrade to no-ops.
+    settlesignal_enabled: bool = True
+    settlesignal_import: bool = True
 
 
 @dataclass(frozen=True)

@@ -39,8 +39,9 @@ _PROOF_BADGES = {
 
 # Secondary-source link labels, keyed by the ref kind kya.xref attaches. A
 # docket link is a court record (independent verification), a news link is
-# another outlet's coverage - so they must not read the same.
-_XREF_LABELS = {"news": "in the news", "docket": "docket"}
+# another outlet's coverage - so they must not read the same. A SettleSignal
+# link means the case's facts were checked against a second full catalog.
+_XREF_LABELS = {"news": "in the news", "docket": "docket", "settlesignal": "cross-checked"}
 
 _DEADLINE_PREFIX = {
     "claim": "Claim by",

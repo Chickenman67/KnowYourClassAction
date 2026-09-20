@@ -45,3 +45,6 @@ sources:
   news_enabled: true      # topclassactions.com RSS -> "in the news" links
   docket_top_cases: 25    # CourtListener lookups for the top-N claimable cases
                           # by expected value (~1 polite request each)
+  settlesignal_enabled: true   # settlesignal.com catalog (CC-BY 4.0) -> deadline/
+                               # proof cross-checks, "cross-checked" links
+  settlesignal_import: true    # also import open cases no other source covers

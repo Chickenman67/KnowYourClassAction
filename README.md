@@ -135,6 +135,30 @@ can appear or vanish between polls, so `cross_refs` is deliberately **outside**
 the diff's watched set: a new link is never worth a notification, and a quiet
 day must not buzz the phone because a headline rolled off the end of a feed.
 
+### SettleSignal: the independent cross-check
+
+`src/kya/sources/settlesignal.py` ingests a second, independent catalog:
+[settlesignal.com](https://settlesignal.com) publishes 865 US settlements as a
+free CC-BY 4.0 CSV with per-record evidence status
+(`accepted_official_evidence` — a row whose evidence is still under review is
+never promoted to a fact here). It is the first source that can catch a mistake
+in the openclassactions index rather than repeat it.
+
+- **Cross-check by official domain** (matched only when the titles also share a
+  match token — `forms.ksacms.com`-style shared claim portals serve many cases,
+  so a domain alone is not a case match). A deadline conflict becomes a recorded
+  warning and **ours is kept**; a proof disagreement becomes a warning; a fact
+  we lack and the catalog's accepted evidence backs is filled. Matched rows
+  carry a *cross-checked* link.
+- **Import** (config: `settlesignal_import`) of open or automatic cases no other
+  source covers, as thin rows — deadline, proof, links, states, status — scored
+  through the normal pipeline. Unrated tiers mean the catalog states no figure
+  we can parse, not that none exists.
+
+Live calibration run (full catalog vs the 277-case dataset): 137 cases
+cross-checked (120 agreed on the deadline; 2 real conflicts recorded, 23 proof
+disagreements flagged for review) and 130 new cases imported.
+
 ## Running it
 
 ```bash
