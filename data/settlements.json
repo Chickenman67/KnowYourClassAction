@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-20T18:43:47+00:00",
+ "generated_at": "2026-09-20T18:52:43+00:00",
  "index_updated": "2026-09-20",
  "count": 407,
  "settlements": [
@@ -6445,6 +6445,21 @@
    "content_hash": "ef6e61e80f719907",
    "warnings": [],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/costa-del-mar-sunglasses-repair-fee-settlement/",
+      "source": "settlesignal",
+      "title": "SettleSignal: Costa Del Mar Sunglasses Repair Fee Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/costa-repairs-class-action",
+      "source": "claimdepot"
+     }
+    ],
     "news": [
      {
       "label": "in the news",
@@ -6528,6 +6543,21 @@
    "content_hash": "ca74cd19b2c7256c",
    "warnings": [],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/costa-del-mar-sunglasses-warranty-fee-settlement/",
+      "source": "settlesignal",
+      "title": "SettleSignal: Costa Del Mar Sunglasses Warranty Fee Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/costa-sunglass-warranty-settlement",
+      "source": "claimdepot"
+     }
+    ],
     "news": [
      {
       "label": "in the news",
@@ -12021,6 +12051,14 @@
     "tiers derived from the page fact (index had no payout text)"
    ],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/pork-antitrust-consumer-settlements-indirect-purchasers/",
+      "source": "settlesignal",
+      "title": "SettleSignal: Pork Antitrust Consumer Settlements (Indirect Purchasers)"
+     }
+    ],
     "news": [
      {
       "label": "in the news",
@@ -12356,6 +12394,13 @@
     "tiers derived from the page fact (index had no payout text)"
    ],
    "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/tlc-suspension-claims",
+      "source": "claimdepot"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -14405,6 +14450,21 @@
     "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
    ],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/aetna-l-adr-surgery-denial-settlement/",
+      "source": "settlesignal",
+      "title": "SettleSignal: Aetna L-ADR Surgery Denial Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ladr-surgery-settlement",
+      "source": "claimdepot"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -14870,6 +14930,21 @@
    "content_hash": "a4f74309f4bf9cbc",
    "warnings": [],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/americold-logistics-data-breach-settlement/",
+      "source": "settlesignal",
+      "title": "SettleSignal: Americold Logistics Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/americold-bracy-settlement",
+      "source": "claimdepot"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -16797,6 +16872,21 @@
    "content_hash": "bf4aac611452e516",
    "warnings": [],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/community-dental-care-data-breach-settlement/",
+      "source": "settlesignal",
+      "title": "SettleSignal: Community Dental Care Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/cd-data-breach",
+      "source": "claimdepot"
+     }
+    ],
     "news": [
      {
       "label": "in the news",
@@ -17049,6 +17139,21 @@
     "settlesignal says no proof needed; our sources say proof required"
    ],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/cone-health-mychart-and-website-tracking-settlement/",
+      "source": "settlesignal",
+      "title": "SettleSignal: Cone Health MyChart and Website Tracking Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/cone-pixel-settlement",
+      "source": "claimdepot"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -17452,6 +17557,21 @@
     "proof level differs from the index (index=L2, page=L3)"
    ],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/cuso-financial-services-data-breach-settlement/",
+      "source": "settlesignal",
+      "title": "SettleSignal: CUSO Financial Services Data Breach Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/cuso-cyber-security-incident",
+      "source": "claimdepot"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -19340,6 +19460,21 @@
     "claimdepot says no proof needed; our sources say proof required"
    ],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/forbes-media-10m-california-website-tracking-settlement/",
+      "source": "settlesignal",
+      "title": "SettleSignal: Forbes Media $10M California Website Tracking Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/media-site-tracker-settlement",
+      "source": "claimdepot"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -20420,6 +20555,21 @@
     "claimdepot lists claim deadline 2027-01-04 but our sources say 2026-11-13; ours kept"
    ],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/high-5-games-high-5-casino-social-casino-settlement-washington/",
+      "source": "settlesignal",
+      "title": "SettleSignal: High 5 Games / High 5 Casino Social Casino Settlement (Washington)"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/high-5-lawsuit",
+      "source": "claimdepot"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -20857,6 +21007,14 @@
     "settlesignal says no proof needed; our sources say proof required"
    ],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/hydromax-usa-washington-job-posting-settlement/",
+      "source": "settlesignal",
+      "title": "SettleSignal: Hydromax USA Washington Job Posting Settlement"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -22353,6 +22511,13 @@
     "proof level differs from the index (index=L3, page=L2)"
    ],
    "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/limetree-bay-settlement",
+      "source": "claimdepot"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -23320,6 +23485,14 @@
    "content_hash": "01e5fbb236aed3d1",
    "warnings": [],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/homebuyer-antitrust-settlement/",
+      "source": "settlesignal",
+      "title": "SettleSignal: Homebuyer Antitrust Settlement"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -23398,6 +23571,21 @@
     "settlesignal says no proof needed; our sources say proof required"
    ],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/national-tenant-network-1625000-eviction-postcard-fcra-settlement/",
+      "source": "settlesignal",
+      "title": "SettleSignal: National Tenant Network $1,625,000 Eviction Postcard FCRA Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ntn-postcard-settlement",
+      "source": "claimdepot"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -23549,6 +23737,21 @@
    "content_hash": "7014ce49739016f4",
    "warnings": [],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/skin360-bipa-settlement-melzer-v-johnson-johnson-consumer-inc/",
+      "source": "settlesignal",
+      "title": "SettleSignal: Skin360 BIPA Settlement (Melzer v. Johnson & Johnson Consumer Inc.)"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/skin360-bipa-settlement",
+      "source": "claimdepot"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -23721,6 +23924,13 @@
    "content_hash": "7ebc4021fffee0f3",
    "warnings": [],
    "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/canoga-park-class-action",
+      "source": "claimdepot"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -23874,6 +24084,21 @@
    "content_hash": "7f11f7199613184a",
    "warnings": [],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/new-york-city-doc-strip-search-settlement-lewis-v-city-of-new-york/",
+      "source": "settlesignal",
+      "title": "SettleSignal: New York City DOC Strip Search Settlement (Lewis v. City of New York)"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ny-strip-search-settlement",
+      "source": "claimdepot"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -24101,6 +24326,13 @@
    "content_hash": "cc7e3909d27c4058",
    "warnings": [],
    "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/ohio-strip-club-case",
+      "source": "claimdepot"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -24714,6 +24946,21 @@
     "tiers derived from the page fact (index had no payout text)"
    ],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/people-data-labs-6362167-colorado-privacy-settlement/",
+      "source": "settlesignal",
+      "title": "SettleSignal: People Data Labs $6,362,167 Colorado Privacy Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/pdl-settlement",
+      "source": "claimdepot"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -25444,6 +25691,21 @@
     "settlesignal says no proof needed; our sources say proof required"
    ],
    "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/jail-release-card-settlement-rapid-financial-axiom-bank/",
+      "source": "settlesignal",
+      "title": "SettleSignal: Jail Release Card Settlement (Rapid Financial & Axiom Bank)"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/hall-release-card-settlement",
+      "source": "claimdepot"
+     }
+    ],
     "docket": [
      {
       "label": "docket",
@@ -27676,6 +27938,13 @@
    "content_hash": "d71f2481f679759c",
    "warnings": [],
    "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/tift-data-settlement",
+      "source": "claimdepot"
+     }
+    ],
     "news": [
      {
       "label": "in the news",
