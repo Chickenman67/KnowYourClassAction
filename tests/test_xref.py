@@ -383,3 +383,32 @@ def test_apply_merges_both_kinds_and_leaves_the_inputs_alone() -> None:
     assert merged[1].cross_refs == {}
     assert matched.cross_refs == {} and other.cross_refs == {}, "inputs must not be mutated"
 
+
+def test_apply_keeps_refs_earlier_sources_attached() -> None:
+    # Regression: apply() used to replace the whole cross_refs dict, silently
+    # dropping what SettleSignal and ClaimDepot had attached earlier in the
+    # same run - measured live as 17 + 19 links vanishing whenever a row also
+    # earned a news or docket reference.
+    matched = settlement("a", "Case A")
+    matched.cross_refs["claimdepot"] = [
+        {"label": "cross-checked", "href": "https://claimdepot.com/settlements/x", "source": "claimdepot"}
+    ]
+    news = {"a": [{"label": "in the news", "href": "https://tca/x/", "source": "topclassactions"}]}
+
+    out = xref.apply([matched], news)
+
+    assert sorted(out[0].cross_refs) == ["claimdepot", "news"]
+    assert matched.cross_refs == {"claimdepot": [
+        {"label": "cross-checked", "href": "https://claimdepot.com/settlements/x", "source": "claimdepot"}
+    ]}, "inputs must not be mutated"
+
+
+def test_apply_lets_a_fresh_lookup_win_its_own_kind() -> None:
+    matched = settlement("a", "Case A")
+    matched.cross_refs["docket"] = [{"label": "docket", "href": "https://cl/d/old/", "source": "courtlistener"}]
+    fresh = {"a": [{"label": "docket", "href": "https://cl/d/new/", "source": "courtlistener"}]}
+
+    out = xref.apply([matched], fresh)
+
+    assert out[0].cross_refs["docket"][0]["href"] == "https://cl/d/new/"
+

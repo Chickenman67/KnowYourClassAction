@@ -348,14 +348,27 @@ def apply(
     settlements: Sequence[Settlement],
     *ref_maps: Mapping[str, list[dict[str, str]]],
 ) -> list[Settlement]:
-    """Copy the settlements, attaching cross-references where they exist."""
+    """Copy the settlements, attaching cross-references where they exist.
+
+    The new refs are merged *into* whatever the row already carries, not
+    substituted for it: earlier phases in the same run (SettleSignal,
+    ClaimDepot) attach their links before this runs, and replacing the dict
+    silently dropped them - measured live as 17 SettleSignal and 19 ClaimDepot
+    links vanishing whenever a row also happened to earn a news or docket
+    reference. Fresh lookups still win: their kinds overwrite any same-kind
+    entry the row already had.
+    """
     merged: dict[str, dict[str, list[dict[str, str]]]] = {}
     for ref_map in ref_maps:
         for settlement_id, refs in ref_map.items():
             kind = "docket" if refs and refs[0].get("source") == "courtlistener" else "news"
             merged.setdefault(settlement_id, {})[kind] = list(refs)
     return [
-        s.model_copy(update={"cross_refs": merged[s.id]}) if s.id in merged else s
+        s.model_copy(
+            update={"cross_refs": {**(s.cross_refs or {}), **merged[s.id]}}
+        )
+        if s.id in merged
+        else s
         for s in settlements
     ]
 
