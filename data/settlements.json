@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-09-20T18:52:43+00:00",
- "index_updated": "2026-09-20",
- "count": 407,
+ "generated_at": "2026-09-22T11:55:25+00:00",
+ "index_updated": "2026-09-21",
+ "count": 409,
  "settlements": [
   {
    "id": "505-quick-cash-pawn-new-mexico",
@@ -5263,9 +5263,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "a4af51d0d71c5f03",
    "warnings": [],
    "cross_refs": {
@@ -5344,9 +5344,9 @@
    "ev_estimate": 0.3,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-07-24T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "86c4a9706e550d5f",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -5419,9 +5419,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "1a4defa41f287240",
    "warnings": [],
    "cross_refs": {
@@ -5500,9 +5500,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-07-16T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "d020debd95088f24",
    "warnings": [],
    "cross_refs": {
@@ -5573,9 +5573,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-07-27T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "6a1ca295290da87c",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -5649,9 +5649,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "0e3e7c792dcb1ed0",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -5725,9 +5725,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "e97260ba8453e018",
    "warnings": [
     "claimdepot lists claim deadline 2027-06-01 but our sources say 2026-10-29; ours kept"
@@ -5802,9 +5802,9 @@
    "ev_estimate": 141.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "f234957f6e7d4274",
    "warnings": [
     "claimdepot lists claim deadline 2023-10-10 but our sources say 2026-10-21; ours kept"
@@ -5877,9 +5877,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-20T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "32cd1c88b9a64d3b",
    "warnings": [],
    "cross_refs": {
@@ -5950,9 +5950,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "74514b89cca87c2a",
    "warnings": [],
    "cross_refs": {}
@@ -6015,9 +6015,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "a467f552b1eb64bb",
    "warnings": [],
    "cross_refs": {}
@@ -6082,9 +6082,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-07-30T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "28ebb4fc21b1f3d6",
    "warnings": [],
    "cross_refs": {
@@ -6142,9 +6142,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "f6fe0c034e944a22",
    "warnings": [],
    "cross_refs": {
@@ -6218,9 +6218,9 @@
    "ev_estimate": 30000000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "fec0a32061a506a5",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -6302,9 +6302,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "04503572fdbdd039",
    "warnings": [],
    "cross_refs": {
@@ -6373,9 +6373,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-07-08T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "fcefe2296304e0fa",
    "warnings": [],
    "cross_refs": {}
@@ -6439,9 +6439,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "ef6e61e80f719907",
    "warnings": [],
    "cross_refs": {
@@ -6537,9 +6537,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "ca74cd19b2c7256c",
    "warnings": [],
    "cross_refs": {
@@ -6636,9 +6636,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "14afa995b2bb0f5d",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -6719,9 +6719,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "3d4695c5d6bd93b5",
    "warnings": [],
    "cross_refs": {
@@ -6798,9 +6798,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-20T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "43c7423b7c456583",
    "warnings": [],
    "cross_refs": {
@@ -6869,9 +6869,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-08T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b49572dde827bb7c",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -6931,9 +6931,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "7df50d410363a5e4",
    "warnings": [],
    "cross_refs": {}
@@ -6998,9 +6998,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-07-17T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "39bb31ad5d29b153",
    "warnings": [],
    "cross_refs": {
@@ -7082,9 +7082,9 @@
    "ev_estimate": 500000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-07-27T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "579ea853a6bd41c2",
    "warnings": [],
    "cross_refs": {}
@@ -7147,9 +7147,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "59c3e2f29a376858",
    "warnings": [],
    "cross_refs": {
@@ -7221,9 +7221,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-07T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "3c305c702068ff64",
    "warnings": [
     "claimdepot lists claim deadline 2026-11-05 but our sources say 2026-10-06; ours kept"
@@ -7296,9 +7296,9 @@
    "ev_estimate": 40.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-17T19:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "6bdc755b4c5db8b9",
    "warnings": [],
    "cross_refs": {
@@ -7370,9 +7370,9 @@
    "ev_estimate": 0.44,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-01T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "fc05f32ebdbc39e6",
    "warnings": [
     "claimdepot lists claim deadline 2024-10-01 but our sources say 2026-10-19; ours kept"
@@ -7445,9 +7445,9 @@
    "ev_estimate": 680.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "592d854ac124b8bf",
    "warnings": [],
    "cross_refs": {
@@ -7518,9 +7518,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "fe3a104e01338f8f",
    "warnings": [],
    "cross_refs": {
@@ -7591,9 +7591,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "6120f646d4a604e3",
    "warnings": [
     "claimdepot lists claim deadline 2026-10-06 but our sources say 2026-09-21; ours kept"
@@ -7668,9 +7668,9 @@
    "ev_estimate": 1271.91,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b65bf223fa6ca809",
    "warnings": [],
    "cross_refs": {
@@ -7743,9 +7743,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "0479a72270c10e34",
    "warnings": [
     "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
@@ -7826,9 +7826,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-07-30T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "1bce11254852a685",
    "warnings": [
     "claimdepot lists claim deadline 2018-08-30 but our sources say 2026-09-04; ours kept"
@@ -7899,9 +7899,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-06-24",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "03dc8e989feb5ebd",
    "warnings": [],
    "cross_refs": {}
@@ -7966,9 +7966,9 @@
    "ev_estimate": 825000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-17T20:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "930126ed9922da5d",
    "warnings": [],
    "cross_refs": {
@@ -8039,9 +8039,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "fa7a3c8a697dc963",
    "warnings": [],
    "cross_refs": {
@@ -8120,9 +8120,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-03T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "bdfb3777300a62dc",
    "warnings": [],
    "cross_refs": {
@@ -8203,9 +8203,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-18T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "455646a06edc81d2",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -8271,9 +8271,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-22T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "d63c45592bd64452",
    "warnings": [
     "claimdepot lists claim deadline 2016-01-01 but our sources say 2026-10-02; ours kept"
@@ -8590,77 +8590,6 @@
      {
       "label": "cross-checked",
       "href": "https://www.claimdepot.com/settlements/anixter-data-settlement",
-      "source": "claimdepot"
-     }
-    ]
-   }
-  },
-  {
-   "id": "anthem-3625m-proton-beam-therapy-settlement",
-   "source": "settlesignal",
-   "source_url": "https://settlesignal.com/settlements/anthem-3625m-proton-beam-therapy-settlement/",
-   "title": "Anthem $3.625M Proton Beam Therapy Settlement",
-   "category": null,
-   "kind": "settlement",
-   "lane": "claimable",
-   "lane_reason": "published open for claims on settlesignal",
-   "tiers": [
-    {
-     "label": "\"Anthem has agreed to pay a total of $3,625,000 to settle the Action. After deducting Court-approved attorneys' fees and costs, ervice awards, and the costs of administering the Settlement, the balance will be used to make payments to Settlement Class Members who submit valid Claim Forms.\" \"The Settlement Administrator shall determine the Settlement Payment based on the Settlement Class Member's total Qualifying Payment(s). Qualifying Payment(s) means the total amount of out-of-pocket payments made by a Settlement Class Member for PBRT for the treatment of prostate cancer (meaning treatments were not covered by insurance).\"",
-     "payout_type": "fixed",
-     "amount_min": null,
-     "amount_max": 3625000.0,
-     "per_unit": null,
-     "cap": null,
-     "currency": "USD",
-     "proof_level": "L3",
-     "requires_claim_form": true,
-     "source_text": "\"Anthem has agreed to pay a total of $3,625,000 to settle the Action. After deducting Court-approved attorneys' fees and costs, ervice awards, and the costs of administering the Settlement, the balance will be used to make payments to Settlement Class Members who submit valid Claim Forms.\" \"The Settlement Administrator shall determine the Settlement Payment based on the Settlement Class Member's total Qualifying Payment(s). Qualifying Payment(s) means the total amount of out-of-pocket payments made by a Settlement Class Member for PBRT for the treatment of prostate cancer (meaning treatments were not covered by insurance).\"",
-     "confidence": "medium"
-    }
-   ],
-   "payout_raw": null,
-   "payout_sub": null,
-   "payout_tier": "S",
-   "fund_size": null,
-   "fund_size_raw": null,
-   "proof_required": true,
-   "proof_level": "L3",
-   "proof_label_raw": "Yes",
-   "proof_detail": null,
-   "deadline": {
-    "raw": "2026-10-10",
-    "kind": "claim",
-    "date": "2026-10-10",
-    "note": null
-   },
-   "extra_dates": {},
-   "geo": {
-    "scope_type": "nationwide",
-    "states": [],
-    "country": null,
-    "label": ""
-   },
-   "status_text": "Open for claims",
-   "case_title": null,
-   "case_number": null,
-   "court": null,
-   "administrator": null,
-   "official_website": "https://protonbeamradiationtherapylitigation.com/",
-   "claim_url": "https://protonbeamradiationtherapylitigation.com/",
-   "ev_estimate": 3625000.0,
-   "ev_confidence": "high",
-   "ev_note": null,
-   "index_updated": null,
-   "last_modified": null,
-   "verified_as_of": "2026-08-15",
-   "content_hash": "",
-   "warnings": [],
-   "cross_refs": {
-    "claimdepot": [
-     {
-      "label": "cross-checked",
-      "href": "https://www.claimdepot.com/settlements/proton-beam-radiation-therapy-litigation",
       "source": "claimdepot"
      }
     ]
@@ -9216,77 +9145,6 @@
    }
   },
   {
-   "id": "davison-design-30000-washington-text-message-settlement",
-   "source": "settlesignal",
-   "source_url": "https://settlesignal.com/settlements/davison-design-30000-washington-text-message-settlement/",
-   "title": "Davison Design $30,000 Washington Text Message Settlement",
-   "category": null,
-   "kind": "settlement",
-   "lane": "claimable",
-   "lane_reason": "published open for claims on settlesignal",
-   "tiers": [
-    {
-     "label": "Davison has agreed to create a $30,000.00 Settlement Fund. The fund will be used to pay Court-approved attorneys' fees and costs, settlement administration expenses, and cash payments to Settlement Class Members who submit timely and valid Claim Forms. The amount of each payment cannot be determined until after the claim deadline. The payment amount will depend on the number of timely and valid claims and the deductions approved by the Court. No payments will be issued unless the Court approves the Settlement and the Settlement becomes final",
-     "payout_type": "fixed",
-     "amount_min": null,
-     "amount_max": 30000.0,
-     "per_unit": null,
-     "cap": null,
-     "currency": "USD",
-     "proof_level": "L3",
-     "requires_claim_form": true,
-     "source_text": "Davison has agreed to create a $30,000.00 Settlement Fund. The fund will be used to pay Court-approved attorneys' fees and costs, settlement administration expenses, and cash payments to Settlement Class Members who submit timely and valid Claim Forms. The amount of each payment cannot be determined until after the claim deadline. The payment amount will depend on the number of timely and valid claims and the deductions approved by the Court. No payments will be issued unless the Court approves the Settlement and the Settlement becomes final",
-     "confidence": "medium"
-    }
-   ],
-   "payout_raw": null,
-   "payout_sub": null,
-   "payout_tier": "S",
-   "fund_size": null,
-   "fund_size_raw": null,
-   "proof_required": false,
-   "proof_level": "L1",
-   "proof_label_raw": "No",
-   "proof_detail": null,
-   "deadline": {
-    "raw": "2026-10-13",
-    "kind": "claim",
-    "date": "2026-10-13",
-    "note": null
-   },
-   "extra_dates": {},
-   "geo": {
-    "scope_type": "nationwide",
-    "states": [],
-    "country": null,
-    "label": ""
-   },
-   "status_text": "Open for claims",
-   "case_title": null,
-   "case_number": null,
-   "court": null,
-   "administrator": null,
-   "official_website": "https://www.millertextsettlement.com/",
-   "claim_url": "https://www.millertextsettlement.com/submit-a-claim",
-   "ev_estimate": 30000.0,
-   "ev_confidence": "high",
-   "ev_note": null,
-   "index_updated": null,
-   "last_modified": null,
-   "verified_as_of": "2026-09-13",
-   "content_hash": "",
-   "warnings": [],
-   "cross_refs": {
-    "claimdepot": [
-     {
-      "label": "cross-checked",
-      "href": "https://www.claimdepot.com/settlements/miller-text-settlement",
-      "source": "claimdepot"
-     }
-    ]
-   }
-  },
-  {
    "id": "dodge-grand-caravan-sliding-doors",
    "source": "settlesignal",
    "source_url": "https://settlesignal.com/settlements/dodge-grand-caravan-sliding-doors/",
@@ -9809,69 +9667,6 @@
      }
     ]
    }
-  },
-  {
-   "id": "aetna-settlement",
-   "source": "settlesignal",
-   "source_url": "https://settlesignal.com/settlements/aetna-settlement/",
-   "title": "Kazda v Aetna",
-   "category": null,
-   "kind": "settlement",
-   "lane": "claimable",
-   "lane_reason": "published open for claims on settlesignal",
-   "tiers": [
-    {
-     "label": "Reimbursement of unreimbursed out-of-pocket lipedema surgery costs, subject to an aggregate cap of $650,000 for all reimbursement claims combined; if total claims exceed the cap, each class member's payment is reduced by an equal percentage",
-     "payout_type": "fixed",
-     "amount_min": null,
-     "amount_max": 650000.0,
-     "per_unit": null,
-     "cap": null,
-     "currency": "USD",
-     "proof_level": "L3",
-     "requires_claim_form": true,
-     "source_text": "Reimbursement of unreimbursed out-of-pocket lipedema surgery costs, subject to an aggregate cap of $650,000 for all reimbursement claims combined; if total claims exceed the cap, each class member's payment is reduced by an equal percentage",
-     "confidence": "medium"
-    }
-   ],
-   "payout_raw": null,
-   "payout_sub": null,
-   "payout_tier": "S",
-   "fund_size": null,
-   "fund_size_raw": null,
-   "proof_required": true,
-   "proof_level": "L3",
-   "proof_label_raw": "Yes",
-   "proof_detail": null,
-   "deadline": {
-    "raw": "2026-09-21",
-    "kind": "claim",
-    "date": "2026-09-21",
-    "note": null
-   },
-   "extra_dates": {},
-   "geo": {
-    "scope_type": "nationwide",
-    "states": [],
-    "country": null,
-    "label": ""
-   },
-   "status_text": "Open for claims",
-   "case_title": null,
-   "case_number": null,
-   "court": null,
-   "administrator": null,
-   "official_website": "https://www.lipedemasurgerysettlement.com/",
-   "claim_url": "https://www.lipedemasurgerysettlement.com/",
-   "ev_estimate": 650000.0,
-   "ev_confidence": "high",
-   "ev_note": null,
-   "index_updated": null,
-   "last_modified": null,
-   "verified_as_of": "2026-09-20",
-   "content_hash": "",
-   "warnings": [],
-   "cross_refs": {}
   },
   {
    "id": "monsanto-settlement",
@@ -11632,9 +11427,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "8b16175f01e2b243",
    "warnings": [
     "no proof requirement published"
@@ -11683,9 +11478,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "2937368164f1f6ae",
    "warnings": [
     "no proof requirement published"
@@ -11734,9 +11529,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "39f06bc48716ef34",
    "warnings": [],
    "cross_refs": {}
@@ -11799,9 +11594,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a non-cash remedy",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "4027459da983e459",
    "warnings": [],
    "cross_refs": {}
@@ -11848,9 +11643,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "611a5b05b4f72244",
    "warnings": [],
    "cross_refs": {}
@@ -11913,9 +11708,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "9a6ae3aa9611fd21",
    "warnings": [],
    "cross_refs": {}
@@ -11978,9 +11773,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a non-cash remedy",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "80d519987b923976",
    "warnings": [],
    "cross_refs": {}
@@ -12043,9 +11838,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "c01b3f3bbb1fde3b",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -12114,9 +11909,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "0c6aa48a9f989023",
    "warnings": [
     "no proof requirement published"
@@ -12181,9 +11976,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-16T09:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "a7f9df18485e7e45",
    "warnings": [],
    "cross_refs": {
@@ -12252,9 +12047,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "84278d675e7feafa",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -12311,9 +12106,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "d7acd8768466ad31",
    "warnings": [
     "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
@@ -12386,9 +12181,9 @@
    "ev_estimate": 18131.5,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-06-18T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "4befd8a876e8f28c",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -12469,9 +12264,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "a05e907338e8db05",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -12530,9 +12325,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-11T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "4cfa2c4d1121bd37",
    "warnings": [],
    "cross_refs": {
@@ -12605,9 +12400,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-09T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "03764eb36265e698",
    "warnings": [],
    "cross_refs": {
@@ -12615,81 +12410,6 @@
      {
       "label": "cross-checked",
       "href": "https://www.claimdepot.com/settlements/twist-securities-settlement",
-      "source": "claimdepot"
-     }
-    ]
-   }
-  },
-  {
-   "id": "danaher-securities-class-action-settlement",
-   "source": "openclassactions",
-   "source_url": "https://openclassactions.com/settlements/securities/danaher-securities-class-action-settlement.php",
-   "title": "$172.5M Danaher Securities Settlement (DHR)",
-   "category": null,
-   "kind": "settlement",
-   "lane": "claimable",
-   "lane_reason": "open claim window",
-   "tiers": [
-    {
-     "label": "About $1.13 per share",
-     "payout_type": "estimated_share",
-     "amount_min": null,
-     "amount_max": null,
-     "per_unit": 1.13,
-     "cap": null,
-     "currency": "USD",
-     "proof_level": "L3",
-     "requires_claim_form": true,
-     "source_text": "About $1.13 per share",
-     "confidence": "low"
-    }
-   ],
-   "payout_raw": "About $1.13 per share",
-   "payout_sub": null,
-   "payout_tier": "E",
-   "fund_size": null,
-   "fund_size_raw": null,
-   "proof_required": true,
-   "proof_level": "L3",
-   "proof_label_raw": "Documentation required",
-   "proof_detail": "Brokerage records for every Danaher stock transaction from January 26, 2022 through January 19, 2024",
-   "deadline": {
-    "raw": "September 20, 2026",
-    "kind": "claim",
-    "date": "2026-09-20",
-    "note": null
-   },
-   "extra_dates": {
-    "Final Approval Hearing": "September 3, 2026 at 10:30 AM"
-   },
-   "geo": {
-    "scope_type": "unspecified",
-    "states": [],
-    "country": null,
-    "label": ""
-   },
-   "status_text": null,
-   "case_title": "Hawkins v. Danaher Corp.",
-   "case_number": "1:23-cv-02055 (AHA)",
-   "court": "U.S. District Court for the District of Columbia",
-   "administrator": "Verita Global, LLC",
-   "official_website": "https://www.danahersecuritiessettlement.com/",
-   "claim_url": "https://www.danahersecuritiessettlement.com/",
-   "ev_estimate": null,
-   "ev_confidence": "low",
-   "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
-   "last_modified": "2026-09-17T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
-   "content_hash": "1d52fb4012a3dd8f",
-   "warnings": [
-    "tiers derived from the page fact (index had no payout text)"
-   ],
-   "cross_refs": {
-    "claimdepot": [
-     {
-      "label": "cross-checked",
-      "href": "https://www.claimdepot.com/settlements/danaher-securities-settlement",
       "source": "claimdepot"
      }
     ]
@@ -12751,9 +12471,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "c53bd74a44216fe9",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -12824,9 +12544,9 @@
    "ev_estimate": 2000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "5b802734ad71cf2c",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -12844,6 +12564,81 @@
      {
       "label": "cross-checked",
       "href": "https://www.claimdepot.com/settlements/mb-aem-incentive",
+      "source": "claimdepot"
+     }
+    ]
+   }
+  },
+  {
+   "id": "apple-intelligence-siri-false-advertising-class-action-settlement",
+   "source": "openclassactions",
+   "source_url": "https://openclassactions.com/settlements/false-advertising/apple-intelligence-siri-false-advertising-class-action-settlement.php",
+   "title": "$250M Apple Intelligence Siri Settlement — $25 to $95 per iPhone",
+   "category": null,
+   "kind": "settlement",
+   "lane": "claimable",
+   "lane_reason": "open claim window",
+   "tiers": [
+    {
+     "label": "$25 to $95 per iPhone",
+     "payout_type": "range",
+     "amount_min": 25.0,
+     "amount_max": 95.0,
+     "per_unit": null,
+     "cap": null,
+     "currency": "USD",
+     "proof_level": "L3",
+     "requires_claim_form": true,
+     "source_text": "$25 to $95 per iPhone",
+     "confidence": "medium"
+    }
+   ],
+   "payout_raw": "$25 to $95 per iPhone",
+   "payout_sub": null,
+   "payout_tier": "C",
+   "fund_size": null,
+   "fund_size_raw": null,
+   "proof_required": false,
+   "proof_level": "L1",
+   "proof_label_raw": "iPhone serial number or Apple Account email stands in for a receipt",
+   "proof_detail": "No receipt and no Claim ID needed to file online · enter the iPhone serial number, or the Apple Account email and phone number for the device",
+   "deadline": {
+    "raw": "December 21, 2026",
+    "kind": "claim",
+    "date": "2026-12-21",
+    "note": null
+   },
+   "extra_dates": {
+    "Final Approval Hearing": "February 24, 2027 at 9:00 AM"
+   },
+   "geo": {
+    "scope_type": "unspecified",
+    "states": [],
+    "country": null,
+    "label": ""
+   },
+   "status_text": null,
+   "case_title": "Landsheft, et al. v. Apple Inc.",
+   "case_number": "5:25-cv-02668-NW",
+   "court": "U.S. District Court, Northern District of California (San Jose)",
+   "administrator": "Verita Global, LLC",
+   "official_website": "https://www.smartphoneaisettlement.com/",
+   "claim_url": "https://www.smartphoneaisettlement.com/",
+   "ev_estimate": 60.0,
+   "ev_confidence": "medium",
+   "ev_note": "midpoint of published range",
+   "index_updated": "2026-09-21",
+   "last_modified": null,
+   "verified_as_of": "2026-09-22",
+   "content_hash": "3a34f29604bb4bb1",
+   "warnings": [
+    "proof level differs from the index (index=L3, page=L1)"
+   ],
+   "cross_refs": {
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/smartphone-ai-settlement",
       "source": "claimdepot"
      }
     ]
@@ -12905,9 +12700,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "94385a86e2103566",
    "warnings": [
     "settlesignal lists claim deadline 2026-09-22 but our sources say 2026-09-23; ours kept"
@@ -12981,9 +12776,9 @@
    "ev_estimate": 2000000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-07-09T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "9537988356ac85b5",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -13057,9 +12852,9 @@
    "ev_estimate": 0.17,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "08e4b6422e0ecfcd",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -13130,9 +12925,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "40115a1fd9a7a333",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -13205,9 +13000,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-13T12:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "79be7065c8a1debf",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -13279,9 +13074,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "248aec7e53dbfb6e",
    "warnings": [
     "no proof requirement published",
@@ -13361,9 +13156,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "5107e4a3f0c83e7d",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -13438,9 +13233,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b9818d78f6401ab9",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -13514,9 +13309,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "8e7e7d0267260d6b",
    "warnings": [],
    "cross_refs": {
@@ -13588,9 +13383,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-17T23:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "769bb5eab6288b62",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -13639,9 +13434,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-07-03",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "fed6ca12667204f1",
    "warnings": [
     "no proof requirement published"
@@ -13704,9 +13499,9 @@
    "ev_estimate": 175.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "af2acbfe77367ef0",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -13778,9 +13573,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "a2bd275117ba94e8",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -13838,9 +13633,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b816eb78eb17c1f1",
    "warnings": [
     "no proof requirement published"
@@ -13903,9 +13698,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "cefff6472650065b",
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)"
@@ -13977,9 +13772,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "db64b09314c1948c",
    "warnings": [],
    "cross_refs": {
@@ -14058,9 +13853,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-18T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "46afc703afc44cc5",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -14125,9 +13920,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-18T20:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "4449f5fc0150ce59",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -14200,9 +13995,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "2b43e45805b13b0e",
    "warnings": [],
    "cross_refs": {}
@@ -14278,9 +14073,9 @@
    "ev_estimate": 1250.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "466c9fb4abe713a8",
    "warnings": [],
    "cross_refs": {
@@ -14359,9 +14154,9 @@
    "ev_estimate": 2525.0,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-04T16:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "1cbce4add02e6ec2",
    "warnings": [],
    "cross_refs": {
@@ -14440,9 +14235,9 @@
    "ev_estimate": 27500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "3681321f25399069",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -14548,9 +14343,9 @@
    "ev_estimate": 2540.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-01T16:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "fa3362c8bc38043a",
    "warnings": [],
    "cross_refs": {
@@ -14642,9 +14437,9 @@
    "ev_estimate": 1250.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "2a26201b0c03412b",
    "warnings": [],
    "cross_refs": {
@@ -14723,9 +14518,9 @@
    "ev_estimate": 350.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "87f55feb4b64ed12",
    "warnings": [],
    "cross_refs": {
@@ -14817,9 +14612,9 @@
    "ev_estimate": 1500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T12:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "6497c123f3708828",
    "warnings": [],
    "cross_refs": {
@@ -14924,9 +14719,9 @@
    "ev_estimate": 12500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "a4f74309f4bf9cbc",
    "warnings": [],
    "cross_refs": {
@@ -15017,9 +14812,9 @@
    "ev_estimate": 2250.0,
    "ev_confidence": "low",
    "ev_note": "estimated 0.05% of a $4,500,000 fund",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-01T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b1dcf5dc645effed",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -15091,9 +14886,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a non-cash remedy",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "0797c2810f4d2037",
    "warnings": [],
    "cross_refs": {
@@ -15101,6 +14896,87 @@
      {
       "label": "cross-checked",
       "href": "https://www.claimdepot.com/settlements/grandfathered-rx-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
+  },
+  {
+   "id": "blue-cross-blue-shield-georgia-proton-beam-therapy-class-action-settlement",
+   "source": "openclassactions",
+   "source_url": "https://openclassactions.com/settlements/blue-cross-blue-shield-georgia-proton-beam-therapy-class-action-settlement.php",
+   "title": "Anthem Proton Beam Therapy Settlement — $3.625M for Denied PBRT Coverage",
+   "category": null,
+   "kind": "settlement",
+   "lane": "claimable",
+   "lane_reason": "open claim window",
+   "tiers": [
+    {
+     "label": "$3.625M for Denied PBRT Coverage",
+     "payout_type": "fixed",
+     "amount_min": null,
+     "amount_max": 3625000.0,
+     "per_unit": null,
+     "cap": null,
+     "currency": "USD",
+     "proof_level": "L3",
+     "requires_claim_form": true,
+     "source_text": "$3.625M for Denied PBRT Coverage",
+     "confidence": "medium"
+    }
+   ],
+   "payout_raw": "$3.625M for Denied PBRT Coverage",
+   "payout_sub": null,
+   "payout_tier": "S",
+   "fund_size": null,
+   "fund_size_raw": null,
+   "proof_required": true,
+   "proof_level": "L3",
+   "proof_label_raw": "Documentation required",
+   "proof_detail": "Documentation of what you paid out of pocket — provider, address, dates, services and charges",
+   "deadline": {
+    "raw": "October 10, 2026",
+    "kind": "claim",
+    "date": "2026-10-10",
+    "note": null
+   },
+   "extra_dates": {
+    "Final Approval Hearing": "August 19, 2026 at 9:30 AM"
+   },
+   "geo": {
+    "scope_type": "unspecified",
+    "states": [],
+    "country": null,
+    "label": ""
+   },
+   "status_text": null,
+   "case_title": "Taylor, et al. v. Blue Cross Blue Shield Healthcare Plan of Georgia, Inc. and Anthem Insurance Companies, Inc.",
+   "case_number": "3:23-cv-00541",
+   "court": "U.S. District Court, Middle District of Tennessee (Judge William L. Campbell Jr.)",
+   "administrator": "Verita Global, LLC",
+   "official_website": "https://www.protonbeamradiationtherapylitigation.com/",
+   "claim_url": "https://www.protonbeamradiationtherapylitigation.com/",
+   "ev_estimate": 3625000.0,
+   "ev_confidence": "high",
+   "ev_note": null,
+   "index_updated": "2026-09-21",
+   "last_modified": "2026-09-21T16:00:00+00:00",
+   "verified_as_of": "2026-09-22",
+   "content_hash": "639865aaa7b4238d",
+   "warnings": [],
+   "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/anthem-3625m-proton-beam-therapy-settlement/",
+      "source": "settlesignal",
+      "title": "SettleSignal: Anthem $3.625M Proton Beam Therapy Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/proton-beam-radiation-therapy-litigation",
       "source": "claimdepot"
      }
     ]
@@ -15177,9 +15053,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "1bf76cccd19b73a7",
    "warnings": [],
    "cross_refs": {
@@ -15258,9 +15134,9 @@
    "ev_estimate": 40.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "203307943d7b6c24",
    "warnings": [],
    "cross_refs": {
@@ -15352,9 +15228,9 @@
    "ev_estimate": 5.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "3024708f7bfa648a",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -15448,9 +15324,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b5623bd9f8446379",
    "warnings": [],
    "cross_refs": {
@@ -15529,9 +15405,9 @@
    "ev_estimate": 25.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "f8379df4426b975e",
    "warnings": [],
    "cross_refs": {
@@ -15596,9 +15472,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "5f093cdb17663b31",
    "warnings": [
     "no proof requirement published",
@@ -15694,9 +15570,9 @@
    "ev_estimate": 40.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "5385e1d1c042a3f4",
    "warnings": [],
    "cross_refs": {
@@ -15788,9 +15664,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "2b412bca5a0d1084",
    "warnings": [],
    "cross_refs": {
@@ -15882,9 +15758,9 @@
    "ev_estimate": 1250.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "85c4f248864fdba9",
    "warnings": [],
    "cross_refs": {
@@ -15963,9 +15839,9 @@
    "ev_estimate": 69000000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-07-28T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "58593d871627612f",
    "warnings": [
     "no proof requirement published"
@@ -16054,9 +15930,9 @@
    "ev_estimate": 2000.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "5ca6ecc1a9ed1897",
    "warnings": [],
    "cross_refs": {
@@ -16133,9 +16009,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "9c99e557fa2a1969",
    "warnings": [
     "no proof requirement published"
@@ -16200,9 +16076,9 @@
    "ev_estimate": 20000.0,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-18T18:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "e4b3328abb362db9",
    "warnings": [],
    "cross_refs": {}
@@ -16278,9 +16154,9 @@
    "ev_estimate": 1250.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "1cdd87ad330a219f",
    "warnings": [],
    "cross_refs": {
@@ -16364,9 +16240,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b663421902e49b01",
    "warnings": [],
    "cross_refs": {
@@ -16445,9 +16321,9 @@
    "ev_estimate": 2537.5,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "fc0f560f5b2e7607",
    "warnings": [],
    "cross_refs": {
@@ -16526,9 +16402,9 @@
    "ev_estimate": 37.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "8179f858a5b40cf4",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -16600,9 +16476,9 @@
    "ev_estimate": 32.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "284e7f7b546e7f7a",
    "warnings": [],
    "cross_refs": {}
@@ -16678,9 +16554,9 @@
    "ev_estimate": 7500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "8347d95c7a1eb1db",
    "warnings": [],
    "cross_refs": {
@@ -16772,9 +16648,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "e665fef37698baf3",
    "warnings": [],
    "cross_refs": {
@@ -16866,9 +16742,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "bf4aac611452e516",
    "warnings": [],
    "cross_refs": {
@@ -16969,9 +16845,9 @@
    "ev_estimate": 1000.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b3d7e30060194016",
    "warnings": [],
    "cross_refs": {
@@ -17050,9 +16926,9 @@
    "ev_estimate": 450.0,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "6ec64fa7da9a9c86",
    "warnings": [],
    "cross_refs": {
@@ -17131,9 +17007,9 @@
    "ev_estimate": 1765000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "bda3946376016241",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -17237,9 +17113,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "03a77acf57cd1ef0",
    "warnings": [],
    "cross_refs": {
@@ -17320,9 +17196,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "19d37caefcf6d02f",
    "warnings": [],
    "cross_refs": {
@@ -17393,9 +17269,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "69d941c83f91ca27",
    "warnings": [],
    "cross_refs": {
@@ -17476,9 +17352,9 @@
    "ev_estimate": 4000.0,
    "ev_confidence": "medium",
    "ev_note": "assumes 1 unit(s) at $4000/unit, capped at $4000",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b19ecb4eadb4f89a",
    "warnings": [],
    "cross_refs": {
@@ -17549,9 +17425,9 @@
    "ev_estimate": 50000299.5,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "2a8c1771ed7e6d34",
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)"
@@ -17642,9 +17518,9 @@
    "ev_estimate": 2.5,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "bf55a83064b3555b",
    "warnings": [],
    "cross_refs": {
@@ -17728,9 +17604,9 @@
    "ev_estimate": 2250.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "9c41faac36ce5eb9",
    "warnings": [],
    "cross_refs": {
@@ -17822,9 +17698,9 @@
    "ev_estimate": 37500000.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "62a3ee421469dc7f",
    "warnings": [],
    "cross_refs": {
@@ -17840,6 +17716,167 @@
      {
       "label": "cross-checked",
       "href": "https://www.claimdepot.com/settlements/dap-data-settlement",
+      "source": "claimdepot"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dartmouth-oracle-ebs-data-breach-settlement",
+   "source": "openclassactions",
+   "source_url": "https://openclassactions.com/settlements/data-breaches/dartmouth-oracle-ebs-data-breach-settlement.php",
+   "title": "Dartmouth Oracle EBS Data Breach Settlement — $75 or Up to $5,000",
+   "category": "Data Breaches",
+   "kind": "settlement",
+   "lane": "claimable",
+   "lane_reason": "open claim window",
+   "tiers": [
+    {
+     "label": "$75",
+     "payout_type": "fixed",
+     "amount_min": null,
+     "amount_max": 75.0,
+     "per_unit": null,
+     "cap": null,
+     "currency": "USD",
+     "proof_level": "L2",
+     "requires_claim_form": true,
+     "source_text": "$75",
+     "confidence": "medium"
+    },
+    {
+     "label": "Up to $5,000",
+     "payout_type": "range",
+     "amount_min": null,
+     "amount_max": 5000.0,
+     "per_unit": null,
+     "cap": null,
+     "currency": "USD",
+     "proof_level": "L2",
+     "requires_claim_form": true,
+     "source_text": "Up to $5,000",
+     "confidence": "medium"
+    }
+   ],
+   "payout_raw": "$75 or Up to $5,000",
+   "payout_sub": null,
+   "payout_tier": "S",
+   "fund_size": null,
+   "fund_size_raw": null,
+   "proof_required": true,
+   "proof_level": "L2",
+   "proof_label_raw": "ID/code from notice required",
+   "proof_detail": "Unique ID and PIN from the email or postcard notice · documentation only for the Cash Payment A loss option · a paper form can be mailed instead",
+   "deadline": {
+    "raw": "October 21, 2026",
+    "kind": "claim",
+    "date": "2026-10-21",
+    "note": null
+   },
+   "extra_dates": {
+    "Final Approval Hearing": "November 5, 2026 at 9:00 AM Central Time"
+   },
+   "geo": {
+    "scope_type": "unspecified",
+    "states": [],
+    "country": null,
+    "label": ""
+   },
+   "status_text": null,
+   "case_title": "In re Oracle Corporation Data Breach Litigation (Dartmouth)",
+   "case_number": "1:25-cv-01805-ADA-SH",
+   "court": "U.S. District Court, Western District of Texas",
+   "administrator": "Epiq Class Action & Claims Solutions",
+   "official_website": "https://www.oracledartmouthdatasettlement.com/",
+   "claim_url": "https://www.oracledartmouthdatasettlement.com/",
+   "ev_estimate": 2500.0,
+   "ev_confidence": "low",
+   "ev_note": "half of the published maximum",
+   "index_updated": "2026-09-21",
+   "last_modified": null,
+   "verified_as_of": "2026-09-22",
+   "content_hash": "498e88e865b55fe1",
+   "warnings": [],
+   "cross_refs": {}
+  },
+  {
+   "id": "davison-design-washington-text-message-class-action-settlement",
+   "source": "openclassactions",
+   "source_url": "https://openclassactions.com/settlements/tcpa/davison-design-washington-text-message-class-action-settlement.php",
+   "title": "Davison Design Washington Text Message Settlement — Equal Share of $30,000",
+   "category": "TCPA",
+   "kind": "settlement",
+   "lane": "claimable",
+   "lane_reason": "open claim window",
+   "tiers": [
+    {
+     "label": "Equal Share of $30,000",
+     "payout_type": "fixed",
+     "amount_min": null,
+     "amount_max": 30000.0,
+     "per_unit": null,
+     "cap": null,
+     "currency": "USD",
+     "proof_level": "L1",
+     "requires_claim_form": false,
+     "source_text": "Equal Share of $30,000",
+     "confidence": "medium"
+    }
+   ],
+   "payout_raw": "Equal Share of $30,000",
+   "payout_sub": null,
+   "payout_tier": "S",
+   "fund_size": null,
+   "fund_size_raw": null,
+   "proof_required": false,
+   "proof_level": "L1",
+   "proof_label_raw": "No proof required",
+   "proof_detail": "The Notice ID field is optional — you attest to your own numbers under penalty of perjury",
+   "deadline": {
+    "raw": "October 13, 2026",
+    "kind": "claim",
+    "date": "2026-10-13",
+    "note": null
+   },
+   "extra_dates": {
+    "Final Approval Hearing": "November 17, 2026 at 11:00 AM"
+   },
+   "geo": {
+    "scope_type": "states",
+    "states": [
+     "WA"
+    ],
+    "country": null,
+    "label": "WA residents"
+   },
+   "status_text": null,
+   "case_title": "Miller v. Davison Design & Development, Inc.",
+   "case_number": "2:25-cv-00459-RLP",
+   "court": "U.S. District Court, Eastern District of Washington (Judge Rebecca L. Pennell)",
+   "administrator": "Class Experts Group, LLC",
+   "official_website": "https://www.millertextsettlement.com/",
+   "claim_url": "https://www.millertextsettlement.com/submit-a-claim",
+   "ev_estimate": 30000.0,
+   "ev_confidence": "high",
+   "ev_note": null,
+   "index_updated": "2026-09-21",
+   "last_modified": "2026-09-21T16:00:00+00:00",
+   "verified_as_of": "2026-09-22",
+   "content_hash": "da435a071c6ac8d6",
+   "warnings": [],
+   "cross_refs": {
+    "settlesignal": [
+     {
+      "label": "cross-checked",
+      "href": "https://settlesignal.com/settlements/davison-design-30000-washington-text-message-settlement/",
+      "source": "settlesignal",
+      "title": "SettleSignal: Davison Design $30,000 Washington Text Message Settlement"
+     }
+    ],
+    "claimdepot": [
+     {
+      "label": "cross-checked",
+      "href": "https://www.claimdepot.com/settlements/miller-text-settlement",
       "source": "claimdepot"
      }
     ]
@@ -17903,9 +17940,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "16a268dae24e6d07",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -18000,9 +18037,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "9b745c07da9e6986",
    "warnings": [],
    "cross_refs": {}
@@ -18080,9 +18117,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a percentage of your documented costs",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "f255ad62b3c07540",
    "warnings": [],
    "cross_refs": {
@@ -18166,9 +18203,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "e916cf3dde94115a",
    "warnings": [],
    "cross_refs": {
@@ -18247,9 +18284,9 @@
    "ev_estimate": 6.5,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "d4bfef1af0fc2d11",
    "warnings": [],
    "cross_refs": {
@@ -18341,9 +18378,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b51049f632bc6133",
    "warnings": [],
    "cross_refs": {
@@ -18435,9 +18472,9 @@
    "ev_estimate": 1250.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "568bece8ae8ef21b",
    "warnings": [],
    "cross_refs": {
@@ -18529,9 +18566,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "6da61d56f4ae48cc",
    "warnings": [
     "claimdepot lists claim deadline 2026-10-09 but our sources say 2026-10-08; ours kept"
@@ -18612,9 +18649,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "91eb4d85f6e0f57c",
    "warnings": [],
    "cross_refs": {
@@ -18695,9 +18732,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a non-cash remedy",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-06T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "0d19b7b1fa005cb1",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required",
@@ -18792,9 +18829,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "574bc5eee55bf873",
    "warnings": [],
    "cross_refs": {
@@ -18810,100 +18847,6 @@
      {
       "label": "cross-checked",
       "href": "https://www.claimdepot.com/settlements/equinox-inc-settlement",
-      "source": "claimdepot"
-     }
-    ]
-   }
-  },
-  {
-   "id": "excel-fitness-data-breach-settlement",
-   "source": "openclassactions",
-   "source_url": "https://openclassactions.com/settlements/data-breaches/excel-fitness-data-breach-settlement.php",
-   "title": "Excel Fitness Data Breach Settlement — $50 Cash or Up to $4,000",
-   "category": "Data Breaches",
-   "kind": "settlement",
-   "lane": "claimable",
-   "lane_reason": "open claim window",
-   "tiers": [
-    {
-     "label": "$50 Cash",
-     "payout_type": "fixed",
-     "amount_min": null,
-     "amount_max": 50.0,
-     "per_unit": null,
-     "cap": null,
-     "currency": "USD",
-     "proof_level": "L2",
-     "requires_claim_form": true,
-     "source_text": "$50 Cash",
-     "confidence": "medium"
-    },
-    {
-     "label": "Up to $4,000",
-     "payout_type": "range",
-     "amount_min": null,
-     "amount_max": 4000.0,
-     "per_unit": null,
-     "cap": null,
-     "currency": "USD",
-     "proof_level": "L2",
-     "requires_claim_form": true,
-     "source_text": "Up to $4,000",
-     "confidence": "medium"
-    }
-   ],
-   "payout_raw": "$50 Cash or Up to $4,000",
-   "payout_sub": null,
-   "payout_tier": "A",
-   "fund_size": null,
-   "fund_size_raw": null,
-   "proof_required": true,
-   "proof_level": "L2",
-   "proof_label_raw": "ID/code from notice required",
-   "proof_detail": "the $50 alternative cash payment needs no receipts, but the settlement website states you must log in with the Login ID and PIN from your notice to start the online claim form · without them the routes are a downloaded paper form, or asking the administrator to resend the credentials · the up to $4,000 tier also needs receipts",
-   "deadline": {
-    "raw": "September 21, 2026",
-    "kind": "claim",
-    "date": "2026-09-21",
-    "note": null
-   },
-   "extra_dates": {
-    "Final Approval Hearing": "February 4, 2027"
-   },
-   "geo": {
-    "scope_type": "unspecified",
-    "states": [],
-    "country": null,
-    "label": ""
-   },
-   "status_text": null,
-   "case_title": "Kessler, et al. v. Excel Fitness Consolidator, LLC d/b/a Excel Fitness Management, LLC",
-   "case_number": "CJ-2026-1077",
-   "court": "District Court of Oklahoma County, Oklahoma",
-   "administrator": null,
-   "official_website": "https://www.excelfitnessdatasettlement.com/",
-   "claim_url": "https://www.excelfitnessdatasettlement.com/",
-   "ev_estimate": 2000.0,
-   "ev_confidence": "low",
-   "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
-   "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
-   "content_hash": "9188503b974d7409",
-   "warnings": [],
-   "cross_refs": {
-    "settlesignal": [
-     {
-      "label": "cross-checked",
-      "href": "https://settlesignal.com/settlements/excel-fitness-management-data-breach-settlement/",
-      "source": "settlesignal",
-      "title": "SettleSignal: Excel Fitness Management Data Breach Settlement"
-     }
-    ],
-    "claimdepot": [
-     {
-      "label": "cross-checked",
-      "href": "https://www.claimdepot.com/settlements/excel-fitness-data-settlement",
       "source": "claimdepot"
      }
     ]
@@ -18980,9 +18923,9 @@
    "ev_estimate": 100.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "03992b6c098a595f",
    "warnings": [],
    "cross_refs": {
@@ -19063,9 +19006,9 @@
    "ev_estimate": 25.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "add888af756d6a15",
    "warnings": [],
    "cross_refs": {
@@ -19136,9 +19079,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-10T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "f20b35c99bbdeda9",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -19203,9 +19146,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "854449e3c19de986",
    "warnings": [],
    "cross_refs": {
@@ -19214,6 +19157,15 @@
       "label": "cross-checked",
       "href": "https://www.claimdepot.com/settlements/finwise-data-settlement",
       "source": "claimdepot"
+     }
+    ],
+    "news": [
+     {
+      "label": "in the news",
+      "href": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/2-8m-finwise-bank-data-breach-class-action-settlement/",
+      "source": "topclassactions",
+      "title": "$2.8M FinWise Bank data breach class action settlement",
+      "date": "Mon, 21 Sep 2026 17:00:00 +0000"
      }
     ]
    }
@@ -19289,9 +19241,9 @@
    "ev_estimate": 2250.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "de263655ac27d093",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -19374,9 +19326,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "ad2b6b9dd53b8ac8",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -19451,9 +19403,9 @@
    "ev_estimate": 5000.0,
    "ev_confidence": "low",
    "ev_note": "estimated 0.05% of a $10,000,000 fund",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "3a5d5ef31dc681a8",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required",
@@ -19558,9 +19510,9 @@
    "ev_estimate": 2750.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-04T16:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "77f97c8a80825df3",
    "warnings": [],
    "cross_refs": {
@@ -19652,9 +19604,9 @@
    "ev_estimate": 1250.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "08da50bd2a2b5e84",
    "warnings": [],
    "cross_refs": {
@@ -19746,9 +19698,9 @@
    "ev_estimate": 2300.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "8211e98f64d772a8",
    "warnings": [],
    "cross_refs": {
@@ -19827,9 +19779,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "16e8503b5154d5a7",
    "warnings": [
     "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
@@ -19928,9 +19880,9 @@
    "ev_estimate": 1000.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "a7ab76b94d3fbaa8",
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)"
@@ -20003,9 +19955,9 @@
    "ev_estimate": 2536.0,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "e00ce1ef3193bee3",
    "warnings": [],
    "cross_refs": {
@@ -20079,9 +20031,9 @@
    "ev_estimate": 9.0,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "06f1a0f93c72fba4",
    "warnings": [],
    "cross_refs": {
@@ -20173,9 +20125,9 @@
    "ev_estimate": 2000.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "8fd381b20559a448",
    "warnings": [],
    "cross_refs": {
@@ -20267,9 +20219,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "8338eaa2c9d22eea",
    "warnings": [],
    "cross_refs": {
@@ -20350,9 +20302,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a percentage of your documented costs",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-20T09:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "5bfa9bcebf14bf70",
    "warnings": [],
    "cross_refs": {}
@@ -20399,9 +20351,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "0c85ba682e1c80be",
    "warnings": [],
    "cross_refs": {}
@@ -20464,9 +20416,9 @@
    "ev_estimate": 1000.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "8982db940f7ee8d1",
    "warnings": [],
    "cross_refs": {
@@ -20547,9 +20499,9 @@
    "ev_estimate": 21000000.0,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "38d0a2dd41b9aca7",
    "warnings": [
     "claimdepot lists claim deadline 2027-01-04 but our sources say 2026-11-13; ours kept"
@@ -20653,9 +20605,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-18T22:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "49dec64e7e26cd2a",
    "warnings": [],
    "cross_refs": {
@@ -20747,9 +20699,9 @@
    "ev_estimate": 2125.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "441369307aee6b7d",
    "warnings": [],
    "cross_refs": {
@@ -20841,9 +20793,9 @@
    "ev_estimate": 1000.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "2abb14f9eca20219",
    "warnings": [],
    "cross_refs": {
@@ -20916,9 +20868,9 @@
    "ev_estimate": 150.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "753967ea9bce1e10",
    "warnings": [],
    "cross_refs": {
@@ -20999,9 +20951,9 @@
    "ev_estimate": 191250.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "de2df9307dd01189",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -21083,9 +21035,9 @@
    "ev_estimate": 2250.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "0f0d709be9eab0f0",
    "warnings": [],
    "cross_refs": {
@@ -21164,9 +21116,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "c55b7c340f672334",
    "warnings": [
     "no proof requirement published"
@@ -21229,10 +21181,88 @@
    "ev_estimate": 105000.0,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "23389f2d4a63c707",
+   "warnings": [],
+   "cross_refs": {}
+  },
+  {
+   "id": "innovative-renal-care-data-breach-settlement",
+   "source": "openclassactions",
+   "source_url": "https://openclassactions.com/settlements/data-breaches/innovative-renal-care-data-breach-settlement.php",
+   "title": "Innovative Renal Care Data Breach Settlement — $100 or Up to $5,000",
+   "category": "Data Breaches",
+   "kind": "settlement",
+   "lane": "claimable",
+   "lane_reason": "open claim window",
+   "tiers": [
+    {
+     "label": "$100",
+     "payout_type": "fixed",
+     "amount_min": null,
+     "amount_max": 100.0,
+     "per_unit": null,
+     "cap": null,
+     "currency": "USD",
+     "proof_level": "L2",
+     "requires_claim_form": true,
+     "source_text": "$100",
+     "confidence": "medium"
+    },
+    {
+     "label": "Up to $5,000",
+     "payout_type": "range",
+     "amount_min": null,
+     "amount_max": 5000.0,
+     "per_unit": null,
+     "cap": null,
+     "currency": "USD",
+     "proof_level": "L2",
+     "requires_claim_form": true,
+     "source_text": "Up to $5,000",
+     "confidence": "medium"
+    }
+   ],
+   "payout_raw": "$100 or Up to $5,000",
+   "payout_sub": null,
+   "payout_tier": "S",
+   "fund_size": null,
+   "fund_size_raw": null,
+   "proof_required": true,
+   "proof_level": "L2",
+   "proof_label_raw": "ID/code from notice required",
+   "proof_detail": "Class Member ID from the mailed notice · documentation only for the documented-loss option · a paper form can be mailed instead",
+   "deadline": {
+    "raw": "December 21, 2026",
+    "kind": "claim",
+    "date": "2026-12-21",
+    "note": null
+   },
+   "extra_dates": {
+    "Final Approval Hearing": "February 1, 2027 at 9:00 AM Central Time"
+   },
+   "geo": {
+    "scope_type": "unspecified",
+    "states": [],
+    "country": null,
+    "label": ""
+   },
+   "status_text": null,
+   "case_title": "In re American Renal Management LLC Data Breach Litigation",
+   "case_number": "3:25-cv-00248-EJR",
+   "court": "U.S. District Court, Middle District of Tennessee",
+   "administrator": "Kroll Settlement Administration LLC",
+   "official_website": "https://www.ircsettlement.com/",
+   "claim_url": "https://www.ircsettlement.com/",
+   "ev_estimate": 2500.0,
+   "ev_confidence": "low",
+   "ev_note": "half of the published maximum",
+   "index_updated": "2026-09-21",
+   "last_modified": null,
+   "verified_as_of": "2026-09-22",
+   "content_hash": "a60b1321ba9d86f9",
    "warnings": [],
    "cross_refs": {}
   },
@@ -21307,9 +21337,9 @@
    "ev_estimate": 2290.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-17T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b448786056bec1b4",
    "warnings": [],
    "cross_refs": {
@@ -21393,9 +21423,9 @@
    "ev_estimate": 2000.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-01T16:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "08dcf50c6a23f805",
    "warnings": [],
    "cross_refs": {
@@ -21469,9 +21499,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a percentage of your documented costs",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-20T09:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "53de9245465c7d7f",
    "warnings": [],
    "cross_refs": {
@@ -21555,9 +21585,9 @@
    "ev_estimate": 2040.0,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "4555f01be6309f44",
    "warnings": [],
    "cross_refs": {
@@ -21636,9 +21666,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "bb6fbac6732efbdd",
    "warnings": [],
    "cross_refs": {
@@ -21709,9 +21739,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a non-cash remedy",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-06-22T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "e81ac46329b8bcb4",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -21768,9 +21798,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "22cbded6d6c431b7",
    "warnings": [
     "claimdepot lists claim deadline 2025-11-14 but our sources say 2027-09-30; ours kept",
@@ -21844,9 +21874,9 @@
    "ev_estimate": 400.0,
    "ev_confidence": "medium",
    "ev_note": "assumes 1 unit(s) at $400/unit, capped at $400",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "3769e018a957fdc2",
    "warnings": [],
    "cross_refs": {
@@ -21925,9 +21955,9 @@
    "ev_estimate": 0.53,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "574e7a7a1ef2e6ce",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -22000,9 +22030,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "8f25dcf1daa8511a",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -22102,9 +22132,9 @@
    "ev_estimate": 1000.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "d6a5d6a60d393335",
    "warnings": [],
    "cross_refs": {
@@ -22188,9 +22218,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "704898780163dee6",
    "warnings": [],
    "cross_refs": {
@@ -22282,9 +22312,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "d7cfec9de1d7093d",
    "warnings": [],
    "cross_refs": {
@@ -22355,9 +22385,9 @@
    "ev_estimate": 10.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-06T16:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "3265ce80c8366742",
    "warnings": [],
    "cross_refs": {}
@@ -22420,9 +22450,9 @@
    "ev_estimate": 1500.0,
    "ev_confidence": "low",
    "ev_note": "estimated 0.05% of a $3,000,000 fund",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "3f59e9a0159d494c",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -22503,9 +22533,9 @@
    "ev_estimate": 59800000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-17T20:30:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "cda347031de87f77",
    "warnings": [
     "proof level differs from the index (index=L3, page=L2)"
@@ -22588,9 +22618,9 @@
    "ev_estimate": 76.5,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b031a6b7b9e69822",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -22671,9 +22701,9 @@
    "ev_estimate": 1785.0,
    "ev_confidence": "low",
    "ev_note": "estimated 0.05% of a $3,570,000 fund",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "f6d0d7e44b2b515a",
    "warnings": [],
    "cross_refs": {
@@ -22728,9 +22758,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "5bb7a9757e339a6c",
    "warnings": [
     "no proof requirement published"
@@ -22795,9 +22825,9 @@
    "ev_estimate": 1250.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b37b4377d03f8fe7",
    "warnings": [],
    "cross_refs": {
@@ -22889,9 +22919,9 @@
    "ev_estimate": 2537.5,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "1af5820ca9fe271d",
    "warnings": [],
    "cross_refs": {
@@ -22970,9 +23000,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "2b4c177ba2e42567",
    "warnings": [],
    "cross_refs": {
@@ -23056,9 +23086,9 @@
    "ev_estimate": 3.5,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-10T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "35c61d11ffba5efa",
    "warnings": [],
    "cross_refs": {
@@ -23150,9 +23180,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "61a7950a5c538084",
    "warnings": [],
    "cross_refs": {
@@ -23244,9 +23274,9 @@
    "ev_estimate": 1000.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-03T16:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "fa9868f28c8cca87",
    "warnings": [],
    "cross_refs": {
@@ -23325,9 +23355,9 @@
    "ev_estimate": 20.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "640df254d8d8547f",
    "warnings": [],
    "cross_refs": {
@@ -23406,9 +23436,9 @@
    "ev_estimate": 525000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-16T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "fe1e21d5c3e2b94d",
    "warnings": [],
    "cross_refs": {
@@ -23479,9 +23509,9 @@
    "ev_estimate": 120300000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "01e5fbb236aed3d1",
    "warnings": [],
    "cross_refs": {
@@ -23563,9 +23593,9 @@
    "ev_estimate": 1625000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "d2d37318e7c5d1ad",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -23656,9 +23686,9 @@
    "ev_estimate": 250.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "8cccd44a2dde19dc",
    "warnings": [],
    "cross_refs": {
@@ -23731,9 +23761,9 @@
    "ev_estimate": 4700000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-15T12:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "7014ce49739016f4",
    "warnings": [],
    "cross_refs": {
@@ -23835,9 +23865,9 @@
    "ev_estimate": 1250.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "80e5444ee8257fce",
    "warnings": [],
    "cross_refs": {
@@ -23918,9 +23948,9 @@
    "ev_estimate": 14302.0,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "7ebc4021fffee0f3",
    "warnings": [],
    "cross_refs": {
@@ -24003,9 +24033,9 @@
    "ev_estimate": 237.5,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-06T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "d77f2820e66b09db",
    "warnings": [],
    "cross_refs": {
@@ -24078,9 +24108,9 @@
    "ev_estimate": 14000.0,
    "ev_confidence": "low",
    "ev_note": "estimated 0.05% of a $28,000,000 fund",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-13T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "7f11f7199613184a",
    "warnings": [],
    "cross_refs": {
@@ -24167,9 +24197,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a non-cash remedy",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-07-08T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "0a068f9bb9dc572d",
    "warnings": [
     "no proof requirement published",
@@ -24235,9 +24265,9 @@
    "ev_estimate": 11.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "9eaa9c81091dda88",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -24320,9 +24350,9 @@
    "ev_estimate": 800000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "cc7e3909d27c4058",
    "warnings": [],
    "cross_refs": {
@@ -24416,9 +24446,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "66a4855dfcce539e",
    "warnings": [],
    "cross_refs": {
@@ -24510,9 +24540,9 @@
    "ev_estimate": 1750.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "ce78ae27d903f71e",
    "warnings": [],
    "cross_refs": {
@@ -24604,9 +24634,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "02c234a31c416185",
    "warnings": [],
    "cross_refs": {
@@ -24685,9 +24715,9 @@
    "ev_estimate": 1500.0,
    "ev_confidence": "medium",
    "ev_note": "assumes 1 unit(s) at $1500/unit, capped at $1500",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "441c774501044062",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -24781,9 +24811,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "178ebec8acc17372",
    "warnings": [],
    "cross_refs": {
@@ -24855,9 +24885,9 @@
    "ev_estimate": 275.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "e91ad60ddbc09a32",
    "warnings": [],
    "cross_refs": {
@@ -24938,9 +24968,9 @@
    "ev_estimate": 6362167.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "88062b6e35f7fe74",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -25044,9 +25074,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "dd6eba602faa693a",
    "warnings": [],
    "cross_refs": {
@@ -25138,9 +25168,9 @@
    "ev_estimate": 2000.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "5b0383b2a268f956",
    "warnings": [],
    "cross_refs": {
@@ -25219,12 +25249,88 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-18T23:59:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "f7f4f251ea5a52aa",
    "warnings": [],
    "cross_refs": {}
+  },
+  {
+   "id": "curran-progressive-colorado-total-loss-class-action-settlement",
+   "source": "openclassactions",
+   "source_url": "https://openclassactions.com/settlements/curran-progressive-colorado-total-loss-class-action-settlement.php",
+   "title": "Progressive Colorado Total-Loss Settlement — $15.2M for Underpaid Totaled Vehicles",
+   "category": null,
+   "kind": "settlement",
+   "lane": "claimable",
+   "lane_reason": "open claim window",
+   "tiers": [
+    {
+     "label": "$15.2M for Underpaid Totaled Vehicles",
+     "payout_type": "fixed",
+     "amount_min": null,
+     "amount_max": 15200000.0,
+     "per_unit": null,
+     "cap": null,
+     "currency": "USD",
+     "proof_level": "L2",
+     "requires_claim_form": true,
+     "source_text": "$15.2M for Underpaid Totaled Vehicles",
+     "confidence": "medium"
+    }
+   ],
+   "payout_raw": "$15.2M for Underpaid Totaled Vehicles",
+   "payout_sub": null,
+   "payout_tier": "S",
+   "fund_size": null,
+   "fund_size_raw": null,
+   "proof_required": true,
+   "proof_level": "L2",
+   "proof_label_raw": "ID/code from notice required",
+   "proof_detail": "Claim ID from the mailed or emailed notice · no receipts, and a blank paper form can be requested by mail instead",
+   "deadline": {
+    "raw": "February 5, 2027",
+    "kind": "claim",
+    "date": "2027-02-05",
+    "note": null
+   },
+   "extra_dates": {},
+   "geo": {
+    "scope_type": "states",
+    "states": [
+     "CO"
+    ],
+    "country": null,
+    "label": "CO residents"
+   },
+   "status_text": null,
+   "case_title": "Curran, et al. v. Progressive Direct Insurance Company, et al.",
+   "case_number": "1:22-cv-00878-SKC-TPO",
+   "court": "U.S. District Court, District of Colorado",
+   "administrator": "Verita Global (formerly KCC Class Action Services)",
+   "official_website": "https://www.cototallossclaim.com/",
+   "claim_url": "https://www.cototallossclaim.com/",
+   "ev_estimate": 15200000.0,
+   "ev_confidence": "high",
+   "ev_note": null,
+   "index_updated": "2026-09-21",
+   "last_modified": "2026-09-21T16:00:00+00:00",
+   "verified_as_of": "2026-09-22",
+   "content_hash": "0b913c6ea805943a",
+   "warnings": [],
+   "cross_refs": {
+    "docket": [
+     {
+      "label": "docket",
+      "href": "https://www.courtlistener.com/docket/63236504/curran-v-progressive-preferred-insurance-company/",
+      "source": "courtlistener",
+      "title": "Curran v. Progressive Preferred Insurance Company",
+      "court": "D. Colo.",
+      "docket_number": "1:22-cv-00878"
+     }
+    ]
+   }
   },
   {
    "id": "quality-inn-seatac-seawind-washington-job-postings-class-action-settlement",
@@ -25272,9 +25378,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "fb74190144831bb4",
    "warnings": [],
    "cross_refs": {
@@ -25345,9 +25451,9 @@
    "ev_estimate": 425.0,
    "ev_confidence": "low",
    "ev_note": "estimated 0.05% of a $850,000 fund",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-04T16:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "6118b4f0b7337e5d",
    "warnings": [],
    "cross_refs": {
@@ -25438,9 +25544,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a non-cash remedy",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-01T12:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "d95d9a9ce19422d0",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -25524,9 +25630,9 @@
    "ev_estimate": 573.43,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "08175d417d36c4bb",
    "warnings": [],
    "cross_refs": {}
@@ -25602,9 +25708,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "1c1a3e3e971525a5",
    "warnings": [],
    "cross_refs": {
@@ -25683,9 +25789,9 @@
    "ev_estimate": 15000000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "010df7e04aa18bcc",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -25776,9 +25882,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "4791dc47ba7c21f0",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -25843,9 +25949,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "206911c8a62278e3",
    "warnings": [
     "no proof requirement published",
@@ -25909,9 +26015,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-07-10T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "e429fb116e635429",
    "warnings": [
     "no proof requirement published"
@@ -25976,9 +26082,9 @@
    "ev_estimate": 0.11,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T12:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "a1d4b1f272d4e71a",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -26035,9 +26141,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "db2e800ae07dc320",
    "warnings": [],
    "cross_refs": {}
@@ -26113,9 +26219,9 @@
    "ev_estimate": 1750.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "21c17afeae0aa018",
    "warnings": [],
    "cross_refs": {
@@ -26170,9 +26276,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "cc2e4a21ee3dcf06",
    "warnings": [],
    "cross_refs": {
@@ -26246,9 +26352,9 @@
    "ev_estimate": 7.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "5df3415af069e1a5",
    "warnings": [],
    "cross_refs": {
@@ -26332,9 +26438,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b735cacf797b2f42",
    "warnings": [],
    "cross_refs": {
@@ -26397,9 +26503,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-25",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "e5b52ac4b49c3f3f",
    "warnings": [],
    "cross_refs": {}
@@ -26475,9 +26581,9 @@
    "ev_estimate": 1750.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "52edc116702465d9",
    "warnings": [],
    "cross_refs": {
@@ -26558,9 +26664,9 @@
    "ev_estimate": 72.5,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "79e234bc5a2fb4ae",
    "warnings": [],
    "cross_refs": {}
@@ -26625,9 +26731,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-08T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "f09ab2cd23f02c2a",
    "warnings": [],
    "cross_refs": {}
@@ -26692,9 +26798,9 @@
    "ev_estimate": 139.925,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "7280b3d0e3fed952",
    "warnings": [],
    "cross_refs": {
@@ -26775,9 +26881,9 @@
    "ev_estimate": 28.39,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "c09bdda652fe999c",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -26860,9 +26966,9 @@
    "ev_estimate": 625.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-19T21:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "1576a9c9767a6037",
    "warnings": [],
    "cross_refs": {
@@ -26946,9 +27052,9 @@
    "ev_estimate": 2530.0,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "99a26bc14201621b",
    "warnings": [],
    "cross_refs": {
@@ -27027,9 +27133,9 @@
    "ev_estimate": 45.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "6a662b9d100cd49c",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -27110,9 +27216,9 @@
    "ev_estimate": 33.0,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-17T19:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "e03c28f99c49106c",
    "warnings": [],
    "cross_refs": {
@@ -27183,9 +27289,9 @@
    "ev_estimate": 166.0,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b7e50ddf7002274a",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -27266,9 +27372,9 @@
    "ev_estimate": 1272.5,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "526c764eecd59915",
    "warnings": [],
    "cross_refs": {
@@ -27347,9 +27453,9 @@
    "ev_estimate": 50.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "e01626bdefdc31bf",
    "warnings": [],
    "cross_refs": {
@@ -27441,9 +27547,9 @@
    "ev_estimate": 1500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "3a9443113c05cefd",
    "warnings": [],
    "cross_refs": {
@@ -27524,9 +27630,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "5b54fb977f9f1e4f",
    "warnings": [],
    "cross_refs": {
@@ -27589,9 +27695,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "3d1e8ec99e50fa30",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -27678,9 +27784,9 @@
    "ev_estimate": 5.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "72e83fed1d61a6e6",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -27763,9 +27869,9 @@
    "ev_estimate": 175.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "29377c403eb54e72",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -27846,9 +27952,9 @@
    "ev_estimate": 850000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "e7a62240d9e41d2d",
    "warnings": [],
    "cross_refs": {
@@ -27932,9 +28038,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-14T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "d71f2481f679759c",
    "warnings": [],
    "cross_refs": {
@@ -28029,9 +28135,9 @@
    "ev_estimate": 500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "0bc4a669f55a5d11",
    "warnings": [
     "claimdepot lists claim deadline 2026-09-14 but our sources say 2026-10-05; ours kept",
@@ -28113,9 +28219,9 @@
    "ev_estimate": 550.0,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "59ad5c06214f387b",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -28196,9 +28302,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a percentage of your documented costs",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "c4531d5b198bc9e5",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -28279,9 +28385,9 @@
    "ev_estimate": 93500000.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-18T23:59:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "4176f408e9589915",
    "warnings": [],
    "cross_refs": {
@@ -28353,9 +28459,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "04e5bfd088415a1b",
    "warnings": [],
    "cross_refs": {
@@ -28439,9 +28545,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "297490167bf4887d",
    "warnings": [],
    "cross_refs": {
@@ -28520,9 +28626,9 @@
    "ev_estimate": 100.0,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "2cea8a5ed94364a5",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -28616,9 +28722,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "709542144191cb6d",
    "warnings": [],
    "cross_refs": {
@@ -28702,9 +28808,9 @@
    "ev_estimate": 1250.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "ef9e9ad34a20a2f0",
    "warnings": [],
    "cross_refs": {
@@ -28775,9 +28881,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a percentage of your documented costs",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "f0ed463068839cdc",
    "warnings": [],
    "cross_refs": {
@@ -28856,9 +28962,9 @@
    "ev_estimate": 20.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "7700b5994402bb18",
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)",
@@ -28940,9 +29046,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "cc5fd31fdab31138",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -29028,9 +29134,9 @@
    "ev_estimate": 2500.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-09-16T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "3a7a7052f61bf1c4",
    "warnings": [],
    "cross_refs": {
@@ -29101,9 +29207,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no basis for an estimate",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "061c150c50357967",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -29198,9 +29304,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a non-cash remedy",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "cdef0fcf24fc08da",
    "warnings": [
     "no proof requirement published",
@@ -29288,9 +29394,9 @@
    "ev_estimate": 2240.0,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "6df941751f7bdb67",
    "warnings": [],
    "cross_refs": {
@@ -29369,9 +29475,9 @@
    "ev_estimate": 500.0,
    "ev_confidence": "high",
    "ev_note": null,
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "eacff2db14758ed4",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -29458,9 +29564,9 @@
    "ev_estimate": 1290.0,
    "ev_confidence": "medium",
    "ev_note": "midpoint of published range",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "df0af801bf10688d",
    "warnings": [],
    "cross_refs": {
@@ -29529,12 +29635,65 @@
    "ev_estimate": 2467.36,
    "ev_confidence": "low",
    "ev_note": "half of the published maximum",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": "2026-06-17T16:00:00-04:00",
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "820efecca771252f",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
+   ],
+   "cross_refs": {}
+  },
+  {
+   "id": "anthropic-openai-google-ai-slowdown-class-action-lawsuit",
+   "source": "openclassactions",
+   "source_url": "https://openclassactions.com/lawsuits/antitrust/anthropic-openai-google-ai-slowdown-class-action-lawsuit.php",
+   "title": "AI Slowdown Antitrust Class Action (Anthropic, OpenAI, SpaceXAI, Google)",
+   "category": "Class Action Investigations",
+   "kind": "investigation",
+   "lane": "investigation",
+   "lane_reason": "lawsuit page under /lawsuits/",
+   "tiers": [],
+   "payout_raw": null,
+   "payout_sub": null,
+   "payout_tier": null,
+   "fund_size": null,
+   "fund_size_raw": null,
+   "proof_required": null,
+   "proof_level": null,
+   "proof_label_raw": null,
+   "proof_detail": null,
+   "deadline": {
+    "raw": "",
+    "kind": "unparsed",
+    "date": null,
+    "note": null
+   },
+   "extra_dates": {
+    "Date Filed": "September 18, 2026"
+   },
+   "geo": {
+    "scope_type": "unspecified",
+    "states": [],
+    "country": null,
+    "label": ""
+   },
+   "status_text": null,
+   "case_title": "Buist v. Anthropic, PBC",
+   "case_number": "3:26-cv-10693-NC",
+   "court": "U.S. District Court, Northern District of California (San Francisco Division)",
+   "administrator": null,
+   "official_website": null,
+   "claim_url": null,
+   "ev_estimate": null,
+   "ev_confidence": "low",
+   "ev_note": "no benefit tiers published",
+   "index_updated": "2026-09-21",
+   "last_modified": null,
+   "verified_as_of": "2026-09-22",
+   "content_hash": "6f383238dd1e5360",
+   "warnings": [
+    "no proof requirement published"
    ],
    "cross_refs": {}
   },
@@ -29582,9 +29741,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "34887729128cb606",
    "warnings": [
     "no proof requirement published"
@@ -29635,9 +29794,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "e7e947f2a45e11c5",
    "warnings": [
     "no proof requirement published"
@@ -29688,9 +29847,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "b114ea2ffa4417b5",
    "warnings": [
     "no proof requirement published"
@@ -29741,9 +29900,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "67d16127c0af8a09",
    "warnings": [
     "no proof requirement published"
@@ -29792,9 +29951,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "f9b6cdd370ea4bd5",
    "warnings": [
     "no proof requirement published"
@@ -29860,9 +30019,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a non-cash remedy",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "d221109082ba118c",
    "warnings": [],
    "cross_refs": {}
@@ -29926,9 +30085,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "a non-cash remedy",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "44b1af9bd4f870d4",
    "warnings": [],
    "cross_refs": {}
@@ -29989,9 +30148,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "ffab33573e05fd4c",
    "warnings": [
     "no proof requirement published"
@@ -30054,9 +30213,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "5df439b82eeee8b7",
    "warnings": [
     "no proof requirement published",
@@ -30120,9 +30279,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "7c92fc44e59d961f",
    "warnings": [
     "no proof requirement published"
@@ -30185,9 +30344,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "0b368da7411676b8",
    "warnings": [
     "no proof requirement published"
@@ -30238,9 +30397,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "7bbc4601479351b9",
    "warnings": [
     "no proof requirement published"
@@ -30289,9 +30448,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "no benefit tiers published",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "3bb8ca85ca14677c",
    "warnings": [
     "no proof requirement published"
@@ -30357,9 +30516,9 @@
    "ev_estimate": null,
    "ev_confidence": "low",
    "ev_note": "payout not disclosed",
-   "index_updated": "2026-09-20",
+   "index_updated": "2026-09-21",
    "last_modified": null,
-   "verified_as_of": "2026-09-20",
+   "verified_as_of": "2026-09-22",
    "content_hash": "77937aa385aef8c5",
    "warnings": [
     "no proof requirement published"
