@@ -42,6 +42,11 @@ Callback payloads are validated with the same rule as
 ≤ 64 bytes); anything foreign is answered "Unrecognised button" and recorded
 nowhere.
 
+An id too long for that 64-byte budget arrives as a 16-hex-character alias
+derived by `kya.notify.decision_key`. The worker stores and returns it
+verbatim - no worker change is needed - and the Python side resolves it with
+the same function, so a press still names exactly one case.
+
 ## Offline tests
 
 ```bash

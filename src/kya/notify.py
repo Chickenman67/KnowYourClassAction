@@ -17,10 +17,19 @@ Design decisions worth knowing before changing anything here:
   and the action back as callback data; recording that decision is the webhook
   worker's job (Milestone C). :func:`parse_callback_data` is the contract
   between the two.
+* **An id too long for a button is aliased, never truncated.** Telegram caps
+  ``callback_data`` at 64 bytes, and this project's descriptive slugs grow
+  past that - one reached 60 characters, and the ``kya:done:`` prefix spends 9
+  more. :func:`decision_key` substitutes a 16-hex-character digest of the id:
+  stable, collision-safe at this scale, derived identically on both sides of
+  the contract, so a press still resolves to exactly one case. Truncating would
+  map a press onto whichever case shares the prefix, which is why that was
+  never an option.
 """
 
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 from dataclasses import dataclass, field
@@ -80,13 +89,41 @@ def escape(text: object) -> str:
     return html.escape("" if text is None else str(text), quote=False)
 
 
-def callback_data(action: str, settlement_id: str) -> str:
-    """The button payload for one decision.
+# What a button payload may spend on the id, i.e. everything left of it in
+# "kya:<action>:<id>". The longest action name is measured so that adding a
+# longer one can never quietly eat an id's room.
+CALLBACK_ID_BUDGET = CALLBACK_LIMIT_BYTES - len(
+    f"{CALLBACK_NAMESPACE}:{max(ACTIONS, key=len)}:"
+)
 
-    Raises rather than truncating: a truncated id would map a press onto the
-    wrong case, which is worse than the button not existing.
-    """
-    data = f"{CALLBACK_NAMESPACE}:{action}:{settlement_id}"
+# Characters in an aliased id. 16 hex characters is 64 bits: across the ~400
+# ids in this dataset a collision is a 1-in-2^58 event, and because both sides
+# of the contract derive the alias from the same function, nothing has to be
+# stored in order to resolve one.
+ALIAS_CHARS = 16
+
+
+def decision_key(settlement_id: str) -> str:
+    '''The id a decision is shipped and recorded under.
+
+    An id that fits the callback budget is shipped whole, so every decision the
+    webhook has already recorded keeps resolving. A longer one is replaced by a
+    stable digest of itself - an alias, not a truncation: it names exactly one
+    case, where a prefix would name whichever case happens to share it.
+    '''
+    if len(settlement_id.encode("utf-8")) <= CALLBACK_ID_BUDGET:
+        return settlement_id
+    return hashlib.sha256(settlement_id.encode("utf-8")).hexdigest()[:ALIAS_CHARS]
+
+
+def callback_data(action: str, settlement_id: str) -> str:
+    '''The button payload for one decision.
+
+    The raise is the last resort: unreachable while :func:`decision_key` keeps
+    the id inside the budget, and the guard that makes any future change to
+    that arithmetic fail here at build time rather than at Telegram.
+    '''
+    data = f"{CALLBACK_NAMESPACE}:{action}:{decision_key(settlement_id)}"
     if len(data.encode("utf-8")) > CALLBACK_LIMIT_BYTES:
         raise ValueError(
             f"callback_data would be {len(data.encode('utf-8'))} bytes "
@@ -540,10 +577,12 @@ def cmd_notify_digest(
         except TelegramError as exc:
             out(f"digest: decisions unavailable ({exc}); sending unfiltered")
             decisions = {}
-    decided = [e for e in events if e.settlement_id in decisions]
+    # Looked up through decision_key, not the raw id: the worker stores whatever
+    # id the button shipped, which is an alias for an over-long one.
+    decided = [e for e in events if decision_key(e.settlement_id) in decisions]
     if decided:
         out(f"digest: skipping {len(decided)} case(s) already decided")
-        events = [e for e in events if e.settlement_id not in decisions]
+        events = [e for e in events if decision_key(e.settlement_id) not in decisions]
     return cmd_notify_digest_events(bot, chat_id, events, out=out)
 
 

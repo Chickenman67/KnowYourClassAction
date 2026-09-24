@@ -31,9 +31,41 @@ def test_parse_rejects_foreign_malformed_and_empty_payloads() -> None:
     assert notify.parse_callback_data(None) is None
 
 
-def test_callback_data_raises_rather_than_truncating_an_id() -> None:
-    with pytest.raises(ValueError):
-        notify.callback_data("done", "x" * 100)
+# The live regression: this id is 61 characters, so the payload is 70 bytes
+# against Telegram's 64-byte ceiling - and it failed a scheduled build.
+LONG_ID = "laguna-honda-hospital-patients-rights-class-action-settlement"
+
+
+def test_an_over_long_id_is_aliased_into_the_button_budget() -> None:
+    data = notify.callback_data("done", LONG_ID)
+    assert len(data.encode("utf-8")) <= notify.CALLBACK_LIMIT_BYTES
+    assert notify.parse_callback_data(data) == ("done", notify.decision_key(LONG_ID))
+    # An alias, never a prefix: a prefix would name whichever case shares it.
+    assert notify.decision_key(LONG_ID) != LONG_ID
+    assert not LONG_ID.startswith(notify.decision_key(LONG_ID))
+
+
+def test_a_short_id_is_shipped_whole() -> None:
+    # Every decision the webhook has already recorded keeps resolving.
+    assert notify.decision_key("kia-window-regulator") == "kia-window-regulator"
+
+
+def test_the_alias_is_stable_and_unique_across_a_large_id_set() -> None:
+    assert notify.decision_key(LONG_ID) == notify.decision_key(LONG_ID)
+    keys = {notify.decision_key(f"{LONG_ID}-{i}") for i in range(2000)}
+    assert len(keys) == 2000
+
+
+def test_every_button_for_an_over_long_id_fits_the_limit() -> None:
+    fake = FakeTelegram()
+    bot = notify.TelegramBot("token", transport=fake)
+    status = notify.cmd_notify_digest_events(
+        bot, 123, [event(EventKind.NEW, LONG_ID, "Laguna Honda")], out=lambda _: None
+    )
+    assert status == 0
+    payload = [c for c in fake.calls if c[0] == "sendMessage"][0][1]
+    for row in payload["reply_markup"]["inline_keyboard"]:
+        assert len(row[0]["callback_data"].encode("utf-8")) <= notify.CALLBACK_LIMIT_BYTES
 
 
 # --- rendering ----------------------------------------------------------------
@@ -243,6 +275,25 @@ def test_digest_skips_cases_already_decided_by_the_worker() -> None:
     assert len(sends) == 1
     assert "Fresh Case" in sends[0][1]["text"]
     assert "Decided Case" not in sends[0][1]["text"]
+
+
+def test_digest_matches_a_decision_recorded_against_an_aliased_id() -> None:
+    # The worker stores whatever id the button shipped, so a press on a long
+    # id is recorded under its alias - and must still suppress that case.
+    fake = FakeTelegram()
+    bot = notify.TelegramBot("token", transport=fake)
+    lines: list[str] = []
+    status = notify.cmd_notify_digest(
+        bot,
+        123,
+        [settlement_fixture(LONG_ID, "Laguna Honda Case")],
+        previous={"gone": {"id": "gone", "title": "Gone Case"}},
+        decisions={notify.decision_key(LONG_ID): {"action": "done"}},
+        out=lines.append,
+    )
+    assert status == 0
+    assert "skipping 1 case(s) already decided" in "\n".join(lines)
+    assert not [c for c in fake.calls if c[0] == "sendMessage"]
 
 
 def test_digest_degrades_to_unfiltered_when_the_worker_is_down(monkeypatch) -> None:

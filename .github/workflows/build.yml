@@ -84,6 +84,11 @@ jobs:
         run: kya --pages --site --notify-digest
 
       - name: Commit the rebuilt dataset and site
+        # Runs even when the build-and-digest step failed: a notification bug
+        # must not also discard a dataset and site that were already written
+        # (a 64-byte button payload did exactly that). The diff check below
+        # still means nothing is committed when the build wrote nothing.
+        if: always()
         run: |
           # Commit as the repository owner so the contributors graph stays a
           # single identity - a bot account here becomes a permanent extra
