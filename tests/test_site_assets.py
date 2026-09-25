@@ -25,6 +25,22 @@ TEMPLATES = ROOT / "src" / "kya" / "templates"
 _REF = re.compile(r'(?:href|src)="([^"]+)"')
 _EXTERNAL = ("http://", "https://", "mailto:", "data:", "#", "//")
 
+_MD_IMAGE = re.compile(r"!\[[^\]]*\]\(([^)\s]+)\)")
+
+
+def test_readme_images_exist() -> None:
+    """The README is the project's landing page, so its images must load.
+
+    A screenshot it references is the first thing a visitor sees; a renamed or
+    untracked file would silently render as a broken-image box on GitHub.
+    """
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    targets = _MD_IMAGE.findall(readme)
+    assert targets, "the README should show what the tool looks like"
+    missing = [t for t in targets if not t.startswith(_EXTERNAL) and not (ROOT / t).is_file()]
+    assert not missing, f"README references images it does not ship: {missing}"
+
+
 
 def nested_rule_lines(css: str) -> tuple[list[str], int]:
     """Find style rules nested inside other rules, plus the final depth.

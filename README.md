@@ -1,24 +1,47 @@
 # KnowYourClassAction
 
-A free, self-updating tracker for US class-action settlements, split by **how
-big the money is**, **what it takes to claim it**, and **when the window
-closes**. Not legal advice, not a law firm, not a settlement administrator.
+**Most class-action trackers show you the maximum payout. This one shows the
+realistic one, the proof you actually need, and the exact deadline.**
 
-Current state: **Milestones A–C complete, and running themselves** — a daily
-GitHub Actions build republishes the static site, the Telegram bot delivers
-diffs with inline *Done / Not mine* buttons, the Cloudflare Worker records those
-presses into KV so decided cases stop re-appearing, and each row carries
-cross-checked links to a court docket and to other coverage. Details and the
-roadmap are below.
+A free, self-updating tracker for US class-action settlements — **[see it
+live](https://chickenman67.github.io/KnowYourClassAction/)** — split by **how big
+the money is**, **what it takes to claim it**, and **when the window closes**.
+Not legal advice, not a law firm, not a settlement administrator.
+
+![Four settlement rows: deadline, payout sticker, proof label, and a Claim portal button](assets/readme-rows.png)
+
+That is the whole product in one image, and it is a real capture of the live
+site. Read the first two rows: **"up to $2,000"** sits beside the proof it
+actually takes — a *Notice ID* from the mailed notice, not receipts — while the
+cookware row's honest ceiling is **$6–$12 with no proof at all**, limited to two
+states. Both close **today**, which the site says in red rather than leaving you
+to do date arithmetic. An aggregator flattens all of that into one headline
+number; here each fact is modelled separately and the button goes to the claim
+form.
+
+Current state: **400+ cases across 4 lanes, rebuilt daily** by a GitHub Actions
+run that republishes the static site. Every row is cross-checked against two
+independent catalogs, carries a court-docket link where one verifies, and the
+Telegram bot delivers diffs with inline *Done / Not mine* buttons — recorded by
+a Cloudflare Worker so decided cases stop re-appearing. Details and the roadmap
+are below.
 
 ## Why this exists
 
-Class-action deadlines are easy to miss and hard to compare. An aggregator
-announces *"up to $5,000!"* — but that figure is usually a documents-required
-ceiling, while the realistic no-receipts claim is $50. The difference decides
-whether a claim is worth ten minutes of your time, so this project treats
-**payout size** and **proof burden** as first-class, separately-modelled
-dimensions instead of one headline number.
+Deadlines are easy to miss and hard to compare, and the two facts that decide
+whether a claim is worth ten minutes — the realistic payout and the proof burden
+— are exactly the two an aggregator compresses into one flattering number. So
+**payout size** and **proof burden** are modelled here as separate, first-class
+dimensions: every row shows both, plus the date, and each figure keeps a record
+of where it came from.
+
+### Every open deadline in one picture
+
+![Deadline runway: a tick for each open deadline in the next 120 days, coloured by payout tier](assets/readme-runway.png)
+
+Each tick is one open deadline; its colour is the payout tier (`S` highest · `F`
+varies), and the ones inside 3 or 7 days are marked, so what is urgent is
+visible without reading a single row. Hovering a tick names the case.
 
 ## The four lanes
 
@@ -73,7 +96,7 @@ listed here rather than hidden in code:
 The page's own `Proof Required` fact is authoritative over the index label —
 but a *systematic* disagreement between them usually means the parser, not the
 world, is wrong. So conflicts become recorded warnings, and the repo ships an
-audit tool that groups them by shape. On the last full build, 259 enriched
+audit tool that groups them by shape. In that build, 259 enriched
 settlements carried exactly **3** flagged proof disagreements (Toyota airbags,
 FCA valve train, VSL#3) — all genuine two-path ambiguities a human should
 review, down from 103 systematic misreads that the audit exposed and the
@@ -88,14 +111,15 @@ parser fixes above eliminated.
 - The **official claim portal** linked on every card is the authority. Figures
   here exist because a human read a settlement agreement; they carry a
   `verified_as_of` stamp and expire visibly.
-- CourtListener and topclassactions RSS are the secondary sources — see below.
+- CourtListener, topclassactions RSS, SettleSignal and ClaimDepot are the
+  secondary sources — see below.
 
 ### Secondary sources: independence, not decoration
 
-Two more sources feed every row, and neither is load-bearing: each phase
-degrades to a no-op on failure, because a wrong link is worse than no link.
-Results land in `data/settlements.json` as `cross_refs` and render as small
-links beside the claim portal.
+Four more sources feed every row, and none is load-bearing: each phase degrades
+to a no-op on failure, because a wrong link is worse than no link. Results land
+in `data/settlements.json` as `cross_refs` and render as small links beside the
+claim portal.
 
 - **topclassactions.com RSS** → an *in the news* link, when their headline is
   convincingly the same case. Two gates must both pass: non-generic token
@@ -121,7 +145,8 @@ links beside the claim portal.
   sounds: because the window is ranked by expected value, a case could slide
   out of it and silently lose a court record it already had.
 
-Live probe (the real feed and the real API, against the 269-case dataset): the
+Live probe (the real feed and the real API, against the 269-case dataset at the
+time): the
 feed carried exactly 100 items — three weeks, so the parser's cap truncates
 nothing — and matched 6 settlements, every one a genuine counterpart. 5 of the
 6 docket lookups verified; the one without a confident hit was left unlinked.
@@ -155,15 +180,46 @@ in the openclassactions index rather than repeat it.
   through the normal pipeline. Unrated tiers mean the catalog states no figure
   we can parse, not that none exists.
 
-Live calibration run (full catalog vs the 277-case dataset): 137 cases
-cross-checked (120 agreed on the deadline; 2 real conflicts recorded, 23 proof
-disagreements flagged for review) and 130 new cases imported.
+Live calibration run (full catalog vs the 277-case dataset of the time): 137
+cases cross-checked (120 agreed on the deadline; 2 real conflicts recorded, 23
+proof disagreements flagged for review) and 130 new cases imported.
+
+### ClaimDepot: the third opinion, matched by identity
+
+`src/kya/sources/claimdepot.py` adds a third independent directory
+([claimdepot.com](https://www.claimdepot.com/settlements), robots fully open) as
+a pure verifier: it **imports nothing**, because a listing card carries no
+official claim link, and a row with nothing to click gives a reader nothing.
+Its cards publish a nine-value status vocabulary, a claim deadline, a payout
+string and a *No Proof* badge, so a matched pair can disagree on the date, on
+the proof burden, or on whether the case is still open — each becomes a
+recorded warning with ours kept.
+
+Pairing is by **identity, not by title similarity**, and the calibration that
+settled it is worth recording. Title matching failed in both directions on real
+data: it paired Thinkware's "$850,000 Dashcam" with our "$850,000
+Dartmouth-Hitchcock ERISA" on the shared dollar figure alone (similarity 0.33,
+above any workable floor), and it missed the Alaska military-leave case
+entirely (0.14, below every floor that keeps the false pairs out). But a
+claimdepot card's URL slug *is* the case's settlement-website domain with the
+separators removed — `/settlements/alaska-military-leave-settlement` vs
+`alaskamilitaryleavesettlement.com` — which the captured detail pages confirmed
+16 times out of 16. So a pair requires equal identities, and an identity claimed
+by two rows or two cards on either side is dropped from both: a shared claim
+portal (`forms.ksacms.com`) or a government host (`ftc.gov`) is not a case's
+identity.
+
+Today: **287 cases cross-checked** (135 by SettleSignal as well), with **57
+recorded disagreements** — 25 of them "listed closed elsewhere" for a row we
+show as open, 14 deadline conflicts where ours is kept, 14 posture, 4 proof.
+Every one renders as a short badge with the full sentence in its tooltip, which
+is what replaced the old bare *flagged* label.
 
 ## Running it
 
 ```bash
 pip install -e .[dev]
-python -m pytest                    # 339 tests, all offline (fixtures captured live)
+python -m pytest                    # 396 tests, all offline (fixtures captured live)
 node --test tests/js/site_filters.test.mjs   # 17 tests: the site's filter logic
 cd worker && npm test && cd ..      # 13 tests: the Telegram webhook + decision loop
 kya --pages --site                  # full build: dataset + docs/ site
@@ -255,7 +311,7 @@ the file never becomes a notification.
 ```
 src/kya/
   http.py          polite, cached, robots-aware client
-  sources/         openclassactions index + page parsers
+  sources/         the three catalogs: openclassactions index + pages, settlesignal, claimdepot
   normalize.py     payout tiers + the L0-L4 proof ladder
   classify.py      lane and kind classification
   score.py         payout tiers S-F, expected value, confidence
@@ -268,7 +324,7 @@ src/kya/
   run.py           the kya console entry point
   templates/       index.html.j2 plus static assets (style.css, app.js, favicon)
 worker/            Cloudflare Worker webhook + KV (Milestone C), node-tested
-tests/             339 pytest tests over captured live fixtures, plus js/ (node)
+tests/             396 pytest tests over captured live fixtures, plus js/ (node)
 tools/             build, fixture capture, and warning-audit CLIs
 .github/workflows/
   build.yml        daily build: dataset + site + digest, then commit (which is the deploy)
@@ -306,6 +362,29 @@ tools/             build, fixture capture, and warning-audit CLIs
   node tests, no DOM dependency) — the last untested behaviour in the shipped
   product, and verified again in a real browser against the live page. The same
   job now runs the Worker's 13 tests, which had never run in CI at all.
+- [x] Two independent catalogs cross-checking the dataset
+  (`src/kya/sources/settlesignal.py`, `src/kya/sources/claimdepot.py`): 287
+  cases matched by case identity, 135 of them against SettleSignal too, with 57
+  disagreements recorded and **our figure kept** rather than silently resolved.
+  A conflict is information: from here a stale directory and our own error look
+  identical, so both go in front of the reader as a short badge (25 rows are
+  "listed closed elsewhere" for a case we still show as open).
+- [x] Warnings that say what they mean. Every internal reason-marker renders as
+  a human badge — *proof rules not published*, *sources disagree on deadline*,
+  *figures from case page* — with the full sentence as its tooltip, replacing a
+  bare red *flagged* label that told a reader nothing.
+- [x] One destination per row. "Claim portal" and "official site" were the same
+  URL on 220 of 259 rows (most administrators run both on one domain), so
+  duplicates collapse into a single **Claim portal** button, styled as the row's
+  primary action instead of a footnote-sized link.
+
+## Feedback
+
+Corrections are the most useful thing you can send. If a deadline, an amount or
+a proof rule here looks wrong, [open an
+issue](https://github.com/Chickenman67/KnowYourClassAction/issues) with the case
+and the official page — those reports are exactly what the cross-check flags are
+already surfacing for review.
 
 ## Disclaimers
 
