@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-24T11:29:44+00:00",
+ "generated_at": "2026-10-25T11:59:41+00:00",
  "index_updated": "2026-10-24",
- "count": 714,
+ "count": 715,
  "settlements": [
   {
    "id": "505-quick-cash-pawn-new-mexico",
@@ -5290,7 +5290,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a4af51d0d71c5f03",
    "warnings": [],
    "cross_refs": {
@@ -5371,7 +5371,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-07-24T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "86c4a9706e550d5f",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -5446,7 +5446,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1a4defa41f287240",
    "warnings": [],
    "cross_refs": {
@@ -5527,7 +5527,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-07-16T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d020debd95088f24",
    "warnings": [],
    "cross_refs": {
@@ -5600,7 +5600,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-07-27T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "6a1ca295290da87c",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -5676,7 +5676,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0e3e7c792dcb1ed0",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -5752,7 +5752,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-22T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "29addf1dd62a843c",
    "warnings": [
     "claimdepot lists claim deadline 2027-06-01 but our sources say 2026-11-25; ours kept"
@@ -5842,7 +5842,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T22:30:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "53da23f1e045079d",
    "warnings": [
     "proof level differs from the index (index=L0, page=L2)"
@@ -5909,7 +5909,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-25T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c4831519fb4d5356",
    "warnings": [],
    "cross_refs": {
@@ -5984,7 +5984,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f234957f6e7d4274",
    "warnings": [
     "claimdepot lists claim deadline 2023-10-10 but our sources say 2026-10-21; ours kept"
@@ -6059,7 +6059,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-20T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "32cd1c88b9a64d3b",
    "warnings": [],
    "cross_refs": {
@@ -6132,7 +6132,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a467f552b1eb64bb",
    "warnings": [],
    "cross_refs": {}
@@ -6198,7 +6198,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-19T18:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "531235d1408908c2",
    "warnings": [],
    "cross_refs": {}
@@ -6253,7 +6253,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-09T15:00:00-07:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a4e33eb3bad3e5b2",
    "warnings": [],
    "cross_refs": {
@@ -6348,7 +6348,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-11T15:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7d8d0dbb08356f01",
    "warnings": [
     "proof level differs from the index (index=L0, page=L2)"
@@ -6402,7 +6402,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f6fe0c034e944a22",
    "warnings": [],
    "cross_refs": {
@@ -6475,7 +6475,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-27T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5d334eb12b644c57",
    "warnings": [],
    "cross_refs": {}
@@ -6543,7 +6543,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-17T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b204b45442b0db21",
    "warnings": [],
    "cross_refs": {
@@ -6617,7 +6617,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-23T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "008dc84862860c57",
    "warnings": [],
    "cross_refs": {
@@ -6693,7 +6693,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "fec0a32061a506a5",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -6777,7 +6777,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-15T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "bf6e27bc313261de",
    "warnings": [],
    "cross_refs": {}
@@ -6843,7 +6843,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-06T19:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3c93784bbff50147",
    "warnings": [],
    "cross_refs": {
@@ -6917,7 +6917,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "04503572fdbdd039",
    "warnings": [],
    "cross_refs": {
@@ -6991,7 +6991,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-01T19:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a4eb58165346b852",
    "warnings": [],
    "cross_refs": {}
@@ -7054,7 +7054,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-07-08T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "fcefe2296304e0fa",
    "warnings": [],
    "cross_refs": {}
@@ -7119,7 +7119,7 @@
    "ev_note": "a percentage of your documented costs",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T15:15:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3bea10566213b49d",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -7178,7 +7178,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-01T20:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "196732487f516385",
    "warnings": [],
    "cross_refs": {}
@@ -7245,7 +7245,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-18T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4bd72ce43bc6f7bd",
    "warnings": [],
    "cross_refs": {
@@ -7320,7 +7320,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-15T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0a6a34df02a493e0",
    "warnings": [],
    "cross_refs": {}
@@ -7387,7 +7387,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-29T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ac2fd84bc1de01bc",
    "warnings": [],
    "cross_refs": {
@@ -7462,7 +7462,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b198c207fe686700",
    "warnings": [],
    "cross_refs": {
@@ -7536,7 +7536,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ef6e61e80f719907",
    "warnings": [],
    "cross_refs": {
@@ -7627,7 +7627,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ca74cd19b2c7256c",
    "warnings": [],
    "cross_refs": {
@@ -7717,7 +7717,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-01T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "41d472e5c0127f6c",
    "warnings": [],
    "cross_refs": {
@@ -7792,7 +7792,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "14afa995b2bb0f5d",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -7876,7 +7876,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-02T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b6c3ace3fef38b8f",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -7943,7 +7943,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-22T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3d4695c5d6bd93b5",
    "warnings": [],
    "cross_refs": {
@@ -8022,7 +8022,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-20T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "43c7423b7c456583",
    "warnings": [],
    "cross_refs": {
@@ -8097,7 +8097,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-06T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ba47b28daaf30f6e",
    "warnings": [],
    "cross_refs": {
@@ -8171,7 +8171,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-15T14:15:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "6abf9320c1d222ac",
    "warnings": [],
    "cross_refs": {
@@ -8245,7 +8245,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-26T21:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5d277d5d85348706",
    "warnings": [],
    "cross_refs": {}
@@ -8308,7 +8308,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-08T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b49572dde827bb7c",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -8387,7 +8387,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-21T00:30:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ea0e1defea723601",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -8463,7 +8463,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-15T15:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "752e20ba5eb2d638",
    "warnings": [],
    "cross_refs": {
@@ -8538,7 +8538,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-02T13:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d48c3a25b3962154",
    "warnings": [],
    "cross_refs": {
@@ -8609,7 +8609,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-08T23:50:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f5c15f18911b3c89",
    "warnings": [],
    "cross_refs": {
@@ -8684,7 +8684,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-13T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0831b3671a542aed",
    "warnings": [],
    "cross_refs": {
@@ -8768,7 +8768,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-07-17T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "39bb31ad5d29b153",
    "warnings": [],
    "cross_refs": {
@@ -8850,7 +8850,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-19T18:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "41c8f52214ab18b9",
    "warnings": [],
    "cross_refs": {}
@@ -8917,7 +8917,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-23T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d5ab6b0bcafed3b7",
    "warnings": [],
    "cross_refs": {}
@@ -8984,7 +8984,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5e9dd950df7da47e",
    "warnings": [],
    "cross_refs": {
@@ -9059,7 +9059,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-23T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f049c453a404a522",
    "warnings": [],
    "cross_refs": {
@@ -9143,7 +9143,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "6ccf6d55417d6dce",
    "warnings": [],
    "cross_refs": {}
@@ -9210,7 +9210,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-16T05:30:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "abb0770461925fcb",
    "warnings": [],
    "cross_refs": {
@@ -9285,7 +9285,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-29T23:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "918da1e36a84cb9f",
    "warnings": [],
    "cross_refs": {}
@@ -9336,7 +9336,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-09T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "86b5e19c1de1a705",
    "warnings": [],
    "cross_refs": {
@@ -9411,7 +9411,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "59c3e2f29a376858",
    "warnings": [],
    "cross_refs": {
@@ -9485,7 +9485,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-07T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3c305c702068ff64",
    "warnings": [
     "claimdepot lists claim deadline 2026-11-05 but our sources say 2026-10-06; ours kept"
@@ -9561,7 +9561,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-27T17:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9c4662f01e369b58",
    "warnings": [],
    "cross_refs": {
@@ -9634,7 +9634,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-17T19:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "6bdc755b4c5db8b9",
    "warnings": [],
    "cross_refs": {
@@ -9717,7 +9717,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-02T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9ce4600cec4dbbbb",
    "warnings": [],
    "cross_refs": {}
@@ -9785,7 +9785,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-16T20:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "172afac50b96adce",
    "warnings": [
     "claimdepot lists claim deadline 2023-01-01 but our sources say 2026-12-14; ours kept"
@@ -9860,7 +9860,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-09T14:30:00-07:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "6fadb7a77e4d7de3",
    "warnings": [],
    "cross_refs": {
@@ -9934,7 +9934,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-01T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "fc05f32ebdbc39e6",
    "warnings": [
     "claimdepot lists claim deadline 2024-10-01 but our sources say 2026-10-19; ours kept"
@@ -10009,7 +10009,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "592d854ac124b8bf",
    "warnings": [],
    "cross_refs": {
@@ -10097,7 +10097,7 @@
    "ev_note": "a percentage of your documented costs",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9dd35e9f39611da5",
    "warnings": [],
    "cross_refs": {
@@ -10172,7 +10172,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-01T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b64b5f114d09736d",
    "warnings": [],
    "cross_refs": {}
@@ -10237,7 +10237,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "fe3a104e01338f8f",
    "warnings": [],
    "cross_refs": {
@@ -10310,7 +10310,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7e0889559ad1e0c3",
    "warnings": [
     "claimdepot lists claim deadline 2026-10-06 but our sources say 2026-10-08; ours kept",
@@ -10386,7 +10386,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-02T15:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d8950b53b4fbf8d5",
    "warnings": [
     "claimdepot lists claim deadline 2026-11-16 but our sources say 2026-10-26; ours kept"
@@ -10463,7 +10463,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b65bf223fa6ca809",
    "warnings": [
     "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
@@ -10548,7 +10548,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-02T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "25b75de65a8ccbc7",
    "warnings": [
     "claimdepot lists claim deadline 2014-08-14 but our sources say 2026-11-12; ours kept"
@@ -10625,7 +10625,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0479a72270c10e34",
    "warnings": [
     "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
@@ -10710,7 +10710,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-27T20:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d4083f18bfd57c63",
    "warnings": [
     "claimdepot lists this as 'Closed' but we show it as open (the 'automatic' lane); check the claim deadline"
@@ -10783,7 +10783,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-06-24",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "03dc8e989feb5ebd",
    "warnings": [],
    "cross_refs": {}
@@ -10848,7 +10848,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-30T22:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e7bde32a997d24b9",
    "warnings": [],
    "cross_refs": {
@@ -10923,7 +10923,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-17T20:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "930126ed9922da5d",
    "warnings": [],
    "cross_refs": {
@@ -11004,7 +11004,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-30T17:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "dc0ee78a0e968655",
    "warnings": [],
    "cross_refs": {
@@ -11078,7 +11078,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-19T18:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "826d21a624d39b09",
    "warnings": [],
    "cross_refs": {}
@@ -11145,7 +11145,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-13T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "589bc244ca426e79",
    "warnings": [],
    "cross_refs": {}
@@ -11210,7 +11210,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "bdfb3777300a62dc",
    "warnings": [],
    "cross_refs": {
@@ -11293,7 +11293,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-30T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e93658681144e968",
    "warnings": [],
    "cross_refs": {
@@ -11366,7 +11366,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T18:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0214fcfb4d70dea3",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -11435,7 +11435,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-18T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "455646a06edc81d2",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -11503,7 +11503,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-22T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d63c45592bd64452",
    "warnings": [
     "claimdepot lists claim deadline 2016-01-01 but our sources say 2026-10-02; ours kept"
@@ -11578,7 +11578,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-02T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5e1bff13d1fd90d0",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -11645,7 +11645,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c77c9ac9b7f3781b",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -11722,7 +11722,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-06T21:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b85428020f1e8d86",
    "warnings": [],
    "cross_refs": {
@@ -11795,7 +11795,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T14:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2283612dd6607af1",
    "warnings": [
     "claimdepot lists claim deadline 2022-10-22 but our sources say 2026-12-14; ours kept"
@@ -12871,7 +12871,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": null,
    "last_modified": null,
-   "verified_as_of": "2026-10-18",
+   "verified_as_of": "2026-10-25",
    "content_hash": "",
    "warnings": [],
    "cross_refs": {}
@@ -14185,7 +14185,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8b16175f01e2b243",
    "warnings": [
     "no proof requirement published"
@@ -14252,7 +14252,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7b88a468be6a5214",
    "warnings": [],
    "cross_refs": {}
@@ -14301,7 +14301,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2937368164f1f6ae",
    "warnings": [
     "no proof requirement published"
@@ -14352,7 +14352,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "39f06bc48716ef34",
    "warnings": [],
    "cross_refs": {}
@@ -14417,7 +14417,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f5c545fc3046b284",
    "warnings": [],
    "cross_refs": {}
@@ -14482,7 +14482,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e00c22305f4643f5",
    "warnings": [
     "no proof requirement published"
@@ -14562,7 +14562,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "604f92543b883f57",
    "warnings": [],
    "cross_refs": {}
@@ -14627,7 +14627,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "50988bd100389acd",
    "warnings": [
     "no proof requirement published"
@@ -14694,7 +14694,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4027459da983e459",
    "warnings": [],
    "cross_refs": {}
@@ -14759,7 +14759,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ff82d89737f7a789",
    "warnings": [],
    "cross_refs": {}
@@ -14837,7 +14837,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e4cb362422a843db",
    "warnings": [
     "no proof requirement published"
@@ -14904,7 +14904,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9a6ae3aa9611fd21",
    "warnings": [],
    "cross_refs": {}
@@ -14969,7 +14969,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "80d519987b923976",
    "warnings": [],
    "cross_refs": {}
@@ -15034,7 +15034,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c01b3f3bbb1fde3b",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -15096,7 +15096,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0c6aa48a9f989023",
    "warnings": [
     "no proof requirement published"
@@ -15163,7 +15163,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-16T09:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a7f9df18485e7e45",
    "warnings": [],
    "cross_refs": {
@@ -15220,7 +15220,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d7acd8768466ad31",
    "warnings": [
     "claimdepot lists this as 'Closed' but we show it as open (the 'claimable' lane); check the claim deadline"
@@ -15295,7 +15295,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "612000c2a17acc00",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -15370,7 +15370,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-01T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "cdf360b41f46eac3",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -15453,7 +15453,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e2d3bd42a1fe05d2",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -15514,7 +15514,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-28T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4cfa2c4d1121bd37",
    "warnings": [],
    "cross_refs": {}
@@ -15579,7 +15579,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-09T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "03764eb36265e698",
    "warnings": [],
    "cross_refs": {
@@ -15652,7 +15652,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3a34f29604bb4bb1",
    "warnings": [
     "proof level differs from the index (index=L3, page=L1)"
@@ -15735,7 +15735,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-18T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3defaf0066b49630",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -15799,7 +15799,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-11T19:30:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9fd1e985b7fd7f4c",
    "warnings": [],
    "cross_refs": {}
@@ -15862,7 +15862,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "248aec7e53dbfb6e",
    "warnings": [
     "no proof requirement published",
@@ -15948,7 +15948,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b9818d78f6401ab9",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -16009,7 +16009,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-14T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "919e05ec075afd95",
    "warnings": [],
    "cross_refs": {
@@ -16093,7 +16093,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-08T23:30:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "eb3f55638bef5f04",
    "warnings": [],
    "cross_refs": {}
@@ -16158,7 +16158,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-17T23:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "769bb5eab6288b62",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -16209,7 +16209,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": "2026-07-03",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "fed6ca12667204f1",
    "warnings": [
     "no proof requirement published"
@@ -16274,7 +16274,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "af2acbfe77367ef0",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -16334,7 +16334,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b816eb78eb17c1f1",
    "warnings": [
     "no proof requirement published"
@@ -16399,7 +16399,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "cefff6472650065b",
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)"
@@ -16475,7 +16475,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-16T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "56552287b9b86022",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -16542,7 +16542,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-30T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0560a3480da786b4",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -16609,7 +16609,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-01T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e836ecb072d87ec4",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -16705,7 +16705,7 @@
    "ev_note": "a percentage of your documented costs",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-26T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2f29667ae143f25e",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -16778,7 +16778,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-01T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4a45fc4a7cd0558a",
    "warnings": [],
    "cross_refs": {}
@@ -16845,7 +16845,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-15T14:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f9671a503286f6b1",
    "warnings": [],
    "cross_refs": {
@@ -16918,7 +16918,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3681321f25399069",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -17013,7 +17013,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b28c75aced836028",
    "warnings": [],
    "cross_refs": {
@@ -17102,7 +17102,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-01T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "fa3362c8bc38043a",
    "warnings": [],
    "cross_refs": {
@@ -17183,7 +17183,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1cecd678b09c392c",
    "warnings": [],
    "cross_refs": {
@@ -17270,7 +17270,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "6497c123f3708828",
    "warnings": [],
    "cross_refs": {
@@ -17353,7 +17353,7 @@
    "ev_note": "estimated 0.05% of a $4,500,000 fund",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-01T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b1dcf5dc645effed",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -17427,7 +17427,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9eca518b3c18b2e8",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -17492,7 +17492,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0797c2810f4d2037",
    "warnings": [],
    "cross_refs": {
@@ -17578,7 +17578,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-09T17:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b8a4fac1b7ee3b62",
    "warnings": [
     "proof level differs from the index (index=L3, page=L1)"
@@ -17655,7 +17655,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e69724b7a531beef",
    "warnings": [],
    "cross_refs": {
@@ -17750,7 +17750,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-21T15:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f921b86e451a071c",
    "warnings": [
     "proof level differs from the index (index=L3, page=L1)"
@@ -17825,7 +17825,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-18T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "462fea36116c9ee6",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -17901,7 +17901,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-08T22:15:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3a1890d5a518c576",
    "warnings": [],
    "cross_refs": {
@@ -17974,7 +17974,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-24T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9951065aed749749",
    "warnings": [],
    "cross_refs": {}
@@ -18041,7 +18041,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-22T03:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "17461abb18feb0fc",
    "warnings": [],
    "cross_refs": {
@@ -18127,7 +18127,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b5623bd9f8446379",
    "warnings": [],
    "cross_refs": {
@@ -18221,7 +18221,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T17:30:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "231ebed8acea28a6",
    "warnings": [],
    "cross_refs": {}
@@ -18286,7 +18286,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "db10efeef5573e2c",
    "warnings": [],
    "cross_refs": {}
@@ -18351,7 +18351,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-15T23:15:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "bba976d26d3c4658",
    "warnings": [],
    "cross_refs": {
@@ -18408,7 +18408,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0f06bd94b644126f",
    "warnings": [],
    "cross_refs": {}
@@ -18459,7 +18459,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "75a4fd96300242d9",
    "warnings": [
     "no proof requirement published",
@@ -18545,7 +18545,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-10T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "13529f85c0489a47",
    "warnings": [],
    "cross_refs": {
@@ -18618,7 +18618,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1da914869a2cbbf9",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -18712,7 +18712,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T23:30:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8c9ab1e964cfb63d",
    "warnings": [],
    "cross_refs": {}
@@ -18777,7 +18777,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4e1ecad8c62d678d",
    "warnings": [],
    "cross_refs": {}
@@ -18855,7 +18855,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-24T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f81c58c56135d9a2",
    "warnings": [],
    "cross_refs": {
@@ -18930,7 +18930,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-24T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "00ab87d280455e26",
    "warnings": [],
    "cross_refs": {
@@ -19024,7 +19024,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "85c4f248864fdba9",
    "warnings": [],
    "cross_refs": {
@@ -19118,7 +19118,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-13T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8fcfc9e36e1bb6d1",
    "warnings": [],
    "cross_refs": {
@@ -19191,7 +19191,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T18:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d28147b7cabfa752",
    "warnings": [
     "no proof requirement published",
@@ -19259,7 +19259,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "01ce9bb4755d8f45",
    "warnings": [],
    "cross_refs": {}
@@ -19324,7 +19324,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-07-28T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "58593d871627612f",
    "warnings": [
     "no proof requirement published"
@@ -19415,7 +19415,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5ca6ecc1a9ed1897",
    "warnings": [],
    "cross_refs": {
@@ -19494,7 +19494,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9c99e557fa2a1969",
    "warnings": [
     "no proof requirement published"
@@ -19561,7 +19561,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-24T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "92664422046fcb8e",
    "warnings": [],
    "cross_refs": {}
@@ -19639,7 +19639,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1cdd87ad330a219f",
    "warnings": [],
    "cross_refs": {
@@ -19734,7 +19734,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-06T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7144f4c40b1ec61a",
    "warnings": [],
    "cross_refs": {
@@ -19807,7 +19807,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8179f858a5b40cf4",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -19885,7 +19885,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-15T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9f3478a9b1736ee8",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -19965,7 +19965,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-21T00:10:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "409d2b0e20790370",
    "warnings": [],
    "cross_refs": {
@@ -20044,7 +20044,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "284e7f7b546e7f7a",
    "warnings": [],
    "cross_refs": {}
@@ -20111,7 +20111,7 @@
    "ev_note": "assumes 1 unit(s) at $80/unit",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-21T04:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "dc7f51184ad954b9",
    "warnings": [],
    "cross_refs": {
@@ -20205,7 +20205,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-08T23:45:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1e4d79d5dca2da47",
    "warnings": [],
    "cross_refs": {
@@ -20291,7 +20291,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-24T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a45f510622684963",
    "warnings": [],
    "cross_refs": {
@@ -20385,7 +20385,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "03a77acf57cd1ef0",
    "warnings": [],
    "cross_refs": {
@@ -20477,7 +20477,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T17:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ef71f113ca5ab758",
    "warnings": [],
    "cross_refs": {
@@ -20552,7 +20552,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "19d37caefcf6d02f",
    "warnings": [],
    "cross_refs": {
@@ -20625,7 +20625,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "69d941c83f91ca27",
    "warnings": [],
    "cross_refs": {
@@ -20706,7 +20706,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-13T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c9d89c6694c9371d",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -20781,7 +20781,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2a8c1771ed7e6d34",
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)"
@@ -20874,7 +20874,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "bf55a83064b3555b",
    "warnings": [],
    "cross_refs": {
@@ -20960,7 +20960,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "cc361672fa6f936f",
    "warnings": [],
    "cross_refs": {
@@ -21033,7 +21033,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "16a268dae24e6d07",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -21117,7 +21117,7 @@
    "ev_note": "estimated 0.05% of a $5,750,000 fund",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-04T15:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c8aafcb22ee757ff",
    "warnings": [],
    "cross_refs": {}
@@ -21197,7 +21197,7 @@
    "ev_note": "a percentage of your documented costs",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f255ad62b3c07540",
    "warnings": [],
    "cross_refs": {
@@ -21270,7 +21270,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d4bfef1af0fc2d11",
    "warnings": [],
    "cross_refs": {
@@ -21364,7 +21364,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-02T14:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "26c0a75e4c4bcb4e",
    "warnings": [],
    "cross_refs": {
@@ -21437,7 +21437,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-27T18:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b036a0a24b4937b2",
    "warnings": [],
    "cross_refs": {
@@ -21523,7 +21523,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0d9f79a542194b4b",
    "warnings": [],
    "cross_refs": {
@@ -21598,7 +21598,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-06T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0d19b7b1fa005cb1",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required",
@@ -21682,7 +21682,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "29a28ce657311fce",
    "warnings": [],
    "cross_refs": {
@@ -21755,7 +21755,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-09T17:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2a573025207e1d7f",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -21851,7 +21851,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-30T21:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "40baf75ad49cc726",
    "warnings": [],
    "cross_refs": {
@@ -21932,7 +21932,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "bff5d25edb137177",
    "warnings": [],
    "cross_refs": {
@@ -22007,7 +22007,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "add888af756d6a15",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -22103,7 +22103,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9863ac026bc57802",
    "warnings": [],
    "cross_refs": {
@@ -22176,7 +22176,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-10T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f20b35c99bbdeda9",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -22243,7 +22243,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c73487451259a330",
    "warnings": [],
    "cross_refs": {}
@@ -22308,7 +22308,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-23T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "23e7f1404d68a790",
    "warnings": [],
    "cross_refs": {
@@ -22381,7 +22381,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9797e4fa6c60df16",
    "warnings": [],
    "cross_refs": {}
@@ -22459,7 +22459,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1890af8d46b00bd2",
    "warnings": [],
    "cross_refs": {
@@ -22540,7 +22540,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "854449e3c19de986",
    "warnings": [],
    "cross_refs": {
@@ -22613,7 +22613,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "de675e211cc59163",
    "warnings": [],
    "cross_refs": {}
@@ -22680,7 +22680,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ad2b6b9dd53b8ac8",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -22755,7 +22755,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-15T21:45:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5607d8d9f9d2c55a",
    "warnings": [],
    "cross_refs": {}
@@ -22822,7 +22822,7 @@
    "ev_note": "estimated 0.05% of a $10,000,000 fund",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3a5d5ef31dc681a8",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required",
@@ -22916,7 +22916,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-24T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "50e47ba132183b32",
    "warnings": [],
    "cross_refs": {
@@ -23002,7 +23002,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-11T11:30:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "aee40a18b76d1c45",
    "warnings": [
     "proof level differs from the index (index=L3, page=L2)"
@@ -23098,7 +23098,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-28T18:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "6b964646fe28793f",
    "warnings": [],
    "cross_refs": {}
@@ -23176,7 +23176,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "08da50bd2a2b5e84",
    "warnings": [],
    "cross_refs": {
@@ -23270,7 +23270,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8211e98f64d772a8",
    "warnings": [],
    "cross_refs": {
@@ -23351,7 +23351,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "16e8503b5154d5a7",
    "warnings": [
     "claimdepot lists this as 'Preliminarily Approved' but we have it in the 'claimable' lane"
@@ -23424,7 +23424,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "84b1254f31ea7c7a",
    "warnings": [],
    "cross_refs": {
@@ -23541,7 +23541,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a7ab76b94d3fbaa8",
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)"
@@ -23624,7 +23624,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-23T14:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d1da84f8c6d72d97",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -23699,7 +23699,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a32ab27281e5fc89",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -23752,7 +23752,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4c46cf96437c38c6",
    "warnings": [
     "no proof requirement published"
@@ -23832,7 +23832,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-24T14:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ca67f08f6024d899",
    "warnings": [],
    "cross_refs": {
@@ -23903,7 +23903,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-01T19:30:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f55d32163e882d7f",
    "warnings": [],
    "cross_refs": {
@@ -23965,7 +23965,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "43b88977b9264cd0",
    "warnings": [],
    "cross_refs": {
@@ -24047,7 +24047,7 @@
    "ev_note": "a percentage of your documented costs",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-22T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d9f9c96ea64a5b04",
    "warnings": [],
    "cross_refs": {
@@ -24122,7 +24122,7 @@
    "ev_note": "a percentage of your documented costs",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-22T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5bfa9bcebf14bf70",
    "warnings": [],
    "cross_refs": {}
@@ -24187,7 +24187,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-23T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "608e9dc367f26421",
    "warnings": [],
    "cross_refs": {}
@@ -24254,7 +24254,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "31003ba7284c65ae",
    "warnings": [
     "settlesignal lists claim deadline 2026-11-13 but our sources say 2027-01-04; ours kept"
@@ -24360,7 +24360,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-18T22:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "49dec64e7e26cd2a",
    "warnings": [],
    "cross_refs": {
@@ -24454,7 +24454,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2abb14f9eca20219",
    "warnings": [],
    "cross_refs": {
@@ -24548,7 +24548,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-08T19:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e0310c602ff8053e",
    "warnings": [],
    "cross_refs": {
@@ -24621,7 +24621,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "aae48dbdb4857bab",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -24686,7 +24686,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0f0d709be9eab0f0",
    "warnings": [],
    "cross_refs": {
@@ -24780,7 +24780,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-24T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f56ccc2612173da8",
    "warnings": [],
    "cross_refs": {
@@ -24861,7 +24861,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c55b7c340f672334",
    "warnings": [
     "no proof requirement published"
@@ -24928,7 +24928,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-10T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2be3b675799bfa2a",
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)",
@@ -25010,7 +25010,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "23389f2d4a63c707",
    "warnings": [],
    "cross_refs": {}
@@ -25088,7 +25088,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a60b1321ba9d86f9",
    "warnings": [],
    "cross_refs": {
@@ -25174,7 +25174,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-17T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b448786056bec1b4",
    "warnings": [],
    "cross_refs": {
@@ -25268,7 +25268,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-01T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "08dcf50c6a23f805",
    "warnings": [],
    "cross_refs": {
@@ -25344,7 +25344,7 @@
    "ev_note": "a percentage of your documented costs",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T09:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "53de9245465c7d7f",
    "warnings": [],
    "cross_refs": {
@@ -25419,7 +25419,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-07T00:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c74508999bd8d4ba",
    "warnings": [],
    "cross_refs": {
@@ -25492,7 +25492,7 @@
    "ev_note": "a percentage of your documented costs",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T22:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9ae67e4df235dffd",
    "warnings": [],
    "cross_refs": {}
@@ -25570,7 +25570,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4555f01be6309f44",
    "warnings": [],
    "cross_refs": {
@@ -25664,7 +25664,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-05T14:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ad7d59e55f04d860",
    "warnings": [],
    "cross_refs": {
@@ -25753,7 +25753,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-08T22:30:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b9a57845b47dc6fb",
    "warnings": [],
    "cross_refs": {
@@ -25835,7 +25835,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": "2026-06-22T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e81ac46329b8bcb4",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -25923,7 +25923,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-07T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4a78993e1a251b48",
    "warnings": [],
    "cross_refs": {
@@ -25980,7 +25980,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "22cbded6d6c431b7",
    "warnings": [
     "claimdepot lists claim deadline 2025-11-14 but our sources say 2027-09-30; ours kept",
@@ -26056,7 +26056,7 @@
    "ev_note": "assumes 1 unit(s) at $400/unit, capped at $400",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3769e018a957fdc2",
    "warnings": [],
    "cross_refs": {
@@ -26137,7 +26137,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-02T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "42a7becfd611cf88",
    "warnings": [],
    "cross_refs": {
@@ -26210,7 +26210,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "927605edbe49f0be",
    "warnings": [],
    "cross_refs": {}
@@ -26275,7 +26275,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-22T03:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a5e58f881c7c1d59",
    "warnings": [],
    "cross_refs": {
@@ -26350,7 +26350,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T23:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d5421807bf7160c8",
    "warnings": [],
    "cross_refs": {
@@ -26423,7 +26423,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "574e7a7a1ef2e6ce",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -26498,7 +26498,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8f25dcf1daa8511a",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -26609,7 +26609,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d6a5d6a60d393335",
    "warnings": [],
    "cross_refs": {
@@ -26682,7 +26682,7 @@
    "ev_note": "estimated 0.05% of a $500,000 fund",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-29T20:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9e54464415f20a86",
    "warnings": [],
    "cross_refs": {}
@@ -26749,7 +26749,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-27T19:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b9adfbcd22dbbe3c",
    "warnings": [],
    "cross_refs": {
@@ -26830,7 +26830,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3265ce80c8366742",
    "warnings": [],
    "cross_refs": {}
@@ -26895,7 +26895,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "076cf1ff151679bc",
    "warnings": [],
    "cross_refs": {}
@@ -26960,7 +26960,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-17T20:30:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "cda347031de87f77",
    "warnings": [
     "proof level differs from the index (index=L3, page=L2)"
@@ -27053,7 +27053,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b031a6b7b9e69822",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -27136,7 +27136,7 @@
    "ev_note": "estimated 0.05% of a $3,570,000 fund",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f6d0d7e44b2b515a",
    "warnings": [],
    "cross_refs": {
@@ -27209,7 +27209,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e8820b6a581eb946",
    "warnings": [],
    "cross_refs": {}
@@ -27274,7 +27274,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "408df2f957252586",
    "warnings": [],
    "cross_refs": {}
@@ -27339,7 +27339,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T23:45:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "00ada1fc70b43cdc",
    "warnings": [],
    "cross_refs": {}
@@ -27404,7 +27404,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "098b9a9209418a59",
    "warnings": [],
    "cross_refs": {}
@@ -27453,7 +27453,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5bb7a9757e339a6c",
    "warnings": [
     "no proof requirement published"
@@ -27520,7 +27520,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-19T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1f65a9e3fe5aed6f",
    "warnings": [],
    "cross_refs": {}
@@ -27598,7 +27598,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-02T06:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8dd6ba1cb48c656d",
    "warnings": [],
    "cross_refs": {
@@ -27671,7 +27671,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3b2191593bd47649",
    "warnings": [],
    "cross_refs": {
@@ -27757,7 +27757,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1af5820ca9fe271d",
    "warnings": [],
    "cross_refs": {
@@ -27840,7 +27840,7 @@
    "ev_note": "a percentage of your documented costs",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-22T08:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "650517bd607a92ec",
    "warnings": [
     "claimdepot lists claim deadline 2026-07-16 but our sources say 2026-11-23; ours kept",
@@ -27929,7 +27929,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "61a7950a5c538084",
    "warnings": [],
    "cross_refs": {
@@ -28010,7 +28010,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d4be5117c398c5c7",
    "warnings": [],
    "cross_refs": {}
@@ -28088,7 +28088,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-03T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "fa9868f28c8cca87",
    "warnings": [],
    "cross_refs": {
@@ -28169,7 +28169,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-16T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "fe1e21d5c3e2b94d",
    "warnings": [],
    "cross_refs": {
@@ -28250,7 +28250,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-13T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f542fde722f47cbb",
    "warnings": [],
    "cross_refs": {
@@ -28323,7 +28323,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "01e5fbb236aed3d1",
    "warnings": [],
    "cross_refs": {
@@ -28407,7 +28407,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-05T18:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f63e2f09a0b7fb03",
    "warnings": [],
    "cross_refs": {
@@ -28480,7 +28480,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-02T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d05d731f685a3c04",
    "warnings": [],
    "cross_refs": {}
@@ -28545,7 +28545,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8cccd44a2dde19dc",
    "warnings": [],
    "cross_refs": {
@@ -28628,7 +28628,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-15T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7014ce49739016f4",
    "warnings": [],
    "cross_refs": {
@@ -28728,7 +28728,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "46a8314a1acf4b0e",
    "warnings": [],
    "cross_refs": {}
@@ -28795,7 +28795,7 @@
    "ev_note": "estimated 0.05% of a $28,000,000 fund",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-07T01:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "de98e78967229edc",
    "warnings": [
     "proof level differs from the index (index=L3, page=L2)",
@@ -28887,7 +28887,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": "2026-07-08T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0a068f9bb9dc572d",
    "warnings": [
     "no proof requirement published",
@@ -28957,7 +28957,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-15T23:45:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9bad725af684346a",
    "warnings": [
     "proof level differs from the index (index=L3, page=L2)"
@@ -29045,7 +29045,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "66a4855dfcce539e",
    "warnings": [],
    "cross_refs": {
@@ -29139,7 +29139,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "02c234a31c416185",
    "warnings": [],
    "cross_refs": {
@@ -29220,7 +29220,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "fa55eb9765e3b630",
    "warnings": [],
    "cross_refs": {}
@@ -29285,7 +29285,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f4258029baef58ec",
    "warnings": [],
    "cross_refs": {}
@@ -29352,7 +29352,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-19T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "87c5e8218a104ae4",
    "warnings": [],
    "cross_refs": {}
@@ -29417,7 +29417,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e91ad60ddbc09a32",
    "warnings": [],
    "cross_refs": {
@@ -29496,7 +29496,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b090f9715146f5ce",
    "warnings": [
     "no proof requirement published"
@@ -29584,7 +29584,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4991174b2f3a800b",
    "warnings": [],
    "cross_refs": {}
@@ -29649,7 +29649,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-08T23:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "da7fb0c4018017f6",
    "warnings": [],
    "cross_refs": {
@@ -29722,7 +29722,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-18T23:59:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f7f4f251ea5a52aa",
    "warnings": [],
    "cross_refs": {}
@@ -29787,7 +29787,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-13T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0b913c6ea805943a",
    "warnings": [],
    "cross_refs": {
@@ -29878,7 +29878,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-02T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "6182df535d931528",
    "warnings": [],
    "cross_refs": {
@@ -29982,7 +29982,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-04T13:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7846a06ba34ff7c6",
    "warnings": [],
    "cross_refs": {
@@ -30057,7 +30057,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-24T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "43da08f4f89f65c6",
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)"
@@ -30132,7 +30132,7 @@
    "ev_note": "estimated 0.05% of a $850,000 fund",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-29T18:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "84ae602d8ba7a515",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -30228,7 +30228,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1c1a3e3e971525a5",
    "warnings": [],
    "cross_refs": {
@@ -30307,7 +30307,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4791dc47ba7c21f0",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -30374,7 +30374,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "206911c8a62278e3",
    "warnings": [
     "no proof requirement published",
@@ -30442,7 +30442,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-02T16:30:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7f1a952645dbeae2",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -30511,7 +30511,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-14T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b39990c105102bda",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -30592,7 +30592,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-11T15:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "871fbee3fd7aafd1",
    "warnings": [
     "proof level differs from the index (index=L3, page=L2)"
@@ -30657,7 +30657,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-07-10T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e429fb116e635429",
    "warnings": [
     "no proof requirement published"
@@ -30722,7 +30722,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-12T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c20b239a7418760b",
    "warnings": [],
    "cross_refs": {}
@@ -30771,7 +30771,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "db2e800ae07dc320",
    "warnings": [],
    "cross_refs": {}
@@ -30849,7 +30849,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-29T18:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5f0c13f3f337d74f",
    "warnings": [],
    "cross_refs": {}
@@ -30927,7 +30927,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-24T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "6caf3a7c214f87ad",
    "warnings": [],
    "cross_refs": {
@@ -31008,7 +31008,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-08T23:55:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "6d6908b97a48b3f2",
    "warnings": [],
    "cross_refs": {
@@ -31084,7 +31084,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d7157694a86a221f",
    "warnings": [],
    "cross_refs": {
@@ -31144,7 +31144,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "cc2e4a21ee3dcf06",
    "warnings": [],
    "cross_refs": {
@@ -31221,7 +31221,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-23T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7f9c5b0614e31369",
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)"
@@ -31308,7 +31308,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5df3415af069e1a5",
    "warnings": [],
    "cross_refs": {
@@ -31383,7 +31383,7 @@
    "ev_note": "estimated 0.05% of a $7,750,000 fund",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-12T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0798f630b561d55e",
    "warnings": [],
    "cross_refs": {}
@@ -31450,7 +31450,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-30T18:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "115cf08a735e6924",
    "warnings": [],
    "cross_refs": {
@@ -31533,7 +31533,7 @@
    "ev_note": "a percentage of your documented costs",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-30T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0e3acfd777046419",
    "warnings": [],
    "cross_refs": {
@@ -31604,7 +31604,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-22T05:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3c3b5594d4285928",
    "warnings": [],
    "cross_refs": {
@@ -31690,7 +31690,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b735cacf797b2f42",
    "warnings": [],
    "cross_refs": {
@@ -31773,7 +31773,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-27T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f93e241c252b19dc",
    "warnings": [],
    "cross_refs": {
@@ -31846,7 +31846,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "391cb247a7d8e3c2",
    "warnings": [
     "no proof requirement published",
@@ -31906,7 +31906,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-09",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e5b52ac4b49c3f3f",
    "warnings": [],
    "cross_refs": {}
@@ -31984,7 +31984,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "52edc116702465d9",
    "warnings": [],
    "cross_refs": {
@@ -32067,7 +32067,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-08T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f09ab2cd23f02c2a",
    "warnings": [],
    "cross_refs": {
@@ -32142,7 +32142,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7280b3d0e3fed952",
    "warnings": [],
    "cross_refs": {
@@ -32223,7 +32223,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-15T14:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0052796d0815f336",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -32305,7 +32305,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T21:30:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "945377d085852449",
    "warnings": [],
    "cross_refs": {}
@@ -32372,7 +32372,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-13T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1576a9c9767a6037",
    "warnings": [],
    "cross_refs": {
@@ -32458,7 +32458,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "99a26bc14201621b",
    "warnings": [],
    "cross_refs": {
@@ -32539,7 +32539,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-17T19:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e03c28f99c49106c",
    "warnings": [],
    "cross_refs": {
@@ -32620,7 +32620,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "526c764eecd59915",
    "warnings": [],
    "cross_refs": {
@@ -32701,7 +32701,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e01626bdefdc31bf",
    "warnings": [],
    "cross_refs": {
@@ -32766,7 +32766,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3d1e8ec99e50fa30",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -32855,7 +32855,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "72e83fed1d61a6e6",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -32938,7 +32938,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-08T22:45:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0bf6d225a7c47254",
    "warnings": [],
    "cross_refs": {}
@@ -33003,7 +33003,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-24T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "80b89941c250ac26",
    "warnings": [],
    "cross_refs": {
@@ -33103,7 +33103,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-22T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "02f8c1c96710fb1b",
    "warnings": [],
    "cross_refs": {}
@@ -33181,7 +33181,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-30T22:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "508eae5a089bddd5",
    "warnings": [],
    "cross_refs": {}
@@ -33248,7 +33248,7 @@
    "ev_note": "assumes 1 unit(s) at $75/unit",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-08T22:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "dafb3a50012b1633",
    "warnings": [
     "proof level differs from the index (index=L2, page=L3)"
@@ -33323,7 +33323,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e7a62240d9e41d2d",
    "warnings": [],
    "cross_refs": {}
@@ -33388,7 +33388,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "59ad5c06214f387b",
    "warnings": [
     "settlesignal says no proof needed; our sources say proof required"
@@ -33482,7 +33482,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-24T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "69afd0b636e04cc9",
    "warnings": [],
    "cross_refs": {
@@ -33563,7 +33563,7 @@
    "ev_note": "assumes 1 unit(s) at $3/unit",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-29T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a11df1c1664fa0d6",
    "warnings": [],
    "cross_refs": {}
@@ -33628,7 +33628,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-18T23:59:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4176f408e9589915",
    "warnings": [],
    "cross_refs": {
@@ -33717,7 +33717,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-24T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "887a19e202ee9f9a",
    "warnings": [],
    "cross_refs": {
@@ -33796,7 +33796,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "04e5bfd088415a1b",
    "warnings": [],
    "cross_refs": {
@@ -33882,7 +33882,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "297490167bf4887d",
    "warnings": [],
    "cross_refs": {
@@ -33965,7 +33965,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-08T20:10:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "56ef2cb4c51ed773",
    "warnings": [],
    "cross_refs": {
@@ -34038,7 +34038,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-24T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "676fc5256ae5f3d4",
    "warnings": [],
    "cross_refs": {
@@ -34124,7 +34124,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "709542144191cb6d",
    "warnings": [],
    "cross_refs": {
@@ -34218,7 +34218,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ef9e9ad34a20a2f0",
    "warnings": [],
    "cross_refs": {
@@ -34293,7 +34293,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-25T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "39edff9f6c479687",
    "warnings": [],
    "cross_refs": {
@@ -34397,7 +34397,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-22T03:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3eb138e2b05ae12e",
    "warnings": [],
    "cross_refs": {
@@ -34470,7 +34470,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-22T09:30:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1a7d89bdec6d53e8",
    "warnings": [],
    "cross_refs": {}
@@ -34548,7 +34548,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-15T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1c1c10e54d34a083",
    "warnings": [],
    "cross_refs": {
@@ -34634,7 +34634,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-16T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3a7a7052f61bf1c4",
    "warnings": [],
    "cross_refs": {
@@ -34707,7 +34707,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3f2ebb897936ce52",
    "warnings": [],
    "cross_refs": {
@@ -34784,7 +34784,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-07T00:30:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3257e5c6f8db1917",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -34860,7 +34860,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "061c150c50357967",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -34957,7 +34957,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": "2026-08-31T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "cdef0fcf24fc08da",
    "warnings": [
     "no proof requirement published",
@@ -35034,7 +35034,7 @@
    "ev_note": "no basis for an estimate",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "abfdfaaf579f6900",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -35101,7 +35101,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-16T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4e88492df7653d4b",
    "warnings": [],
    "cross_refs": {}
@@ -35166,7 +35166,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-20T23:55:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1bf62a4b6b68d0e3",
    "warnings": [],
    "cross_refs": {}
@@ -35244,7 +35244,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "df0af801bf10688d",
    "warnings": [],
    "cross_refs": {
@@ -35319,7 +35319,7 @@
    "ev_note": "midpoint of published range",
    "index_updated": "2026-10-24",
    "last_modified": "2026-09-27T18:30:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "278701ec2722fa41",
    "warnings": [],
    "cross_refs": {
@@ -35390,7 +35390,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-06-17T16:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "820efecca771252f",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -35457,7 +35457,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1d3649607273d313",
    "warnings": [],
    "cross_refs": {}
@@ -35508,7 +35508,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b26113b83e07627e",
    "warnings": [
     "no proof requirement published"
@@ -35561,7 +35561,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "917d6cd137064939",
    "warnings": [
     "no proof requirement published"
@@ -35614,7 +35614,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b7bbc937ad970c51",
    "warnings": [
     "no proof requirement published"
@@ -35667,7 +35667,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "6f383238dd1e5360",
    "warnings": [
     "no proof requirement published"
@@ -35720,7 +35720,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "21a19791d6916b57",
    "warnings": [
     "no proof requirement published"
@@ -35773,7 +35773,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a710ef976606c669",
    "warnings": [
     "no proof requirement published",
@@ -35827,7 +35827,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4d660cac688666da",
    "warnings": [
     "no proof requirement published",
@@ -35881,7 +35881,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "81385e9d6ac70108",
    "warnings": [
     "no proof requirement published"
@@ -35934,7 +35934,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "34887729128cb606",
    "warnings": [
     "no proof requirement published"
@@ -35987,8 +35987,63 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e075b1bb00829365",
+   "warnings": [
+    "no proof requirement published"
+   ],
+   "cross_refs": {}
+  },
+  {
+   "id": "apple-iphone-17-18-wi-fi-7-class-action-lawsuit",
+   "source": "openclassactions",
+   "source_url": "https://openclassactions.com/lawsuits/false-advertising/apple-iphone-17-18-wi-fi-7-class-action-lawsuit.php",
+   "title": "Apple iPhone 17 and 18 Wi-Fi 7 False Advertising Class Action",
+   "category": "Class Action Investigations",
+   "kind": "investigation",
+   "lane": "investigation",
+   "lane_reason": "lawsuit page under /lawsuits/",
+   "tiers": [],
+   "payout_raw": null,
+   "payout_sub": null,
+   "payout_tier": null,
+   "fund_size": null,
+   "fund_size_raw": null,
+   "proof_required": null,
+   "proof_level": null,
+   "proof_label_raw": null,
+   "proof_detail": null,
+   "deadline": {
+    "raw": "",
+    "kind": "unparsed",
+    "date": null,
+    "note": null
+   },
+   "extra_dates": {
+    "Date Filed": "October 16, 2026"
+   },
+   "geo": {
+    "scope_type": "states",
+    "states": [
+     "CA"
+    ],
+    "country": null,
+    "label": "California purchasers only"
+   },
+   "status_text": null,
+   "case_title": "Smith v. Apple Inc.",
+   "case_number": "26CV506247",
+   "court": "Superior Court of California, County of Santa Clara (Hon. Elizabeth C. Peterson, complex civil)",
+   "administrator": null,
+   "official_website": "https://portal.scscourt.org/",
+   "claim_url": "https://portal.scscourt.org/",
+   "ev_estimate": null,
+   "ev_confidence": "low",
+   "ev_note": "no benefit tiers published",
+   "index_updated": "2026-10-24",
+   "last_modified": null,
+   "verified_as_of": "2026-10-25",
+   "content_hash": "7c3972024daf7e0b",
    "warnings": [
     "no proof requirement published"
    ],
@@ -36040,7 +36095,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e7e947f2a45e11c5",
    "warnings": [
     "no proof requirement published"
@@ -36095,7 +36150,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e750562a7392431d",
    "warnings": [
     "no proof requirement published"
@@ -36148,7 +36203,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3165c2342da0afc2",
    "warnings": [
     "no proof requirement published"
@@ -36201,7 +36256,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f6f0c4176e88e7d8",
    "warnings": [
     "no proof requirement published"
@@ -36254,7 +36309,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ffa5cf94a6447f00",
    "warnings": [
     "no proof requirement published"
@@ -36307,7 +36362,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b114ea2ffa4417b5",
    "warnings": [
     "no proof requirement published"
@@ -36360,7 +36415,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "913988fca8ee7636",
    "warnings": [
     "no proof requirement published"
@@ -36413,7 +36468,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "198887f6cb892fad",
    "warnings": [
     "no proof requirement published"
@@ -36466,7 +36521,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e86c4135ab0244a5",
    "warnings": [
     "no proof requirement published"
@@ -36519,7 +36574,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "daf3c17b62d49c83",
    "warnings": [
     "no proof requirement published"
@@ -36572,7 +36627,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a73ee6d57b0eb8f0",
    "warnings": [
     "no proof requirement published"
@@ -36625,7 +36680,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "25792769cdfe41e6",
    "warnings": [
     "no proof requirement published"
@@ -36678,7 +36733,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "46a0f06c7564ceb1",
    "warnings": [
     "no proof requirement published"
@@ -36731,7 +36786,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "cbf3451503693228",
    "warnings": [
     "no proof requirement published"
@@ -36784,7 +36839,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8500dd1cd4eff83a",
    "warnings": [
     "no proof requirement published"
@@ -36839,7 +36894,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a6ff81bbdfe7d6ea",
    "warnings": [
     "no proof requirement published"
@@ -36890,7 +36945,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "38191db0d8e2a90b",
    "warnings": [
     "no proof requirement published"
@@ -36943,7 +36998,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9ecddf54f8f43a38",
    "warnings": [
     "no proof requirement published"
@@ -36998,7 +37053,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "06be05b9b4db8883",
    "warnings": [
     "no proof requirement published"
@@ -37051,7 +37106,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ec6e703347dfcaa9",
    "warnings": [
     "no proof requirement published"
@@ -37104,7 +37159,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "dc39a61dc16ab52d",
    "warnings": [
     "no proof requirement published"
@@ -37159,7 +37214,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "79f9c56616f71a60",
    "warnings": [
     "no proof requirement published"
@@ -37212,7 +37267,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "94d3f3a5716f27c8",
    "warnings": [
     "no proof requirement published",
@@ -37266,7 +37321,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2dfb8c099623757a",
    "warnings": [
     "no proof requirement published"
@@ -37319,7 +37374,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "866321967abca72d",
    "warnings": [
     "no proof requirement published",
@@ -37375,7 +37430,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c141ed9daa525dd3",
    "warnings": [
     "no proof requirement published"
@@ -37428,7 +37483,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a75a35538152b742",
    "warnings": [
     "no proof requirement published"
@@ -37481,7 +37536,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c57837e5b5447038",
    "warnings": [
     "no proof requirement published",
@@ -37535,7 +37590,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "34211ca7bba04579",
    "warnings": [
     "no proof requirement published"
@@ -37588,7 +37643,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "de0a3a50b23aeb32",
    "warnings": [
     "no proof requirement published",
@@ -37644,7 +37699,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "dd1f5f1350de1aff",
    "warnings": [
     "no proof requirement published"
@@ -37699,7 +37754,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "90ab87f175921fd8",
    "warnings": [
     "no proof requirement published"
@@ -37752,7 +37807,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ce349a2e9a3bcb8e",
    "warnings": [
     "no proof requirement published",
@@ -37806,7 +37861,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b84a7c7b97fd7dd4",
    "warnings": [
     "no proof requirement published"
@@ -37857,7 +37912,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "6ab789effdcfa7e6",
    "warnings": [
     "no proof requirement published"
@@ -37910,7 +37965,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9ed5a4de65835224",
    "warnings": [
     "no proof requirement published"
@@ -37963,7 +38018,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c96d6b869ae88a6d",
    "warnings": [
     "no proof requirement published"
@@ -38016,7 +38071,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "888fdb1f510681c9",
    "warnings": [
     "no proof requirement published"
@@ -38069,7 +38124,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b8964765972961d6",
    "warnings": [
     "no proof requirement published",
@@ -38123,7 +38178,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0bf1c5f1b8324f19",
    "warnings": [
     "no proof requirement published"
@@ -38176,7 +38231,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4d8c7a15ae4e4935",
    "warnings": [
     "no proof requirement published"
@@ -38227,7 +38282,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8704df6cfa348fa5",
    "warnings": [
     "no proof requirement published"
@@ -38282,7 +38337,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4a7139e5886a0c66",
    "warnings": [
     "no proof requirement published"
@@ -38335,7 +38390,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "edf2488feeac266d",
    "warnings": [
     "no proof requirement published"
@@ -38386,7 +38441,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f3367a1e85bc405a",
    "warnings": [
     "no proof requirement published"
@@ -38439,7 +38494,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7580ce603b8d2924",
    "warnings": [
     "no proof requirement published"
@@ -38495,7 +38550,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5554a11b384fca58",
    "warnings": [
     "no proof requirement published"
@@ -38548,7 +38603,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "47d0695e5daa8305",
    "warnings": [
     "no proof requirement published"
@@ -38601,7 +38656,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "cf250a4e6183954b",
    "warnings": [
     "no proof requirement published"
@@ -38654,7 +38709,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b91248e9e9bdf6d8",
    "warnings": [
     "no proof requirement published"
@@ -38707,7 +38762,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2becebe273c72c06",
    "warnings": [
     "no proof requirement published"
@@ -38762,7 +38817,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "12b6e63bbeea4149",
    "warnings": [
     "no proof requirement published"
@@ -38815,7 +38870,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ae2b69d74b1272ba",
    "warnings": [
     "no proof requirement published"
@@ -38868,7 +38923,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "14ef4200e5b5940e",
    "warnings": [
     "no proof requirement published"
@@ -38921,7 +38976,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9b423835b31253ae",
    "warnings": [
     "no proof requirement published"
@@ -38974,7 +39029,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c8bea8d6c986f0d3",
    "warnings": [
     "no proof requirement published"
@@ -39029,7 +39084,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5687a59f37dd4624",
    "warnings": [
     "no proof requirement published"
@@ -39096,7 +39151,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f7c21cca1d635718",
    "warnings": [
     "no proof requirement published",
@@ -39150,7 +39205,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5fb89fc1cc98f59e",
    "warnings": [
     "no proof requirement published"
@@ -39201,7 +39256,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f4f9032791ab5e6b",
    "warnings": [
     "no proof requirement published"
@@ -39254,7 +39309,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e559ca2b5acffc8c",
    "warnings": [
     "no proof requirement published"
@@ -39307,7 +39362,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2b3c3c111d8ee513",
    "warnings": [
     "no proof requirement published"
@@ -39362,7 +39417,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "092cee90fad52dbb",
    "warnings": [
     "no proof requirement published"
@@ -39424,7 +39479,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1319be36c3ab7520",
    "warnings": [
     "no proof requirement published"
@@ -39477,7 +39532,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "859edcb4347ba11a",
    "warnings": [
     "no proof requirement published"
@@ -39530,7 +39585,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "99204e0678ca1067",
    "warnings": [
     "no proof requirement published"
@@ -39586,7 +39641,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ddd26feab8ce73af",
    "warnings": [
     "no proof requirement published"
@@ -39639,7 +39694,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "58b1e950b7826ba7",
    "warnings": [
     "no proof requirement published",
@@ -39693,7 +39748,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "eda78607947f5cec",
    "warnings": [
     "no proof requirement published"
@@ -39746,7 +39801,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "40d128fbb3446849",
    "warnings": [
     "no proof requirement published"
@@ -39803,7 +39858,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1d97c7eefb322fb0",
    "warnings": [
     "no proof requirement published"
@@ -39856,7 +39911,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ffcbcfddc7b6b93d",
    "warnings": [
     "no proof requirement published"
@@ -39911,7 +39966,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9b09f9c795b8db06",
    "warnings": [
     "no proof requirement published",
@@ -39965,7 +40020,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5e1afc3926d11121",
    "warnings": [
     "no proof requirement published"
@@ -40018,7 +40073,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7f916972095ed8d0",
    "warnings": [
     "no proof requirement published"
@@ -40083,7 +40138,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "dbd5777b4dbef009",
    "warnings": [
     "no proof requirement published"
@@ -40136,7 +40191,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "50139b588205712e",
    "warnings": [
     "no proof requirement published"
@@ -40189,7 +40244,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "217edf7699b09e6f",
    "warnings": [
     "no proof requirement published"
@@ -40242,7 +40297,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d72410e272f1a00c",
    "warnings": [
     "no proof requirement published",
@@ -40296,7 +40351,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8fd1df09ee467e2a",
    "warnings": [
     "no proof requirement published"
@@ -40351,7 +40406,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "bf3dad25f07cd66e",
    "warnings": [
     "no proof requirement published"
@@ -40406,7 +40461,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a1eb6bbbe35e3a4a",
    "warnings": [
     "no proof requirement published"
@@ -40461,7 +40516,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "bf9ecd9ac9c96ee1",
    "warnings": [
     "no proof requirement published"
@@ -40514,7 +40569,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "26db63c30aa68454",
    "warnings": [
     "no proof requirement published"
@@ -40567,7 +40622,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "cd7662234a6446a3",
    "warnings": [
     "no proof requirement published"
@@ -40620,7 +40675,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "84722541cbbde1e3",
    "warnings": [
     "no proof requirement published"
@@ -40673,7 +40728,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a2371592f7aebde4",
    "warnings": [
     "no proof requirement published"
@@ -40726,7 +40781,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9b32111497737e29",
    "warnings": [
     "no proof requirement published"
@@ -40782,7 +40837,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9ef40853963f9179",
    "warnings": [
     "no proof requirement published",
@@ -40836,7 +40891,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5ec86a718b4dc2b4",
    "warnings": [
     "no proof requirement published"
@@ -40889,7 +40944,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f77c98055409cd2c",
    "warnings": [
     "no proof requirement published"
@@ -40942,7 +40997,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0b3bfbef9eaac698",
    "warnings": [
     "no proof requirement published"
@@ -40995,7 +41050,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "67d16127c0af8a09",
    "warnings": [
     "no proof requirement published"
@@ -41048,7 +41103,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c809132c3d5c1ca0",
    "warnings": [
     "no proof requirement published"
@@ -41101,7 +41156,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "fd4bdf440c714f96",
    "warnings": [
     "no proof requirement published"
@@ -41154,7 +41209,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "195ce264380242bc",
    "warnings": [
     "no proof requirement published"
@@ -41207,7 +41262,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "85b92ec9b604717e",
    "warnings": [
     "no proof requirement published"
@@ -41260,7 +41315,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "697a9cb820dbd40e",
    "warnings": [
     "no proof requirement published",
@@ -41314,7 +41369,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "523b9122ef5dd068",
    "warnings": [
     "no proof requirement published"
@@ -41369,7 +41424,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0db8f7b79ca0d48c",
    "warnings": [
     "no proof requirement published"
@@ -41422,7 +41477,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0085cd04af2fb8b6",
    "warnings": [
     "no proof requirement published"
@@ -41477,7 +41532,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "bda3867cfce64c7c",
    "warnings": [
     "no proof requirement published",
@@ -41531,7 +41586,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d47a025ef1bd65b2",
    "warnings": [
     "no proof requirement published"
@@ -41584,7 +41639,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3ebcadd0c3c1b5d6",
    "warnings": [
     "no proof requirement published"
@@ -41635,7 +41690,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f9b6cdd370ea4bd5",
    "warnings": [
     "no proof requirement published"
@@ -41688,7 +41743,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a28e95a140988cf8",
    "warnings": [
     "no proof requirement published",
@@ -41745,7 +41800,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "53ab89e6c8b66b01",
    "warnings": [
     "no proof requirement published"
@@ -41798,7 +41853,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "fce75a18ad97ddfb",
    "warnings": [
     "no proof requirement published"
@@ -41851,7 +41906,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7b8532ec815125bd",
    "warnings": [
     "no proof requirement published"
@@ -41904,7 +41959,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "57fa736cc9120ba8",
    "warnings": [
     "no proof requirement published",
@@ -41960,7 +42015,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7a180dd14fe711c0",
    "warnings": [
     "no proof requirement published"
@@ -42013,7 +42068,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ef54dd9afca51ec9",
    "warnings": [
     "no proof requirement published"
@@ -42066,7 +42121,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d8c89c2a2b314d14",
    "warnings": [
     "no proof requirement published",
@@ -42122,7 +42177,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "70841787abb93947",
    "warnings": [
     "no proof requirement published"
@@ -42177,7 +42232,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "595097a9a0a9ad7f",
    "warnings": [
     "no proof requirement published"
@@ -42228,7 +42283,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2f0973b39b7a1a9a",
    "warnings": [
     "no proof requirement published"
@@ -42283,7 +42338,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e2272a8341723b34",
    "warnings": [
     "no proof requirement published"
@@ -42334,7 +42389,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "18bcb917c8ba163d",
    "warnings": [
     "no proof requirement published"
@@ -42385,7 +42440,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "68fc0dde770cf4d1",
    "warnings": [
     "no proof requirement published"
@@ -42438,7 +42493,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f2c873c8bacc0fc1",
    "warnings": [
     "no proof requirement published"
@@ -42491,7 +42546,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "255aa059f3c0af1f",
    "warnings": [
     "no proof requirement published",
@@ -42545,7 +42600,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2bd59193292b5a55",
    "warnings": [
     "no proof requirement published"
@@ -42598,7 +42653,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8d999ff2094a9190",
    "warnings": [
     "no proof requirement published"
@@ -42651,7 +42706,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5b1d195206d24eea",
    "warnings": [
     "no proof requirement published",
@@ -42705,7 +42760,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ef59cfabcc329024",
    "warnings": [
     "no proof requirement published"
@@ -42758,7 +42813,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2f59dc1de50510d8",
    "warnings": [
     "no proof requirement published"
@@ -42811,7 +42866,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "bfbdf91fbd064118",
    "warnings": [
     "no proof requirement published",
@@ -42867,7 +42922,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3c8b53547e29ca59",
    "warnings": [
     "no proof requirement published",
@@ -42921,7 +42976,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9ca4e6ad95bbe149",
    "warnings": [
     "no proof requirement published"
@@ -42976,7 +43031,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2da7ee2f1fa5d84f",
    "warnings": [
     "no proof requirement published"
@@ -43029,7 +43084,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e7303a6d8b561a2b",
    "warnings": [
     "no proof requirement published"
@@ -43082,7 +43137,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8d6b624468a423d1",
    "warnings": [
     "no proof requirement published"
@@ -43137,7 +43192,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3260acca9fee7de9",
    "warnings": [
     "no proof requirement published"
@@ -43188,7 +43243,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "cab41c44b3f54dfe",
    "warnings": [
     "no proof requirement published"
@@ -43241,7 +43296,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a56f70314b456aa7",
    "warnings": [
     "no proof requirement published"
@@ -43294,7 +43349,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "70b37fa3eff7041d",
    "warnings": [
     "no proof requirement published"
@@ -43347,7 +43402,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5f60fa1621f8f66f",
    "warnings": [
     "no proof requirement published"
@@ -43400,7 +43455,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4eb59c39c6e0c0a6",
    "warnings": [
     "no proof requirement published",
@@ -43456,7 +43511,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8a25be867dc3c101",
    "warnings": [
     "no proof requirement published"
@@ -43509,7 +43564,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9edc498846d77e04",
    "warnings": [
     "no proof requirement published"
@@ -43564,7 +43619,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "03dc8756db152b9e",
    "warnings": [
     "no proof requirement published"
@@ -43617,7 +43672,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "65beb92e6b67c534",
    "warnings": [
     "no proof requirement published"
@@ -43668,7 +43723,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3ea907957cfbb92c",
    "warnings": [
     "no proof requirement published"
@@ -43721,7 +43776,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a0f6b4f8a0f29662",
    "warnings": [
     "no proof requirement published"
@@ -43776,7 +43831,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "1646b8e8c88e7e76",
    "warnings": [
     "no proof requirement published"
@@ -43831,7 +43886,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d7892e14d535a468",
    "warnings": [
     "no proof requirement published"
@@ -43884,7 +43939,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2ea31375b8e51b5e",
    "warnings": [
     "no proof requirement published"
@@ -43935,7 +43990,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "6fd6feff60535c03",
    "warnings": [
     "no proof requirement published"
@@ -43988,7 +44043,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7487bfc3eed00af6",
    "warnings": [
     "no proof requirement published",
@@ -44042,7 +44097,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "dd1c2d2369c84c15",
    "warnings": [
     "no proof requirement published"
@@ -44095,7 +44150,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "85c5f5059ae0757e",
    "warnings": [
     "no proof requirement published",
@@ -44149,7 +44204,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "10cacfaaad74571c",
    "warnings": [
     "no proof requirement published"
@@ -44204,7 +44259,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "dd9141536e82f30d",
    "warnings": [
     "no proof requirement published",
@@ -44258,7 +44313,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "03cdf85d3514d0bc",
    "warnings": [
     "no proof requirement published"
@@ -44311,7 +44366,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3562b35e13c62d11",
    "warnings": [
     "no proof requirement published"
@@ -44364,7 +44419,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "dca092c1438dac80",
    "warnings": [
     "no proof requirement published",
@@ -44418,7 +44473,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c1b20d84f0fc047d",
    "warnings": [
     "no proof requirement published"
@@ -44471,7 +44526,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "159a1ad2cf8067a6",
    "warnings": [
     "no proof requirement published"
@@ -44524,7 +44579,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "742400484b04ddcd",
    "warnings": [
     "no proof requirement published"
@@ -44577,7 +44632,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "92d4966cd7c95a5f",
    "warnings": [
     "no proof requirement published"
@@ -44630,7 +44685,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7f7d9a13b5160819",
    "warnings": [
     "no proof requirement published"
@@ -44683,7 +44738,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "404b7b3d1e15e196",
    "warnings": [
     "no proof requirement published"
@@ -44748,7 +44803,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "80c76915cf5a47bb",
    "warnings": [
     "no proof requirement published"
@@ -44801,7 +44856,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7ed27a4227f93cca",
    "warnings": [
     "no proof requirement published"
@@ -44854,7 +44909,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "05e66fbad71d4814",
    "warnings": [
     "no proof requirement published"
@@ -44907,7 +44962,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c6bcc3cc86d1f885",
    "warnings": [
     "no proof requirement published",
@@ -44961,7 +45016,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "c72c69301d827d19",
    "warnings": [
     "no proof requirement published"
@@ -45014,7 +45069,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f25b184e78355364",
    "warnings": [
     "no proof requirement published"
@@ -45065,7 +45120,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d8343dc4c0a6f165",
    "warnings": [
     "no proof requirement published"
@@ -45128,7 +45183,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4037283ed03c162c",
    "warnings": [
     "no proof requirement published"
@@ -45183,7 +45238,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7ec4e76aebada29e",
    "warnings": [
     "no proof requirement published",
@@ -45235,7 +45290,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "07ce2dfb1010da5c",
    "warnings": [
     "no proof requirement published"
@@ -45288,7 +45343,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "af38c77d2c413812",
    "warnings": [
     "no proof requirement published"
@@ -45341,7 +45396,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8cefab5f4d1b63e0",
    "warnings": [
     "no proof requirement published"
@@ -45392,7 +45447,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b33a4911a1e38c31",
    "warnings": [
     "no proof requirement published",
@@ -45446,7 +45501,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "317e1ecde964b183",
    "warnings": [
     "no proof requirement published"
@@ -45499,7 +45554,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9e7c3c5786aa2b99",
    "warnings": [
     "no proof requirement published"
@@ -45552,7 +45607,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "3ce9d997958bccdf",
    "warnings": [
     "no proof requirement published"
@@ -45620,7 +45675,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "d221109082ba118c",
    "warnings": [],
    "cross_refs": {}
@@ -45686,7 +45741,7 @@
    "ev_note": "a non-cash remedy",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "44b1af9bd4f870d4",
    "warnings": [],
    "cross_refs": {}
@@ -45749,7 +45804,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ffab33573e05fd4c",
    "warnings": [
     "no proof requirement published"
@@ -45800,7 +45855,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "50e09101bb2de109",
    "warnings": [
     "no proof requirement published"
@@ -45853,7 +45908,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "39e00f918a5da4a9",
    "warnings": [
     "no proof requirement published"
@@ -45918,7 +45973,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "5df439b82eeee8b7",
    "warnings": [
     "no proof requirement published",
@@ -45984,7 +46039,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7c92fc44e59d961f",
    "warnings": [
     "no proof requirement published"
@@ -46037,7 +46092,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f4fc583280f6c8e0",
    "warnings": [
     "no proof requirement published"
@@ -46102,7 +46157,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0b368da7411676b8",
    "warnings": [
     "no proof requirement published"
@@ -46155,7 +46210,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "228d53deac1b93b1",
    "warnings": [],
    "cross_refs": {}
@@ -46204,7 +46259,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "07e7f2904ecd924c",
    "warnings": [
     "no proof requirement published"
@@ -46284,7 +46339,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-19T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "eff7ef5a221aad8b",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)"
@@ -46349,7 +46404,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "73b7d55393dbcdf9",
    "warnings": [
     "no proof requirement published"
@@ -46416,7 +46471,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-19T13:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "4d0f13a82acc0e6d",
    "warnings": [
     "no proof requirement published"
@@ -46483,7 +46538,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-14T19:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "df5161b4ea9332f7",
    "warnings": [
     "no proof requirement published"
@@ -46534,7 +46589,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "fc39fe4a55014786",
    "warnings": [
     "no proof requirement published",
@@ -46615,7 +46670,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-03T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "86e9e417cae5fdfd",
    "warnings": [
     "tiers derived from the page fact (index had no payout text)",
@@ -46667,7 +46722,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "0293717d1b5b1a42",
    "warnings": [
     "no proof requirement published",
@@ -46733,7 +46788,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "6240201e4967bfa8",
    "warnings": [
     "no proof requirement published"
@@ -46788,7 +46843,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "ea54dbdd1cca3563",
    "warnings": [
     "no proof requirement published"
@@ -46841,7 +46896,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b3812fd51146b6ec",
    "warnings": [
     "no proof requirement published"
@@ -46894,7 +46949,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a37ffe7698caff2c",
    "warnings": [
     "no proof requirement published"
@@ -46949,7 +47004,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "44a07e39d991728c",
    "warnings": [
     "no proof requirement published"
@@ -47018,7 +47073,7 @@
    "ev_note": "half of the published maximum",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-17T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8299bd439524f047",
    "warnings": [
     "no proof requirement published",
@@ -47070,7 +47125,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "512f7ea11d11f763",
    "warnings": [
     "no proof requirement published"
@@ -47121,7 +47176,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "638792ff0ecc0eb5",
    "warnings": [
     "no proof requirement published"
@@ -47172,7 +47227,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-13T16:00:00+00:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "bc790105feede21b",
    "warnings": [
     "no proof requirement published"
@@ -47240,7 +47295,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "77937aa385aef8c5",
    "warnings": [
     "no proof requirement published"
@@ -47302,7 +47357,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "f7366d628965fee5",
    "warnings": [],
    "cross_refs": {
@@ -47359,7 +47414,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-05T18:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "14ee35131fb0795d",
    "warnings": [
     "no proof requirement published"
@@ -47436,7 +47491,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "7771a28d7c816607",
    "warnings": [],
    "cross_refs": {}
@@ -47487,7 +47542,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "e1e60b7d5c31c6d4",
    "warnings": [
     "no proof requirement published"
@@ -47540,7 +47595,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "44c0716ea64bd76b",
    "warnings": [
     "no proof requirement published"
@@ -47609,7 +47664,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "8d2bf5b20b08e204",
    "warnings": [
     "no proof requirement published",
@@ -47663,7 +47718,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "79e6c036907fcf76",
    "warnings": [
     "source links a court record where the settlement website belongs"
@@ -47714,7 +47769,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "eaaae71fabf8ef3a",
    "warnings": [
     "no proof requirement published"
@@ -47781,7 +47836,7 @@
    "ev_note": "payout not disclosed",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "a8aaf53f3adfe26d",
    "warnings": [],
    "cross_refs": {}
@@ -47832,7 +47887,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "2a7bd53f3275618e",
    "warnings": [
     "no proof requirement published",
@@ -47886,7 +47941,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "536e227f6fc25d7d",
    "warnings": [
     "no proof requirement published"
@@ -47941,7 +47996,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "29860c05fff60da5",
    "warnings": [
     "no proof requirement published"
@@ -47996,7 +48051,7 @@
    "ev_note": "no benefit tiers published",
    "index_updated": "2026-10-24",
    "last_modified": null,
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "b6f64c5d00bbd441",
    "warnings": [],
    "cross_refs": {}
@@ -48061,7 +48116,7 @@
    "ev_note": null,
    "index_updated": "2026-10-24",
    "last_modified": "2026-10-13T12:00:00-04:00",
-   "verified_as_of": "2026-10-24",
+   "verified_as_of": "2026-10-25",
    "content_hash": "9b48c514c585376b",
    "warnings": [
     "no proof requirement published",
